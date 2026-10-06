@@ -1,0 +1,33 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 64 64" fill="none">
+  <defs>
+    <linearGradient id="codigix-red" x1="0" y1="0" x2="64" y2="64" gradientUnits="userSpaceOnUse">
+      <stop offset="0%" stop-color="#ff2e4d" />
+      <stop offset="100%" stop-color="#e20b27" />
+    </linearGradient>
+    <linearGradient id="codigix-blue" x1="0" y1="0" x2="64" y2="64" gradientUnits="userSpaceOnUse">
+      <stop offset="0%" stop-color="#2a1d7c" />
+      <stop offset="100%" stop-color="#1a1053" />
+    </linearGradient>
+    <filter id="shadow" x="-4" y="-4" width="72" height="72" filterUnits="userSpaceOnUse">
+      <feDropShadow dx="0" dy="2" stdDeviation="3" flood-opacity="0.15" />
+    </filter>
+  </defs>
+  
+  <!-- Outer Glow / Background disc -->
+  <circle cx="32" cy="32" r="30" fill="#ffffff" filter="url(#shadow)" />
+  
+  <!-- Codigix Emblem: Dynamic Interlocking Healthcare Crescents -->
+  <g transform="translate(6, 6) scale(0.8125)">
+    <!-- Left Crescent (Crimson Red) -->
+    <path d="M 32 4 A 28 28 0 0 0 10.5 47.5 A 28 28 0 0 1 32 18 A 14 14 0 0 0 32 4 Z" fill="url(#codigix-red)" />
+    <path d="M 10.5 47.5 A 28 28 0 0 0 32 60 A 14 14 0 0 0 32 46 A 28 28 0 0 1 10.5 47.5 Z" fill="url(#codigix-red)" />
+    
+    <!-- Right Crescent (Deep Indigo / Tech Navy) -->
+    <path d="M 32 4 A 14 14 0 0 1 32 18 A 28 28 0 0 1 53.5 16.5 A 28 28 0 0 0 32 4 Z" fill="url(#codigix-blue)" />
+    <path d="M 53.5 16.5 A 28 28 0 0 1 32 46 A 14 14 0 0 1 32 60 A 28 28 0 0 0 53.5 16.5 Z" fill="url(#codigix-blue)" />
+    
+    <!-- Central Dynamic Core Pulse -->
+    <circle cx="32" cy="32" r="6" fill="#e20b27" opacity="0.9" />
+    <circle cx="32" cy="32" r="2.5" fill="#ffffff" />
+  </g>
+</svg>

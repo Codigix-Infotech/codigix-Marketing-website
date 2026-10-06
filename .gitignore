@@ -1,0 +1,18 @@
+node_modules
+.next
+out
+.env.local
+.env
+*.tsbuildinfo
+next-env.d.ts
+backend/node_modules
+backend/.env
+backend/uploads/*
+!backend/uploads/.gitkeep
+backend/private_uploads/**
+backend/data/
+
+# production secrets (the *.example templates are safe to commit)
+.env.production
+.env*.local
+backend/.env.production

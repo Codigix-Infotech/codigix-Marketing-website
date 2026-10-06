@@ -1,0 +1,260 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@layer base {
+  html {
+    -webkit-font-smoothing: antialiased;
+    -moz-osx-font-smoothing: grayscale;
+    text-rendering: optimizeLegibility;
+  }
+
+  body {
+    @apply bg-primary-bg text-primary-text font-sans antialiased overflow-x-hidden;
+    font-family: "Roboto", sans-serif;
+    overscroll-behavior-y: none;
+  }
+
+  /* Universal Typography Enforcement (Defaults) */
+  h1 { @apply text-4xl md:text-5xl lg:text-6xl font-bold text-[#1a1053] leading-tight tracking-tight; }
+  h2 { @apply text-3xl md:text-4xl lg:text-5xl font-bold text-[#1a1053] leading-snug tracking-tight; }
+  h3 { @apply text-2xl md:text-3xl lg:text-4xl font-semibold text-[#1a1053] leading-snug; }
+  h4 { @apply text-xl md:text-2xl font-semibold text-[#1a1053] leading-snug; }
+  h5 { @apply text-lg md:text-xl font-semibold text-[#1a1053]; }
+  h6 { @apply text-base md:text-lg font-semibold text-[#1a1053]; }
+  p { @apply text-base lg:text-lg font-normal text-slate-700 leading-relaxed; }
+
+  * {
+    border-color: rgba(226, 232, 240, 0.8);
+  }
+
+  /* Universal Section Container Width matching Hero Banner Section */
+  .container,
+  [class*="max-w-[1360px]"],
+  [class*="max-w-[1380px]"],
+  [class*="max-w-[1440px]"] {
+    max-width: 100% !important;
+  }
+
+  .container {
+    width: 100% !important;
+    padding-left: 1rem !important;
+    padding-right: 1rem !important;
+  }
+
+  @media (min-width: 640px) {
+    .container {
+      padding-left: 1.5rem !important;
+      padding-right: 1.5rem !important;
+    }
+  }
+
+  @media (min-width: 1024px) {
+    .container {
+      padding-left: 2rem !important;
+      padding-right: 2rem !important;
+    }
+  }
+
+  @media (min-width: 1280px) {
+    .container {
+      padding-left: 3rem !important;
+      padding-right: 3rem !important;
+    }
+  }
+
+  @media (min-width: 1536px) {
+    .container {
+      padding-left: 4rem !important;
+      padding-right: 4rem !important;
+    }
+  }
+}
+
+@layer utilities {
+  .text-balance {
+    text-wrap: balance;
+  }
+  
+  .glass {
+    @apply bg-white/70 backdrop-blur-lg border border-slate-200 rounded-2xl shadow-sm;
+  }
+  
+  .glass-card {
+    @apply bg-white/70 backdrop-blur-xl border border-slate-200/50 shadow-[0_8px_30px_rgb(0,0,0,0.04)] rounded-2xl relative overflow-hidden;
+  }
+  
+  .text-gradient {
+    @apply bg-clip-text text-transparent bg-gradient-to-r from-blue-600 via-indigo-600 to-[#e20b27];
+  }
+
+  /* GPU Hardware Acceleration */
+  .gpu-accelerated {
+    transform: translate3d(0, 0, 0);
+    backface-visibility: hidden;
+    perspective: 1000px;
+    will-change: transform, opacity;
+  }
+}
+
+/* SVG Drawing Utilities */
+.path-draw {
+  stroke-dasharray: 1000;
+  stroke-dashoffset: 1000;
+  animation: drawPath 2s ease-out forwards;
+}
+
+@keyframes drawPath {
+  to {
+    stroke-dashoffset: 0;
+  }
+}
+
+.fill-reveal {
+  opacity: 0;
+  animation: revealFill 0.5s ease-out 1s forwards;
+}
+
+@keyframes revealFill {
+  to {
+    opacity: 1;
+  }
+}
+
+/* Pulsing SVG dot (radius 3→7→3 on an r=7 circle), done in CSS so it doesn't need a JS loop. */
+.svg-pulse {
+  transform-box: fill-box;
+  transform-origin: center;
+  animation: svgPulse 2s ease-in-out infinite;
+}
+
+@keyframes svgPulse {
+  0%, 100% { transform: scale(0.4286); opacity: 0.6; }
+  50% { transform: scale(1); opacity: 0.15; }
+}
+
+/* Hide scrollbar for horizontal lists */
+.hide-scrollbar::-webkit-scrollbar {
+  display: none;
+}
+.hide-scrollbar {
+  -ms-overflow-style: none;
+  scrollbar-width: none;
+}
+
+/* ---------- Scroll performance (public site) ----------
+ * Measured with a 4x CPU throttle: the homepage scrolled at ~6 fps because 100+ frosted
+ * (backdrop-filter) panels and large blurred glows were re-rendered on every frame while
+ * decorative animations ran non-stop, even off-screen.
+ */
+
+/* Frosted-glass cards sit on plain light backgrounds, where the blur is invisible but still
+   costs a full re-render of everything behind them on every scroll frame. The navbar and
+   its mobile overlay live outside <main> and keep their blur. */
+.site-main [class*="backdrop-blur"] {
+  -webkit-backdrop-filter: none !important;
+  backdrop-filter: none !important;
+}
+
+/* Skip layout/paint (and the animations inside) for sections that are off-screen.
+   `auto` remembers each section's real height once rendered, so the scrollbar stays stable. */
+.site-main section:not(section section) {
+  content-visibility: auto;
+  contain-intrinsic-size: auto 900px;
+}
+
+/* Phones: sections use 80–128px of vertical padding sized for desktop, which stacks into
+   ~200px blank gaps between sections. Tighten the rhythm below 640px (sections only —
+   cards and hero offsets that clear the fixed navbar are untouched). */
+@media (max-width: 639px) {
+  .site-main section.py-20,
+  .site-main section.py-24,
+  .site-main section.py-28 {
+    padding-top: 3.5rem;
+    padding-bottom: 3.5rem;
+  }
+  .site-main section.py-32 {
+    padding-top: 4rem;
+    padding-bottom: 4rem;
+  }
+}
+
+/* Touch screens: small icon controls (carousel dots, prev/pause/next) keep their look but get
+   an invisible ~44px touch area. They all carry an aria-label, which is what we key on. */
+@media (pointer: coarse) {
+  .site-main button[aria-label]:not([class*="absolute"]):not([class*="fixed"]) {
+    position: relative;
+  }
+  .site-main button[aria-label]::after {
+    content: '';
+    position: absolute;
+    inset: -10px;
+  }
+}
+
+/* Anchor jumps (e.g. /services#case-studies) should land below the fixed navbar. */
+.site-main [id] {
+  scroll-margin-top: 96px;
+}
+
+@media (prefers-reduced-motion: no-preference) {
+  :root {
+    scroll-behavior: smooth;
+  }
+}
+
+/* Lenis animates the scroll itself; native CSS smoothing on top would fight it. */
+html.lenis {
+  scroll-behavior: auto !important;
+}
+
+@media (prefers-reduced-motion: reduce) {
+  .site-main *,
+  .site-main *::before,
+  .site-main *::after {
+    animation-duration: 0.01ms !important;
+    animation-iteration-count: 1 !important;
+    transition-duration: 0.01ms !important;
+  }
+}
+
+/* ---------- Blog article content (HTML from the CMS editor) ---------- */
+.article-content h2,
+.article-content h3 {
+  scroll-margin-top: 110px;
+}
+.article-content table {
+  display: block;
+  overflow-x: auto;
+}
+.article-content iframe {
+  width: 100%;
+  aspect-ratio: 16 / 9;
+  height: auto;
+  border-radius: 1rem;
+}
+.article-content mark {
+  background: #fef3c7;
+  padding: 0 0.15em;
+  border-radius: 0.2em;
+}
+
+/* ---------- Admin panel animations ---------- */
+@keyframes fadeIn { from { opacity: 0 } to { opacity: 1 } }
+@keyframes slideIn { from { transform: translateX(24px); opacity: 0 } to { transform: none; opacity: 1 } }
+@keyframes slideUp { from { transform: translateY(8px); opacity: 0 } to { transform: none; opacity: 1 } }
+
+/* TipTap editor */
+.tiptap-editor .ProseMirror { outline: none; min-height: 420px; }
+.tiptap-editor .ProseMirror p.is-editor-empty:first-child::before {
+  content: attr(data-placeholder);
+  float: left;
+  color: #94a3b8;
+  pointer-events: none;
+  height: 0;
+}
+.tiptap-editor .ProseMirror img.ProseMirror-selectednode { outline: 3px solid #6366f1; border-radius: 0.75rem; }
+.tiptap-editor .ProseMirror table { border-collapse: collapse; width: 100%; }
+.tiptap-editor .ProseMirror td, .tiptap-editor .ProseMirror th { border: 1px solid #e2e8f0; padding: 6px 10px; min-width: 60px; }
+.tiptap-editor .ProseMirror th { background: #f8fafc; }
+.tiptap-editor .ProseMirror .selectedCell { background: #eef2ff; }
