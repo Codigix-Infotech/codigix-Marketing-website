@@ -194,7 +194,7 @@ export default function HeroSection({ dashboard }: { dashboard?: HeroDashboardDa
                   </div>
 
                   {/* Main Headline with Animated Categories - Stable Height & No Layout Jump */}
-                  <h1 className="text-4xl sm:text-5xl lg:text-[3.2rem] xl:text-[3.8rem] font-semibold leading-[1.14] text-[#1a1053] tracking-tight mb-4">
+                  <h1 className="text-4xl sm:text-5xl lg:text-[3.2rem] xl:text-[3.8rem] font-semibold leading-[1.14] text-[#1a1053] tracking-tight mb-4 bg-violet-700">
                      Strategy That Grows <br />
                      <span className="relative inline-flex items-center h-[1.24em] overflow-hidden align-middle">
                         <AnimatePresence mode="popLayout">

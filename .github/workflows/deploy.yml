@@ -1,0 +1,43 @@
+name: Deploy to VPS
+
+on:
+  push:
+    branches:
+      - main # Change to master if your default branch is master
+
+jobs:
+  deploy:
+    runs-on: ubuntu-latest
+
+    steps:
+      - name: Deploy to VPS via SSH
+        uses: appleboy/ssh-action@v1.0.3
+        with:
+          host: ${{ secrets.VPS_HOST }}
+          username: ${{ secrets.VPS_USERNAME }}
+          key: ${{ secrets.VPS_SSH_KEY }}
+          port: ${{ secrets.VPS_PORT}}
+          script: |
+            set -e
+
+            echo "Navigating to project directory..."
+            cd /var/www/codigix-Marketing-website
+
+            echo "Pulling latest changes from Git..."
+            git pull origin main
+
+            echo "Installing backend dependencies & running migrations..."
+            cd backend
+            npm ci || npm i
+            npm run migrate
+            cd ..
+
+            echo "Installing frontend dependencies & building Next.js..."
+            npm ci || npm i
+            npm run build
+
+            echo "Restarting PM2 processes..."
+            pm2 restart codigix-marketing-backend
+            pm2 restart codigix-marketing-frontend
+
+            echo "Deployment successful!"
