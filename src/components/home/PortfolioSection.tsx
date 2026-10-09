@@ -34,7 +34,7 @@ const healthcareCaseStudies: CaseStudy[] = [
   {
     id: 1,
     title: "Dr. Sheetal's Glow Clinic",
-    clientLogo: "/clients/sheetals-glow.png",
+    clientLogo: "/clients/sheetals-glow.webp",
     location: "Kothrud, Pune",
     category: "Dermatology & Skin",
     speciality: "Laser Skin & Aesthetics",
@@ -90,7 +90,7 @@ const healthcareCaseStudies: CaseStudy[] = [
   {
     id: 3,
     title: "Moraya Multispeciality Hospital",
-    clientLogo: "/clients/morya.png",
+    clientLogo: "/clients/morya.webp",
     location: "Chinchwad, Pune",
     category: "Hospital Growth",
     speciality: "Multispeciality & Surgery",
@@ -146,7 +146,7 @@ const healthcareCaseStudies: CaseStudy[] = [
   {
     id: 5,
     title: "Shushrut Surgical Hospital & Piles Clinic",
-    clientLogo: "/clients/shushrut.png",
+    clientLogo: "/clients/shushrut.webp",
     location: "Pimpri, Pune",
     category: "Surgical & Proctology",
     speciality: "Laser Surgery & Proctology",
@@ -174,7 +174,7 @@ const healthcareCaseStudies: CaseStudy[] = [
   {
     id: 6,
     title: "Canopy Dental Care",
-    clientLogo: "/clients/canopy.png",
+    clientLogo: "/clients/canopy.webp",
     location: "Baner, Pune",
     category: "Advanced Dentistry",
     speciality: "Orthodontics & Aligners",
@@ -410,7 +410,7 @@ export default function PortfolioSection() {
   };
 
   return (
-    <section className="py-20 lg:py-24 bg-[#fafbfe] overflow-hidden relative border-t border-slate-100">
+    <section id="portfolio" className="py-20 lg:py-24 bg-[#fafbfe] overflow-hidden relative border-t border-slate-100 scroll-mt-24">
 
       {/* Animated Subtle Grid Pattern */}
       <div className="absolute inset-0 z-0 pointer-events-none opacity-[0.03]" style={{ backgroundImage: 'linear-gradient(#1a1053 1px, transparent 1px), linear-gradient(90deg, #1a1053 1px, transparent 1px)', backgroundSize: '40px 40px' }} />

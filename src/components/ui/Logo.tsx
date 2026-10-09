@@ -14,7 +14,7 @@ const sizeMap = {
   xl: 250,
 };
 
-export default function Logo({ className = '', size = 'md', src = '/logo.png' }: LogoProps) {
+export default function Logo({ className = '', size = 'md', src = '/logo.webp' }: LogoProps) {
   return (
     <div className={`flex items-center ${className}`}>
       {/* eslint-disable-next-line @next/next/no-img-element */}
@@ -24,6 +24,11 @@ export default function Logo({ className = '', size = 'md', src = '/logo.png' }:
         width={sizeMap[size]}
         style={{ width: sizeMap[size], height: 'auto' }}
         className="object-contain"
+        onError={(e) => {
+          if (!e.currentTarget.src.endsWith('/logo.png')) {
+            e.currentTarget.src = '/logo.png';
+          }
+        }}
       />
     </div>
   );

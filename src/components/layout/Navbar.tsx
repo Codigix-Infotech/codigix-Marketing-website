@@ -280,7 +280,9 @@ export default function Navbar() {
 
                 {/* Mobile Drawer Header */}
                 <div className="flex items-center justify-between pb-6 border-b border-slate-100 mb-6">
-                  <Logo size="md" />
+                  <Link href="/" onClick={() => setMobileMenuOpen(false)} aria-label="Codigix Home" className="flex items-center">
+                    <Logo size="md" />
+                  </Link>
                   <button
                     onClick={() => setMobileMenuOpen(false)}
                     className="w-9 h-9 rounded-full bg-slate-100 text-slate-600 flex items-center justify-center hover:bg-slate-200 transition-colors"

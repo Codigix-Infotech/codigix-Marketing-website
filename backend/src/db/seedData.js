@@ -109,24 +109,24 @@ export const settings = {
   },
 };
 
-// `file` is copied from the project root into /uploads/clients on first seed.
+// `file` is copied from public/clients or project root into /uploads/clients on first seed.
 export const clients = [
-  { name: "Dr. Sheetal's Glow", location: 'Kothrud', file: "sheetal's_glow.png", is_healthcare: 1, map_x: 25, map_y: 25 },
-  { name: 'Smiles For All', location: 'Pashan', file: 'simles_for_all.webp', is_healthcare: 1, map_x: 50, map_y: 15 },
-  { name: 'Ayurlekha', location: 'Sangamwadi', file: 'aayurlekha.png', is_healthcare: 1, map_x: 35, map_y: 80 },
-  { name: 'CorpLegal', location: 'Bavdhan', file: 'corplegal.png', is_healthcare: 0, map_x: 85, map_y: 50 },
-  { name: 'Dr. Shagun Rao', location: 'Aundh', file: 'Dr_shagun_rao.webp', is_healthcare: 1, map_x: 75, map_y: 75 },
-  { name: 'Shriraj Clinic', location: 'Bhosari', file: 'Shriraj Clinic Logo PNG.png', is_healthcare: 1, map_x: 15, map_y: 50 },
-  { name: 'Sanskruti Agro Farm', location: 'Chakan', file: 'Sanskruti agro farm logo.jpg.jpeg', is_healthcare: 0, map_x: 35, map_y: 10 },
-  { name: 'Moraya Multispeciality', location: 'Chinchwad', file: 'morya.png', is_healthcare: 1, map_x: 38, map_y: 35 },
-  { name: 'Canopy Dental Care', location: 'Baner', file: 'canopy.png', is_healthcare: 1, map_x: 65, map_y: 20 },
-  { name: 'Kimaya Brain & Spine', location: 'Kalewadi', file: 'kimya.webp', is_healthcare: 1, map_x: 15, map_y: 85 },
-  { name: 'Bakul', location: 'Kharalwadi', file: 'bakul.png', is_healthcare: 0, map_x: 55, map_y: 85 },
-  { name: 'Kitchen Canvas', location: 'Aundh', file: 'kitchen_canvas.jpg.jpeg', is_healthcare: 0, map_x: 90, map_y: 80 },
-  { name: 'Regain', location: 'Wakad', file: 'regain.png', is_healthcare: 0, map_x: 85, map_y: 15 },
-  { name: 'Shushrut Surgical Hospital', location: 'Pimpri', file: 'shushrut.png', is_healthcare: 1, map_x: 65, map_y: 40 },
-  { name: 'Shushrut Piles Clinic', location: 'Pimpri', file: 'shushrut.png', is_healthcare: 1, map_x: 60, map_y: 60 },
-  { name: 'Shushrut Clinic', location: 'Pimpri', file: 'shushrut.png', is_healthcare: 1, map_x: 10, map_y: 30 },
+  { name: "Dr. Sheetal's Glow", location: 'Kothrud', file: 'sheetals-glow.webp', is_healthcare: 1, map_x: 25, map_y: 25 },
+  { name: 'Smiles For All', location: 'Pashan', file: 'smiles-for-all.webp', is_healthcare: 1, map_x: 50, map_y: 15 },
+  { name: 'Ayurlekha', location: 'Sangamwadi', file: 'aayurlekha.webp', is_healthcare: 1, map_x: 35, map_y: 80 },
+  { name: 'CorpLegal', location: 'Bavdhan', file: 'corplegal.webp', is_healthcare: 0, map_x: 85, map_y: 50 },
+  { name: 'Dr. Shagun Rao', location: 'Aundh', file: 'dr-shagun-rao.webp', is_healthcare: 1, map_x: 75, map_y: 75 },
+  { name: 'Shriraj Clinic', location: 'Bhosari', file: 'shriraj-clinic.webp', is_healthcare: 1, map_x: 15, map_y: 50 },
+  { name: 'Sanskruti Agro Farm', location: 'Chakan', file: 'sanskruti-agro-farm.webp', is_healthcare: 0, map_x: 35, map_y: 10 },
+  { name: 'Moraya Multispeciality', location: 'Chinchwad', file: 'morya.webp', is_healthcare: 1, map_x: 38, map_y: 35 },
+  { name: 'Canopy Dental Care', location: 'Baner', file: 'canopy.webp', is_healthcare: 1, map_x: 65, map_y: 20 },
+  { name: 'Kimaya Brain & Spine', location: 'Kalewadi', file: 'kimaya.webp', is_healthcare: 1, map_x: 15, map_y: 85 },
+  { name: 'Bakul', location: 'Kharalwadi', file: 'bakul.webp', is_healthcare: 0, map_x: 55, map_y: 85 },
+  { name: 'Kitchen Canvas', location: 'Aundh', file: 'kitchen-canvas.webp', is_healthcare: 0, map_x: 90, map_y: 80 },
+  { name: 'Regain', location: 'Wakad', file: 'regain.webp', is_healthcare: 0, map_x: 85, map_y: 15 },
+  { name: 'Shushrut Surgical Hospital', location: 'Pimpri', file: 'shushrut.webp', is_healthcare: 1, map_x: 65, map_y: 40 },
+  { name: 'Shushrut Piles Clinic', location: 'Pimpri', file: 'shushrut.webp', is_healthcare: 1, map_x: 60, map_y: 60 },
+  { name: 'Shushrut Clinic', location: 'Pimpri', file: 'shushrut.webp', is_healthcare: 1, map_x: 10, map_y: 30 },
   { name: 'Viranjany', location: 'Wakad', file: 'viranjany.webp', is_healthcare: 0, map_x: 20, map_y: 65 },
 ];
 

@@ -121,7 +121,7 @@ export default function HeroSection({ dashboard }: { dashboard?: HeroDashboardDa
    }, []);
 
    return (
-      <section className="relative w-full pt-24 pb-12 lg:pt-28 lg:pb-12 overflow-hidden bg-gradient-to-br from-white via-[#f8fafe] to-[#eef2f9] flex items-center font-sans px-4 sm:px-6 lg:px-8 xl:px-12 2xl:px-16">
+      <section className="relative w-full pt-24 pb-12 lg:pt-28 lg:pb-12 overflow-hidden bg-gradient-to-br from-white via-[#f8fafe] to-[#eef2f9] flex items-center font-sans px-4 sm:px-6 lg:px-8 xl:px-12 2xl:px-12">
 
          {/* Animated Grid Pattern */}
          <div className="absolute inset-0 z-0 pointer-events-none opacity-[0.04]" style={{ backgroundImage: 'linear-gradient(#1a1053 1px, transparent 1px), linear-gradient(90deg, #1a1053 1px, transparent 1px)', backgroundSize: '40px 40px' }} />
@@ -157,7 +157,7 @@ export default function HeroSection({ dashboard }: { dashboard?: HeroDashboardDa
             className="absolute bottom-[-10%] left-[5%] w-[800px] h-[700px] border-[1px] border-solid border-purple-600/5 rounded-full z-0 pointer-events-none hidden lg:block"
          />
 
-         <div className="w-full  mx-auto px-2 sm:px-4 lg:px-6 relative z-20 flex flex-col lg:flex-row items-center justify-between">
+         <div className="w-full  mx-auto  relative z-20 flex flex-col lg:flex-row items-center justify-between">
 
             {/* LEFT COLUMN: 50% Hero Content */}
             <div className="flex flex-col items-start text-left w-full lg:w-[48%] xl:w-[46%] shrink-0 z-20 lg:pr-6">

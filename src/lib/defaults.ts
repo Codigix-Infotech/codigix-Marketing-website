@@ -9,7 +9,7 @@ export const defaultSettings: PublicSettings = {
     tagline: 'Healthcare Digital Marketing Agency',
     description:
       "Pune's dedicated healthcare digital growth agency — driving organic SEO, Google Maps visibility, high-DA backlinks, and viral social reach for hospitals and clinics.",
-    logo: '/logo.png',
+    logo: '/logo.webp',
     newsletter_title: 'Join our Newsletter',
     newsletter_text:
       'Get the latest healthcare SEO insights, Google Maps strategies, and patient acquisition trends delivered straight to your inbox.',
@@ -109,22 +109,22 @@ const c = (id: number, name: string, location: string, logo: string, is_healthca
 });
 
 export const defaultClients: Client[] = [
-  c(1, "Dr. Sheetal's Glow", 'Kothrud', 'sheetals-glow.png', true, 25, 25),
+  c(1, "Dr. Sheetal's Glow", 'Kothrud', 'sheetals-glow.webp', true, 25, 25),
   c(2, 'Smiles For All', 'Pashan', 'smiles-for-all.webp', true, 50, 15),
-  c(3, 'Ayurlekha', 'Sangamwadi', 'aayurlekha.png', true, 35, 80),
-  c(4, 'CorpLegal', 'Bavdhan', 'corplegal.png', false, 85, 50),
+  c(3, 'Ayurlekha', 'Sangamwadi', 'aayurlekha.webp', true, 35, 80),
+  c(4, 'CorpLegal', 'Bavdhan', 'corplegal.webp', false, 85, 50),
   c(5, 'Dr. Shagun Rao', 'Aundh', 'dr-shagun-rao.webp', true, 75, 75),
-  c(6, 'Shriraj Clinic', 'Bhosari', 'shriraj-clinic.png', true, 15, 50),
-  c(7, 'Sanskruti Agro Farm', 'Chakan', 'sanskruti-agro-farm.jpg', false, 35, 10),
-  c(8, 'Moraya Multispeciality', 'Chinchwad', 'morya.png', true, 38, 35),
-  c(9, 'Canopy Dental Care', 'Baner', 'canopy.png', true, 65, 20),
+  c(6, 'Shriraj Clinic', 'Bhosari', 'shriraj-clinic.webp', true, 15, 50),
+  c(7, 'Sanskruti Agro Farm', 'Chakan', 'sanskruti-agro-farm.webp', false, 35, 10),
+  c(8, 'Moraya Multispeciality', 'Chinchwad', 'morya.webp', true, 38, 35),
+  c(9, 'Canopy Dental Care', 'Baner', 'canopy.webp', true, 65, 20),
   c(10, 'Kimaya Brain & Spine', 'Kalewadi', 'kimaya.webp', true, 15, 85),
-  c(11, 'Bakul', 'Kharalwadi', 'bakul.png', false, 55, 85),
-  c(12, 'Kitchen Canvas', 'Aundh', 'kitchen-canvas.jpg', false, 90, 80),
-  c(13, 'Regain', 'Wakad', 'regain.png', false, 85, 15),
-  c(14, 'Shushrut Surgical Hospital', 'Pimpri', 'shushrut.png', true, 65, 40),
-  c(15, 'Shushrut Piles Clinic', 'Pimpri', 'shushrut.png', true, 60, 60),
-  c(16, 'Shushrut Clinic', 'Pimpri', 'shushrut.png', true, 10, 30),
+  c(11, 'Bakul', 'Kharalwadi', 'bakul.webp', false, 55, 85),
+  c(12, 'Kitchen Canvas', 'Aundh', 'kitchen-canvas.webp', false, 90, 80),
+  c(13, 'Regain', 'Wakad', 'regain.webp', false, 85, 15),
+  c(14, 'Shushrut Surgical Hospital', 'Pimpri', 'shushrut.webp', true, 65, 40),
+  c(15, 'Shushrut Piles Clinic', 'Pimpri', 'shushrut.webp', true, 60, 60),
+  c(16, 'Shushrut Clinic', 'Pimpri', 'shushrut.webp', true, 10, 30),
   c(17, 'Viranjany', 'Wakad', 'viranjany.webp', false, 20, 65),
 ];
 

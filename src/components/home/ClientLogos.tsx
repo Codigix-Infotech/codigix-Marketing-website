@@ -1,7 +1,8 @@
 "use client";
 
 import React, { useEffect, useState } from 'react';
-import { ChevronDown } from 'lucide-react';
+import Link from 'next/link';
+import { ExternalLink, ArrowDown } from 'lucide-react';
 import Logo from '@/components/ui/Logo';
 import AbstractMap from '@/components/ui/AbstractMap';
 import type { Client } from '@/lib/types';
@@ -14,7 +15,6 @@ const FALLBACK_POSITIONS = [
   { x: 35, y: 10 }, { x: 38, y: 35 }, { x: 65, y: 20 }, { x: 15, y: 85 }, { x: 55, y: 85 }, { x: 90, y: 80 },
   { x: 85, y: 15 }, { x: 65, y: 40 }, { x: 60, y: 60 }, { x: 10, y: 30 }, { x: 20, y: 65 },
 ];
-
 
 const cssStyles = `
   @keyframes draw-line {
@@ -35,13 +35,26 @@ export default function ClientLogos({ clients = defaultClients }: { clients?: Cl
     .filter((c) => c.show_on_map !== false)
     .map((c) => {
       let logo = c.logo;
-      // Hotfix for broken database seed filenames
-      if (c.name === "Dr. Sheetal's Glow") logo = '/clients/sheetals-glow.png';
+      // Convert any legacy extensions or known paths to webp
+      if (logo) {
+        logo = logo.replace(/\.(png|jpg|jpeg)$/i, '.webp');
+      }
+      // Standardize client logos to high-quality WebP files
+      if (c.name === "Dr. Sheetal's Glow") logo = '/clients/sheetals-glow.webp';
       if (c.name === "Smiles For All") logo = '/clients/smiles-for-all.webp';
       if (c.name === "Dr. Shagun Rao") logo = '/clients/dr-shagun-rao.webp';
-      if (c.name === "Kitchen Canvas") logo = '/clients/kitchen-canvas.jpg';
+      if (c.name === "Kitchen Canvas") logo = '/clients/kitchen-canvas.webp';
       if (c.name === "Kimaya Brain & Spine") logo = '/clients/kimaya.webp';
-      if (c.name === "Sanskruti Agro Farm") logo = '/clients/sanskruti-agro-farm.jpg';
+      if (c.name === "Sanskruti Agro Farm") logo = '/clients/sanskruti-agro-farm.webp';
+      if (c.name === "Ayurlekha") logo = '/clients/aayurlekha.webp';
+      if (c.name === "CorpLegal") logo = '/clients/corplegal.webp';
+      if (c.name === "Shriraj Clinic") logo = '/clients/shriraj-clinic.webp';
+      if (c.name === "Moraya Multispeciality") logo = '/clients/morya.webp';
+      if (c.name === "Canopy Dental Care") logo = '/clients/canopy.webp';
+      if (c.name === "Bakul") logo = '/clients/bakul.webp';
+      if (c.name === "Regain") logo = '/clients/regain.webp';
+      if (c.name && c.name.startsWith("Shushrut")) logo = '/clients/shushrut.webp';
+      if (c.name === "Viranjany") logo = '/clients/viranjany.webp';
       
       return { ...c, logo: mediaUrl(logo), isHealthcare: c.is_healthcare };
     });
@@ -126,8 +139,13 @@ export default function ClientLogos({ clients = defaultClients }: { clients?: Cl
           )}
 
           {/* Central Codigix Node - Exactly at center (50%, 50%) */}
-          <div className="absolute z-20 flex flex-col items-center" style={{ left: '50%', top: '50%', transform: 'translate(-50%, -50%)' }}>
-            <div className={"w-20 h-20 sm:w-28 sm:h-28 bg-white rounded-full flex items-center justify-center p-2 transition-all duration-500 relative " + (activeIndex !== null ? 'shadow-[0_0_50px_rgba(59,130,246,0.5)] border-2 border-blue-400' : 'shadow-lg border border-slate-200')}>
+          <Link
+            href="/"
+            title="Codigix Infotech Headquarters"
+            className="absolute z-20 flex flex-col items-center group cursor-pointer"
+            style={{ left: '50%', top: '50%', transform: 'translate(-50%, -50%)' }}
+          >
+            <div className={"w-20 h-20 sm:w-28 sm:h-28 bg-white rounded-full flex items-center justify-center p-2 transition-all duration-500 relative group-hover:scale-105 " + (activeIndex !== null ? 'shadow-[0_0_50px_rgba(59,130,246,0.5)] border-2 border-blue-400' : 'shadow-lg border border-slate-200')}>
               {activeIndex === null && (
                 <div className="absolute inset-0 rounded-full border-4 border-blue-500/20 animate-ping" style={{ animationDuration: '3s' }} />
               )}
@@ -136,16 +154,18 @@ export default function ClientLogos({ clients = defaultClients }: { clients?: Cl
               </div>
             </div>
             {/* Location Tag */}
-            <div className="absolute top-[110%] bg-[#1a1053] text-white text-[9px] font-bold px-2 py-1 rounded shadow-md whitespace-nowrap">
+            <div className="absolute top-[110%] bg-[#1a1053] group-hover:bg-blue-600 transition-colors text-white text-[9px] font-bold px-2.5 py-1 rounded-full shadow-md whitespace-nowrap">
               Pune HQ
             </div>
-          </div>
+          </Link>
 
           {/* Client Map Nodes */}
           {clientLogos.map((logo, idx) => {
             const pos = nodePositions[idx];
             const isActive = activeIndex === idx;
             const isFaded = activeIndex !== null && !isActive;
+            const navHref = logo.website && logo.website.trim() !== '' ? logo.website : '#portfolio';
+            const isExternal = /^https?:\/\//i.test(navHref);
 
             return (
               <div
@@ -161,13 +181,38 @@ export default function ClientLogos({ clients = defaultClients }: { clients?: Cl
                 onMouseEnter={() => setActiveIndex(idx)}
                 onMouseLeave={() => setActiveIndex(null)}
               >
-                <div className={"relative flex flex-col items-center justify-center cursor-pointer transition-all duration-500 " + (isActive ? "-translate-y-3" : "translate-y-0")}>
-                  <div className={`relative rounded-xl flex items-center justify-center transition-all duration-500 ${logo.isHealthcare ? 'w-auto max-w-[160px] sm:max-w-[200px] h-16 sm:h-20 px-5 py-3 border-2' : 'w-auto max-w-[120px] sm:max-w-[160px] h-12 sm:h-16 px-4 py-2 border'} ${isActive ? 'bg-white shadow-[0_15px_30px_rgba(59,130,246,0.4)] border-blue-400 scale-110 z-20' : 'bg-white/90 backdrop-blur-sm border-slate-200 shadow-md'}`}>
+                <Link
+                  href={navHref}
+                  target={isExternal ? '_blank' : undefined}
+                  rel={isExternal ? 'noopener noreferrer' : undefined}
+                  className={"relative flex flex-col items-center justify-center cursor-pointer transition-all duration-500 group " + (isActive ? "-translate-y-3" : "translate-y-0")}
+                >
+                  <div className={`relative rounded-xl flex items-center justify-center transition-all duration-500 overflow-hidden ${logo.isHealthcare ? 'w-auto max-w-[160px] sm:max-w-[200px] h-16 sm:h-20 px-5 py-3 border-2' : 'w-auto max-w-[120px] sm:max-w-[160px] h-12 sm:h-16 px-4 py-2 border'} ${isActive ? 'bg-white shadow-[0_15px_30px_rgba(59,130,246,0.4)] border-blue-400 scale-110 z-20' : 'bg-white/90 backdrop-blur-sm border-slate-200 shadow-md group-hover:border-blue-300'}`}>
                     {logo.logo ? (
                       <img
                         src={logo.logo}
                         alt={logo.name}
                         className="w-full h-full object-contain transition-all duration-500"
+                        onError={(e) => {
+                          const img = e.currentTarget;
+                          // If remote uploads failed, try direct local public webp
+                          if (!img.src.includes('.webp')) {
+                            img.src = img.src.replace(/\.(png|jpg|jpeg)$/i, '.webp');
+                          } else if (img.src.includes('/uploads/clients/')) {
+                            const filename = img.src.split('/').pop();
+                            img.src = `/clients/${filename}`;
+                          } else {
+                            // As final safety fallback, hide image and show stylish text
+                            img.style.display = 'none';
+                            const parent = img.parentElement;
+                            if (parent && !parent.querySelector('.fallback-node-text')) {
+                              const span = document.createElement('span');
+                              span.className = 'fallback-node-text text-xs font-bold text-slate-700 whitespace-nowrap px-2';
+                              span.innerText = logo.name;
+                              parent.appendChild(span);
+                            }
+                          }
+                        }}
                       />
                     ) : (
                       <span className={`transition-colors whitespace-nowrap ${logo.isHealthcare ? 'font-extrabold text-base' : 'font-bold text-sm'} ${isActive ? 'text-blue-600' : 'text-slate-600'}`}>{logo.name}</span>
@@ -183,14 +228,21 @@ export default function ClientLogos({ clients = defaultClients }: { clients?: Cl
                         {logo.location}
                       </span>
                     )}
+                    <span className="text-[9px] text-blue-400 font-medium mt-1 flex items-center gap-1">
+                      {isExternal ? (
+                        <>Visit Website <ExternalLink size={10} /></>
+                      ) : (
+                        <>View Case Study <ArrowDown size={10} /></>
+                      )}
+                    </span>
                   </div>
-                </div>
+                </Link>
               </div>
             );
           })}
 
         </div>
       </div>
-    </section >
+    </section>
   );
 }

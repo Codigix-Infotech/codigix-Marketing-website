@@ -32,12 +32,21 @@ async function seedSettings() {
 async function copyClientLogo(file) {
   const projectRoot = path.resolve(env.root, '..');
   const src = path.join(projectRoot, file);
-  const ext = path.extname(file).toLowerCase() === '.jpeg' ? '.jpg' : path.extname(file).toLowerCase();
-  const name = `${slugify(path.parse(file).name.replace(/\.jpg$/i, ''))}${ext}`;
+  const publicSrc = path.join(projectRoot, 'public', 'clients', file);
+  const ext = path.extname(file).toLowerCase();
+  const name = `${slugify(path.parse(file).name)}${ext}`;
   const destDir = path.join(env.uploadDir, 'clients');
   try {
     await fs.mkdir(destDir, { recursive: true });
-    await fs.copyFile(src, path.join(destDir, name));
+    let sourcePath = src;
+    try {
+      await fs.access(publicSrc);
+      sourcePath = publicSrc;
+    } catch {
+      await fs.access(src);
+      sourcePath = src;
+    }
+    await fs.copyFile(sourcePath, path.join(destDir, name));
     return `/uploads/clients/${name}`;
   } catch {
     return null; // logo file not present: the site shows the client name instead

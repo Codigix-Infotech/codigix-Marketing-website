@@ -20,8 +20,25 @@ export const INDEXABLE = process.env.NEXT_PUBLIC_NOINDEX !== 'true';
 export function mediaUrl(path?: string | null): string {
   if (!path) return '';
   if (/^https?:\/\//i.test(path)) return path;
-  if (path.startsWith('/uploads/')) return `${API_URL}${path}`;
-  return path;
+  
+  // Normalize legacy logo extensions to webp
+  let normalized = path;
+  if (normalized.includes('/clients/') || normalized.includes('logo')) {
+    normalized = normalized.replace(/\.(png|jpg|jpeg)$/i, '.webp');
+  }
+
+  if (normalized.startsWith('/uploads/')) {
+    // In browser on an online host, if API_URL points to localhost, use relative path so Next.js proxy/static serves it
+    if (typeof window !== 'undefined') {
+      const isWindowLocal = /^(localhost|127\.0\.0\.1)$/.test(window.location.hostname);
+      const isApiLocal = /^(https?:\/\/)?(localhost|127\.0\.0\.1)(:\d+)?$/i.test(API_URL);
+      if (!isWindowLocal && isApiLocal) {
+        return normalized;
+      }
+    }
+    return `${API_URL}${normalized}`;
+  }
+  return normalized;
 }
 
 /** Absolute URL for SEO tags (Open Graph, JSON-LD). */
