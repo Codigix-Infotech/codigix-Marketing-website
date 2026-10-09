@@ -122,7 +122,7 @@ function SerpPreview({ form }: { form: BlogForm }) {
       <div className={cx('rounded-lg border border-slate-200 bg-white p-4 font-[arial,sans-serif]', mobile ? 'max-w-[380px]' : '')}>
         <div className="flex items-center gap-2 mb-1">
           <span className="w-7 h-7 rounded-full bg-slate-100 border border-slate-200 flex items-center justify-center overflow-hidden">
-            <img src="/logo.png" alt="" className="w-5 h-5 object-contain" />
+            <img src="/logo.webp" alt="" className="w-5 h-5 object-contain" onError={(e) => { if (!e.currentTarget.src.endsWith('/logo.png')) e.currentTarget.src = '/logo.png'; }} />
           </span>
           <div className="leading-tight">
             <p className="text-[13px] text-[#202124]">Codigix Infotech</p>

@@ -19,7 +19,7 @@ interface PageSeo {
  */
 export async function pageMetadata({ title, description, path, image, keywords }: PageSeo): Promise<Metadata> {
   const { seo, site } = await getSettings();
-  const ogImage = absoluteUrl(image || seo.default_og_image || site.logo || '/logo.png');
+  const ogImage = absoluteUrl(image || seo.default_og_image || site.logo || '/logo.webp');
   const url = `${SITE_URL}${path === '/' ? '' : path}`;
   return {
     title: { absolute: title },

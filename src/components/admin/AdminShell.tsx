@@ -71,7 +71,14 @@ function Sidebar({ open, onClose, badges = {} }: { open: boolean; onClose: () =>
         <div className="h-16 flex items-center justify-between px-5 border-b border-white/10">
           <Link href="/admin" className="flex items-center gap-2.5">
             <span className="w-8 h-8 rounded-lg bg-white flex items-center justify-center p-1">
-              <img src="/logo.png" alt="" className="w-full h-full object-contain" />
+              <img
+                src="/logo.webp"
+                alt="Codigix"
+                className="w-full h-full object-contain"
+                onError={(e) => {
+                  if (!e.currentTarget.src.endsWith('/logo.png')) e.currentTarget.src = '/logo.png';
+                }}
+              />
             </span>
             <span>
               <span className="block text-sm font-semibold text-white leading-tight">Codigix Infotech</span>

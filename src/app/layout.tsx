@@ -72,7 +72,7 @@ export default async function RootLayout({
     "@id": `${SITE_URL}/#organization`,
     name: site.name || "Codigix Infotech",
     url: SITE_URL,
-    logo: absoluteUrl(site.logo || "/logo.png"),
+    logo: absoluteUrl(site.logo || "/logo.webp"),
     description: site.tagline || "Healthcare Digital Marketing Agency",
     email: contact.email || undefined,
     telephone: contact.phone || undefined,
