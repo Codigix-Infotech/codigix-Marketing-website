@@ -28,7 +28,7 @@ export default function PageHero({ title, subtitle, gradientText }: PageHeroProp
             animate={{ opacity: 1, y: 0 }}
             transition={{ duration: 0.6 }}
           >
-            <h1 className="text-4xl lg:text-6xl font-sans text-[#1a1053] leading-tight mb-6 tracking-tight">
+            <h1 className="text-4xl lg:text-6xl font-serif text-[#1a1053] leading-tight mb-6 tracking-tight">
               {title}{" "}
               {gradientText && (
                 <span className="text-transparent bg-clip-text bg-gradient-to-r from-blue-600 via-indigo-600 to-[#e20b27]">

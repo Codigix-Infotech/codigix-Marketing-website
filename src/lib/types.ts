@@ -66,6 +66,67 @@ export interface DashboardChannel {
   color?: string;
 }
 
+export interface ClientFieldSummary {
+  field: string;
+  short_name: string;
+  count: number;
+  share: number;
+  icon: string;
+  color: string;
+  highlight: string;
+  metric: string;
+  clients: string[];
+  logos: string[];
+}
+
+export interface GmbRankingItem {
+  client: string;
+  location: string;
+  keyword: string;
+  rank: number;
+  previous_rank?: number;
+  rating: number;
+  reviews: number;
+  monthly_calls: number;
+  direction_requests: number;
+  logo?: string;
+}
+
+export interface AdChannelStat {
+  spend: number;
+  leads: number;
+  cpl: number;
+  clicks: number;
+  ctr: number;
+  conversion_rate: number;
+}
+
+export interface LeadTypeBreakdown {
+  type: string;
+  count: number;
+  pct: number;
+  cpl: number;
+  icon: string;
+  color: string;
+}
+
+export interface AdsStatisticsData {
+  total_spend: number;
+  total_leads: number;
+  avg_cpl: number;
+  impressions: string;
+  clicks: number;
+  avg_ctr: number;
+  conversion_rate: number;
+  consultations_booked: number;
+  attributed_revenue: string;
+  roas: number;
+  google_ads: AdChannelStat;
+  meta_ads: AdChannelStat;
+  lead_types: LeadTypeBreakdown[];
+  funnel_steps: { step: string; count: string; pct: string }[];
+}
+
 export interface HeroDashboardData {
   metrics: DashboardMetric[];
   channels: DashboardChannel[];
@@ -76,6 +137,9 @@ export interface HeroDashboardData {
   content: { title: string; views: string; engagement: string }[];
   ads: { label: string; value: number; isCurrency?: boolean; trend: number; down?: boolean }[];
   funnel: { label: string; value: string; pct: string; width: number }[];
+  clients_by_field?: ClientFieldSummary[];
+  gmb_rankings?: GmbRankingItem[];
+  ads_statistics?: AdsStatisticsData;
 }
 
 export interface PublicSettings {

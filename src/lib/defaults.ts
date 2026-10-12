@@ -102,6 +102,215 @@ export const defaultDashboard: HeroDashboardData = {
     { label: 'Consultations Booked', value: '426', pct: '1.7%', width: 12 },
     { label: 'Treatments Started', value: '214', pct: '0.9%', width: 6 },
   ],
+  clients_by_field: [
+    {
+      field: 'Hospitals & Multispeciality',
+      short_name: 'Hospitals',
+      count: 18,
+      share: 24,
+      icon: 'building-2',
+      color: 'blue',
+      highlight: 'Surgical & Multispeciality Hubs',
+      metric: '+4.2x Patient Footfall',
+      clients: ['Shushrut Surgical Hospital', 'Moraya Multispeciality', 'Kimaya Brain & Spine'],
+      logos: ['shushrut.webp', 'morya.webp', 'kimaya.webp']
+    },
+    {
+      field: 'Dental Clinics & Implant Centers',
+      short_name: 'Dental',
+      count: 14,
+      share: 19,
+      icon: 'smile',
+      color: 'emerald',
+      highlight: 'Implants, Aligners & Laser Dentistry',
+      metric: '320+ Implant Leads / Mo',
+      clients: ['Dr. Shagun Rao', 'Smiles For All', 'Canopy Dental Care'],
+      logos: ['dr-shagun-rao.webp', 'smiles-for-all.webp', 'canopy.webp']
+    },
+    {
+      field: 'Dermatology & Skin Aesthetics',
+      short_name: 'Skin Care',
+      count: 12,
+      share: 16,
+      icon: 'sparkles',
+      color: 'purple',
+      highlight: 'Laser Aesthetics & Anti-Aging',
+      metric: '18.4K Video Reach',
+      clients: ["Dr. Sheetal's Glow", 'Shriraj Clinic'],
+      logos: ['sheetals-glow.webp', 'shriraj-clinic.webp']
+    },
+    {
+      field: 'Hair Transplant & Trichology',
+      short_name: 'Hair Clinics',
+      count: 10,
+      share: 13,
+      icon: 'activity',
+      color: 'pink',
+      highlight: 'FUE / FUT Restoration & PRP',
+      metric: '₹88 Cost Per Consultation',
+      clients: ['Regain Hair Clinic'],
+      logos: ['regain.webp']
+    },
+    {
+      field: 'Ayurveda, Wellness & Lifestyle',
+      short_name: 'Ayurveda',
+      count: 9,
+      share: 12,
+      icon: 'heart-pulse',
+      color: 'orange',
+      highlight: 'Chronic Healing & Panchakarma',
+      metric: '150+ Monthly Inquiries',
+      clients: ['Aayurlekha', 'Bakul'],
+      logos: ['aayurlekha.webp', 'bakul.webp']
+    },
+    {
+      field: 'Corporate, Legal & Agro Enterprises',
+      short_name: 'Corporate/Agro',
+      count: 12,
+      share: 16,
+      icon: 'briefcase',
+      color: 'indigo',
+      highlight: 'Agro Farms, Legal Advisory & Retail',
+      metric: '5,000+ High-DA Backlinks',
+      clients: ['CorpLegal', 'Sanskruti Agro Farm', 'Viranjany', 'Kitchen Canvas'],
+      logos: ['corplegal.webp', 'sanskruti-agro-farm.webp', 'viranjany.webp', 'kitchen-canvas.webp']
+    }
+  ],
+  gmb_rankings: [
+    {
+      client: 'Shushrut Surgical Hospital',
+      location: 'Pimpri, PCMC',
+      keyword: 'multispeciality hospital pcmc',
+      rank: 1,
+      previous_rank: 4,
+      rating: 4.9,
+      reviews: 428,
+      monthly_calls: 1420,
+      direction_requests: 2840,
+      logo: 'shushrut.webp'
+    },
+    {
+      client: 'Dr. Shagun Rao Dental',
+      location: 'Aundh, Pune',
+      keyword: 'best dental clinic pune',
+      rank: 1,
+      previous_rank: 3,
+      rating: 5.0,
+      reviews: 312,
+      monthly_calls: 940,
+      direction_requests: 1890,
+      logo: 'dr-shagun-rao.webp'
+    },
+    {
+      client: "Dr. Sheetal's Glow Clinic",
+      location: 'Kothrud / Baner',
+      keyword: 'skin laser clinic baner',
+      rank: 1,
+      previous_rank: 5,
+      rating: 4.9,
+      reviews: 195,
+      monthly_calls: 780,
+      direction_requests: 1620,
+      logo: 'sheetals-glow.webp'
+    },
+    {
+      client: 'Regain Hair Clinic',
+      location: 'Wakad, PCMC',
+      keyword: 'hair transplant clinic wakad',
+      rank: 2,
+      previous_rank: 6,
+      rating: 4.8,
+      reviews: 246,
+      monthly_calls: 860,
+      direction_requests: 1750,
+      logo: 'regain.webp'
+    },
+    {
+      client: 'Moraya Multispeciality Hospital',
+      location: 'Chinchwad',
+      keyword: 'emergency hospital chinchwad',
+      rank: 1,
+      previous_rank: 3,
+      rating: 4.9,
+      reviews: 380,
+      monthly_calls: 1210,
+      direction_requests: 2490,
+      logo: 'morya.webp'
+    },
+    {
+      client: 'Aayurlekha Clinic',
+      location: 'Sangamwadi / Kothrud',
+      keyword: 'ayurvedic clinic in pune',
+      rank: 1,
+      previous_rank: 4,
+      rating: 4.9,
+      reviews: 164,
+      monthly_calls: 520,
+      direction_requests: 1140,
+      logo: 'aayurlekha.webp'
+    }
+  ],
+  ads_statistics: {
+    total_spend: 84720,
+    total_leads: 738,
+    avg_cpl: 114.8,
+    impressions: '4.2M',
+    clicks: 30776,
+    avg_ctr: 4.1,
+    conversion_rate: 24.6,
+    consultations_booked: 182,
+    attributed_revenue: '₹28.4L',
+    roas: 4.8,
+    google_ads: {
+      spend: 48320,
+      leads: 326,
+      cpl: 148,
+      clicks: 12452,
+      ctr: 4.8,
+      conversion_rate: 26.2
+    },
+    meta_ads: {
+      spend: 36400,
+      leads: 412,
+      cpl: 88,
+      clicks: 18324,
+      ctr: 3.4,
+      conversion_rate: 23.3
+    },
+    lead_types: [
+      {
+        type: 'Inbound Direct Calls',
+        count: 342,
+        pct: 46.3,
+        cpl: 108,
+        icon: 'phone',
+        color: 'emerald'
+      },
+      {
+        type: 'WhatsApp Direct Inquiries',
+        count: 248,
+        pct: 33.6,
+        cpl: 92,
+        icon: 'message-circle',
+        color: 'blue'
+      },
+      {
+        type: 'Appointment Booking Forms',
+        count: 148,
+        pct: 20.1,
+        cpl: 162,
+        icon: 'calendar',
+        color: 'purple'
+      }
+    ],
+    funnel_steps: [
+      { step: 'Ad Impressions', count: '4,220,000', pct: '100%' },
+      { step: 'High-Intent Clicks', count: '30,776', pct: '0.73%' },
+      { step: 'Qualified Patient Leads', count: '738', pct: '2.40%' },
+      { step: 'Booked Doctor Consults', count: '182', pct: '24.6%' },
+      { step: 'Confirmed Treatments', count: '114', pct: '15.4%' }
+    ]
+  }
 };
 
 const c = (id: number, name: string, location: string, logo: string, is_healthcare: boolean, map_x: number, map_y: number): Client => ({

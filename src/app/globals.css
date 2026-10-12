@@ -11,13 +11,14 @@
 
   body {
     @apply bg-primary-bg text-primary-text font-sans antialiased overflow-x-hidden;
-    font-family: "Roboto", sans-serif;
+    font-family: "Inter", ui-sans-serif, system-ui, sans-serif;
+    font-feature-settings: "cv11", "ss01";
     overscroll-behavior-y: none;
   }
 
   /* Universal Typography Enforcement (Defaults) */
-  h1 { @apply text-4xl md:text-5xl lg:text-6xl font-bold text-[#1a1053] leading-tight tracking-tight; }
-  h2 { @apply text-3xl md:text-4xl lg:text-5xl font-bold text-[#1a1053] leading-snug tracking-tight; }
+  h1 { @apply font-serif text-4xl md:text-5xl lg:text-6xl font-bold text-[#1a1053] leading-tight tracking-tight; }
+  h2 { @apply font-serif text-3xl md:text-4xl lg:text-5xl font-bold text-[#1a1053] leading-snug tracking-tight; }
   h3 { @apply text-2xl md:text-3xl lg:text-4xl font-semibold text-[#1a1053] leading-snug; }
   h4 { @apply text-xl md:text-2xl font-semibold text-[#1a1053] leading-snug; }
   h5 { @apply text-lg md:text-xl font-semibold text-[#1a1053]; }
@@ -258,3 +259,11 @@ html.lenis {
 .tiptap-editor .ProseMirror td, .tiptap-editor .ProseMirror th { border: 1px solid #e2e8f0; padding: 6px 10px; min-width: 60px; }
 .tiptap-editor .ProseMirror th { background: #f8fafc; }
 .tiptap-editor .ProseMirror .selectedCell { background: #eef2ff; }
+
+/* claude.ai-style serif titles: Source Serif reads best at a medium weight with natural spacing,
+   so this overrides the heavier font-bold/extrabold + tracking-tight utilities used on h1/h2. */
+h1, h2,
+h1 span, h2 span {
+  font-weight: 500 !important;
+  letter-spacing: -0.012em !important;
+}

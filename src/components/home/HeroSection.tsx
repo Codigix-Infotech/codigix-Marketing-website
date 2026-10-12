@@ -2,7 +2,7 @@
 
 import React, { useEffect, useRef, useState } from 'react';
 import { motion, AnimatePresence, useInView } from 'framer-motion';
-import { ArrowRight, Users, Trophy, Smile, TrendingUp, BarChart2, Target, Search, Bell, Calendar, ChevronDown, Star, Heart, FileText, Rocket, Monitor, Megaphone, Edit, Lightbulb, Briefcase, Factory, Plus, ShoppingCart, GraduationCap, Utensils, Home, PlayCircle, Handshake, CheckCircle, Share2, Globe, ShieldCheck, MapPin, Youtube, Instagram, Link2 } from 'lucide-react';
+import { ArrowRight, Users, Trophy, Smile, TrendingUp, BarChart2, Target, Search, Bell, Calendar, ChevronDown, Star, Heart, FileText, Rocket, Monitor, Megaphone, Edit, Lightbulb, Briefcase, Factory, Plus, ShoppingCart, GraduationCap, Utensils, Home, PlayCircle, Handshake, CheckCircle, Share2, Globe, ShieldCheck, MapPin, Youtube, Instagram, Link2, Play } from 'lucide-react';
 import HeroDashboard from './HeroDashboard';
 import type { HeroDashboardData } from '@/lib/types';
 
@@ -164,37 +164,21 @@ export default function HeroSection({ dashboard }: { dashboard?: HeroDashboardDa
                <motion.div initial={{ opacity: 0, x: -30 }} animate={{ opacity: 1, x: 0 }} transition={{ duration: 0.6 }} className="flex flex-col w-full">
 
                   {/* Top Live Badge */}
-                  <div className="inline-flex items-center gap-2.5 px-4 py-2 rounded-full bg-white shadow-[0_2px_12px_rgba(26,16,83,0.06)] border border-slate-200/80 mb-4 hover:border-[#e20b27]/40 transition-all cursor-default w-fit">
-                     <span className="flex h-2.5 w-2.5 relative">
-                        <span className="animate-ping absolute inline-flex h-full w-full rounded-full bg-[#e20b27] opacity-75"></span>
-                        <span className="relative inline-flex rounded-full h-2.5 w-2.5 bg-[#e20b27]"></span>
+                  <div className="inline-flex items-center gap-2.5 pl-1.5 pr-4 py-1.5 rounded-full bg-white shadow-[0_2px_12px_rgba(26,16,83,0.06)] border border-slate-200/80 mb-5 hover:border-[#e20b27]/40 transition-all cursor-default w-fit">
+                     <span className="inline-flex items-center gap-1.5 px-2.5 py-1 rounded-full bg-[#e20b27] text-white text-[10px] font-bold uppercase tracking-wider">
+                        <span className="flex h-1.5 w-1.5 relative">
+                           <span className="animate-ping absolute inline-flex h-full w-full rounded-full bg-white opacity-75"></span>
+                           <span className="relative inline-flex rounded-full h-1.5 w-1.5 bg-white"></span>
+                        </span>
+                        Pune
                      </span>
-                     <span className="text-xs font-semibold text-[#1a1053] tracking-wider uppercase">
-                        Healthcare Digital Marketing & Patient Acquisition Agency
-                     </span>
-                  </div>
-
-                  {/* Marketing Channels Managed Strip */}
-                  <div className="flex flex-wrap items-center gap-1.5 mb-5">
-                     <span className="px-2.5 py-1 rounded-lg bg-emerald-50/90 text-emerald-700 text-[10px] font-medium border border-emerald-200/60 flex items-center gap-1">
-                        <TrendingUp size={11} className="text-emerald-600" /> SEO
-                     </span>
-                     <span className="px-2.5 py-1 rounded-lg bg-blue-50/90 text-blue-700 text-[10px] font-medium border border-blue-200/60 flex items-center gap-1">
-                        <MapPin size={11} className="text-blue-600" /> GMB & Google Maps
-                     </span>
-                     <span className="px-2.5 py-1 rounded-lg bg-purple-50/90 text-purple-700 text-[10px] font-medium border border-purple-200/60 flex items-center gap-1">
-                        <Link2 size={11} className="text-purple-600" /> High-DA Backlinks
-                     </span>
-                     <span className="px-2.5 py-1 rounded-lg bg-pink-50/90 text-pink-700 text-[10px] font-medium border border-pink-200/60 flex items-center gap-1">
-                        <Instagram size={11} className="text-pink-600" /> Instagram & Meta
-                     </span>
-                     <span className="px-2.5 py-1 rounded-lg bg-rose-50/90 text-[#e20b27] text-[10px] font-medium border border-rose-200/60 flex items-center gap-1">
-                        <Youtube size={11} className="text-[#e20b27]" /> YouTube
+                     <span className="text-[11px] sm:text-xs font-semibold text-[#1a1053] tracking-wider uppercase">
+                        Healthcare Marketing & Patient Acquisition
                      </span>
                   </div>
 
                   {/* Main Headline with Animated Categories - Stable Height & No Layout Jump */}
-                  <h1 className="text-4xl sm:text-5xl lg:text-[3.2rem] xl:text-[3.8rem] font-semibold leading-[1.14] text-[#1a1053] tracking-tight mb-4">
+                  <h1 className="text-4xl sm:text-5xl lg:text-[3.2rem] xl:text-[3.8rem] font-semibold leading-[1.12] text-[#1a1053] tracking-tight mb-5">
                      Strategy That Grows <br />
                      <span className="relative inline-flex items-center h-[1.24em] overflow-hidden align-middle">
                         <AnimatePresence mode="popLayout">
@@ -215,55 +199,69 @@ export default function HeroSection({ dashboard }: { dashboard?: HeroDashboardDa
 
                   {/* Subtitle Paragraph */}
                   <p className="text-base sm:text-lg text-slate-600 mb-7 max-w-xl font-light leading-relaxed">
-                     Codigix Infotech is Pune’s premier healthcare growth agency — empowering hospitals, clinics, and specialists with dominant SEO rankings, top GMB Google Maps visibility, high-authority backlinks, and engaging Instagram, Meta & YouTube content.
+                     Codigix Infotech is Pune’s premier healthcare growth agency — helping hospitals, clinics & specialists win more patients with{' '}
+                     <span className="font-medium text-[#1a1053]">#1 Google Maps rankings</span>,{' '}
+                     <span className="font-medium text-[#1a1053]">healthcare SEO</span> and{' '}
+                     <span className="font-medium text-[#1a1053]">content that converts</span>.
                   </p>
 
-                  {/* Digital Marketing Strategic Highlights */}
-                  <div className="grid grid-cols-2 gap-x-4 gap-y-2.5 mb-8 w-full max-w-lg text-xs font-light text-[#1a1053]">
-                     <div className="flex items-center gap-2 bg-slate-50/80 px-3 py-1.5 rounded-lg border border-slate-200/60 font-medium">
-                        <div className="w-4 h-4 rounded-full bg-rose-50 text-[#e20b27] flex items-center justify-center">
-                           <CheckCircle size={13} className="text-[#e20b27]" />
+                  {/* Proof Strip */}
+                  <div className="grid grid-cols-3 w-full max-w-xl mb-8 rounded-2xl bg-white/80 backdrop-blur-sm border border-slate-200/80 shadow-[0_4px_20px_-8px_rgba(26,16,83,0.12)] divide-x divide-slate-200/80">
+                     {[
+                        { icon: Users, value: '75+', label: 'Healthcare clients', tint: 'text-blue-600 bg-blue-50' },
+                        { icon: MapPin, value: '94%', label: '#1 on Google Maps', tint: 'text-emerald-600 bg-emerald-50' },
+                        { icon: TrendingUp, value: '4.8x', label: 'Average ad ROAS', tint: 'text-[#e20b27] bg-rose-50' },
+                     ].map(({ icon: Icon, value, label, tint }) => (
+                        <div key={label} className="flex items-center gap-2.5 px-3 sm:px-4 py-3">
+                           <div className={`hidden 2xl:flex w-9 h-9 rounded-xl items-center justify-center shrink-0 ${tint}`}>
+                              <Icon size={17} />
+                           </div>
+                           <div className="leading-tight min-w-0">
+                              <div className="text-xl sm:text-2xl font-bold text-[#1a1053] tracking-tight">{value}</div>
+                              <div className="text-[10.5px] sm:text-xs text-slate-500 truncate">{label}</div>
+                           </div>
                         </div>
-                        <span>#1 Local GMB 3-Pack Maps</span>
-                     </div>
-                     <div className="flex items-center gap-2 bg-slate-50/80 px-3 py-1.5 rounded-lg border border-slate-200/60 font-medium">
-                        <div className="w-4 h-4 rounded-full bg-rose-50 text-[#e20b27] flex items-center justify-center">
-                           <CheckCircle size={13} className="text-[#e20b27]" />
-                        </div>
-                        <span>Healthcare SEO & Top Ranks</span>
-                     </div>
-                     <div className="flex items-center gap-2 bg-slate-50/80 px-3 py-1.5 rounded-lg border border-slate-200/60 font-medium">
-                        <div className="w-4 h-4 rounded-full bg-rose-50 text-[#e20b27] flex items-center justify-center">
-                           <CheckCircle size={13} className="text-[#e20b27]" />
-                        </div>
-                        <span>High-DA Backlinks & PR</span>
-                     </div>
-                     <div className="flex items-center gap-2 bg-slate-50/80 px-3 py-1.5 rounded-lg border border-slate-200/60 font-medium">
-                        <div className="w-4 h-4 rounded-full bg-rose-50 text-[#e20b27] flex items-center justify-center">
-                           <CheckCircle size={13} className="text-[#e20b27]" />
-                        </div>
-                        <span>Insta, Meta & YouTube Reach</span>
-                     </div>
+                     ))}
                   </div>
 
                   {/* Action CTA Buttons */}
-                  <div className="flex flex-col sm:flex-row items-center gap-4 w-full">
+                  <div className="flex flex-col sm:flex-row items-center gap-3 sm:gap-5 w-full mb-8">
                      <a
                         href="https://codigix.co/about-us/"
-                        className="group inline-flex items-center justify-center gap-3 px-8 py-4 w-full sm:w-auto bg-[#1a1053] hover:bg-[#26186b] text-white rounded-full font-medium text-[15px] shadow-[0_10px_25px_rgba(26,16,83,0.25)] hover:shadow-[0_14px_35px_rgba(26,16,83,0.35)] hover:-translate-y-0.5 active:translate-y-0 transition-all duration-300"
+                        className="group inline-flex items-center justify-center gap-3 pl-7 pr-2 py-2 w-full sm:w-auto bg-[#1a1053] hover:bg-[#26186b] text-white rounded-full font-medium text-[15px] shadow-[0_10px_25px_rgba(26,16,83,0.25)] hover:shadow-[0_14px_35px_rgba(26,16,83,0.35)] hover:-translate-y-0.5 active:translate-y-0 transition-all duration-300"
                      >
                         <span>Discover More About Us</span>
-                        <div className="w-7 h-7 rounded-full bg-white/15 flex items-center justify-center group-hover:bg-[#e20b27] group-hover:text-white transition-colors duration-300">
-                           <ArrowRight size={15} className="group-hover:translate-x-0.5 transition-transform" />
+                        <div className="w-10 h-10 rounded-full bg-white/15 flex items-center justify-center group-hover:bg-[#e20b27] group-hover:text-white transition-colors duration-300">
+                           <ArrowRight size={16} className="group-hover:translate-x-0.5 transition-transform" />
                         </div>
                      </a>
 
-                     <button className="group inline-flex items-center justify-center gap-3 px-7 py-4 w-full sm:w-auto bg-white/95 hover:bg-white text-[#1a1053] border border-slate-200/90 rounded-full font-medium text-[15px] shadow-[0_4px_14px_rgba(0,0,0,0.04)] hover:shadow-md hover:border-slate-300 hover:-translate-y-0.5 transition-all duration-300">
-                        <div className="w-7 h-7 rounded-full bg-rose-50 flex items-center justify-center text-[#e20b27] group-hover:bg-[#e20b27] group-hover:text-white transition-colors duration-300">
-                           <PlayCircle size={16} className="fill-current" />
-                        </div>
-                        <span>Watch Video</span>
+                     <button className="group inline-flex items-center justify-center gap-3 px-2 py-2 w-full sm:w-auto text-[#1a1053] font-medium text-[15px] transition-all duration-300">
+                        <span className="relative w-11 h-11 rounded-full bg-white border border-slate-200 shadow-[0_6px_16px_-6px_rgba(226,11,39,0.4)] flex items-center justify-center text-[#e20b27] group-hover:bg-[#e20b27] group-hover:text-white group-hover:border-[#e20b27] transition-colors duration-300">
+                           <span className="absolute inset-0 rounded-full border border-[#e20b27]/40 animate-ping opacity-40" />
+                           <Play size={16} className="fill-current ml-0.5" />
+                        </span>
+                        <span className="flex flex-col items-start leading-tight">
+                           <span>Watch Video</span>
+                           <span className="text-[11px] font-normal text-slate-500">See how we grow clinics</span>
+                        </span>
                      </button>
+                  </div>
+
+                  {/* Channels we manage */}
+                  <div className="flex flex-wrap items-center gap-2">
+                     <span className="text-[10px] font-semibold uppercase tracking-[0.14em] text-slate-400 mr-1">Channels we manage</span>
+                     {[
+                        { icon: TrendingUp, label: 'SEO', color: 'text-emerald-600' },
+                        { icon: MapPin, label: 'Google Maps', color: 'text-blue-600' },
+                        { icon: Link2, label: 'Backlinks', color: 'text-purple-600' },
+                        { icon: Instagram, label: 'Instagram & Meta', color: 'text-pink-600' },
+                        { icon: Youtube, label: 'YouTube', color: 'text-[#e20b27]' },
+                     ].map(({ icon: Icon, label, color }) => (
+                        <span key={label} className="inline-flex items-center gap-1.5 px-2.5 py-1 rounded-full bg-white border border-slate-200/80 text-[11px] font-medium text-slate-700 shadow-[0_1px_2px_rgba(15,23,42,0.04)]">
+                           <Icon size={12} className={color} /> {label}
+                        </span>
+                     ))}
                   </div>
 
                </motion.div>
@@ -272,52 +270,85 @@ export default function HeroSection({ dashboard }: { dashboard?: HeroDashboardDa
             {/* RIGHT COLUMN: 50% 3D Device & Dashboard Layout + Social Proof */}
             <div className="w-full lg:w-[52%] xl:w-[54%] relative z-10 flex flex-col items-center justify-center mt-6 lg:mt-0">
 
-               <div className="relative w-full mx-auto perspective-[1800px] py-0.5 sm:py-1">
+               <div className="relative w-full mx-auto py-0.5 sm:py-1">
 
-                  {/* Ambient Glow Aura */}
-                  <div className="absolute -inset-2 bg-gradient-to-tr from-[#1a1053]/15 via-[#e20b27]/10 to-indigo-500/15 rounded-[2.5rem] blur-xl -z-10 pointer-events-none" />
+                  {/* Ambient colour glow behind the device */}
+                  <div className="absolute -inset-8 -z-10 pointer-events-none">
+                     <div className="absolute top-[5%] left-[8%] w-[55%] h-[65%] rounded-full bg-indigo-500/20 blur-3xl" />
+                     <div className="absolute bottom-[5%] right-[4%] w-[50%] h-[60%] rounded-full bg-[#e20b27]/15 blur-3xl" />
+                  </div>
 
-                  {/* Top-Left Floating SEO Badge - Ultra-Compact Micro-Pill */}
+                  {/* Stacked depth layers + ground shadow */}
+                  <div className="absolute inset-x-6 sm:inset-x-10 -bottom-2.5 sm:-bottom-3 h-24 rounded-b-[2rem] bg-white/60 border border-white shadow-[0_8px_24px_-12px_rgba(26,16,83,0.25)] -z-10 pointer-events-none" />
+                  <div className="absolute inset-x-14 sm:inset-x-20 -bottom-5 sm:-bottom-6 h-24 rounded-b-[2rem] bg-white/35 border border-white/70 -z-20 pointer-events-none" />
+                  <div className="absolute left-[14%] right-[14%] -bottom-10 h-12 rounded-[100%] bg-[#1a1053]/25 blur-2xl -z-30 pointer-events-none" />
+
+                  {/* Floating stat card: Backlinks (bottom-left edge) */}
                   <motion.div
-                     animate={{ transform: ["translate(0px, -1.5px)", "translate(0px, 1.5px)", "translate(0px, -1.5px)"] }}
+                     animate={{ y: [0, -5, 0] }}
                      transition={{ duration: 6, repeat: Infinity, ease: "easeInOut" }}
-                     className="absolute -top-2 left-3 sm:left-5 z-20 hidden sm:flex items-center gap-1.5 bg-white/95 backdrop-blur-md px-2 py-0.5 rounded-full border border-slate-200/90 shadow-xs pointer-events-none"
+                     className="absolute left-[10%] -bottom-6 z-20 hidden md:flex items-center gap-2 pl-1.5 pr-3 py-1.5 rounded-2xl bg-white/90 backdrop-blur-xl border border-white ring-1 ring-slate-900/5 shadow-[0_14px_30px_-10px_rgba(26,16,83,0.35)] pointer-events-none"
                   >
-                     <Link2 size={10} className="text-purple-600 shrink-0" />
-                     <span className="text-[8.5px] font-bold text-[#1a1053]">5,000+ Backlinks</span>
-                     <span className="flex h-1 w-1 rounded-full bg-emerald-500" />
+                     <div className="w-8 h-8 rounded-xl bg-gradient-to-br from-purple-500 to-indigo-600 text-white flex items-center justify-center shadow-sm shrink-0">
+                        <Link2 size={14} />
+                     </div>
+                     <div className="leading-tight">
+                        <div className="text-[13px] font-extrabold text-[#1a1053]">5,000+</div>
+                        <div className="text-[9.5px] font-medium text-slate-500">High-DA Backlinks</div>
+                     </div>
                   </motion.div>
 
-                  {/* Top-Right Floating GMB Badge - Ultra-Compact Micro-Pill */}
+                  {/* Floating stat card: GMB (right edge) */}
                   <motion.div
-                     animate={{ transform: ["translate(0px, 1.5px)", "translate(0px, -1.5px)", "translate(0px, 1.5px)"] }}
+                     animate={{ y: [0, 5, 0] }}
                      transition={{ duration: 5.5, repeat: Infinity, ease: "easeInOut", delay: 0.5 }}
-                     className="absolute -top-2 right-3 sm:right-5 z-20 hidden sm:flex items-center gap-1 bg-[#1a1053] text-white px-2 py-0.5 rounded-full shadow-xs border border-white/15 pointer-events-none"
+                     className="absolute -right-4 xl:-right-6 top-[30%] z-20 hidden md:flex items-center gap-2 pl-1.5 pr-3 py-1.5 rounded-2xl bg-gradient-to-br from-[#1a1053] to-[#2b1f6f] text-white border border-white/10 shadow-[0_14px_30px_-10px_rgba(26,16,83,0.6)] pointer-events-none"
                   >
-                     <MapPin size={9} className="text-emerald-400 shrink-0" />
-                     <span className="text-[8.5px] font-semibold tracking-wide">#1 GMB Maps</span>
+                     <div className="w-8 h-8 rounded-xl bg-emerald-500/15 border border-emerald-400/30 text-emerald-400 flex items-center justify-center shrink-0">
+                        <MapPin size={14} />
+                     </div>
+                     <div className="leading-tight">
+                        <div className="text-[13px] font-extrabold flex items-center gap-1">
+                           #1 Rank
+                           <span className="flex h-1.5 w-1.5 rounded-full bg-emerald-400 animate-pulse" />
+                        </div>
+                        <div className="text-[9.5px] font-medium text-slate-300">Google Maps 3-Pack</div>
+                     </div>
                   </motion.div>
 
-                  {/* Bottom-Right Floating Reach Badge - Ultra-Compact Micro-Pill */}
+                  {/* Floating stat card: Reach (bottom edge) */}
                   <motion.div
-                     animate={{ transform: ["translate(0px, -1.5px)", "translate(0px, 1.5px)", "translate(0px, -1.5px)"] }}
+                     animate={{ y: [0, -4, 0] }}
                      transition={{ duration: 6.5, repeat: Infinity, ease: "easeInOut", delay: 1 }}
-                     className="absolute -bottom-2 right-3 sm:right-5 z-20 hidden sm:flex items-center gap-1 bg-white/95 backdrop-blur-md px-2 py-0.5 rounded-full border border-slate-200/90 shadow-xs pointer-events-none"
+                     className="absolute right-[16%] -bottom-6 z-20 hidden md:flex items-center gap-2 pl-1.5 pr-3 py-1.5 rounded-2xl bg-white/90 backdrop-blur-xl border border-white ring-1 ring-slate-900/5 shadow-[0_14px_30px_-10px_rgba(26,16,83,0.35)] pointer-events-none"
                   >
-                     <Youtube size={10} className="text-[#e20b27] shrink-0" />
-                     <span className="text-[8.5px] font-bold text-[#1a1053]">2.4M+ Reach</span>
+                     <div className="w-8 h-8 rounded-xl bg-gradient-to-br from-[#ff4d64] to-[#e20b27] text-white flex items-center justify-center shadow-sm shrink-0">
+                        <Youtube size={14} />
+                     </div>
+                     <div className="leading-tight">
+                        <div className="text-[13px] font-extrabold text-[#1a1053] flex items-center gap-1">
+                           2.4M+
+                           <span className="text-[9px] font-bold text-emerald-600 flex items-center"><TrendingUp size={9} />38%</span>
+                        </div>
+                        <div className="text-[9.5px] font-medium text-slate-500">Video Reach</div>
+                     </div>
                   </motion.div>
 
-                  {/* Server-rendered so its space is reserved from the first paint (no layout jump on hydration). */}
+                  {/* Device: gradient hairline edge → glass bezel → screen */}
                   <motion.div
-                     initial={{ opacity: 0, y: 20 }}
-                     animate={{ opacity: 1, y: 0 }}
-                     transition={{ duration: 0.7, ease: "easeOut" }}
-                     className="relative w-full bg-gradient-to-b from-white via-white to-slate-50/90 rounded-[2rem] p-1.5 sm:p-2 shadow-[0_25px_70px_-15px_rgba(26,16,83,0.16)] border border-slate-200/90 ring-1 ring-slate-900/5"
+                     initial={{ opacity: 0, y: 24, rotateX: 6 }}
+                     animate={{ opacity: 1, y: 0, rotateX: 0 }}
+                     transition={{ duration: 0.8, ease: [0.22, 1, 0.36, 1] }}
+                     style={{ transformPerspective: 1800 }}
+                     className="relative w-full rounded-[2rem] p-px bg-gradient-to-br from-indigo-300/90 via-white to-rose-300/80 shadow-[0_40px_90px_-30px_rgba(26,16,83,0.45),0_12px_30px_-12px_rgba(26,16,83,0.18)]"
                   >
-                     {/* Device Screen Frame */}
-                     <div className="relative w-full rounded-[1.6rem] overflow-hidden border border-slate-200/80 bg-white">
-                        <HeroDashboard data={dashboard} />
+                     <div className="relative rounded-[calc(2rem-1px)] bg-gradient-to-b from-white/95 to-slate-50/90 backdrop-blur-xl p-1.5 sm:p-2">
+                        {/* Glass highlight along the top edge */}
+                        <div className="absolute inset-x-12 top-0 h-px bg-gradient-to-r from-transparent via-white to-transparent pointer-events-none" />
+                        {/* Server-rendered so its space is reserved from the first paint (no layout jump on hydration). */}
+                        <div className="relative w-full rounded-[1.6rem] overflow-hidden shadow-[0_2px_10px_-2px_rgba(15,23,42,0.18)] ring-1 ring-slate-900/[0.06]">
+                           <HeroDashboard data={dashboard} />
+                        </div>
                      </div>
                   </motion.div>
                </div>
@@ -327,7 +358,7 @@ export default function HeroSection({ dashboard }: { dashboard?: HeroDashboardDa
                   initial={{ opacity: 0, y: 15 }}
                   animate={{ opacity: 1, y: 0 }}
                   transition={{ duration: 0.6, delay: 0.15 }}
-                  className="mt-3 grid grid-cols-1 sm:grid-cols-2 gap-2.5 w-full max-w-[620px]"
+                  className="mt-8 sm:mt-10 grid grid-cols-1 sm:grid-cols-2 gap-2.5 w-full max-w-[620px]"
                >
                   {/* Card 1: Doctor Trust & Star Rating */}
                   <div className="flex items-center gap-2.5 p-2.5 px-3.5 rounded-2xl bg-white/90 backdrop-blur-xl border border-slate-200/80 shadow-[0_4px_14px_rgba(26,16,83,0.04)] hover:shadow-md transition-all">

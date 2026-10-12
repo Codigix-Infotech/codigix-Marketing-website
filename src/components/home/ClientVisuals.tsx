@@ -202,7 +202,8 @@ export default function ClientVisuals({ videos = defaultVideos }: { videos?: Vid
 
             <div
               ref={scrollRef}
-              className="flex gap-5 overflow-x-auto hide-scrollbar snap-x snap-mandatory pb-6 pt-2 px-1"
+              // Extra padding gives the lifted active card's ring + shadow room inside the scroll clip; negative margins keep the layout in place
+              className="flex gap-5 overflow-x-auto hide-scrollbar snap-x snap-mandatory scroll-px-4 pt-5 pb-10 px-4 -mt-3 -mb-4 -mx-3"
             >
               {videosData.map((video) => (
                 <VideoCard

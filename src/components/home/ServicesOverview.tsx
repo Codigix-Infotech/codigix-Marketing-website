@@ -228,7 +228,8 @@ export default function ServicesOverview() {
             {/* Carousel Container (Crisp, pure white cards with vibrant glowing animated border) */}
             <div
               ref={scrollRef}
-              className="flex gap-5 overflow-x-auto pb-8 pt-3 hide-scrollbar px-2"
+              // Extra padding gives the lifted/scaled active card + its glow room inside the scroll clip; negative margins keep the layout in place
+              className="flex gap-5 overflow-x-auto hide-scrollbar pt-8 pb-12 px-4 -mt-5 -mb-4 -mx-2"
             >
               {services.map((service, idx) => {
                 const isActive = activeIndex === idx;

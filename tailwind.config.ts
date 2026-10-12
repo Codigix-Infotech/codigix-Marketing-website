@@ -22,7 +22,9 @@ const config: Config = {
         'border': '#e5e7eb',
       },
       fontFamily: {
-        sans: ["'Roboto'", "sans-serif"],
+        // Free lookalikes of claude.ai's licensed faces: Inter ≈ Styrene (UI/body), Source Serif 4 ≈ Tiempos (titles)
+        sans: ['Inter', 'ui-sans-serif', 'system-ui', 'sans-serif'],
+        serif: ['"Source Serif 4"', 'Georgia', 'ui-serif', 'serif'],
       },
       backgroundImage: {
         'gradient-radial': 'radial-gradient(var(--tw-gradient-stops))',
