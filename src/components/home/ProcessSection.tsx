@@ -27,15 +27,15 @@ const steps = [
   { num: "02", title: "Audit & Research", icon: Search },
   { num: "03", title: "Strategy & Roadmap", icon: Lightbulb },
   { num: "04", title: "Web Design & Development", icon: Layout },
-  { num: "05", title: "Healthcare SEO & Visibility", icon: Globe },
-  { num: "06", title: "Social & Video Growth", icon: Share2 },
-  { num: "07", title: "GMB & Google Maps 3-Pack", icon: MapPin },
-  { num: "08", title: "High-DA Backlink Network", icon: Link2 },
+  { num: "05", title: "Technical SEO & Structured Data", icon: Globe },
+  { num: "06", title: "Educational Social & Video", icon: Share2 },
+  { num: "07", title: "Accurate Local Profiles", icon: MapPin },
+  { num: "08", title: "Content & Citation Accuracy", icon: Link2 },
   { num: "09", title: "Campaign Launch", icon: Rocket },
-  { num: "10", title: "Conversion Optimization", icon: Activity },
+  { num: "10", title: "Usability & Accessibility Review", icon: Activity },
   { num: "11", title: "Analytics & Reporting", icon: PieChart },
   { num: "12", title: "Quarterly Review", icon: ClipboardCheck },
-  { num: "13", title: "Long-term Scaling", icon: TrendingUp }
+  { num: "13", title: "Long-term Maintenance", icon: TrendingUp }
 ];
 
 /**
@@ -209,15 +209,15 @@ export default function ProcessSection() {
             </div>
             <div>
               <div className="flex items-center gap-1.5 mb-0.5">
-                <span className="text-lg font-bold text-slate-800 leading-none">2.4M+</span>
-                <span className="text-[10px] font-bold text-emerald-600 bg-emerald-50 px-1.5 py-0.5 rounded-lg border border-emerald-200/60">+340%</span>
+                <span className="text-lg font-bold text-slate-800 leading-none">Educational</span>
+                <span className="text-[10px] font-bold text-emerald-600 bg-emerald-50 px-1.5 py-0.5 rounded-lg border border-emerald-200/60">AI-labelled</span>
               </div>
-              <p className="text-[11px] font-medium text-slate-500 uppercase tracking-wider">Social Video Reach</p>
+              <p className="text-[11px] font-medium text-slate-500 uppercase tracking-wider">Video & Social Content</p>
             </div>
           </motion.div>
         </motion.div>
 
-        {/* 2. BOTTOM-LEFT METRIC: Verified Patient Trust (Flanking Lower Area) */}
+        {/* 2. BOTTOM-LEFT METRIC: Authenticity (Flanking Lower Area) */}
         <motion.div
           initial={{ opacity: 0, transform: "translate(-20px, 20px)" }}
           whileInView={{ opacity: 1, transform: "translate(0px, 0px)" }}
@@ -235,15 +235,15 @@ export default function ProcessSection() {
             </div>
             <div>
               <div className="flex items-center gap-1.5 mb-0.5">
-                <span className="text-base font-bold text-slate-800 leading-none">4.9 / 5.0</span>
-                <span className="text-[10px] font-bold text-amber-700 bg-amber-50 px-1.5 py-0.5 rounded-lg border border-amber-200/60">500+ Rev</span>
+                <span className="text-base font-bold text-slate-800 leading-none">No Fake Reviews</span>
+                <span className="text-[10px] font-bold text-amber-700 bg-amber-50 px-1.5 py-0.5 rounded-lg border border-amber-200/60">Disclosed</span>
               </div>
-              <p className="text-[11px] font-medium text-slate-500 uppercase tracking-wider">Patient Trust Score</p>
+              <p className="text-[11px] font-medium text-slate-500 uppercase tracking-wider">Authenticity &amp; AI Transparency</p>
             </div>
           </motion.div>
         </motion.div>
 
-        {/* 3. TOP-RIGHT METRIC: Healthcare SEO & Maps (Floating in Upper Sky) */}
+        {/* 3. TOP-RIGHT METRIC: Factual Review (Floating in Upper Sky) */}
         <motion.div
           initial={{ opacity: 0, transform: "translate(20px, -20px)" }}
           whileInView={{ opacity: 1, transform: "translate(0px, 0px)" }}
@@ -261,15 +261,15 @@ export default function ProcessSection() {
             </div>
             <div>
               <div className="flex items-center gap-1.5 mb-0.5">
-                <span className="text-lg font-bold text-slate-800 leading-none">Top 1%</span>
-                <span className="text-[10px] font-bold text-indigo-700 bg-indigo-50 px-1.5 py-0.5 rounded-lg border border-indigo-200/60">Rank #1</span>
+                <span className="text-lg font-bold text-slate-800 leading-none">Factual</span>
+                <span className="text-[10px] font-bold text-indigo-700 bg-indigo-50 px-1.5 py-0.5 rounded-lg border border-indigo-200/60">Reviewed</span>
               </div>
-              <p className="text-[11px] font-medium text-slate-500 uppercase tracking-wider">SEO & Local Maps</p>
+              <p className="text-[11px] font-medium text-slate-500 uppercase tracking-wider">Pre-publication Review</p>
             </div>
           </motion.div>
         </motion.div>
 
-        {/* 4. BOTTOM-RIGHT METRIC: 100% Safe High-DA Backlinks (Flanking Lower Area) */}
+        {/* 4. BOTTOM-RIGHT METRIC: Data Protection (Flanking Lower Area) */}
         <motion.div
           initial={{ opacity: 0, transform: "translate(20px, 20px)" }}
           whileInView={{ opacity: 1, transform: "translate(0px, 0px)" }}
@@ -287,10 +287,10 @@ export default function ProcessSection() {
             </div>
             <div>
               <div className="flex items-center gap-1.5 mb-0.5">
-                <span className="text-base font-bold text-slate-800 leading-none">100% Safe</span>
-                <span className="text-[10px] font-bold text-emerald-700 bg-emerald-50 px-1.5 py-0.5 rounded-lg border border-emerald-200/60">High DA</span>
+                <span className="text-base font-bold text-slate-800 leading-none">Data Protection</span>
+                <span className="text-[10px] font-bold text-emerald-700 bg-emerald-50 px-1.5 py-0.5 rounded-lg border border-emerald-200/60">DPDP</span>
               </div>
-              <p className="text-[11px] font-medium text-slate-500 uppercase tracking-wider">Authority Backlinks</p>
+              <p className="text-[11px] font-medium text-slate-500 uppercase tracking-wider">IT Act &amp; DPDP Act aligned</p>
             </div>
           </motion.div>
         </motion.div>
@@ -356,16 +356,16 @@ transition={{ duration: 0.5, ease: [0.22, 1, 0.36, 1] }}
               <span className="animate-ping absolute inline-flex h-full w-full rounded-full bg-blue-400 opacity-75"></span>
               <span className="relative inline-flex rounded-full h-2 w-2 bg-blue-600"></span>
             </span>
-            <span>Continuous Growth Engine</span>
+            <span>Continuous Improvement Cycle</span>
           </div>
           <h2 className="text-3xl sm:text-4xl lg:text-5xl font-semibold text-[#1a1053] leading-[1.15] tracking-tight mb-3.5">
-            A Simple Process for <br className="hidden md:block" />
+            A Clear Process for <br className="hidden md:block" />
             <span className="text-transparent bg-clip-text bg-gradient-to-r from-blue-600 via-indigo-600 to-[#e20b27]">
-              Measurable Healthcare Growth.
+              Responsible Healthcare Communication.
             </span>
           </h2>
           <p className="text-slate-600 font-light text-base sm:text-lg leading-relaxed max-w-2xl px-4">
-            We follow a transparent, continuous, and data-driven lifecycle engineered to maximize doctor authority, patient inquiries, and organic search dominance.
+            We follow a transparent, continuous lifecycle that includes internal pre-publication review for factual accuracy, credential and registration disclosures, privacy safeguards, and AI-content labelling.
           </p>
         </motion.div>
 

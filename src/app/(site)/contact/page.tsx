@@ -7,9 +7,9 @@ import { jsonLd } from '@/lib/seo';
 
 export const generateMetadata = () =>
   pageMetadata({
-    title: 'Contact Codigix Infotech | Healthcare Marketing Agency Pune',
+    title: 'Contact Codigix Infotech | Digital Engineering & Communication, Pune',
     description:
-      'Contact Codigix Infotech in Pune. Grow your clinic or hospital with healthcare SEO, Google Maps 3-Pack rankings and performance marketing.',
+      'Contact Codigix Infotech in Pune to discuss website development, digital infrastructure or educational content services. Please do not share patient medical records through general enquiries.',
     path: '/contact',
   });
 

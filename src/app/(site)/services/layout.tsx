@@ -5,9 +5,9 @@ import { SITE_URL } from '@/lib/config';
 // The page itself is a client component, so its metadata and structured data live here.
 export const generateMetadata = () =>
   pageMetadata({
-    title: 'Healthcare Digital Marketing Services in Pune | Codigix',
+    title: 'Digital Strategy, Web Systems & Communication Services in Pune | Codigix',
     description:
-      'SEO, Google & Meta ads, social media, content, e-commerce and website development for clinics, hospitals and healthcare brands in Pune & PCMC.',
+      'SEO and local profile management, educational video content, policy-compliant paid campaigns, content architecture and web development for hospitals, clinics and enterprises in Pune & PCMC.',
     path: '/services',
   });
 

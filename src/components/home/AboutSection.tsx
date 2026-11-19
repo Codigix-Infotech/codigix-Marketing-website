@@ -48,21 +48,21 @@ export default function AboutSection() {
           className="flex flex-col gap-6"
         >
           <div className="inline-flex items-center gap-2 px-3.5 py-1.5 rounded-full bg-primary-accent/10 border border-primary-accent/20 w-fit text-xs font-semibold text-primary-accent uppercase tracking-wider">
-            Healthcare Authority
+            About Codigix Infotech
           </div>
           <h2 className="text-3xl md:text-5xl font-semibold text-primary-text leading-tight tracking-tight">
-            Specialized Healthcare Marketing <br />
-            <span className="text-gradient">by Codigix Infotech</span>
+            About <br />
+            <span className="text-gradient">Codigix Infotech</span>
           </h2>
           <p className="text-base md:text-lg text-secondary-text font-light leading-relaxed text-balance">
-            We are Codigix Infotech Pvt Ltd — Pune's dedicated healthcare growth agency. From multi-speciality hospitals to private dental, hair transplant, IVF, and aesthetic clinics, we build organic authority, Google Maps supremacy, and engaging social content that patients trust.
+            Codigix Infotech is a technology and digital communication firm based in Pune, working across healthcare institutions, enterprises, and commercial businesses. Our work centers on dependable web engineering, structured information design, search discoverability, and clear educational communication.
           </p>
           <ul className="flex flex-col gap-3.5 mt-2">
             {[
-              'Proven Healthcare SEO & Keyword Domination',
-              'GMB Google Maps #1 Local 3-Pack Ranking',
-              'High-DA Healthcare Backlinks & Doctor Citations',
-              'Instagram, Meta & YouTube Patient Content'
+              'No Patient Solicitation or Referral Incentives',
+              'Factual & Non-Promotional Framing',
+              'Authenticity & AI Transparency',
+              'Data Protection First (IT Act, 2000 & DPDP Act, 2023)'
             ].map((item, idx) => (
               <li key={idx} className="flex items-center gap-3 text-primary-text text-sm md:text-base font-normal">
                 <CheckCircle2 className="text-primary-accent shrink-0" size={18} />
@@ -97,7 +97,7 @@ export default function AboutSection() {
             viewport={{ once: true, margin: "-200px" }}
             transition={{ duration: 0.6, delay: 0.35, ease: [0.22, 1, 0.36, 1] }}
             src="/seo_growth_banner_light.jpg"
-            alt="Healthcare SEO Growth & Rankings"
+            alt="Digital infrastructure and information design"
             className="w-full h-full object-cover relative z-10"
           />
 
@@ -113,8 +113,8 @@ export default function AboutSection() {
               <svg xmlns="http://www.w3.org/2000/svg" width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round"><path d="M21 16V8a2 2 0 0 0-1-1.73l-7-4a2 2 0 0 0-2 0l-7 4A2 2 0 0 0 3 8v8a2 2 0 0 0 1 1.73l7 4a2 2 0 0 0 2 0l7-4A2 2 0 0 0 21 16z" /><polyline points="7.5 4.21 12 6.81 16.5 4.21" /><polyline points="7.5 19.79 7.5 14.6 3 12" /><polyline points="21 12 16.5 14.6 16.5 19.79" /><polyline points="3.27 6.96 12 12.01 20.73 6.96" /><line x1="12" y1="22.08" x2="12" y2="12" /></svg>
             </div>
             <div>
-              <p className="text-xl font-semibold text-slate-800 leading-none">12.5k+</p>
-              <p className="text-[11px] font-medium text-slate-500 mt-1">High-DA Backlinks</p>
+              <p className="text-xl font-semibold text-slate-800 leading-none">Schema</p>
+              <p className="text-[11px] font-medium text-slate-500 mt-1">Structured Metadata</p>
             </div>
           </motion.div>
 
@@ -129,8 +129,8 @@ export default function AboutSection() {
               <svg xmlns="http://www.w3.org/2000/svg" width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round"><circle cx="11" cy="11" r="8" /><path d="m21 21-4.3-4.3" /></svg>
             </div>
             <div>
-              <p className="text-xl font-semibold text-slate-800 leading-none">#1 Rank</p>
-              <p className="text-[11px] font-medium text-slate-500 mt-1">Organic SEO Growth</p>
+              <p className="text-xl font-semibold text-slate-800 leading-none">Accessible</p>
+              <p className="text-[11px] font-medium text-slate-500 mt-1">WCAG 2.1 AA aligned</p>
             </div>
           </motion.div>
 

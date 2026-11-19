@@ -89,10 +89,10 @@ export default function ClientLogos({ clients = defaultClients }: { clients?: Cl
           <span>The Codigix Network</span>
         </div>
         <h2 className="text-3xl sm:text-4xl lg:text-5xl font-semibold text-[#1a1053] leading-[1.15] tracking-tight mb-3.5">
-          Trusted Partners in <span className="text-transparent bg-clip-text bg-gradient-to-r from-blue-600 via-indigo-600 to-[#e20b27]">Pune & Beyond</span>
+          Our Clients in <span className="text-transparent bg-clip-text bg-gradient-to-r from-blue-600 via-indigo-600 to-[#e20b27]">Pune & Beyond</span>
         </h2>
         <p className="text-slate-600 font-light text-base sm:text-lg leading-relaxed max-w-2xl">
-          Powering organic discoverability and patient appointments for healthcare institutions across key medical hubs.
+          Web engineering and clear digital communication for healthcare institutions, enterprises, and commercial businesses across Pune and beyond.
         </p>
       </div>
 

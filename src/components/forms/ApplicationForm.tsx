@@ -119,6 +119,9 @@ export default function ApplicationForm({ jobId, jobTitle }: { jobId?: number; j
           className="sr-only"
         />
       </div>
+      <p className="text-xs text-slate-500 leading-snug">
+        Please share only information relevant to your application, and do not include confidential patient medical records or sensitive personal health information. Your details are used only to assess your application, in line with our <a href="/privacy" className="underline">Privacy Policy</a> (IT Act, 2000 and DPDP Act, 2023).
+      </p>
       {error && <p role="alert" className="text-sm text-red-600 bg-red-50 border border-red-100 rounded-lg px-4 py-2">{error}</p>}
       <button
         type="submit"

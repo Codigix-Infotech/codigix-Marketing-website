@@ -17,55 +17,55 @@ export default function ServicesOverview() {
   const services = [
     {
       title: "SEO Search Engine Optimization",
-      description: "Be the First Clinic Patients Find on Google. More visibility. More appointments.",
+      description: "Technical site optimization, structured metadata, crawl/index health, and accurate local listing details, with no ranking manipulation or guaranteed positions.",
       icon: <Search strokeWidth={1.8} />,
       accentColor: "from-emerald-600 to-teal-600",
-      badge: "Organic Search",
+      badge: "Technical SEO",
       gradient: "from-emerald-500 via-teal-500 to-cyan-400",
       href: "/best-seo-services-in-pcmc"
     },
     {
       title: "Paid Advertisements (PPC)",
-      description: "Immediate patient leads with high-ROI Google, Meta & Instagram ad funnels.",
+      description: "Policy-compliant search and social campaigns built around clear, truthful messaging and transparent audience disclosures.",
       icon: <Zap strokeWidth={1.8} />,
       accentColor: "from-amber-600 to-orange-600",
-      badge: "Instant Leads",
+      badge: "Truthful Ads",
       gradient: "from-amber-500 via-orange-500 to-red-400",
       href: "/paid-advertisements-ppc"
     },
     {
       title: "Social Media Marketing",
-      description: "Build community trust with viral doctor reels, visuals & social branding.",
+      description: "Educational video and social content for public-health awareness and institutional updates, with credential disclosures and AI labels.",
       icon: <Instagram strokeWidth={1.8} />,
       accentColor: "from-pink-600 to-rose-600",
-      badge: "Viral Growth",
+      badge: "Education",
       gradient: "from-pink-500 via-rose-500 to-purple-500",
       href: "/social-media-marketing"
     },
     {
       title: "E-Commerce Marketing",
-      description: "Scale online healthcare & store sales, product rankings & conversion funnels.",
+      description: "Catalog architecture, storefront performance, and digital workflows for commercial and non-regulated retail businesses.",
       icon: <ShoppingCart strokeWidth={1.8} />,
       accentColor: "from-blue-600 to-cyan-600",
-      badge: "High ROAS",
+      badge: "Commerce",
       gradient: "from-blue-500 via-indigo-500 to-cyan-400",
       href: "/ecommerce-marketing"
     },
     {
       title: "Medical Content Marketing",
-      description: "Doctor authority blogs, patient education guides & high-trust clinical copywriting.",
+      description: "Well-organized informational pages, department guides, and public-health articles reviewed for accuracy before publication.",
       icon: <FileText strokeWidth={1.8} />,
       accentColor: "from-purple-600 to-indigo-600",
-      badge: "Authority Copy",
+      badge: "Information",
       gradient: "from-purple-500 via-indigo-500 to-pink-500",
       href: "/medical-content-marketing"
     },
     {
       title: "Web Design & Development",
-      description: "High-converting, mobile-first and HIPAA-compliant healthcare & enterprise websites.",
+      description: "Responsive, accessible, security-conscious websites with clear privacy controls aligned with Indian data-protection laws.",
       icon: <Code2 strokeWidth={1.8} />,
       accentColor: "from-indigo-600 to-violet-600",
-      badge: "Conversion Rate",
+      badge: "Web Engineering",
       gradient: "from-indigo-500 via-purple-500 to-blue-400",
       href: "/web-design-development"
     }
@@ -156,10 +156,10 @@ export default function ServicesOverview() {
               </div>
               <div>
                 <div className="flex items-center gap-1.5">
-                  <span className="text-lg font-semibold text-[#1a1053] leading-none">#1 Rank</span>
+                  <span className="text-lg font-semibold text-[#1a1053] leading-none">Accurate Listings</span>
                   <span className="w-2 h-2 rounded-full bg-emerald-500 animate-pulse" />
                 </div>
-                <p className="text-[10px] font-medium text-slate-500 mt-1 uppercase tracking-wider">Local GMB & Google Maps</p>
+                <p className="text-[10px] font-medium text-slate-500 mt-1 uppercase tracking-wider">Local profile information</p>
               </div>
             </motion.div>
 
@@ -169,19 +169,19 @@ export default function ServicesOverview() {
                 <span className="relative inline-flex rounded-full h-2 w-2 bg-blue-600"></span>
               </span>
               <span className="text-xs font-semibold text-[#1a1053] tracking-wide">
-                Core Capabilities · Patient Acquisition
+                Core Capabilities · Digital Systems
               </span>
             </div>
 
             <h2 className="text-3xl sm:text-4xl lg:text-5xl font-semibold text-[#1a1053] tracking-tight leading-[1.15] mb-4">
-              Organic Growth & <br />
+              Search Visibility & <br />
               <span className="text-transparent bg-clip-text bg-gradient-to-r from-blue-600 via-indigo-600 to-[#e20b27]">
-                Healthcare Authority
+                Structured Information
               </span>
             </h2>
 
             <p className="text-slate-600 font-light text-base sm:text-lg leading-relaxed mb-8 max-w-md">
-              We specialize in healthcare SEO, Google Maps (GMB) 3-pack rankings, high-authority medical backlinks, and patient-first social media growth across Instagram, Meta, and YouTube.
+              Digital strategy, web systems and compliance-aligned communication: technical SEO, accurate local profile management, educational video and social content, and accessible web development.
             </p>
 
             <div className="flex items-center gap-4">

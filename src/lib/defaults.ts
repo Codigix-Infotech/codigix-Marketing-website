@@ -6,22 +6,22 @@ import type { Client, HeroDashboardData, PublicSettings, Video } from './types';
 export const defaultSettings: PublicSettings = {
   site: {
     name: 'Codigix Infotech',
-    tagline: 'Healthcare Digital Marketing Agency',
+    tagline: 'Digital Infrastructure & Ethical Healthcare Communication',
     description:
-      "Pune's dedicated healthcare digital growth agency — driving organic SEO, Google Maps visibility, high-DA backlinks, and viral social reach for hospitals and clinics.",
+      'Pune-based technology and digital communication firm providing web engineering, structured information design, search discoverability, and clear educational communication for hospitals, clinics, and enterprises.',
     logo: '/logo.webp',
     newsletter_title: 'Join our Newsletter',
     newsletter_text:
-      'Get the latest healthcare SEO insights, Google Maps strategies, and patient acquisition trends delivered straight to your inbox.',
+      'Get practical insights on web engineering, structured information, accessibility, and responsible digital communication delivered to your inbox.',
   },
   seo: {
-    default_title: 'Healthcare Digital Marketing Agency | Codigix Infotech',
+    default_title: 'Digital Infrastructure & Ethical Healthcare Communication | Codigix Infotech',
     title_template: '%s | Codigix Infotech',
     default_description:
-      'Pune’s healthcare digital marketing agency. Healthcare SEO, Google Maps 3-Pack, ads and social media that bring your clinic or hospital more patients.',
+      'Pune-based web development, search visibility, content structuring and digital communication for hospitals, clinics and enterprises, aligned with the IT Act, 2000, the DPDP Act, 2023 and NMC ethical communication principles.',
     blog_title: 'Insights & Blog',
     blog_description:
-      'Read the latest insights, news, and trends in healthcare digital marketing, SEO, Google Maps and patient acquisition from the Codigix team.',
+      'Insights on web engineering, structured information, search visibility and responsible public-health communication from the Codigix team.',
   },
   contact: {
     address_line1: 'Office No. 309, Bramha Sky Uzuri',
@@ -50,6 +50,8 @@ export const defaultSettings: PublicSettings = {
   social: {},
 };
 
+// The public hero panel shows qualitative capability indicators only, so these
+// defaults intentionally carry no performance, ranking or outcome figures.
 export const defaultDashboard: HeroDashboardData = {
   metrics: [
     { title: 'Website Visitors', value: 24532, trend: 28, icon: 'users', color: 'blue' },
@@ -338,8 +340,8 @@ export const defaultClients: Client[] = [
 ];
 
 export const defaultVideos: Video[] = [
-  { id: 1, youtube_id: 'VkiY_0lhS04', category: 'Market Domination', title: 'Stop Competing. Start Dominating!', subtitle: 'Healthcare Market Leadership', description: 'Strategic playbook for clinics & hospitals to outrank local competition.', duration: '0:45' },
-  { id: 2, youtube_id: 'RhsvzzoOftQ', category: 'AI & Search Strategy', title: 'AI Search & Patient Discovery', subtitle: 'Future-Proof Your Practice', description: 'How modern clinics capture high-intent patients in the AI search era.', duration: '0:50' },
-  { id: 3, youtube_id: '2LCpb3gkv4w', category: 'Doctor Appreciation', title: "Dr. Sheetal's Glow Clinic", subtitle: 'Client Review & Feedback', description: 'Dr. Sheetal shares her growth experience & patient acquisition results.', duration: '0:42' },
-  { id: 4, youtube_id: 'Brzz1X9F-VE', category: 'Doctor Testimonial', title: 'Dr. Dipti Vaidya Recommendation', subtitle: '5-Star Verified Doctor Review', description: 'Dr. Dipti Vaidya on brand credibility and dedicated marketing execution.', duration: '0:38' },
+  { id: 1, youtube_id: 'VkiY_0lhS04', category: 'Digital Infrastructure', title: 'Clear Information for Healthcare Websites', subtitle: 'Accurate Institutional Information', description: 'An overview of structuring factual, accessible institutional information on hospital and clinic websites.', duration: '0:45' },
+  { id: 2, youtube_id: 'RhsvzzoOftQ', category: 'Search & Structured Data', title: 'Search Visibility & Structured Information', subtitle: 'How Search Engines Read Your Site', description: 'How structured data and clear topical architecture help keep organizational information accurate and discoverable.', duration: '0:50' },
+  { id: 3, youtube_id: '2LCpb3gkv4w', category: 'Educational Video', title: 'Educational Video Production', subtitle: 'Public-Health Awareness Content', description: 'Our approach to educational video: practitioner credential disclosures, source accuracy and AI-assistance labelling where applicable.', duration: '0:42' },
+  { id: 4, youtube_id: 'Brzz1X9F-VE', category: 'Ethical Communication', title: 'Our Ethical Communication Commitments', subtitle: 'Transparency & Data Protection', description: 'How we approach factual framing, authenticity and data protection under the IT Act, 2000 and the DPDP Act, 2023.', duration: '0:38' },
 ];

@@ -118,17 +118,17 @@ export default function IndustriesSection() {
                 <span className="relative inline-flex rounded-full h-2 w-2 bg-blue-600"></span>
               </span>
               <span className="text-xs font-semibold text-[#1a1053] tracking-wide">
-                Healthcare Specialities · Tailored Marketing
+                Healthcare Specialities · Digital Systems
               </span>
             </div>
 
             <h2 className="text-3xl sm:text-4xl lg:text-5xl font-semibold text-[#1a1053] tracking-tight leading-[1.15] mb-4">
               Healthcare Specialities. <br className="hidden md:block" />
-              A Dedicated Goal — <span className="text-transparent bg-clip-text bg-gradient-to-r from-blue-600 via-indigo-600 to-[#e20b27]">Patient Growth.</span>
+              Clear, Accurate <span className="text-transparent bg-clip-text bg-gradient-to-r from-blue-600 via-indigo-600 to-[#e20b27]">Digital Information.</span>
             </h2>
 
             <p className="text-slate-600 font-light text-base sm:text-lg leading-relaxed max-w-lg">
-              We deliver tailored digital marketing, SEO, Google Maps 3-Pack rankings, and doctor branding across medical specialities — empowering hospitals, clinics, and specialists to scale patient appointments.
+              We build websites, structured information, technical SEO and educational content across medical specialities, with accurate institutional details and verified practitioner credentials, aligned with applicable NMC, NDC and AYUSH communication guidelines.
             </p>
           </motion.div>
 
@@ -153,13 +153,13 @@ export default function IndustriesSection() {
                   </div>
                   <div>
                     <h4 className="text-[15px] font-semibold text-[#1a1053] leading-tight">Healthcare Digital Hub</h4>
-                    <p className="text-xs text-slate-400 font-light">Smarter Healthcare Growth</p>
+                    <p className="text-xs text-slate-400 font-light">Clear, Accurate Digital Information</p>
                   </div>
                 </div>
 
                 <div className="flex items-center gap-1.5 px-3 py-1 rounded-full bg-emerald-50/80 border border-emerald-200/60 text-emerald-700 text-[11px] font-medium">
                   <span className="w-1.5 h-1.5 rounded-full bg-emerald-500 animate-ping" />
-                  <span>100+ Practices Scaled</span>
+                  <span>Standards-aligned</span>
                 </div>
               </div>
 
@@ -167,18 +167,18 @@ export default function IndustriesSection() {
               <div className="p-4 rounded-2xl bg-gradient-to-br from-[#f8fafe] to-[#eef2f9] border border-slate-200/50 mb-5 relative z-10">
                 <div className="flex items-center justify-between">
                   <div className="flex flex-col">
-                    <span className="text-2xl font-semibold text-[#1a1053] tracking-tight">3.8x</span>
-                    <span className="text-[10px] font-light text-slate-500 uppercase tracking-wider">Patient Inflow</span>
+                    <span className="text-2xl font-semibold text-[#1a1053] tracking-tight">WCAG</span>
+                    <span className="text-[10px] font-light text-slate-500 uppercase tracking-wider">2.1 AA aligned</span>
                   </div>
                   <div className="h-7 w-[1px] bg-slate-200" />
                   <div className="flex flex-col">
-                    <span className="text-2xl font-semibold text-[#e20b27] tracking-tight">#1 Rank</span>
-                    <span className="text-[10px] font-light text-slate-500 uppercase tracking-wider">Google Maps</span>
+                    <span className="text-2xl font-semibold text-[#e20b27] tracking-tight">Schema</span>
+                    <span className="text-[10px] font-light text-slate-500 uppercase tracking-wider">Structured data</span>
                   </div>
                   <div className="h-7 w-[1px] bg-slate-200" />
                   <div className="flex flex-col">
-                    <span className="text-2xl font-semibold text-emerald-600 tracking-tight">98.4%</span>
-                    <span className="text-[10px] font-light text-slate-500 uppercase tracking-wider">Retention</span>
+                    <span className="text-2xl font-semibold text-emerald-600 tracking-tight">DPDP</span>
+                    <span className="text-[10px] font-light text-slate-500 uppercase tracking-wider">Aligned forms</span>
                   </div>
                 </div>
               </div>
@@ -195,7 +195,7 @@ export default function IndustriesSection() {
                   <Baby size={13} className="text-[#e20b27]" /> IVF & Fertility
                 </span>
                 <span className="px-3 py-1 rounded-xl bg-emerald-50/80 text-emerald-700 border border-emerald-100/80 text-xs font-light flex items-center gap-1.5">
-                  <HeartPulse size={13} className="text-emerald-500" /> Specialist OPDs
+                  <HeartPulse size={13} className="text-emerald-500" /> Specialist Departments
                 </span>
               </div>
             </div>
@@ -208,7 +208,7 @@ export default function IndustriesSection() {
             <div className="bg-gradient-to-r from-[#1a1053] to-[#382f7c] text-white text-[11px] font-medium uppercase tracking-wider py-1 px-3.5 rounded-full flex items-center gap-1.5 shadow-sm">
               <Star size={11} className="text-amber-400 fill-amber-400" /> Primary Specialities
             </div>
-            <h3 className="text-xl font-semibold text-[#1a1053]">Medical Disciplines We Scale</h3>
+            <h3 className="text-xl font-semibold text-[#1a1053]">Medical Disciplines We Support</h3>
           </div>
           <span className="text-xs font-light text-slate-400 hidden sm:inline-block">
             Continuous medical category coverage
@@ -243,12 +243,12 @@ export default function IndustriesSection() {
         <div className="mb-6 flex items-center justify-between">
           <div className="flex items-center gap-3">
             <div className="bg-slate-100 text-slate-600 text-[11px] font-medium uppercase tracking-wider py-1 px-3 rounded-full shadow-xs border border-slate-200/60">
-              Cross-Industry Reach
+              Cross-Industry Work
             </div>
             <h3 className="text-xl font-semibold text-[#1a1053]">Other Industries We Cater To</h3>
           </div>
           <p className="text-xs font-light text-slate-400 hidden sm:inline-block">
-            Proven growth frameworks applied to diverse business sectors
+            Dependable web engineering applied to diverse business sectors
           </p>
         </div>
 
@@ -306,7 +306,7 @@ export default function IndustriesSection() {
               <h4 className="font-semibold text-white text-[14px] leading-tight mb-1">
                 Have a specialized practice?
               </h4>
-              <p className="text-slate-300 text-[11px] font-light leading-snug">Let's discuss customized patient growth strategies for your domain.</p>
+              <p className="text-slate-300 text-[11px] font-light leading-snug">Let's discuss website engineering and clear information design for your domain.</p>
             </div>
           </motion.div>
         </div>
@@ -319,16 +319,16 @@ export default function IndustriesSection() {
             </div>
             <div>
               <h4 className="font-semibold text-[#1a1053] text-lg leading-none mb-1">
-                <AnimatedCounter to={500} />
+                Healthcare &amp; Enterprise
               </h4>
-              <p className="text-[11px] font-light text-slate-500 uppercase tracking-wider">Clients Served Across Sectors</p>
+              <p className="text-[11px] font-light text-slate-500 uppercase tracking-wider">Sectors We Work With</p>
             </div>
           </div>
 
           <div className="flex-1 hidden md:flex items-center justify-center px-8">
             <div className="h-[1px] w-full bg-slate-200 relative">
               <span className="absolute left-1/2 top-1/2 -translate-x-1/2 -translate-y-1/2 bg-[#fafbfe] px-4 text-[10px] font-light text-slate-400 tracking-[0.2em] uppercase whitespace-nowrap">
-                Empowering Practices With Proven Digital Healthcare Solutions
+                Reliable Digital Foundations For Healthcare
               </span>
             </div>
           </div>

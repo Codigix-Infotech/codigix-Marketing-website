@@ -26,40 +26,40 @@ interface StatItem {
 
 const stats: StatItem[] = [
   {
-    value: "96%",
-    label: "Client Retention Rate",
-    sublabel: "Long-term doctor & hospital partnerships",
-    badge: "Industry High",
-    icon: HeartHandshake,
+    value: "DPDP",
+    label: "DPDP-Aligned Forms",
+    sublabel: "Data minimisation and clear consent notices",
+    badge: "Privacy by Design",
+    icon: ShieldCheck,
     accentColor: "text-emerald-500",
     gradient: "from-emerald-500 to-teal-600",
     bgGlow: "bg-emerald-500/10"
   },
   {
-    value: "50+",
-    label: "Healthcare Clients Served",
-    sublabel: "Hospitals, clinics & super-specialists",
-    badge: "Pune & Pan-India",
-    icon: Building2,
+    value: "WCAG",
+    label: "WCAG 2.1 AA Aligned",
+    sublabel: "Accessible, mobile-friendly interfaces",
+    badge: "Accessibility",
+    icon: Users,
     accentColor: "text-blue-500",
     gradient: "from-blue-600 to-indigo-600",
     bgGlow: "bg-blue-500/10"
   },
   {
-    value: "250+",
-    label: "Campaigns & Projects Completed",
-    sublabel: "Medical SEO, GMB & patient growth cycles",
-    badge: "100% Verified",
+    value: "CWV",
+    label: "Core Web Vitals Focused",
+    sublabel: "Page load speed and technical site health",
+    badge: "Performance",
     icon: TrendingUp,
     accentColor: "text-purple-500",
     gradient: "from-purple-600 to-violet-600",
     bgGlow: "bg-purple-500/10"
   },
   {
-    value: "5+",
-    label: "Years Healthcare Focus",
-    sublabel: "Dedicated medical marketing domain expertise",
-    badge: "Specialized",
+    value: "Schema",
+    label: "Structured Data",
+    sublabel: "Accurate, machine-readable institutional information",
+    badge: "Information Design",
     icon: Award,
     accentColor: "text-[#e20b27]",
     gradient: "from-[#e20b27] to-rose-600",
@@ -86,14 +86,14 @@ export default function AboutStats() {
           <div className="inline-flex items-center gap-2 px-3.5 py-1.5 rounded-full bg-white border border-slate-200 shadow-xs mb-3.5">
             <span className="w-2 h-2 rounded-full bg-blue-600 animate-pulse" />
             <span className="text-[11px] font-semibold text-[#1a1053] uppercase tracking-wider">
-              Proven Track Record
+              Engineering Standards
             </span>
           </div>
           <h2 className="text-2xl sm:text-3xl lg:text-4xl font-semibold text-[#1a1053] tracking-tight">
-            Impact Measured by <span className="text-transparent bg-clip-text bg-gradient-to-r from-blue-600 via-indigo-600 to-[#e20b27]">Real Patient Growth</span>
+            Quality Guided by <span className="text-transparent bg-clip-text bg-gradient-to-r from-blue-600 via-indigo-600 to-[#e20b27]">Clear, Accurate Systems</span>
           </h2>
           <p className="text-sm sm:text-base text-slate-500 font-light mt-3">
-            Every metric reflects real healthcare practices empowered with predictable patient inquiries.
+            Capability indicators describing the standards we build to, not performance claims.
           </p>
         </div>
 
@@ -122,7 +122,7 @@ export default function AboutStats() {
 
                 {/* Main Stat Number */}
                 <div className="mb-3">
-                  <div className="text-4xl sm:text-5xl font-bold tracking-tight text-[#1a1053] group-hover:text-blue-600 transition-colors duration-300">
+                  <div className="text-3xl sm:text-4xl font-bold tracking-tight text-[#1a1053] group-hover:text-blue-600 transition-colors duration-300">
                     {stat.value}
                   </div>
                   <div className="text-sm font-semibold text-slate-800 mt-2 leading-snug">

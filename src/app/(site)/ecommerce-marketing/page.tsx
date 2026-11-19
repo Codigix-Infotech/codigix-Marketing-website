@@ -47,47 +47,47 @@ const whatWeDoList = [
   {
     num: "01",
     title: "Product Listing Optimization on Amazon, Flipkart & Store",
-    desc: "Complete optimization of product titles, bullet points, high-converting healthcare copywriting, rich A+ content, and search backend keywords.",
+    desc: "Accurate product titles, bullet points, clear descriptive copywriting, rich A+ content, and structured catalog attributes for non-regulated retail products.",
     icon: ShoppingCart,
     color: "from-blue-600 to-indigo-600",
     bg: "bg-blue-50 text-blue-600 border-blue-200"
   },
   {
     num: "02",
-    title: "Healthcare E-Commerce SEO Strategies",
-    desc: "Technical SEO, category taxonomy restructuring, rich product schema markup, and long-tail transactional keyword rankings on Google.",
+    title: "E-Commerce SEO & Catalog Structure",
+    desc: "Technical SEO, category taxonomy restructuring, rich product schema markup, and clean crawl and index health for online stores.",
     icon: Search,
     color: "from-emerald-600 to-teal-600",
     bg: "bg-emerald-50 text-emerald-600 border-emerald-200"
   },
   {
     num: "03",
-    title: "Paid Ad Campaigns for Product Visibility",
-    desc: "Laser-targeted Google Shopping campaigns, Performance Max (PMax), Meta Catalog sales ads, and Amazon PPC to drive instant product purchases.",
+    title: "Policy-Compliant Product Campaigns",
+    desc: "Google Shopping feeds, Meta catalog campaigns, and marketplace advertising set up with accurate product information and clear platform-policy review.",
     icon: Zap,
     color: "from-purple-600 to-pink-600",
     bg: "bg-purple-50 text-purple-600 border-purple-200"
   },
   {
     num: "04",
-    title: "Cart Abandonment & Remarketing Campaigns",
-    desc: "Automated WhatsApp and email checkout recovery flows combined with dynamic social remarketing to recover up to 35%+ of dropped carts.",
+    title: "Checkout Communication & Customer Messaging",
+    desc: "Transactional WhatsApp and email flows for order confirmations and shipping updates, with clear consent and opt-out controls.",
     icon: Repeat,
     color: "from-amber-600 to-orange-600",
     bg: "bg-amber-50 text-amber-600 border-amber-200"
   },
   {
     num: "05",
-    title: "Review & Reputation Management for Products",
-    desc: "Ethical customer feedback collection, verified review generation, and star rating optimization across Google, Amazon, and your online store.",
+    title: "Customer Feedback Handling",
+    desc: "Ethical, genuine customer feedback collection and response handling, with no fabricated or incentivized reviews.",
     icon: Star,
     color: "from-rose-600 to-red-600",
     bg: "bg-rose-50 text-rose-600 border-rose-200"
   },
   {
     num: "06",
-    title: "Sales Funnel Optimization & Conversion Tracking",
-    desc: "Deep conversion rate optimization (CRO) from product landing page to 1-click checkout, tracked via GA4 e-commerce telemetry.",
+    title: "Storefront Analytics & Tracking",
+    desc: "Consent-aware GA4 e-commerce tracking and clear storefront usability review, from product page to checkout.",
     icon: BarChart3,
     color: "from-cyan-600 to-blue-600",
     bg: "bg-cyan-50 text-cyan-600 border-cyan-200"
@@ -97,37 +97,37 @@ const whatWeDoList = [
 const whatYouGetCards = [
   {
     icon: ShoppingBag,
-    title: "Increased Sales & Revenue",
-    desc: "We focus on real bottom-line conversion optimization, average order value (AOV), and profit margins, not just surface traffic.",
-    stat: "3.8x+",
-    statLabel: "Revenue Scaling",
+    title: "Clear Catalog Architecture",
+    desc: "Well-organized categories, product attributes, and listings that make a store easier to browse and maintain.",
+    stat: "Structured",
+    statLabel: "Catalog Architecture",
     color: "from-blue-600 to-indigo-600",
     bg: "bg-blue-50/80 border-blue-200/70"
   },
   {
     icon: DollarSign,
-    title: "Better ROI on Ad Spend",
-    desc: "Maximize returns with hyper-targeted product ads, negative keyword pruning, and catalog scaling across Google & Meta.",
-    stat: "5.2x",
-    statLabel: "Average ROAS",
+    title: "Transparent Campaign Reporting",
+    desc: "Clear reporting on ad spend and campaign delivery for product campaigns across Google & Meta.",
+    stat: "Transparent",
+    statLabel: "Spend Reporting",
     color: "from-emerald-600 to-teal-600",
     bg: "bg-emerald-50/80 border-emerald-200/70"
   },
   {
     icon: Target,
-    title: "Higher Conversion Rates",
-    desc: "Turn passive store browsers into verified buyers with friction-free checkout, trust badges, and sub-second page loads.",
-    stat: "+45%",
-    statLabel: "CVR Boost",
+    title: "Storefront Performance",
+    desc: "Fast-loading, accessible product pages and a friction-light checkout, built around Core Web Vitals.",
+    stat: "Core Web Vitals",
+    statLabel: "Performance Focus",
     color: "from-amber-600 to-orange-600",
     bg: "bg-amber-50/80 border-amber-200/70"
   },
   {
     icon: Repeat,
-    title: "Customer Retention & Loyalty",
-    desc: "Build repeat purchase subscription systems, automated re-order reminders, and high-LTV VIP customer retention funnels.",
-    stat: "40%+",
-    statLabel: "Repeat Orders",
+    title: "Customer Communication Workflows",
+    desc: "Consent-based order updates and re-order reminders for non-regulated retail products.",
+    stat: "Consent-Based",
+    statLabel: "Messaging",
     color: "from-purple-600 to-indigo-600",
     bg: "bg-purple-50/80 border-purple-200/70"
   }
@@ -136,57 +136,57 @@ const whatYouGetCards = [
 const ecommerceServicesIncluded = [
   {
     title: "E-Commerce SEO",
-    subtitle: "Google Product Rankings",
-    desc: "Rank your healthcare products and treatment categories on the 1st page of Google for high-intent transactional buyer searches.",
+    subtitle: "Technical & Catalog SEO",
+    desc: "Technical SEO and structured data for product and category pages, with no guaranteed position claims.",
     icon: Search,
     color: "text-blue-600 bg-blue-50 border-blue-200/70",
     pill: "Organic Search",
-    points: ["Category & product page SEO", "E-commerce schema structured data", "High-DA shopping authority backlinks"]
+    points: ["Category & product page SEO", "E-commerce schema structured data", "Crawl & index health"]
   },
   {
-    title: "Performance Marketing Ads",
-    subtitle: "Paid Acquisition",
-    desc: "Drive immediate online orders through data-driven Google Shopping, Performance Max, and Meta catalog ads.",
+    title: "Product Campaign Setup",
+    subtitle: "Policy-Compliant Campaigns",
+    desc: "Google Shopping, Performance Max, and Meta catalog campaigns configured with accurate product data and clear policy review.",
     icon: Zap,
     color: "text-amber-600 bg-amber-50 border-amber-200/70",
-    pill: "Instant Sales",
-    points: ["Google Shopping & PMax campaigns", "Meta dynamic catalog ads", "Direct ROAS bidding optimization"]
+    pill: "Campaign Setup",
+    points: ["Google Shopping feed setup", "Meta catalog configuration", "Transparent budget reporting"]
   },
   {
     title: "Marketplace Management",
     subtitle: "Amazon & Flipkart",
-    desc: "Complete management of your listings, A+ brand stories, and sponsored product ads across Amazon, Flipkart & 1mg.",
+    desc: "Management of your listings, A+ brand stories, and marketplace catalog accuracy across Amazon and Flipkart.",
     icon: Store,
     color: "text-emerald-600 bg-emerald-50 border-emerald-200/70",
     pill: "Marketplaces",
-    points: ["Amazon Seller Central management", "A+ content & brand store design", "Buy Box & pricing optimization"]
+    points: ["Amazon Seller Central management", "A+ content & brand store design", "Catalog and pricing accuracy"]
   },
   {
-    title: "Conversion Rate Optimization (CRO)",
-    subtitle: "Store UX Optimization",
-    desc: "Transform your Shopify or WooCommerce store layout to eliminate checkout drop-offs and maximize average order value.",
+    title: "Storefront UX",
+    subtitle: "Store Usability",
+    desc: "Improve your Shopify or WooCommerce store layout for clear navigation, readable pages, and a smoother checkout.",
     icon: Layout,
     color: "text-indigo-600 bg-indigo-50 border-indigo-200/70",
-    pill: "Frictionless UX",
-    points: ["Mobile checkout speed tuning", "1-click UPI & COD trust integration", "Upsell & cross-sell bundling"]
+    pill: "Clear UX",
+    points: ["Mobile checkout speed tuning", "UPI & COD payment integration", "Accessible page structure"]
   },
   {
-    title: "Retention Marketing",
-    subtitle: "Repeat Purchases",
-    desc: "Automate email flows, SMS updates, and WhatsApp replenishment reminders to boost customer lifetime value (LTV).",
+    title: "Customer Communication",
+    subtitle: "Transactional Messaging",
+    desc: "Set up email, SMS, and WhatsApp updates for orders and shipping, with clear consent and opt-out controls.",
     icon: RefreshCw,
     color: "text-purple-600 bg-purple-50 border-purple-200/70",
-    pill: "High LTV",
-    points: ["Abandoned cart WhatsApp recovery", "Automated refill reminders", "Loyalty discounts & VIP campaigns"]
+    pill: "Consent-Based",
+    points: ["Order & shipping updates", "Consent and opt-out management", "Privacy notice integration"]
   },
   {
     title: "Product Listing Optimization",
-    subtitle: "High-Converting Content",
-    desc: "Craft persuasive product copy, medical compliance disclaimers, clear dosage guides, and crisp lifestyle product imagery.",
+    subtitle: "Accurate Product Content",
+    desc: "Clear product copy, accurate specifications, usage information, and clean product imagery.",
     icon: Package,
     color: "text-rose-600 bg-rose-50 border-rose-200/70",
     pill: "Product Pages",
-    points: ["Empathetic clinical benefit copy", "High-res infographic galleries", "Trust seals & compliance badges"]
+    points: ["Accurate specification copy", "High-resolution image galleries", "Clear policy and returns information"]
   }
 ];
 
@@ -196,17 +196,17 @@ const growthFrameworkSteps = [
     stepNum: 1,
     name: "Audit",
     time: "Days 1–3",
-    title: "Store UX, Speed & Competitor Audit",
+    title: "Store UX & Speed Review",
     stage: "Store Diagnostic",
     timeline: "Days 1–3",
     icon: Search,
-    deliverable: "UX, Speed & Competitor Pricing Diagnostic",
+    deliverable: "UX, Speed & Catalog Diagnostic",
     badgeBg: "bg-blue-50 text-blue-600 border-blue-200",
     boxBg: "bg-blue-50/70 border-blue-200/90",
     points: [
-      "In-depth checkout funnel drop-off analysis",
-      "Core Web Vitals & mobile page load optimization audit",
-      "Competitor pricing and marketplace catalog benchmarking"
+      "Review of the checkout flow and navigation",
+      "Core Web Vitals & mobile page load audit",
+      "Catalog structure and marketplace listing review"
     ]
   },
   {
@@ -214,229 +214,193 @@ const growthFrameworkSteps = [
     stepNum: 2,
     name: "SEO & Pages",
     time: "Days 4–7",
-    title: "Product Listing & Category SEO Tuning",
+    title: "Product Listing & Category SEO",
     stage: "Catalog Optimization",
     timeline: "Days 4–7",
     icon: Package,
-    deliverable: "High-Converting Product Pages & Schema Markup",
+    deliverable: "Accurate Product Pages & Schema Markup",
     badgeBg: "bg-purple-50 text-purple-600 border-purple-200",
     boxBg: "bg-purple-50/70 border-purple-200/90",
     points: [
-      "Transactional long-tail keywords for product titles and tags",
-      "High-converting clinical benefit copy and usage guides",
-      "Rich product structured data schema (Price, Stock, Reviews)"
+      "Clear keyword-informed product titles and tags",
+      "Accurate descriptions and usage information",
+      "Product structured data schema (price, availability)"
     ]
   },
   {
     phase: "03",
     stepNum: 3,
-    name: "Shopping Ads",
+    name: "Campaigns",
     time: "Weeks 2–3",
-    title: "Google Shopping & Meta Catalog Ads",
-    stage: "Paid Acquisition",
+    title: "Google Shopping & Meta Catalog Setup",
+    stage: "Campaign Setup",
     timeline: "Weeks 2–3",
     icon: Zap,
-    deliverable: "Google Shopping Feed & Meta Dynamic Catalog Ads",
+    deliverable: "Google Shopping Feed & Meta Catalog Configuration",
     badgeBg: "bg-emerald-50 text-emerald-600 border-emerald-200",
     boxBg: "bg-emerald-50/70 border-emerald-200/90",
     points: [
-      "Targeted Google Shopping and Performance Max campaigns",
-      "Meta Dynamic Product Ads (DPA) targeting verified buyers",
-      "Strict negative keyword lists to preserve ad spend profitability"
+      "Google Shopping and Performance Max configuration",
+      "Meta dynamic product catalog setup",
+      "Negative keyword lists to keep campaigns relevant"
     ]
   },
   {
     phase: "04",
     stepNum: 4,
-    name: "CRO Checkout",
+    name: "Checkout",
     time: "Weeks 3–4",
-    title: "Conversion Rate Optimization (CRO)",
-    stage: "Frictionless Checkout",
+    title: "Checkout Usability",
+    stage: "Storefront Usability",
     timeline: "Weeks 3–4",
     icon: Layout,
-    deliverable: "Sub-Second 1-Page Checkout with Instant UPI",
+    deliverable: "Streamlined Checkout with UPI & Cards",
     badgeBg: "bg-amber-50 text-amber-600 border-amber-200",
     boxBg: "bg-amber-50/70 border-amber-200/90",
     points: [
-      "Streamlined single-page checkout with express UPI & Cards",
-      "Strategic trust badges, secure payment seals & urgency triggers",
-      "Mobile-first micro-copy to eliminate purchase hesitation"
+      "Streamlined checkout with UPI & cards",
+      "Clear security and payment information",
+      "Mobile-first, plain-language micro-copy"
     ]
   },
   {
     phase: "05",
     stepNum: 5,
-    name: "Recovery",
+    name: "Messaging",
     time: "Ongoing",
-    title: "Cart Abandonment & Refill Automation",
-    stage: "Customer Retention",
+    title: "Order Communication Setup",
+    stage: "Customer Communication",
     timeline: "Ongoing",
     icon: RefreshCw,
-    deliverable: "Automated WhatsApp & Email Cart Recovery System",
+    deliverable: "Consent-Based Order Update Messaging",
     badgeBg: "bg-rose-50 text-rose-600 border-rose-200",
     boxBg: "bg-rose-50/70 border-rose-200/90",
     points: [
-      "Instant WhatsApp checkout recovery within 15 minutes of drop-off",
-      "Automated replenishment reminders for consumable healthcare products",
-      "VIP customer loyalty discounts and cross-sell recommendations"
+      "Order confirmation and shipping updates",
+      "Consent and opt-out controls for every channel",
+      "Re-order reminders for non-regulated consumable products"
     ]
   },
   {
     phase: "06",
     stepNum: 6,
-    name: "Scaling",
+    name: "Reporting",
     time: "Ongoing",
-    title: "Revenue Scaling & Profit Margin Telemetry",
-    stage: "Scaling & ROAS",
-    timeline: "Ongoing Growth",
+    title: "Storefront Analytics & Reporting",
+    stage: "Review & Reporting",
+    timeline: "Ongoing",
     icon: TrendingUp,
-    deliverable: "Full GA4 E-Commerce Telemetry & Scaled ROAS",
+    deliverable: "Transparent GA4 E-Commerce Reporting",
     badgeBg: "bg-cyan-50 text-cyan-600 border-cyan-200",
     boxBg: "bg-cyan-50/70 border-cyan-200/90",
     points: [
-      "End-to-end GA4 e-commerce revenue and AOV telemetry",
-      "Dynamic ad budget scaling on top-performing product SKU sets",
-      "Continuous blended customer acquisition cost (CAC) reduction"
+      "Consent-aware GA4 e-commerce reporting",
+      "Regular catalog and listing accuracy review",
+      "Clear monthly summary of work delivered"
     ]
   }
 ];
 
 const whyChooseCodigix = [
   {
-    title: "Revenue-Focused Approach",
-    desc: "We prioritize actual store sales, order volume, and net revenue growth over vanity pageviews.",
+    title: "Engineering-Led Approach",
+    desc: "We prioritize dependable storefront engineering, accurate catalogs, and clear structure over vanity metrics.",
     icon: DollarSign
   },
   {
-    title: "Conversion-First Strategy",
-    desc: "We optimize every touchpoint of the shopping experience — from the first ad impression to 1-click checkout.",
+    title: "Usability-First Strategy",
+    desc: "We look at every touchpoint of the shopping experience, from the product page to checkout.",
     icon: Target
   },
   {
-    title: "Data-Driven Execution",
-    desc: "Every rupee is tracked against exact Customer Acquisition Cost (CAC) and Return On Ad Spend (ROAS).",
+    title: "Transparent Execution",
+    desc: "Spend, delivery, and work completed are reported clearly with consent-aware tracking.",
     icon: BarChart3
   },
   {
-    title: "Local & National Expertise",
-    desc: "Scale healthcare and wellness product sales locally in Pune/PCMC and expand seamlessly across pan-India.",
+    title: "Local & National Experience",
+    desc: "Support for retail businesses in Pune/PCMC and for stores that serve customers across India.",
     icon: Globe
   },
   {
-    title: "Full-Funnel Management",
-    desc: "Complete ownership: Store SEO, Shopping Ads, Marketplace channels, Cart recovery, and Customer loyalty.",
+    title: "Separation from Clinical Promotion",
+    desc: "Retail commerce is kept separate from clinical promotion. Healthcare services and regulated products are outside this service.",
     icon: ShieldCheck
   }
 ];
 
 const clientShowcase = [
   {
-    name: "Dr. Sheetal's Glow Clinic",
-    tag: "Skin & Dermatology",
-    location: "Kothrud, Pune",
-    duration: "6+ Months Active",
-    services: "Social Media Marketing, SEO & GMB, Meta Lead Ads, Web Development",
-    result: "+380% Inquiries",
-    highlight: "Rank #1: Skin Clinic PCMC"
-  },
-  {
-    name: "Regain Hair & Skin Clinic",
-    tag: "Trichology & Hair",
-    location: "Wakad, Pune",
-    duration: "1 Year Active",
-    services: "Social Media Marketing, SEO, Google Business Profile (GMB), Ad Funnels",
-    result: "650+ Inquiries/Mo",
-    highlight: "4.9x Ad ROAS"
-  },
-  {
-    name: "Dr. Prasad Kasbekar Clinic",
-    tag: "Oncology Specialist",
-    location: "Pune & PCMC",
-    duration: "1 Year Active",
-    services: "Doctor Authority Branding, High-Intent Search Ads, Video Content",
-    result: "180+ Consultations",
-    highlight: "High-Intent Patients"
-  },
-  {
-    name: "Canopy Dental Care",
-    tag: "Dental & Aligners",
-    location: "Baner, Pune",
-    duration: "1 Year Active",
-    services: "Local Geo-Targeted SEO, WhatsApp Funnels, Website Development",
-    result: "320+ Patients",
-    highlight: "Rank #1: Invisalign Wakad"
-  },
-  {
-    name: "CorpLegal Solutions & Co",
-    tag: "Corporate Law & B2B",
-    location: "Bavdhan, Pune",
-    duration: "1 Year Active",
-    services: "Web Development, Social Media Content Writing, B2B Search",
-    result: "#1 Organic Authority",
-    highlight: "Rank #1: Corporate Law Pune"
+    name: "Precision Tech Engineering",
+    tag: "Manufacturing & Industrial (non-medical)",
+    location: "Bhosari MIDC, Pune",
+    duration: "Ongoing engagement",
+    services: "Catalog pages, enquiry workflows, technical SEO",
+    result: "Catalog & Enquiry Workflows",
+    highlight: "Product pages & technical SEO"
   },
   {
     name: "Bakul Hospitality & Catering",
-    tag: "Hospitality & Events",
+    tag: "Hospitality & Events (non-medical)",
     location: "Pune Metro",
-    duration: "1 Year Active",
-    services: "Social Media Marketing, SEO, Local Maps Optimization, Web Pages",
-    result: "3.4x Direct Calls",
-    highlight: "210+ Verified Reviews"
+    duration: "Ongoing engagement",
+    services: "Web pages, accurate local listings",
+    result: "Responsive Website Refresh",
+    highlight: "Clear service pages"
   },
   {
     name: "Sanskruti Agro Tourism",
-    tag: "Agro Tourism & Leisure",
+    tag: "Agro Tourism & Leisure (non-medical)",
     location: "Chakan & Outskirts",
-    duration: "4 Months Active",
-    services: "Social Media Marketing, Meta Ad Campaigns, Local SEO Optimization",
-    result: "+300% Footfall",
-    highlight: "Rank #1: Agro Resort Pune"
+    duration: "Ongoing engagement",
+    services: "Website, accurate local listings",
+    result: "Responsive Website & Listings",
+    highlight: "Accurate listing details"
   }
 ];
 
 const toolsList = [
-  "Shopify Plus & WooCommerce",
-  "Google Merchant Center & PMax",
-  "Meta Catalog Manager & DPA",
-  "Amazon Seller Central & Flipkart Ads",
-  "Klaviyo, Brevo & WhatsApp API",
+  "Shopify & WooCommerce",
+  "Google Merchant Center",
+  "Meta Catalog Manager",
+  "Amazon Seller Central & Flipkart Seller Hub",
+  "Brevo & WhatsApp Business Platform",
   "Google Analytics 4 E-Commerce Tracking"
 ];
 
 const kpiList = [
-  "Conversion Rate (CVR) — Store visitors to buyers",
-  "Return On Ad Spend (ROAS) — Multiple on ad budget",
-  "Customer Acquisition Cost (CAC) — Cost per paying customer",
-  "Average Order Value (AOV) — Revenue per transaction",
-  "Cart Abandonment Recovery Rate — Recovered checkout revenue",
-  "Customer Lifetime Value (CLV) — Long-term repeat purchases"
+  "Page Speed — Core Web Vitals focused",
+  "Catalog Accuracy — Titles, attributes, and pricing",
+  "Structured Data — Product schema validity",
+  "Accessibility — WCAG 2.1 AA aligned",
+  "Consent & Privacy — DPDP-aligned forms",
+  "Order Communication — Delivery and opt-out status"
 ];
 
 const faqs = [
   {
-    q: "What is E-Commerce marketing?",
-    a: "E-Commerce marketing is the practice of driving targeted awareness, high-intent traffic, and online sales to an e-commerce website or marketplace store (Amazon, Flipkart). It combines SEO, Google Shopping ads, social catalog ads, conversion optimization, and customer retention."
+    q: "What are Commercial & E-Commerce Solutions?",
+    a: "They cover catalog architecture, storefront performance, and digital workflows for commercial and non-regulated retail businesses, including stores on Shopify, WooCommerce, Amazon, and Flipkart."
   },
   {
-    q: "How do you increase product sales on Shopify & WooCommerce?",
-    a: "We deploy a comprehensive 3-pillar strategy: (1) Drive high-intent buyers via Google Shopping and Meta Ads, (2) Optimize product pages with high-converting copy, fast loading speed, and trust seals, and (3) Recover abandoned carts with automated WhatsApp and email reminders."
+    q: "Is this service for healthcare organizations?",
+    a: "No. This service is for commercial and non-regulated retail businesses. Healthcare organizations (NMC, NDC, AYUSH) are served through our separate website, content, and search services, and retail commerce is kept separate from clinical promotion."
   },
   {
-    q: "Why do I need E-Commerce SEO alongside paid ads?",
-    a: "While paid ads generate immediate sales, E-Commerce SEO builds a permanent, compounding stream of organic buyer traffic with zero cost-per-click. Combining both ensures immediate revenue while steadily lowering your blended customer acquisition cost (CAC)."
+    q: "Why combine E-Commerce SEO with paid campaigns?",
+    a: "E-Commerce SEO improves site structure and product data over time, while paid campaigns can share product information in the meantime. We do not guarantee rankings or sales outcomes for either."
   },
   {
-    q: "How long does it take to see results in E-Commerce marketing?",
-    a: "Paid advertising campaigns (Google Shopping & Meta Ads) start generating sales within 24 to 48 hours of launch. E-Commerce SEO and organic product category rankings typically show substantial compounding traffic within 2 to 4 months."
+    q: "How are results reported?",
+    a: "We report on work delivered and technical health: storefront speed, accessibility, catalog accuracy, structured data validity, and campaign spend and delivery. We do not promise specific revenue or conversion outcomes."
   },
   {
     q: "What makes Codigix different from other E-Commerce agencies?",
-    a: "Unlike generic agencies that stop at driving traffic, we build end-to-end e-commerce growth systems — specializing in healthcare and wellness products, compliance policies, marketplace optimization, checkout CRO, and repeat-purchase retention."
+    a: "We focus on dependable storefront engineering, accurate catalogs, consent-aware tracking, and clear platform-policy review, with data handled in line with the Information Technology Act, 2000 and the Digital Personal Data Protection Act, 2023 (and 2025 Rules)."
   },
   {
     q: "Do you handle marketplace management on Amazon and Flipkart?",
-    a: "Yes! We manage complete marketplace operations: listing creation, A+ content design, brand store setup, Amazon Sponsored Products PPC, inventory health monitoring, and review management."
+    a: "Yes. We manage listing creation, A+ content design, brand store setup, and catalog accuracy, with campaign setup subject to platform policies. We do not create or incentivize reviews."
   }
 ];
 
@@ -510,7 +474,7 @@ export default function EcommerceMarketingPage() {
               </div>
               <div>
                 <p className="text-[10px] text-slate-500 font-bold uppercase tracking-wider leading-none mb-1 text-left">Marketplace</p>
-                <p className="text-sm text-[#1a1053] font-extrabold leading-none text-left">E-Com Strategy</p>
+                <p className="text-sm text-[#1a1053] font-extrabold leading-none text-left">Retail Commerce</p>
               </div>
             </motion.div>
 
@@ -525,7 +489,7 @@ export default function EcommerceMarketingPage() {
               </div>
               <div>
                 <p className="text-[10px] text-slate-500 font-bold uppercase tracking-wider leading-none mb-1 text-left">Visibility</p>
-                <p className="text-sm text-[#1a1053] font-extrabold leading-none text-left">Max Product Reach</p>
+                <p className="text-sm text-[#1a1053] font-extrabold leading-none text-left">Accurate Listings</p>
               </div>
             </motion.div>
 
@@ -539,8 +503,8 @@ export default function EcommerceMarketingPage() {
                 <TrendingUp size={16} />
               </div>
               <div>
-                <p className="text-[10px] text-slate-500 font-bold uppercase tracking-wider leading-none mb-1 text-left">Returns</p>
-                <p className="text-sm text-[#1a1053] font-extrabold leading-none text-left">5.2x Average ROAS</p>
+                <p className="text-[10px] text-slate-500 font-bold uppercase tracking-wider leading-none mb-1 text-left">Performance</p>
+                <p className="text-sm text-[#1a1053] font-extrabold leading-none text-left">Core Web Vitals Focused</p>
               </div>
             </motion.div>
 
@@ -554,8 +518,8 @@ export default function EcommerceMarketingPage() {
                 <RefreshCw size={16} />
               </div>
               <div>
-                <p className="text-[10px] text-slate-500 font-bold uppercase tracking-wider leading-none mb-1 text-left">Retention</p>
-                <p className="text-sm text-[#1a1053] font-extrabold leading-none text-left">Loyal Customers</p>
+                <p className="text-[10px] text-slate-500 font-bold uppercase tracking-wider leading-none mb-1 text-left">Messaging</p>
+                <p className="text-sm text-[#1a1053] font-extrabold leading-none text-left">Consent-Based</p>
               </div>
             </motion.div>
           </div>
@@ -567,21 +531,21 @@ export default function EcommerceMarketingPage() {
               <span className="relative inline-flex rounded-full h-2 w-2 bg-amber-500"></span>
             </span>
             <span className="text-xs sm:text-sm font-semibold text-[#1a1053] tracking-wide">
-              E-Commerce Marketing
+              Commercial & E-Commerce Solutions
             </span>
           </div>
 
           {/* Main Title */}
           <h1 className="text-4xl sm:text-5xl lg:text-[64px] font-extrabold text-[#1a1053] tracking-tight leading-[1.1] mb-6 max-w-4xl relative z-20">
-            Sell Healthcare Products Online <br className="hidden lg:block" /> with Confidence.
+            Storefront Engineering <br className="hidden lg:block" /> for Retail Businesses.
             <span className="block text-transparent bg-clip-text bg-gradient-to-r from-blue-600 via-indigo-600 to-[#e20b27] mt-3">
-              More Sales. Loyal Customers.
+              Accurate Catalogs. Reliable Storefronts.
             </span>
           </h1>
 
           {/* Hero Subtitle */}
           <p className="text-base sm:text-lg lg:text-xl text-slate-600 font-light leading-relaxed max-w-2xl mx-auto mb-10 relative z-20">
-            Whether you’re selling medicines, supplements, medical equipment, or wellness products — Codigix Infotech’s E-Commerce Marketing services help you reach the right buyers online, drive more sales, and build lasting customer loyalty.
+            Codigix Infotech provides catalog architecture, storefront performance, and digital workflows tailored for commercial and non-regulated retail businesses. Retail commerce is kept separate from clinical promotion.
           </p>
 
           {/* CTA Buttons */}
@@ -590,14 +554,14 @@ export default function EcommerceMarketingPage() {
               href="/contact"
               className="inline-flex items-center justify-center gap-3 px-8 py-4 bg-[#1a1053] hover:bg-[#281878] text-white rounded-full font-semibold text-base transition-all shadow-[0_10px_25px_-5px_rgba(26,16,83,0.25)] hover:shadow-[0_15px_30px_-5px_rgba(26,16,83,0.35)] transform hover:-translate-y-0.5"
             >
-              <span>Book Free E-Com Strategy Call</span>
+              <span>Schedule a Discovery Call</span>
               <ArrowRight size={18} />
             </Link>
             <a
               href="#framework"
               className="inline-flex items-center justify-center gap-2 px-8 py-4 bg-white border border-slate-200 hover:bg-slate-50 text-[#1a1053] rounded-full font-semibold text-base shadow-xs transition-all"
             >
-              <span>Explore 7-Step Framework</span>
+              <span>Explore Our 6-Step Process</span>
               <ChevronDown size={18} />
             </a>
           </div>
@@ -620,11 +584,11 @@ export default function EcommerceMarketingPage() {
             <h2 className="text-3xl sm:text-4xl lg:text-5xl font-extrabold text-[#1a1053] tracking-tight leading-[1.15]">
               Comprehensive <br className="hidden sm:block" />
               <span className="text-transparent bg-clip-text bg-gradient-to-r from-blue-600 via-indigo-600 to-[#e20b27]">
-                E-Commerce Scaling Services
+                E-Commerce Solutions
               </span>
             </h2>
             <p className="text-slate-600 text-base sm:text-lg font-light leading-relaxed max-w-2xl mx-auto">
-              End-to-end e-commerce growth strategies engineered to scale product visibility, sales volume, and customer retention across web and marketplaces.
+              End-to-end catalog, storefront, and marketplace services built around accuracy, performance, and clear customer communication.
             </p>
           </div>
 
@@ -675,7 +639,7 @@ export default function EcommerceMarketingPage() {
 
 
         {/* ========================================================================= */}
-        {/* SECTION 3: NOT JUST MARKETING — A COMPLETE E-COMMERCE GROWTH SYSTEM */}
+        {/* SECTION 3: A COMPLETE E-COMMERCE SYSTEM */}
         {/* ========================================================================= */}
         <section className="py-16 sm:py-20 max-w-7xl m-auto">
           <div className="rounded-3xl bg-gradient-to-br from-white via-blue-50/30 to-indigo-50/20 border border-blue-200/60 shadow-xl p-8 sm:p-12 lg:p-16 relative overflow-hidden">
@@ -687,17 +651,17 @@ export default function EcommerceMarketingPage() {
               <div className="lg:col-span-5 space-y-4">
                 <div className="rounded-2xl bg-white border border-slate-200/90 shadow-lg p-6 space-y-4">
                   <div className="flex items-center justify-between border-b border-slate-100 pb-3">
-                    <span className="text-xs font-bold text-slate-600 uppercase">E-Com Growth System</span>
-                    <span className="text-xs font-bold text-[#e20b27]">High ROAS</span>
+                    <span className="text-xs font-bold text-slate-600 uppercase">E-Commerce System</span>
+                    <span className="text-xs font-bold text-[#e20b27]">Accurate Data</span>
                   </div>
 
                   <div className="space-y-3">
                     <div className="p-3 rounded-xl bg-slate-50 border border-slate-100 flex items-center justify-between">
                       <div className="flex items-center gap-2.5">
                         <span className="w-6 h-6 rounded-full bg-blue-600 text-white text-xs font-bold flex items-center justify-center">1</span>
-                        <span className="text-xs font-bold text-slate-800">High-Converting Product Funnels</span>
+                        <span className="text-xs font-bold text-slate-800">Clear Product Pages</span>
                       </div>
-                      <span className="text-[11px] text-blue-600 font-semibold">Intent Ads</span>
+                      <span className="text-[11px] text-blue-600 font-semibold">Structured</span>
                     </div>
 
                     <div className="flex justify-center text-slate-300">
@@ -707,9 +671,9 @@ export default function EcommerceMarketingPage() {
                     <div className="p-3 rounded-xl bg-slate-50 border border-slate-100 flex items-center justify-between">
                       <div className="flex items-center gap-2.5">
                         <span className="w-6 h-6 rounded-full bg-indigo-600 text-white text-xs font-bold flex items-center justify-center">2</span>
-                        <span className="text-xs font-bold text-slate-800">Optimized Shopping Experience</span>
+                        <span className="text-xs font-bold text-slate-800">Accessible Shopping Experience</span>
                       </div>
-                      <span className="text-[11px] text-indigo-600 font-semibold">1-Click Buy</span>
+                      <span className="text-[11px] text-indigo-600 font-semibold">Fast Checkout</span>
                     </div>
 
                     <div className="flex justify-center text-slate-300">
@@ -719,9 +683,9 @@ export default function EcommerceMarketingPage() {
                     <div className="p-3 rounded-xl bg-emerald-50 border border-emerald-200 flex items-center justify-between">
                       <div className="flex items-center gap-2.5">
                         <span className="w-6 h-6 rounded-full bg-emerald-600 text-white text-xs font-bold flex items-center justify-center">3</span>
-                        <span className="text-xs font-bold text-emerald-900">Repeat Orders &amp; High LTV</span>
+                        <span className="text-xs font-bold text-emerald-900">Order Updates &amp; Consent Controls</span>
                       </div>
-                      <span className="text-[11px] text-emerald-700 font-bold">5.4x ROAS</span>
+                      <span className="text-[11px] text-emerald-700 font-bold">Privacy-Aware</span>
                     </div>
                   </div>
                 </div>
@@ -730,20 +694,20 @@ export default function EcommerceMarketingPage() {
               {/* Right Column: Copy */}
               <div className="lg:col-span-7 space-y-6">
                 <span className="inline-block px-3.5 py-1 rounded-full bg-blue-100 border border-blue-200 text-blue-800 text-xs font-bold uppercase tracking-wider">
-                  Complete Growth System
+                  Complete Commerce System
                 </span>
 
                 <h2 className="text-3xl sm:text-4xl font-extrabold text-[#1a1053] tracking-tight">
-                  Not Just Marketing — A Complete E-Commerce Growth System
+                  Not Just Marketing — A Complete E-Commerce System
                 </h2>
 
                 <p className="text-slate-600 text-base sm:text-lg leading-relaxed">
-                  Most agencies focus only on traffic. <br className="hidden sm:inline" />
-                  <strong className="text-[#1a1053] font-bold">We focus on what matters most: sales, revenue, and customer retention.</strong>
+                  Many stores focus only on traffic. <br className="hidden sm:inline" />
+                  <strong className="text-[#1a1053] font-bold">We focus on catalog accuracy, storefront performance, and clear customer communication.</strong>
                 </p>
 
                 <div className="p-4 rounded-xl bg-amber-50 border-l-4 border-amber-500 text-amber-950 text-sm font-semibold">
-                  📦 More orders, higher revenue, and repeat customer lifetime value.
+                  A well-structured store is easier for customers to use and for your team to maintain.
                 </div>
 
                 <div className="space-y-3 pt-2">
@@ -751,19 +715,19 @@ export default function EcommerceMarketingPage() {
                   <ul className="grid grid-cols-1 sm:grid-cols-2 gap-3">
                     <li className="flex items-center gap-2.5 text-sm text-slate-700 font-medium">
                       <CheckCircle2 className="w-4 h-4 text-emerald-600 flex-shrink-0" />
-                      <span>High-converting product funnels</span>
+                      <span>Clear product page structure</span>
                     </li>
                     <li className="flex items-center gap-2.5 text-sm text-slate-700 font-medium">
                       <CheckCircle2 className="w-4 h-4 text-emerald-600 flex-shrink-0" />
-                      <span>Performance-driven ad campaigns</span>
+                      <span>Policy-compliant product campaigns</span>
                     </li>
                     <li className="flex items-center gap-2.5 text-sm text-slate-700 font-medium">
                       <CheckCircle2 className="w-4 h-4 text-emerald-600 flex-shrink-0" />
-                      <span>Optimized shopping checkout UX</span>
+                      <span>Accessible checkout experience</span>
                     </li>
                     <li className="flex items-center gap-2.5 text-sm text-slate-700 font-medium">
                       <CheckCircle2 className="w-4 h-4 text-emerald-600 flex-shrink-0" />
-                      <span>Multi-channel marketplace scaling</span>
+                      <span>Multi-channel marketplace management</span>
                     </li>
                   </ul>
                 </div>
@@ -780,13 +744,13 @@ export default function EcommerceMarketingPage() {
         <section className="py-16 sm:py-24 max-w-7xl m-auto">
           <div className="text-center max-w-3xl mx-auto space-y-4 mb-16">
             <span className="inline-block px-3.5 py-1 rounded-full bg-emerald-50 border border-emerald-200 text-emerald-700 text-xs font-bold uppercase tracking-wider">
-              Guaranteed Value
+              Clear Value
             </span>
             <h2 className="text-3xl sm:text-4xl font-extrabold text-[#1a1053] tracking-tight">
-              What You Get With Our E-Commerce Marketing
+              What You Get With Our E-Commerce Services
             </h2>
             <p className="text-slate-600 text-base sm:text-lg">
-              Predictable, scalable, and fully transparent e-commerce marketing systems engineered to maximize your online product sales.
+              Clear, transparent e-commerce systems built around accuracy, usability, and responsible communication.
             </p>
           </div>
 
@@ -840,10 +804,10 @@ export default function EcommerceMarketingPage() {
               Comprehensive Service Suite
             </span>
             <h2 className="text-3xl sm:text-4xl font-extrabold text-[#1a1053] tracking-tight">
-              What Is Included In Our Healthcare E-Commerce Services
+              What Is Included In Our E-Commerce Services
             </h2>
             <p className="text-slate-600 text-base sm:text-lg">
-              Structured, compliant, and results-driven offerings designed to dominate search rankings and scale sales.
+              Structured, policy-aware offerings designed around catalog accuracy, technical SEO, and storefront performance.
             </p>
           </div>
 
@@ -896,13 +860,13 @@ export default function EcommerceMarketingPage() {
         <section id="framework" className="py-16 sm:py-24 max-w-7xl m-auto">
           <div className="text-center max-w-3xl mx-auto space-y-4 mb-12">
             <span className="inline-block px-3.5 py-1 rounded-full bg-blue-50 border border-blue-200 text-blue-700 text-xs font-bold uppercase tracking-wider">
-              Proven Framework
+              Our Framework
             </span>
             <h2 className="text-3xl sm:text-4xl font-extrabold text-[#1a1053] tracking-tight">
-              Our 6-Step E-Commerce Growth Roadmap
+              Our 6-Step E-Commerce Process
             </h2>
             <p className="text-slate-600 text-base sm:text-lg">
-              A synchronized roadmap that systematically scales product visibility, streamlines checkout, and maximizes ROAS.
+              A structured roadmap that reviews the store, organizes the catalog, sets up campaigns, streamlines checkout, and reports clearly.
             </p>
           </div>
 
@@ -1116,7 +1080,7 @@ export default function EcommerceMarketingPage() {
               Why Choose Codigix Infotech
             </h2>
             <p className="text-slate-600 text-base sm:text-lg">
-              We combine deep healthcare product category understanding with cutting-edge advertising algorithms and checkout optimization.
+              We combine retail catalog understanding with careful campaign setup and checkout usability work.
             </p>
           </div>
 
@@ -1147,17 +1111,17 @@ export default function EcommerceMarketingPage() {
             <div className="rounded-2xl bg-gradient-to-br from-[#1a1053] to-slate-900 text-white p-6 sm:p-7 shadow-xl flex flex-col justify-between">
               <div className="space-y-2">
                 <span className="text-xs font-bold text-amber-400 uppercase tracking-wider flex items-center gap-1.5">
-                  <Sparkles className="w-3.5 h-3.5" /> Free E-Com Audit Call
+                  <Sparkles className="w-3.5 h-3.5" /> E-Commerce Discovery Call
                 </span>
-                <h3 className="text-lg font-bold text-white">Need a Store ROAS Review?</h3>
-                <p className="text-xs text-slate-300">We analyze your product listings, checkout UX, and projected ROAS within 24 hours.</p>
+                <h3 className="text-lg font-bold text-white">Need a Store Review?</h3>
+                <p className="text-xs text-slate-300">We review your product listings, checkout experience, and catalog structure and suggest next steps.</p>
               </div>
               <div className="pt-4">
                 <Link
                   href="/contact"
                   className="inline-flex items-center gap-2 text-xs font-bold px-4 py-2.5 rounded-lg bg-[#e20b27] hover:bg-red-700 text-white transition-colors"
                 >
-                  <span>Claim Free Audit</span>
+                  <span>Schedule a Discovery Call</span>
                   <ArrowRight className="w-4 h-4" />
                 </Link>
               </div>
@@ -1170,14 +1134,14 @@ export default function EcommerceMarketingPage() {
         {/* SECTION 8: CLIENT SUCCESS SHOWCASE (SAME AS SEO PAGE) */}
         {/* ========================================================================= */}
         <ClientShowcaseSection
-          badgeText="Verified E-Commerce & Retail Growth"
-          headingPrefix="Why D2C Brands & Retailers"
-          headingGradient="Partner With Codigix Infotech"
-          subtitle="Scaling online store revenue, reducing customer acquisition costs, and optimizing checkout funnels for high-converting sales."
-          strategicAdvantageTitle="The Codigix E-Commerce Advantage"
-          strategicAdvantageSubtitle="Performance ROAS optimization, Shopify & WooCommerce technical scaling, and retention funnels."
-          guaranteeTitle="100% Measurable Store ROI"
-          guaranteeQuote='"Engineered to reduce cart abandonment, scale high-ticket orders, and generate predictable sales revenue across online stores."'
+          badgeText="Selected Work by Regulatory Scope"
+          headingPrefix="Organizations Across Pune & PCMC"
+          headingGradient="Work With Codigix Infotech"
+          subtitle="Website architecture, factual service pages, and technical hygiene for healthcare organizations (NMC and NDC frameworks) and non-medical businesses, which sit outside NMC scope."
+          strategicAdvantageTitle="How We Build Stores"
+          strategicAdvantageSubtitle="Catalog architecture, storefront performance, and consent-aware tracking."
+          guaranteeTitle="Ethical Communication Commitment"
+          guaranteeQuote='"Retail commerce is kept separate from clinical promotion, and data is handled in line with the IT Act, 2000 and the DPDP Act, 2023."'
         />
 
 
@@ -1197,7 +1161,7 @@ export default function EcommerceMarketingPage() {
                 </div>
                 <div>
                   <h3 className="text-xl sm:text-2xl font-bold text-white">Tools &amp; Platforms We Use</h3>
-                  <p className="text-xs text-slate-300">Enterprise e-commerce and performance marketing stack</p>
+                  <p className="text-xs text-slate-300">E-commerce platforms and analytics stack</p>
                 </div>
               </div>
 
@@ -1221,7 +1185,7 @@ export default function EcommerceMarketingPage() {
                 </div>
                 <div>
                   <h3 className="text-xl sm:text-2xl font-bold text-white">KPIs We Track</h3>
-                  <p className="text-xs text-slate-300">Metrics that directly govern your store profitability</p>
+                  <p className="text-xs text-slate-300">Indicators we review on your store</p>
                 </div>
               </div>
 
@@ -1251,7 +1215,7 @@ export default function EcommerceMarketingPage() {
               FAQ : <span className="text-transparent bg-clip-text bg-gradient-to-r from-blue-600 via-indigo-600 to-[#e20b27]">Frequently Asked Questions</span>
             </h2>
             <p className="text-slate-600 text-sm sm:text-base">
-              Everything you need to know about our healthcare e-commerce SEO, Google Shopping, Amazon PPC, and checkout optimization.
+              Everything you need to know about our e-commerce SEO, catalog, marketplace, and storefront services.
             </p>
           </div>
 
@@ -1305,8 +1269,8 @@ export default function EcommerceMarketingPage() {
                 <ShoppingCart size={18} />
               </div>
               <div>
-                <h4 className="text-sm font-bold text-[#1a1053]">Need a custom healthcare store audit?</h4>
-                <p className="text-xs text-slate-600">Our e-commerce growth strategists will review your checkout funnel and outline a scaling plan.</p>
+                <h4 className="text-sm font-bold text-[#1a1053]">Need a custom store review?</h4>
+                <p className="text-xs text-slate-600">Our team will review your checkout flow and outline sensible improvements.</p>
               </div>
             </div>
             <Link
@@ -1314,7 +1278,7 @@ export default function EcommerceMarketingPage() {
               className="inline-flex items-center gap-2 py-2.5 px-5 rounded-xl bg-[#e20b27] hover:bg-red-700 text-white font-bold text-xs shrink-0 shadow-sm transition-colors"
             >
               <PhoneCall size={14} />
-              <span>Talk to E-Com Strategist</span>
+              <span>Talk to Our Team</span>
             </Link>
           </div>
         </section>

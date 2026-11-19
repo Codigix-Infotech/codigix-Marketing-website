@@ -14,7 +14,7 @@ import { pageMetadata } from "@/lib/page-seo";
 export async function generateMetadata() {
   const { seo } = await getSettings();
   return pageMetadata({
-    title: seo.default_title || "Healthcare Digital Marketing Agency | Codigix Infotech",
+    title: seo.default_title || "Digital Infrastructure & Ethical Healthcare Communication | Codigix Infotech",
     description: seo.default_description || "",
     path: "/",
   });

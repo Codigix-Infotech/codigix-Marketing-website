@@ -3,8 +3,8 @@ import { pageMetadata, serviceJsonLd } from '@/lib/page-seo';
 
 // The page itself is a client component, so its metadata and structured data live here.
 const PATH = '/web-design-development';
-const TITLE = 'Healthcare Website Design & Development Pune | Codigix';
-const DESCRIPTION = 'A website your patients can trust at first glance. Modern, mobile-responsive, sub-1.5s fast loading healthcare websites with seamless appointment booking.';
+const TITLE = 'Website Design & Development in Pune | Codigix';
+const DESCRIPTION = 'Responsive, accessible and security-conscious websites with clear privacy controls aligned with the IT Act, 2000 and the DPDP Act, 2023.';
 
 export const generateMetadata = () =>
   pageMetadata({ title: TITLE, description: DESCRIPTION, path: PATH, keywords: ['healthcare website design Pune', 'clinic website development', 'hospital website design PCMC'] });

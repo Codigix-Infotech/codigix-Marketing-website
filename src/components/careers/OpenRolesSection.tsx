@@ -31,7 +31,7 @@ const defaultRoles: JobSummary[] = [
     experience: '1–3 yrs',
     salary_range: '₹3.5L – ₹6L + Bonus',
     openings: 2,
-    summary: 'Lead on-page SEO, GMB 3-pack rankings, and high-DA link building for healthcare and business clients.',
+    summary: 'Lead on-page and technical SEO, structured data, and accurate business listing management for healthcare and business clients, without ranking manipulation.',
     created_at: new Date().toISOString(),
     updated_at: new Date().toISOString(),
   },
@@ -39,14 +39,14 @@ const defaultRoles: JobSummary[] = [
     id: 2,
     title: 'Performance Marketing & Google Ads Specialist',
     slug: 'performance-marketing-specialist',
-    department: 'Performance & Paid Ads',
+    department: 'Paid Digital Campaigns',
     location: 'Pune, Maharashtra',
     employment_type: 'Full-time',
     work_mode: 'Hybrid',
     experience: '2–4 yrs',
     salary_range: '₹5.5L – ₹9.5L + Bonus',
     openings: 2,
-    summary: 'Manage multi-lakh Google Ads & Meta campaign budgets with high-ROAS patient lead acquisition funnels.',
+    summary: 'Plan and manage policy-compliant Google Ads and Meta campaigns with clear, truthful messaging and transparent audience disclosures.',
     created_at: new Date().toISOString(),
     updated_at: new Date().toISOString(),
   },
@@ -61,7 +61,7 @@ const defaultRoles: JobSummary[] = [
     experience: '1–3 yrs',
     salary_range: '₹3.5L – ₹6L',
     openings: 1,
-    summary: 'Script, shoot, and edit scroll-stopping reels and YouTube shorts for clinics and doctor authority branding.',
+    summary: 'Script, shoot, and edit educational videos and social content for public-health awareness, with practitioner credential disclosures and AI labels where applicable.',
     created_at: new Date().toISOString(),
     updated_at: new Date().toISOString(),
   },
@@ -76,13 +76,13 @@ const defaultRoles: JobSummary[] = [
     experience: '1–4 yrs',
     salary_range: '₹4.5L – ₹7.5L',
     openings: 2,
-    summary: 'Craft high-E-E-A-T patient condition guides and doctor scripts that rank #1 on Google and inspire appointments.',
+    summary: 'Write accurate, source-referenced public-health education and institutional content, reviewed for clarity, credential disclosure and compliance before publication.',
     created_at: new Date().toISOString(),
     updated_at: new Date().toISOString(),
   },
   {
     id: 5,
-    title: 'UI/UX & Web Conversion Designer',
+    title: 'UI/UX & Web Designer',
     slug: 'ui-ux-conversion-designer',
     department: 'Design & Tech',
     location: 'Pune, Maharashtra',
@@ -91,36 +91,38 @@ const defaultRoles: JobSummary[] = [
     experience: '2–4 yrs',
     salary_range: '₹5L – ₹8.5L',
     openings: 1,
-    summary: 'Design high-converting healthcare web portals, appointment scheduling funnels, and modern Figma design systems.',
+    summary: 'Design accessible, privacy-aware web interfaces, department and service pages, and Figma design systems with minimal data collection.',
     created_at: new Date().toISOString(),
     updated_at: new Date().toISOString(),
   },
   {
     id: 6,
-    title: 'Healthcare Client Growth & Account Manager',
+    title: 'Healthcare Client Partnerships & Account Manager',
     slug: 'healthcare-client-growth-manager',
-    department: 'Client Strategy',
+    department: 'Client Partnerships',
     location: 'Pune, Maharashtra',
     employment_type: 'Full-time',
     work_mode: 'On-site',
     experience: '2–5 yrs',
     salary_range: '₹6L – ₹10L + Bonus',
     openings: 1,
-    summary: 'Serve as the strategic growth advisor for hospital directors and medical clinics, analyzing campaign ROI.',
+    summary: 'Serve as the day-to-day partner for hospital administrators and clinics, keeping engagements service-based and aligned with applicable communication guidelines.',
     created_at: new Date().toISOString(),
     updated_at: new Date().toISOString(),
   },
 ];
 
 const roleSkills: Record<string, string[]> = {
-  'SEO Executive & Local Search Specialist': ['Google Maps', 'Ahrefs', 'Technical SEO'],
-  'SEO Executive': ['Ahrefs', 'GMB Maps', 'Technical SEO'],
-  'Performance Marketing & Google Ads Specialist': ['Google Ads', 'Meta Ads', 'GA4 & ROAS'],
-  'Social Media & Short-Form Video Creator': ['Reels & Shorts', 'Premiere Pro', 'CapCut'],
-  'Social Media & Video Content Creator': ['Reels Production', 'CapCut', 'Scripting'],
-  'Medical Content Strategist & Copywriter': ['High-E-E-A-T', 'Doctor Scripts', 'AEO Search'],
-  'UI/UX & Web Conversion Designer': ['Figma', 'Next.js UX', 'Appointment CRO'],
-  'Healthcare Client Growth & Account Manager': ['Client Strategy', 'GA4 Insights', 'Growth Roadmaps'],
+  'SEO Executive & Local Search Specialist': ['Local Profiles', 'Ahrefs', 'Technical SEO'],
+  'SEO Executive': ['Ahrefs', 'Business Listings', 'Technical SEO'],
+  'Performance Marketing & Google Ads Specialist': ['Google Ads', 'Meta Ads', 'GA4 & Reporting'],
+  'Social Media & Short-Form Video Creator': ['Educational Video', 'Premiere Pro', 'CapCut'],
+  'Social Media & Video Content Creator': ['Video Production', 'CapCut', 'Scripting'],
+  'Medical Content Strategist & Copywriter': ['Source Referencing', 'Health Education', 'AEO Search'],
+  'UI/UX & Web Designer': ['Figma', 'Next.js UX', 'Accessibility'],
+  'UI/UX & Web Conversion Designer': ['Figma', 'Next.js UX', 'Accessibility'],
+  'Healthcare Client Partnerships & Account Manager': ['Client Partnerships', 'GA4 Insights', 'Delivery Reviews'],
+  'Healthcare Client Growth & Account Manager': ['Client Partnerships', 'GA4 Insights', 'Delivery Reviews'],
 };
 
 export default function OpenRolesSection({ jobs }: OpenRolesSectionProps) {
@@ -154,7 +156,7 @@ export default function OpenRolesSection({ jobs }: OpenRolesSectionProps) {
               </h2>
             </div>
             <p className="text-xs sm:text-sm text-slate-500">
-              Pune Studio & Hybrid Marketing Positions
+              Pune Office & Hybrid Positions
             </p>
           </div>
 

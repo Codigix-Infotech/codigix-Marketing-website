@@ -51,7 +51,7 @@ export default function CareersHero() {
               <span className="relative inline-flex rounded-full h-2 w-2 bg-[#e20b27]" />
             </span>
             <span className="text-xs font-bold tracking-wider uppercase text-slate-200">
-              We&apos;re Hiring Across Performance, SEO & Creative
+              We&apos;re Hiring Across Engineering, Search & Content
             </span>
           </motion.div>
 
@@ -62,9 +62,9 @@ export default function CareersHero() {
             transition={{ duration: 0.6, delay: 0.1 }}
             className="text-3xl sm:text-5xl lg:text-6xl font-extrabold tracking-tight leading-[1.12] mb-6 text-white"
           >
-            Build Real Impact. Scale Top Brands.{' '}
+            Build Reliable Digital Systems.{' '}
             <span className="text-transparent bg-clip-text bg-gradient-to-r from-blue-300 via-indigo-200 to-[#ff7582]">
-              Grow Your Career in Digital Marketing.
+              Grow Your Career with Ethical Communication.
             </span>
           </motion.h1>
 
@@ -75,7 +75,7 @@ export default function CareersHero() {
             transition={{ duration: 0.6, delay: 0.2 }}
             className="text-base sm:text-lg text-indigo-100/80 leading-relaxed max-w-2xl mb-10"
           >
-            Join Pune&apos;s leading performance, SEO, and healthcare growth agency. Work on campaigns that rank #1 on Google, manage multi-lakh ad spends, craft viral reels, and learn recession-proof growth frameworks.
+            Join a Pune-based technology and digital communication firm. Work on web engineering, technical SEO, structured information and educational content, with clear expectations around ethical communication, accuracy and data protection.
           </motion.p>
 
           {/* Action CTAs */}
@@ -96,7 +96,7 @@ export default function CareersHero() {
               href="#culture"
               className="px-7 py-3.5 rounded-full bg-white/10 hover:bg-white/20 text-white font-semibold text-sm border border-white/20 backdrop-blur-md transition-all duration-300"
             >
-              Why Marketers Choose Us
+              Our Culture & Expectations
             </a>
           </motion.div>
         </div>
@@ -113,8 +113,8 @@ export default function CareersHero() {
               <TrendingUp size={22} />
             </div>
             <div className="text-left">
-              <div className="text-xl font-extrabold text-white leading-tight">120+</div>
-              <div className="text-xs text-indigo-200/70">Campaigns Scaled</div>
+              <div className="text-xl font-extrabold text-white leading-tight">Web</div>
+              <div className="text-xs text-indigo-200/70">Engineering &amp; Content</div>
             </div>
           </div>
 
@@ -123,8 +123,8 @@ export default function CareersHero() {
               <Trophy size={22} />
             </div>
             <div className="text-left">
-              <div className="text-xl font-extrabold text-white leading-tight">4.9 / 5</div>
-              <div className="text-xs text-indigo-200/70">Team Glassdoor Rating</div>
+              <div className="text-xl font-extrabold text-white leading-tight">Ethics</div>
+              <div className="text-xs text-indigo-200/70">Communication Standards</div>
             </div>
           </div>
 
@@ -133,8 +133,8 @@ export default function CareersHero() {
               <Award size={22} />
             </div>
             <div className="text-left">
-              <div className="text-xl font-extrabold text-white leading-tight">₹50K+</div>
-              <div className="text-xs text-indigo-200/70">Learning Budget / Yr</div>
+              <div className="text-xl font-extrabold text-white leading-tight">Learning</div>
+              <div className="text-xs text-indigo-200/70">Support for Certifications</div>
             </div>
           </div>
 
@@ -143,8 +143,8 @@ export default function CareersHero() {
               <Zap size={22} />
             </div>
             <div className="text-left">
-              <div className="text-xl font-extrabold text-white leading-tight">Fast-Track</div>
-              <div className="text-xs text-indigo-200/70">Merit Growth Reviews</div>
+              <div className="text-xl font-extrabold text-white leading-tight">Reviews</div>
+              <div className="text-xs text-indigo-200/70">Regular Performance Reviews</div>
             </div>
           </div>
         </motion.div>

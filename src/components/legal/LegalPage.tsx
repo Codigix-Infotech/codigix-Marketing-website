@@ -75,6 +75,18 @@ export default function LegalPage({ title, intro, path, updated, sections, conta
               {contact.phone && <li>Phone: {contact.phone}</li>}
               {address && <li>Address: {address}</li>}
             </ul>
+            <p>
+              <strong>Grievance contact:</strong> for any grievance relating to personal data or this website, write to the email address above
+              marked for the attention of the Grievance Officer, and we will acknowledge and respond within a reasonable time.
+            </p>
+          </section>
+          <section>
+            <h2>{sections.length + 2}. Legal framework and disclaimer</h2>
+            <p>
+              {siteName} handles personal data in accordance with the Information Technology Act, 2000 and the Digital Personal Data Protection
+              Act, 2023 (and 2025 Rules). Information on this website is provided for general organizational and informational purposes only,
+              does not constitute medical advice, and does not guarantee specific search rankings or clinical/business outcomes.
+            </p>
           </section>
         </article>
 

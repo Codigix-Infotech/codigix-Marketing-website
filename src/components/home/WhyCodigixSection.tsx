@@ -20,7 +20,7 @@ export default function WhyCodigixSection() {
     "Creative thinking supported by data.",
     "Cross-industry understanding.",
     "Transparent communication.",
-    "Focus on meaningful business outcomes.",
+    "Focus on dependable, well-engineered systems.",
     "Continuous improvement."
   ];
 

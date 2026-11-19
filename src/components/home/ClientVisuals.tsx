@@ -153,23 +153,23 @@ export default function ClientVisuals({ videos = defaultVideos }: { videos?: Vid
               <div className="inline-flex items-center gap-2 px-3.5 py-1.5 rounded-full bg-white border border-slate-200/90 shadow-2xs mb-3.5">
                 <Video size={13} className="text-[#e20b27] animate-pulse" />
                 <span className="text-xs font-semibold text-[#1a1053] tracking-wide">
-                  Patient & Doctor Media · Video Production
+                  Educational Video Production
                 </span>
               </div>
 
               <h2 className="text-3xl sm:text-4xl lg:text-5xl font-semibold text-[#1a1053] tracking-tight leading-[1.15] mb-4">
-                Healthcare Stories <br />
+                Public-Health Education <br />
                 <span className="text-transparent bg-clip-text bg-gradient-to-r from-blue-600 via-indigo-600 to-[#e20b27]">
-                  in Motion
+                  in Video
                 </span>
               </h2>
 
               <p className="text-slate-600 font-light text-base sm:text-lg leading-relaxed mb-4 max-w-md">
-                High-trust patient video testimonials, doctor FAQ shorts, and clinic walk-throughs designed for Instagram & YouTube.
+                Structured video and social content focused on public-health awareness, institutional updates, and clear educational explanations.
               </p>
 
               <p className="text-slate-500 font-light text-xs sm:text-sm leading-relaxed mb-8 max-w-md">
-                Authentic medical video production builds profound patient trust before they even step into your clinic.
+                Practitioner credential disclosures are included, and AI-assisted media is clearly labelled where applicable.
               </p>
 
               <div className="flex items-center gap-4">
@@ -230,7 +230,7 @@ export default function ClientVisuals({ videos = defaultVideos }: { videos?: Vid
 
               <div className="flex items-center gap-2 text-xs font-medium text-blue-600 hover:text-blue-800 transition-colors">
                 <Youtube size={15} />
-                <span>See YouTube & Instagram Campaigns</span>
+                <span>Educational video &amp; social content</span>
               </div>
             </div>
 

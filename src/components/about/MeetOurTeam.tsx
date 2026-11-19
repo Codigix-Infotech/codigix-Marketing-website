@@ -35,72 +35,72 @@ const teamMembers: TeamMember[] = [
   {
     id: "1",
     name: "Akshay Patil",
-    role: "Founder & Healthcare Growth Director",
-    superpower: "Zero-Churn Practice Scaling",
-    impactMetric: "+380%",
-    metricLabel: "Avg. Patient Growth",
-    department: "Growth Strategy",
-    bio: "Obsessed with doctor success. Architects end-to-end patient acquisition funnels that turn clinical goals into predictable, high-value practice footfall across Pune & PCMC.",
+    role: "Founder & Digital Strategy Director",
+    superpower: "Service-Based Engagement Design",
+    impactMetric: "Strategy",
+    metricLabel: "Digital Systems",
+    department: "Digital Strategy",
+    bio: "Leads digital strategy and web systems planning, with engagements that are service-based and never tied to patient procurement or referral incentives.",
     image: "https://images.unsplash.com/photo-1534528741775-53994a69daeb?auto=format&fit=crop&q=80&w=600",
     accentColor: "#2563eb",
-    badge: "10+ Yrs Healthcare Growth",
-    certification: "Growth Systems Architect",
-    skills: ["Practice Scaling", "Doctor Retention", "Healthcare ROI"],
-    recentAchievement: "Scaled 40+ Super-Speciality Clinics to 100+ Monthly Inquiries",
+    badge: "Founder",
+    certification: "Digital Strategy",
+    skills: ["Digital Strategy", "Web Systems", "Compliance-Aligned Communication"],
+    recentAchievement: "Oversees internal pre-publication review for client engagements",
     linkedin: "https://linkedin.com",
     email: "contact@codigix.com"
   },
   {
     id: "2",
     name: "Dr. Priya Deshpande",
-    role: "Head of Medical Content & Compliance",
-    superpower: "100% Clinically Verified Copy",
-    impactMetric: "100%",
-    metricLabel: "NABH & Ethical Compliance",
-    department: "Clinical Accuracy",
-    bio: "Translates complex surgical terminology into empathetic, patient-friendly narratives that dismantle anxiety and build unshakeable clinical trust before the first visit.",
+    role: "Head of Content Review & Compliance",
+    superpower: "Factual, Source-Based Content",
+    impactMetric: "Review",
+    metricLabel: "Accuracy & Ethics",
+    department: "Content Accuracy",
+    bio: "Reviews public-health and institutional content for factual accuracy, source references, practitioner credential and registration disclosures, and AI labelling before publication.",
     image: "https://images.unsplash.com/photo-1594824813537-4384b656b825?auto=format&fit=crop&q=80&w=600",
     accentColor: "#059669",
-    badge: "Clinical Background",
-    certification: "Medical Copy & Ethics",
-    skills: ["Doctor Thought-Leadership", "Patient FAQs", "Surgical SEO"],
-    recentAchievement: "Authored 500+ Medically Verified Treatment Guides for Top Doctors",
+    badge: "Content Review",
+    certification: "Content Review & Ethics",
+    skills: ["Public-Health Education", "Credential Disclosure", "Source Referencing"],
+    recentAchievement: "Runs pre-publication review: accuracy, disclosures, privacy, AI labels",
     linkedin: "https://linkedin.com",
     email: "contact@codigix.com"
   },
   {
     id: "3",
     name: "Rahul Sharma",
-    role: "Lead Medical SEO & Local 3-Pack Specialist",
-    superpower: "Google Maps 3-Pack Domination",
-    impactMetric: "#1 Rank",
-    metricLabel: "Local Clinic Search",
-    department: "Organic Search",
-    bio: "Puts your clinic at the top of high-intent Google searches ('best cardiologist near me') with localized schema, GMB optimization, and authoritative medical citations.",
+    role: "Lead Technical SEO & Listings Specialist",
+    superpower: "Accurate Listings & Schema",
+    impactMetric: "Technical",
+    metricLabel: "Site Health",
+    department: "Search Visibility",
+    bio: "Handles technical site optimization, structured metadata and schema, and accurate management of business listing details such as address, hours, departments and services, without ranking manipulation.",
     image: "https://images.unsplash.com/photo-1507003211169-0a1dd7228f2d?auto=format&fit=crop&q=80&w=600",
     accentColor: "#7c3aed",
-    badge: "Google Certified",
-    certification: "Local 3-Pack Authority",
-    skills: ["Google Business Profile", "High-Intent Medical SEO", "Local Citations"],
-    recentAchievement: "Ranked 28 Clinics #1 on Google Maps in under 90 days",
+    badge: "Technical SEO",
+    certification: "Structured Data & Listings",
+    skills: ["Technical SEO", "Structured Data", "Accurate Listings"],
+    recentAchievement: "Maintains factual, consistent listing information across directories",
     linkedin: "https://linkedin.com",
     email: "contact@codigix.com"
   },
   {
     id: "4",
     name: "Sneha Kulkarni",
-    role: "Senior Paid Ads & Funnel Strategist",
-    superpower: "Precision Patient Funnels",
-    impactMetric: "4.8x",
-    metricLabel: "Avg. Campaign ROAS",
-    department: "Paid Performance",
-    bio: "Runs laser-targeted Meta and Google Ad campaigns engineered exclusively for hospitals and specialty clinics, delivering qualified patient bookings at the lowest CPA.",
+    role: "Senior Digital Campaigns Specialist",
+    superpower: "Policy-Compliant Campaigns",
+    impactMetric: "Policy",
+    metricLabel: "Truthful Messaging",
+    department: "Paid Campaigns",
+    bio: "Plans policy-compliant search and social campaigns built around clear, truthful messaging and transparent audience disclosures, without inducements or cure promises.",
     image: "https://images.unsplash.com/photo-1573496359142-b8d87734a5a2?auto=format&fit=crop&q=80&w=600",
     accentColor: "#e20b27",
-    badge: "Meta & Google Partner",
-    certification: "Healthcare Ads Master",
-    skills: ["Google Search Ads", "Hyper-Local Targeting", "CPA Reduction"],
-    recentAchievement: "Generated 12,000+ Verified Patient Bookings across 2024-2025",
+    badge: "Campaigns",
+    certification: "Policy-Compliant Campaigns",
+    skills: ["Search Campaigns", "Transparent Disclosures", "Policy Compliance"],
+    recentAchievement: "Applies platform and advertising policy checks to all campaigns",
     linkedin: "https://linkedin.com",
     email: "contact@codigix.com"
   }
@@ -141,7 +141,7 @@ export default function MeetOurTeam() {
             >
               <Zap size={13} className="text-[#e20b27] animate-pulse" />
               <span className="text-xs font-semibold text-[#1a1053] tracking-wide">
-                100% In-House Healthcare Growth Squad
+                Pune-Based Digital Team
               </span>
             </motion.div>
 
@@ -153,9 +153,9 @@ export default function MeetOurTeam() {
               transition={{ delay: 0.08, duration: 0.5, ease: [0.22, 1, 0.36, 1] }}
               className="text-3xl sm:text-4xl lg:text-5xl font-semibold text-[#1a1053] tracking-tight leading-[1.15]"
             >
-              The Specialists Turning Clinic Expectations <br />
+              The Team Behind Our <br />
               <span className="text-transparent bg-clip-text bg-gradient-to-r from-blue-600 via-indigo-600 to-[#e20b27]">
-                Into Guaranteed Practice Footfall
+                Web, Content & Compliance Work
               </span>
             </motion.h2>
 
@@ -166,7 +166,7 @@ export default function MeetOurTeam() {
               transition={{ delay: 0.15, duration: 0.5, ease: [0.22, 1, 0.36, 1] }}
               className="text-slate-600 font-light text-base sm:text-lg mt-3.5 leading-relaxed"
             >
-              Zero outsourcing. Zero guesswork. A synchronized in-house team of clinical writers, SEO specialists, media buyers, and UI engineers driving real doctor revenue.
+              A Pune-based team of content reviewers, technical SEO specialists, campaign planners, and UI engineers working to factual, privacy-aware and ethical communication standards.
             </motion.p>
           </div>
 
@@ -184,7 +184,7 @@ export default function MeetOurTeam() {
               </div>
               <div>
                 <p className="text-xs font-semibold text-[#1a1053]">Pune Headquarters Squad</p>
-                <p className="text-[11px] font-light text-slate-500">In-House Healthcare Growth Leads</p>
+                <p className="text-[11px] font-light text-slate-500">Web, Content & Compliance Leads</p>
               </div>
             </div>
           </motion.div>

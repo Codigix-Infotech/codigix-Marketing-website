@@ -47,8 +47,10 @@ export default async function TermsPage() {
           heading: 'No professional or medical advice',
           body: (
             <p>
-              Articles and resources on this site are for general information about digital marketing. They are not medical, legal or
-              financial advice, and results described in case studies are not a guarantee of future performance.
+              Articles and resources on this site are for general organizational and informational purposes only. They do not constitute
+              medical, legal or financial advice, do not guarantee specific search rankings or clinical or business outcomes, and
+              descriptions of past projects are not a guarantee of future results. Healthcare-related content is not a substitute for
+              consultation with a qualified, registered practitioner.
             </p>
           ),
         },
@@ -64,7 +66,7 @@ export default async function TermsPage() {
           heading: 'Limitation of liability',
           body: (
             <p>
-              The website is provided &ldquo;as is&rdquo;. To the extent permitted by law, {name} is not liable for any loss arising from
+              The website is provided &ldquo;as is&rdquo; for general information. To the extent permitted by law, {name} is not liable for any loss arising from
               your use of, or inability to use, the website or its content.
             </p>
           ),
@@ -73,7 +75,9 @@ export default async function TermsPage() {
           heading: 'Privacy',
           body: (
             <p>
-              Personal information you submit is handled as described in our <Link href="/privacy">Privacy Policy</Link>.
+              Personal information you submit is handled as described in our <Link href="/privacy">Privacy Policy</Link>, in accordance with
+              the Information Technology Act, 2000 and the Digital Personal Data Protection Act, 2023 (and 2025 Rules). Please do not
+              submit confidential patient medical records or sensitive personal health information through this website.
             </p>
           ),
         },

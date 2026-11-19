@@ -44,48 +44,48 @@ import {
 const whatWeDoList = [
   {
     num: "01",
-    title: "Google Search & Display Ads for Healthcare",
-    desc: "Target patients actively searching for specific treatments, surgeries, and emergency clinic visits with high-intent Google Search campaigns and high-reach Display networks.",
+    title: "Google Search & Display Campaigns",
+    desc: "Policy-compliant search and display campaigns with clear, truthful messaging that describes services, departments, and facilities factually.",
     icon: Search,
     color: "from-blue-600 to-indigo-600",
     bg: "bg-blue-50 text-blue-600 border-blue-200"
   },
   {
     num: "02",
-    title: "Meta (Facebook & Instagram) Ad Campaigns",
-    desc: "Engage local communities and target specific demographics with visually stunning reels, carousel ads, and patient awareness campaigns on Instagram and Facebook.",
+    title: "Meta (Facebook & Instagram) Campaigns",
+    desc: "Awareness and institutional-update campaigns on Instagram and Facebook, with transparent audience disclosures and educational, non-promotional framing.",
     icon: Instagram,
     color: "from-pink-600 to-purple-600",
     bg: "bg-pink-50 text-pink-600 border-pink-200"
   },
   {
     num: "03",
-    title: "Retargeting & Remarketing Strategies",
-    desc: "Re-engage patients who visited your website, viewed your doctor profiles, or browsed treatment pages but left without scheduling an appointment.",
+    title: "Audience Settings & Privacy Controls",
+    desc: "Clear audience definitions and consent-aware tracking configuration, with no sensitive health data used for targeting.",
     icon: RotateCw,
     color: "from-emerald-600 to-teal-600",
     bg: "bg-emerald-50 text-emerald-600 border-emerald-200"
   },
   {
     num: "04",
-    title: "Landing Page Design & Conversion Optimization",
-    desc: "Custom-built, sub-second loading healthcare landing pages with one-tap WhatsApp booking, click-to-call, and trust badges designed to convert up to 35%+ of visitors into leads.",
+    title: "Landing Page Design & Disclosures",
+    desc: "Fast-loading, accessible landing pages with factual information, practitioner credential disclosures, and clear privacy notices.",
     icon: Layout,
     color: "from-indigo-600 to-blue-600",
     bg: "bg-indigo-50 text-indigo-600 border-indigo-200"
   },
   {
     num: "05",
-    title: "A/B Testing for Ad Creatives & Copy",
-    desc: "Continuous multi-variant split testing on headlines, visuals, call-to-actions, and patient psychology hooks to steadily reduce your Cost Per Lead (CPL).",
+    title: "Ad Copy Review & Testing",
+    desc: "Copy and creative variants are reviewed for factual accuracy, with no fear-based messaging, cure promises, or inducements.",
     icon: Sliders,
     color: "from-amber-600 to-orange-600",
     bg: "bg-amber-50 text-amber-600 border-amber-200"
   },
   {
     num: "06",
-    title: "Detailed Campaign Performance Reporting",
-    desc: "100% transparent real-time dashboards showing exact ad spend, impressions, CTR, total qualified leads, cost per booking, and Return On Ad Spend (ROAS).",
+    title: "Transparent Campaign Reporting",
+    desc: "Clear reporting on ad spend, impressions, click-through rate, and policy status, so you always know how campaigns are running.",
     icon: BarChart3,
     color: "from-purple-600 to-pink-600",
     bg: "bg-purple-50 text-purple-600 border-purple-200"
@@ -95,37 +95,37 @@ const whatWeDoList = [
 const whatYouGetCards = [
   {
     icon: Zap,
-    title: "Instant Lead Generation",
-    desc: "Start getting qualified patient inquiries, phone calls, and appointment bookings within 24 to 48 hours of campaign launch.",
-    stat: "24-48 hrs",
-    statLabel: "Time to First Lead",
+    title: "Truthful, Factual Messaging",
+    desc: "Ad copy that describes your organization, departments, and services accurately, without exaggeration or unsubstantiated claims.",
+    stat: "Factual",
+    statLabel: "Ad Copy Standard",
     color: "from-blue-600 to-indigo-600",
     bg: "bg-blue-50/80 border-blue-200/70"
   },
   {
     icon: Target,
-    title: "Highly Targeted Audience",
-    desc: "Reach people actively searching for your specialized medical services within your exact city, pin codes, and radius.",
-    stat: "100%",
-    statLabel: "Intent-Targeted",
+    title: "Transparent Audience Settings",
+    desc: "Audiences are defined by location and general topical relevance, with clear disclosure of how campaigns are targeted.",
+    stat: "Disclosed",
+    statLabel: "Audience Targeting",
     color: "from-emerald-600 to-teal-600",
     bg: "bg-emerald-50/80 border-emerald-200/70"
   },
   {
     icon: DollarSign,
-    title: "Controlled Budget & Measurable ROI",
-    desc: "Track every single rupee spent and optimize bids continuously so your ad budget generates predictable clinic revenue.",
-    stat: "4.8x+",
-    statLabel: "Average ROAS",
+    title: "Clear Budget Reporting",
+    desc: "Transparent reporting on every rupee of ad spend, with fees that are service-based and never tied to acquiring individual patients.",
+    stat: "Service-Based",
+    statLabel: "Fee Model",
     color: "from-purple-600 to-pink-600",
     bg: "bg-purple-50/80 border-purple-200/70"
   },
   {
     icon: TrendingUp,
-    title: "Scalable Growth",
-    desc: "Increase ad spend with complete confidence only when conversion rates and patient acquisition profits are proven.",
-    stat: "300%+",
-    statLabel: "Scalable Capacity",
+    title: "Policy Alignment",
+    desc: "Campaigns are reviewed against platform advertising policies and applicable NMC, NDC, and AYUSH communication principles before launch.",
+    stat: "Reviewed",
+    statLabel: "Before Launch",
     color: "from-rose-600 to-amber-600",
     bg: "bg-rose-50/80 border-rose-200/70"
   }
@@ -134,48 +134,48 @@ const whatYouGetCards = [
 const ppcAdTypes = [
   {
     title: "Google Search Ads",
-    subtitle: "High-Intent Search",
-    desc: "Capture patients actively looking for doctors, clinics, and treatments at the exact moment of need.",
+    subtitle: "Search-Based Visibility",
+    desc: "Factual search ads that present accurate organization, department, and location details to people already looking for that information.",
     icon: Search,
     color: "text-blue-600 bg-blue-50 border-blue-200/70",
-    pill: "High Intent",
-    points: ["Target 'near me' medical keywords", "Appear above organic rankings", "Direct Click-to-Call extensions"]
+    pill: "Search",
+    points: ["Accurate location and department details", "Policy-compliant ad copy", "Click-to-call extensions with verified numbers"]
   },
   {
     title: "Display Ads",
-    subtitle: "Visual Brand Recall",
-    desc: "Increase brand awareness across trusted health websites, medical blogs, and local news portals.",
+    subtitle: "Visual Information Placement",
+    desc: "Informational display creative for institutional updates and public-health awareness, placed with transparent targeting.",
     icon: Layout,
     color: "text-indigo-600 bg-indigo-50 border-indigo-200/70",
-    pill: "Brand Reach",
-    points: ["High-impact visual banners", "Doctor profile promotions", "Hyper-local geo-fenced placements"]
+    pill: "Awareness",
+    points: ["Clear informational banners", "Practitioner credential disclosures", "Geographic placement settings"]
   },
   {
     title: "YouTube Ads",
-    subtitle: "Video Storytelling",
-    desc: "Engage prospective patients through educational clinical videos, treatment explainers, and patient testimonials.",
+    subtitle: "Educational Video",
+    desc: "Educational explainer videos on public-health topics and institutional updates, with practitioner credentials disclosed and AI-assisted media labelled.",
     icon: Youtube,
     color: "text-rose-600 bg-rose-50 border-rose-200/70",
-    pill: "High Trust",
-    points: ["Doctor authority video clips", "Patient recovery testimonials", "Non-skippable & bumper ad formats"]
+    pill: "Educational",
+    points: ["Public-health explainer videos", "Credential and registration disclosure", "AI-assisted media labelled"]
   },
   {
     title: "Meta Ads (FB & IG)",
-    subtitle: "Social Engagement",
-    desc: "Generate consistent patient leads with engaging video reels, carousel ads, and lead generation forms.",
+    subtitle: "Social Awareness",
+    desc: "Awareness and informational campaigns using video and carousel formats, with transparent audience disclosures.",
     icon: Instagram,
     color: "text-pink-600 bg-pink-50 border-pink-200/70",
-    pill: "Viral Reach",
-    points: ["Targeted demographic filters", "Interactive Instant Lead Forms", "Instagram Reels & Story ads"]
+    pill: "Awareness",
+    points: ["Transparent audience disclosures", "Informational carousels", "Educational Reels & Story formats"]
   },
   {
-    title: "Remarketing Ads",
-    subtitle: "Re-engage Visitors",
-    desc: "Re-target prospective patients who visited your site or social profiles but haven't yet booked an appointment.",
+    title: "Audience Settings",
+    subtitle: "Privacy-Aware Configuration",
+    desc: "Consent-aware tracking and audience configuration aligned with the DPDP Act, 2023, with no sensitive health data used for targeting.",
     icon: RotateCw,
     color: "text-emerald-600 bg-emerald-50 border-emerald-200/70",
-    pill: "Max Conversion",
-    points: ["Recover dropped visitors", "Special clinic offer reminders", "Cross-channel patient recall"]
+    pill: "Privacy",
+    points: ["Consent-aware tracking setup", "No sensitive health-data targeting", "Clear privacy notices"]
   }
 ];
 
@@ -185,35 +185,35 @@ const ppcStrategySteps = [
     stepNum: 1,
     name: "Research",
     time: "Days 1–3",
-    title: "Healthcare Market & Competitor Audit",
-    stage: "Research & Audit",
+    title: "Policy & Messaging Review",
+    stage: "Research & Review",
     timeline: "Days 1–3",
     icon: Search,
-    deliverable: "Competitor Benchmark & Patient Persona Blueprint",
+    deliverable: "Messaging Guidelines & Policy Checklist",
     badgeBg: "bg-blue-50 text-blue-600 border-blue-200",
     boxBg: "bg-blue-50/70 border-blue-200/90",
     points: [
-      "Analyze top competitor ads and high-converting keywords",
-      "Map target patient demographics across Pune & PCMC",
-      "Ensure strict compliance with medical advertising policies"
+      "Review the organization's factual details and credentials",
+      "Map the relevant geography across Pune & PCMC",
+      "Check applicable platform and medical advertising policies"
     ]
   },
   {
     phase: "02",
     stepNum: 2,
-    name: "Funnel Setup",
+    name: "Structure",
     time: "Days 4–7",
-    title: "Multi-Channel Ad Architecture Setup",
-    stage: "Funnel Architecture",
+    title: "Campaign Architecture Setup",
+    stage: "Campaign Architecture",
     timeline: "Days 4–7",
     icon: Layers,
-    deliverable: "Synchronized Search, Meta & Retargeting Funnel",
+    deliverable: "Organized Search & Social Campaign Structure",
     badgeBg: "bg-purple-50 text-purple-600 border-purple-200",
     boxBg: "bg-purple-50/70 border-purple-200/90",
     points: [
-      "High-intent Google Search ads for urgent medical needs",
-      "Targeted Meta reels & carousels for treatment awareness",
-      "Automated retargeting to re-engage prospective patients"
+      "Search campaigns built around accurate, informational queries",
+      "Social campaigns focused on public-health awareness",
+      "Clear separation of campaign topics and audiences"
     ]
   },
   {
@@ -221,17 +221,17 @@ const ppcStrategySteps = [
     stepNum: 3,
     name: "Targeting",
     time: "Week 2",
-    title: "High-Intent Keyword & Geo-Targeting",
+    title: "Keyword & Location Settings",
     stage: "Targeting & Filters",
     timeline: "Week 2",
     icon: Target,
-    deliverable: "High-Intent Search Matrix & Negative Keyword Shield",
+    deliverable: "Keyword List & Negative Keyword Filters",
     badgeBg: "bg-emerald-50 text-emerald-600 border-emerald-200",
     boxBg: "bg-emerald-50/70 border-emerald-200/90",
     points: [
-      "Pin-point radius geo-fencing (Baner, Wakad, Hinjewadi, PCMC)",
-      "Strict negative keyword list to eliminate wasted ad spend",
-      "Custom interest and lookalike patient audience building"
+      "Location settings across Baner, Wakad, Hinjewadi, PCMC",
+      "Negative keyword list to keep ads relevant",
+      "Transparent audience definitions with no sensitive-data targeting"
     ]
   },
   {
@@ -239,17 +239,17 @@ const ppcStrategySteps = [
     stepNum: 4,
     name: "Creatives",
     time: "Weeks 2–3",
-    title: "Scroll-Stopping Visuals & Doctor Copy",
+    title: "Factual Visuals & Copy",
     stage: "Creative Production",
     timeline: "Weeks 2–3",
     icon: Sparkles,
-    deliverable: "High-CTR Visual Ad Banners & Video Reels",
+    deliverable: "Reviewed Ad Creatives & Educational Video",
     badgeBg: "bg-rose-50 text-rose-600 border-rose-200",
     boxBg: "bg-rose-50/70 border-rose-200/90",
     points: [
-      "Visual treatment explainers & doctor authority videos",
-      "Empathetic, patient-focused medical ad copywriting",
-      "Continuous A/B split testing on hooks and headlines"
+      "Educational explainers with practitioner credential disclosure",
+      "Calm, factual copywriting without fear-based messaging",
+      "AI-assisted media labelled where applicable"
     ]
   },
   {
@@ -257,63 +257,63 @@ const ppcStrategySteps = [
     stepNum: 5,
     name: "Landing Pages",
     time: "Weeks 3–4",
-    title: "Sub-Second Conversion Landing Pages",
-    stage: "Conversion Optimization",
+    title: "Accessible Landing Pages",
+    stage: "Landing Page Build",
     timeline: "Weeks 3–4",
     icon: Layout,
-    deliverable: "Fast-Loading WhatsApp & Call Booking Pages",
+    deliverable: "Fast-Loading, Accessible Information Pages",
     badgeBg: "bg-amber-50 text-amber-600 border-amber-200",
     boxBg: "bg-amber-50/70 border-amber-200/90",
     points: [
-      "Instant 1-tap WhatsApp consultation and click-to-call",
-      "Sub-second mobile loading speed for highest conversion",
-      "Verified patient reviews, doctor credentials and trust badges"
+      "Click-to-call and contact options with clear privacy notices",
+      "Core Web Vitals focused, mobile-friendly pages",
+      "Practitioner credentials and registration details disclosed"
     ]
   },
   {
     phase: "06",
     stepNum: 6,
-    name: "Scale & ROI",
+    name: "Review",
     time: "Ongoing",
-    title: "Daily Bid Tuning & Budget Scaling",
-    stage: "Scaling & Analytics",
-    timeline: "Ongoing Growth",
+    title: "Ongoing Policy & Performance Review",
+    stage: "Review & Reporting",
+    timeline: "Ongoing",
     icon: TrendingUp,
-    deliverable: "Real-Time ROI Dashboard & Lead Scaling",
+    deliverable: "Transparent Reporting Dashboard",
     badgeBg: "bg-cyan-50 text-cyan-600 border-cyan-200",
     boxBg: "bg-cyan-50/70 border-cyan-200/90",
     points: [
-      "Daily bid management to steadily reduce Cost Per Lead (CPL)",
-      "Aggressive budget scaling on top-performing treatments",
-      "Transparent monthly reporting tracking revenue & ROAS"
+      "Regular review of ad copy against policy changes",
+      "Budget adjustments agreed in advance with you",
+      "Transparent monthly reporting on spend and delivery"
     ]
   }
 ];
 
 const whyChooseCodigix = [
   {
-    title: "ROI-Focused Campaigns",
-    desc: "We prioritize actual booked patient consultations and clinic revenue over meaningless clicks and impressions.",
+    title: "Policy-Compliant Campaigns",
+    desc: "We prioritize truthful, non-soliciting messaging that follows platform policies and applicable communication principles.",
     icon: Zap
   },
   {
-    title: "Conversion-Focused Strategy",
-    desc: "We optimize the entire patient acquisition funnel — from the first ad view to landing page submission.",
+    title: "Clear Information Flow",
+    desc: "We make sure the path from ad to landing page presents accurate information with clear privacy and credential disclosures.",
     icon: Target
   },
   {
-    title: "Data-Driven Decisions",
-    desc: "Every marketing rupee is tracked with precision via Google Tag Manager and Server-Side Meta Conversion API.",
+    title: "Transparent Measurement",
+    desc: "Tracking is configured with Google Tag Manager and consent-aware settings, aligned with the DPDP Act, 2023.",
     icon: BarChart3
   },
   {
-    title: "Local Market Expertise",
-    desc: "Deep knowledge of patient demographics and search patterns across Pune, PCMC, Wakad, Baner, and Hinjewadi.",
+    title: "Local Familiarity",
+    desc: "A Pune-based team familiar with the geography of Pune, PCMC, Wakad, Baner, and Hinjewadi.",
     icon: Globe
   },
   {
-    title: "Healthcare Marketing Specialists",
-    desc: "Specialized in medical terminology, patient psychology, doctor brand authority, and strict healthcare ad policies.",
+    title: "Ethical Communication Principles",
+    desc: "Awareness of NMC, NDC, and AYUSH communication principles and strict advertising policies for healthcare engagements.",
     icon: ShieldCheck
   }
 ];
@@ -321,111 +321,84 @@ const whyChooseCodigix = [
 const clientShowcase = [
   {
     name: "Dr. Sheetal's Glow Clinic",
-    tag: "Skin & Dermatology",
+    tag: "Dermatology (NMC scope)",
     location: "Kothrud, Pune",
-    duration: "6+ Months Active",
-    services: "Social Media Marketing, SEO & GMB, Meta Lead Ads, Web Development",
-    result: "+380% Inquiries",
-    highlight: "Rank #1: Skin Clinic PCMC"
-  },
-  {
-    name: "Regain Hair & Skin Clinic",
-    tag: "Trichology & Hair",
-    location: "Wakad, Pune",
-    duration: "1 Year Active",
-    services: "Social Media Marketing, SEO, Google Business Profile (GMB), Ad Funnels",
-    result: "650+ Inquiries/Mo",
-    highlight: "4.9x Ad ROAS"
-  },
-  {
-    name: "Dr. Prasad Kasbekar Clinic",
-    tag: "Oncology Specialist",
-    location: "Pune & PCMC",
-    duration: "1 Year Active",
-    services: "Doctor Authority Branding, High-Intent Search Ads, Video Content",
-    result: "180+ Consultations",
-    highlight: "High-Intent Patients"
+    duration: "Ongoing engagement",
+    services: "Website development, technical SEO, factual service pages",
+    result: "Website & Information Architecture",
+    highlight: "Factual service pages"
   },
   {
     name: "Canopy Dental Care",
-    tag: "Dental & Aligners",
+    tag: "Dental (NDC scope)",
     location: "Baner, Pune",
-    duration: "1 Year Active",
-    services: "Local Geo-Targeted SEO, WhatsApp Funnels, Website Development",
-    result: "320+ Patients",
-    highlight: "Rank #1: Invisalign Wakad"
+    duration: "Ongoing engagement",
+    services: "Website development, accurate local listings",
+    result: "Website & Accessibility Work",
+    highlight: "Accurate listings"
   },
   {
     name: "CorpLegal Solutions & Co",
-    tag: "Corporate Law & B2B",
+    tag: "Corporate Law & B2B (non-medical)",
     location: "Bavdhan, Pune",
-    duration: "1 Year Active",
-    services: "Web Development, Social Media Content Writing, B2B Search",
-    result: "#1 Organic Authority",
-    highlight: "Rank #1: Corporate Law Pune"
+    duration: "Ongoing engagement",
+    services: "Web development, content writing, technical SEO",
+    result: "Structured Web Content",
+    highlight: "Technical SEO hygiene"
   },
   {
     name: "Bakul Hospitality & Catering",
-    tag: "Hospitality & Events",
+    tag: "Hospitality & Events (non-medical)",
     location: "Pune Metro",
-    duration: "1 Year Active",
-    services: "Social Media Marketing, SEO, Local Maps Optimization, Web Pages",
-    result: "3.4x Direct Calls",
-    highlight: "210+ Verified Reviews"
-  },
-  {
-    name: "Sanskruti Agro Tourism",
-    tag: "Agro Tourism & Leisure",
-    location: "Chakan & Outskirts",
-    duration: "4 Months Active",
-    services: "Social Media Marketing, Meta Ad Campaigns, Local SEO Optimization",
-    result: "+300% Footfall",
-    highlight: "Rank #1: Agro Resort Pune"
+    duration: "Ongoing engagement",
+    services: "Web pages, accurate local listings",
+    result: "Responsive Website Refresh",
+    highlight: "Clear service pages"
   }
 ];
 
 const toolsList = [
-  "Google Ads (Search, Display, Video, Discovery)",
+  "Google Ads (Search, Display, Video)",
   "Meta Ads Manager (Facebook & Instagram)",
   "Google Analytics 4 (GA4)",
-  "Google Tag Manager & Server-Side Tracking",
-  "Meta Conversions API (CAPI)",
-  "CallRail & Lead Tracking CRM"
+  "Google Tag Manager (consent-aware setup)",
+  "Platform Policy & Ad Review Tools",
+  "Privacy Notice & Consent Banner Configuration"
 ];
 
 const kpiList = [
-  "Cost Per Lead (CPL) — Minimize ad cost per inquiry",
-  "Click-Through Rate (CTR) — Maximize ad engagement",
-  "Conversion Rate (CVR) — Turn visitors into booked patients",
-  "Cost Per Acquisition (CPA) — Exact cost per treated patient",
-  "Return On Ad Spend (ROAS) — Measure clinic revenue multiples",
-  "Appointment Show-Up Rate — High-intent patient filtering"
+  "Impressions — Visibility of campaign delivery",
+  "Click-Through Rate (CTR) — Relevance of ad copy",
+  "Ad Policy Status — Approval and compliance checks",
+  "Landing Page Speed — Core Web Vitals focused",
+  "Accessibility Checks — WCAG 2.1 AA aligned",
+  "Consent & Privacy Checks — DPDP-aligned forms"
 ];
 
 const faqs = [
   {
-    q: "What is PPC advertising?",
-    a: "PPC (Pay-Per-Click) is a digital advertising model where you only pay when a prospective patient clicks on your ad or calls your clinic. It delivers immediate visibility at the very top of Google search results and on social platforms like Facebook and Instagram."
+    q: "What are paid digital campaigns?",
+    a: "Paid digital campaigns are search and social advertisements that you pay to run on platforms such as Google, Facebook, and Instagram. We design them around clear, truthful messaging and transparent audience disclosures."
   },
   {
-    q: "Why does my healthcare practice need PPC?",
-    a: "Unlike SEO which takes 3 to 6 months to build organic momentum, PPC delivers instant patient inquiries within 24 to 48 hours. It allows you to target high-intent patients searching for emergency treatments, specialized surgeries, or consultations right now in your specific neighborhood."
+    q: "Why would my organization use paid campaigns?",
+    a: "Paid campaigns can share accurate institutional information, public-health awareness content, or service updates with relevant audiences while organic search structure is being built. For medical engagements, copy follows applicable NMC, NDC, or AYUSH communication principles."
   },
   {
-    q: "How quickly do PPC ads deliver results?",
-    a: "PPC campaigns can start generating phone calls and appointment requests within 24 to 48 hours of launch. Once your ads and dedicated landing pages are live, patients searching for your medical services will immediately see your clinic."
+    q: "Do you promise specific results?",
+    a: "No. We do not promise or guarantee rankings, volumes of enquiries, or business outcomes. We focus on accurate messaging, policy-compliant setup, and transparent reporting."
   },
   {
     q: "Which is better: Google Ads or Meta Ads?",
-    a: "Both platforms serve complementary purposes. Google Ads captures high-intent patients actively searching for immediate medical help ('emergency dentist near me' or 'best orthopedic doctor in Pune'). Meta Ads (Facebook & Instagram) excel at visual treatments (dermatology, cosmetology, IVF, hair transplants) and building brand trust through video reels."
+    a: "They serve different purposes. Google Ads presents factual information to people searching for it. Meta Ads suit educational and awareness content in video or carousel formats. We recommend a mix based on your content and goals, and never use fear-based messaging, cure promises, or inducements."
   },
   {
-    q: "How do you ensure our ad budget is not wasted?",
-    a: "We implement rigorous negative keyword lists, laser-focused radius geo-targeting, click-fraud prevention, continuous A/B split testing on ad copy, and high-converting custom landing pages. Every single rupee is tracked against verified patient appointments."
+    q: "How do you handle privacy and tracking?",
+    a: "Tracking is configured with consent-aware settings and clear privacy notices, aligned with the Information Technology Act, 2000 and the Digital Personal Data Protection Act, 2023 (and 2025 Rules). We do not use sensitive health information for targeting."
   },
   {
     q: "What ad budget should we start with?",
-    a: "We tailor ad budgets to your clinic's specialty and geographic target. Most clinics start with a comfortable testing budget that allows us to test multiple ad sets and keywords, and scale up spend only when positive ROI and patient bookings are clearly demonstrated."
+    a: "We tailor budgets to your goals and geography. Budget decisions are made with you in advance, reported transparently, and our fees are service-based and never tied to acquiring individual patients."
   }
 ];
 
@@ -499,7 +472,7 @@ export default function PaidAdvertisementsPage() {
               </div>
               <div>
                 <p className="text-[10px] text-slate-500 font-bold uppercase tracking-wider leading-none mb-1 text-left">Search Ads</p>
-                <p className="text-sm text-[#1a1053] font-extrabold leading-none text-left">High-Intent Clicks</p>
+                <p className="text-sm text-[#1a1053] font-extrabold leading-none text-left">Factual Search Copy</p>
               </div>
             </motion.div>
 
@@ -513,8 +486,8 @@ export default function PaidAdvertisementsPage() {
                 <TrendingUp size={16} />
               </div>
               <div>
-                <p className="text-[10px] text-slate-500 font-bold uppercase tracking-wider leading-none mb-1 text-left">ROAS</p>
-                <p className="text-sm text-[#1a1053] font-extrabold leading-none text-left">4.8x Return</p>
+                <p className="text-[10px] text-slate-500 font-bold uppercase tracking-wider leading-none mb-1 text-left">Reporting</p>
+                <p className="text-sm text-[#1a1053] font-extrabold leading-none text-left">Transparent Spend</p>
               </div>
             </motion.div>
 
@@ -528,8 +501,8 @@ export default function PaidAdvertisementsPage() {
                 <PhoneCall size={16} />
               </div>
               <div>
-                <p className="text-[10px] text-slate-500 font-bold uppercase tracking-wider leading-none mb-1 text-left">Leads</p>
-                <p className="text-sm text-[#1a1053] font-extrabold leading-none text-left">24-48h Patient Flow</p>
+                <p className="text-[10px] text-slate-500 font-bold uppercase tracking-wider leading-none mb-1 text-left">Messaging</p>
+                <p className="text-sm text-[#1a1053] font-extrabold leading-none text-left">Truthful & Non-Soliciting</p>
               </div>
             </motion.div>
 
@@ -544,7 +517,7 @@ export default function PaidAdvertisementsPage() {
               </div>
               <div>
                 <p className="text-[10px] text-slate-500 font-bold uppercase tracking-wider leading-none mb-1 text-left">Optimization</p>
-                <p className="text-sm text-[#1a1053] font-extrabold leading-none text-left">Max ROI Driven</p>
+                <p className="text-sm text-[#1a1053] font-extrabold leading-none text-left">Policy-Aligned</p>
               </div>
             </motion.div>
           </div>
@@ -556,21 +529,21 @@ export default function PaidAdvertisementsPage() {
               <span className="relative inline-flex rounded-full h-2 w-2 bg-amber-500"></span>
             </span>
             <span className="text-xs sm:text-sm font-semibold text-[#1a1053] tracking-wide">
-              Google & Meta Ads Experts
+              Policy-Compliant Search & Social Campaigns
             </span>
           </div>
 
           {/* Main Title */}
           <h1 className="text-4xl sm:text-5xl lg:text-[64px] font-extrabold text-[#1a1053] tracking-tight leading-[1.1] mb-6 max-w-4xl relative z-20">
-            Build a Healthcare Brand Patients <br className="hidden lg:block" /> Follow & Trust.
+            Clear, Truthful Messaging <br className="hidden lg:block" /> for Search & Social.
             <span className="block text-transparent bg-clip-text bg-gradient-to-r from-blue-600 via-indigo-600 to-[#e20b27] mt-3">
-              More Clicks. More Leads.
+              Transparent, Policy-Compliant Campaigns.
             </span>
           </h1>
 
           {/* Hero Subtitle */}
           <p className="text-base sm:text-lg lg:text-xl text-slate-600 font-light leading-relaxed max-w-2xl mx-auto mb-10 relative z-20">
-            Don’t wait months for organic results. Our data-driven PPC campaigns put your clinic in front of high-intent patients immediately — across Google, Facebook, and Instagram — with every rupee of your budget optimized for maximum ROI.
+            Targeted, policy-compliant search and social campaigns designed around clear, truthful messaging and transparent audience disclosures, across Google, Facebook, and Instagram.
           </p>
 
           {/* CTA Buttons */}
@@ -579,14 +552,14 @@ export default function PaidAdvertisementsPage() {
               href="/contact"
               className="inline-flex items-center justify-center gap-3 px-8 py-4 bg-[#1a1053] hover:bg-[#281878] text-white rounded-full font-semibold text-base transition-all shadow-[0_10px_25px_-5px_rgba(26,16,83,0.25)] hover:shadow-[0_15px_30px_-5px_rgba(26,16,83,0.35)] transform hover:-translate-y-0.5"
             >
-              <span>Book Free Ad Strategy Call</span>
+              <span>Schedule a Discovery Call</span>
               <ArrowRight size={18} />
             </Link>
             <a
               href="#strategy"
               className="inline-flex items-center justify-center gap-2 px-8 py-4 bg-white border border-slate-200 hover:bg-slate-50 text-[#1a1053] rounded-full font-semibold text-base shadow-xs transition-all"
             >
-              <span>Explore 6-Step Strategy</span>
+              <span>Explore Our 6-Step Process</span>
               <ChevronDown size={18} />
             </a>
           </div>
@@ -609,11 +582,11 @@ export default function PaidAdvertisementsPage() {
             <h2 className="text-3xl sm:text-4xl lg:text-5xl font-extrabold text-[#1a1053] tracking-tight leading-[1.15]">
               Comprehensive <br className="hidden sm:block" />
               <span className="text-transparent bg-clip-text bg-gradient-to-r from-blue-600 via-indigo-600 to-[#e20b27]">
-                Paid Advertising & Growth Services
+                Paid Digital Campaign Services
               </span>
             </h2>
             <p className="text-slate-600 text-base sm:text-lg font-light leading-relaxed max-w-2xl mx-auto">
-              A custom brand strategy designed for healthcare providers. We combine patient psychology, high-intent targeting, and multi-channel advertising to scale your patient consultations.
+              Campaign services designed for organizations that need accurate, transparent communication. We combine factual messaging, clear audience disclosures, and policy review across search and social channels.
             </p>
           </div>
 
@@ -664,7 +637,7 @@ export default function PaidAdvertisementsPage() {
 
 
         {/* ========================================================================= */}
-        {/* SECTION 3: NOT JUST ADS — A PROFIT-GENERATING SYSTEM */}
+        {/* SECTION 3: NOT JUST ADS — A TRANSPARENT PROCESS */}
         {/* ========================================================================= */}
         <section className="py-16 sm:py-20 max-w-7xl m-auto">
           <div className="rounded-3xl bg-gradient-to-br from-white via-blue-50/40 to-indigo-50/30 border border-blue-200/60 shadow-xl p-8 sm:p-12 lg:p-16 relative overflow-hidden">
@@ -676,8 +649,8 @@ export default function PaidAdvertisementsPage() {
               <div className="lg:col-span-5 space-y-4">
                 <div className="rounded-2xl bg-white border border-slate-200/90 shadow-lg p-6 space-y-4">
                   <div className="flex items-center justify-between border-b border-slate-100 pb-3">
-                    <span className="text-xs font-bold text-slate-600 uppercase">PPC Profit System</span>
-                    <span className="text-xs font-bold text-[#e20b27]">High Conversion</span>
+                    <span className="text-xs font-bold text-slate-600 uppercase">Campaign Process</span>
+                    <span className="text-xs font-bold text-[#e20b27]">Policy Reviewed</span>
                   </div>
 
                   {/* Step visual */}
@@ -685,9 +658,9 @@ export default function PaidAdvertisementsPage() {
                     <div className="p-3 rounded-xl bg-slate-50 border border-slate-100 flex items-center justify-between">
                       <div className="flex items-center gap-2.5">
                         <span className="w-6 h-6 rounded-full bg-blue-600 text-white text-xs font-bold flex items-center justify-center">1</span>
-                        <span className="text-xs font-bold text-slate-800">Targeted Healthcare Search</span>
+                        <span className="text-xs font-bold text-slate-800">Relevant Search Query</span>
                       </div>
-                      <span className="text-[11px] text-blue-600 font-semibold">High Intent</span>
+                      <span className="text-[11px] text-blue-600 font-semibold">Relevant</span>
                     </div>
 
                     <div className="flex justify-center text-slate-300">
@@ -697,9 +670,9 @@ export default function PaidAdvertisementsPage() {
                     <div className="p-3 rounded-xl bg-slate-50 border border-slate-100 flex items-center justify-between">
                       <div className="flex items-center gap-2.5">
                         <span className="w-6 h-6 rounded-full bg-indigo-600 text-white text-xs font-bold flex items-center justify-center">2</span>
-                        <span className="text-xs font-bold text-slate-800">High-Converting Landing Page</span>
+                        <span className="text-xs font-bold text-slate-800">Accessible Landing Page</span>
                       </div>
-                      <span className="text-[11px] text-indigo-600 font-semibold">35%+ CVR</span>
+                      <span className="text-[11px] text-indigo-600 font-semibold">Clear Disclosures</span>
                     </div>
 
                     <div className="flex justify-center text-slate-300">
@@ -709,9 +682,9 @@ export default function PaidAdvertisementsPage() {
                     <div className="p-3 rounded-xl bg-emerald-50 border border-emerald-200 flex items-center justify-between">
                       <div className="flex items-center gap-2.5">
                         <span className="w-6 h-6 rounded-full bg-emerald-600 text-white text-xs font-bold flex items-center justify-center">3</span>
-                        <span className="text-xs font-bold text-emerald-900">Booked Patient Consultation</span>
+                        <span className="text-xs font-bold text-emerald-900">Clear Contact Information</span>
                       </div>
-                      <span className="text-[11px] text-emerald-700 font-bold">4.8x ROI</span>
+                      <span className="text-[11px] text-emerald-700 font-bold">Privacy Notice</span>
                     </div>
                   </div>
                 </div>
@@ -720,39 +693,39 @@ export default function PaidAdvertisementsPage() {
               {/* Right Column: Copy & Bullet Points */}
               <div className="lg:col-span-7 space-y-6">
                 <span className="inline-block px-3.5 py-1 rounded-full bg-[#e20b27]/10 border border-[#e20b27]/20 text-[#e20b27] text-xs font-bold uppercase tracking-wider">
-                  Strategic Performance
+                  Transparent Process
                 </span>
 
                 <h2 className="text-3xl sm:text-4xl font-extrabold text-[#1a1053] tracking-tight">
-                  Not Just Ads — A Profit-Generating System
+                  Not Just Ads — A Transparent, Policy-Aware Process
                 </h2>
 
                 <p className="text-slate-600 text-base sm:text-lg leading-relaxed">
-                  Paid advertising (PPC) allows you to pay only when users take action — whether it’s clicking your ad, calling your clinic, or scheduling an appointment.
+                  Paid advertising (PPC) lets you pay when users click your ad. For healthcare and institutional communication, the quality of the message and the landing page matter as much as the setup.
                 </p>
 
                 <div className="p-4 rounded-xl bg-amber-50 border-l-4 border-amber-500 text-amber-900 text-sm font-semibold">
-                  ⚠️ But running ads without strategy = burning money.
+                  Running ads without clear messaging and policy review creates compliance and reputation risk.
                 </div>
 
                 <div className="space-y-3 pt-2">
-                  <p className="text-sm font-bold text-[#1a1053]">We focus on building an end-to-end patient funnel:</p>
+                  <p className="text-sm font-bold text-[#1a1053]">We focus on an end-to-end, transparent campaign process:</p>
                   <ul className="grid grid-cols-1 sm:grid-cols-2 gap-3">
                     <li className="flex items-center gap-2.5 text-sm text-slate-700 font-medium">
                       <CheckCircle2 className="w-4 h-4 text-emerald-600 flex-shrink-0" />
-                      <span>High-conversion targeting</span>
+                      <span>Transparent audience targeting</span>
                     </li>
                     <li className="flex items-center gap-2.5 text-sm text-slate-700 font-medium">
                       <CheckCircle2 className="w-4 h-4 text-emerald-600 flex-shrink-0" />
-                      <span>Funnel-based ad campaigns</span>
+                      <span>Policy-compliant ad campaigns</span>
                     </li>
                     <li className="flex items-center gap-2.5 text-sm text-slate-700 font-medium">
                       <CheckCircle2 className="w-4 h-4 text-emerald-600 flex-shrink-0" />
-                      <span>Continuous bid optimization</span>
+                      <span>Clear budget reporting</span>
                     </li>
                     <li className="flex items-center gap-2.5 text-sm text-slate-700 font-medium">
                       <CheckCircle2 className="w-4 h-4 text-emerald-600 flex-shrink-0" />
-                      <span>More leads at lower cost & higher ROI</span>
+                      <span>Truthful, non-soliciting ad copy</span>
                     </li>
                   </ul>
                 </div>
@@ -769,13 +742,13 @@ export default function PaidAdvertisementsPage() {
         <section className="py-16 sm:py-24 max-w-7xl m-auto">
           <div className="text-center max-w-3xl mx-auto space-y-4 mb-16">
             <span className="inline-block px-3.5 py-1 rounded-full bg-indigo-50 border border-indigo-200 text-indigo-700 text-xs font-bold uppercase tracking-wider">
-              Guaranteed Value
+              Transparent Value
             </span>
             <h2 className="text-3xl sm:text-4xl font-extrabold text-[#1a1053] tracking-tight">
               What You Get With Our PPC Services
             </h2>
             <p className="text-slate-600 text-base sm:text-lg">
-              Predictable, scalable, and fully transparent advertising systems engineered to maximize clinic revenue and patient trust.
+              Clear, transparent advertising systems built around accurate messaging and responsible communication.
             </p>
           </div>
 
@@ -826,13 +799,13 @@ export default function PaidAdvertisementsPage() {
         <section className="py-16 sm:py-24 max-w-7xl m-auto border-t border-slate-200/80 max-w-7xl mx-auto">
           <div className="text-center max-w-3xl mx-auto space-y-4 mb-16">
             <span className="inline-block px-3.5 py-1 rounded-full bg-emerald-50 border border-emerald-200 text-emerald-700 text-xs font-bold uppercase tracking-wider">
-              Complete Multi-Channel Coverage
+              Search & Social Coverage
             </span>
             <h2 className="text-3xl sm:text-4xl font-extrabold text-[#1a1053] tracking-tight">
-              What Is Included In Our Healthcare PPC Services?
+              What Is Included In Our Paid Campaign Services?
             </h2>
             <p className="text-slate-600 text-base sm:text-lg">
-              From searching for doctors near them on Google to seeing targeted ads on Facebook & Instagram, we cover the entire patient journey.
+              From search ads on Google to awareness campaigns on Facebook & Instagram, each is built around accurate, non-promotional information.
             </p>
           </div>
 
@@ -885,13 +858,13 @@ export default function PaidAdvertisementsPage() {
         <section id="strategy" className="py-16 sm:py-24 max-w-7xl m-auto">
           <div className="text-center max-w-3xl mx-auto space-y-4 mb-12">
             <span className="inline-block px-3.5 py-1 rounded-full bg-blue-50 border border-blue-200 text-blue-700 text-xs font-bold uppercase tracking-wider">
-              Proven Framework
+              Our Framework
             </span>
             <h2 className="text-3xl sm:text-4xl font-extrabold text-[#1a1053] tracking-tight">
-              Our 6-Step PPC Strategy & Growth Roadmap
+              Our 6-Step Campaign Process
             </h2>
             <p className="text-slate-600 text-base sm:text-lg">
-              A synchronized medical advertising roadmap designed to eliminate ad waste, drive urgent patient bookings, and maximize clinic revenue.
+              A structured roadmap designed around policy review, factual messaging, accessible landing pages, and transparent reporting.
             </p>
           </div>
 
@@ -1105,7 +1078,7 @@ export default function PaidAdvertisementsPage() {
               Why Choose Codigix Infotech
             </h2>
             <p className="text-slate-600 text-base sm:text-lg">
-              We combine deep healthcare industry understanding with advanced advertising algorithms to turn ad spend into profitable practice growth.
+              We combine healthcare industry awareness with careful advertising setup so that campaigns stay accurate, transparent, and policy-compliant.
             </p>
           </div>
 
@@ -1136,17 +1109,17 @@ export default function PaidAdvertisementsPage() {
             <div className="rounded-2xl bg-gradient-to-br from-[#1a1053] to-slate-900 text-white p-6 sm:p-7 shadow-xl flex flex-col justify-between">
               <div className="space-y-2">
                 <span className="text-xs font-bold text-amber-400 uppercase tracking-wider flex items-center gap-1.5">
-                  <Sparkles className="w-3.5 h-3.5" /> Direct Doctor Consultation
+                  <Sparkles className="w-3.5 h-3.5" /> Campaign Discovery Call
                 </span>
-                <h3 className="text-lg font-bold text-white">Need a custom PPC audit?</h3>
-                <p className="text-xs text-slate-300">We analyze your competitor ads, keyword costs, and projected CPL within 24 hours.</p>
+                <h3 className="text-lg font-bold text-white">Need a campaign policy review?</h3>
+                <p className="text-xs text-slate-300">We review your messaging, audience settings, and landing pages for accuracy and policy alignment.</p>
               </div>
               <div className="pt-4">
                 <Link
                   href="/contact"
                   className="inline-flex items-center gap-2 text-xs font-bold px-4 py-2.5 rounded-lg bg-[#e20b27] hover:bg-red-700 text-white transition-colors"
                 >
-                  <span>Request Free Audit</span>
+                  <span>Schedule a Discovery Call</span>
                   <ArrowRight className="w-4 h-4" />
                 </Link>
               </div>
@@ -1159,14 +1132,14 @@ export default function PaidAdvertisementsPage() {
         {/* SECTION 8: CLIENT SUCCESS SHOWCASE (SAME AS SEO PAGE) */}
         {/* ========================================================================= */}
         <ClientShowcaseSection
-          badgeText="Verified Paid Ads & Client Growth"
-          headingPrefix="Why Leading Brands Across Pune & PCMC"
-          headingGradient="Scale With Codigix Ad Campaigns"
-          subtitle="Delivering high-intent qualified leads, predictable patient flow, and verified 4.8x+ ROAS across clinics, hospitals, B2B enterprises, and local brands."
-          strategicAdvantageTitle="The Codigix PPC Advantage"
-          strategicAdvantageSubtitle="Precision geo-targeting, conversion rate optimization, and transparent real-time reporting."
-          guaranteeTitle="100% Transparent ROI & Budget Safety"
-          guaranteeQuote='"Every single marketing rupee is tracked through server-side APIs to deliver verified patient appointments and sales revenue."'
+          badgeText="Selected Work by Regulatory Scope"
+          headingPrefix="Organizations Across Pune & PCMC"
+          headingGradient="Work With Codigix Infotech"
+          subtitle="Website architecture, factual service pages, and technical hygiene for healthcare organizations (NMC and NDC frameworks) and non-medical businesses, which sit outside NMC scope."
+          strategicAdvantageTitle="How We Run Campaigns"
+          strategicAdvantageSubtitle="Transparent audience settings, factual messaging, and clear reporting."
+          guaranteeTitle="Ethical Communication Commitment"
+          guaranteeQuote='"Campaign messaging is truthful and non-soliciting, with no inducements or cure promises, and tracking is configured in line with the IT Act, 2000 and the DPDP Act, 2023."'
         />
 
 
@@ -1186,7 +1159,7 @@ export default function PaidAdvertisementsPage() {
                 </div>
                 <div>
                   <h3 className="text-xl sm:text-2xl font-bold text-white">Tools & Platforms We Use</h3>
-                  <p className="text-xs text-slate-300">Enterprise ad platforms and analytics stack</p>
+                  <p className="text-xs text-slate-300">Ad platforms and analytics stack</p>
                 </div>
               </div>
 
@@ -1210,7 +1183,7 @@ export default function PaidAdvertisementsPage() {
                 </div>
                 <div>
                   <h3 className="text-xl sm:text-2xl font-bold text-white">KPIs We Track</h3>
-                  <p className="text-xs text-slate-300">Metrics that directly drive clinic bottom-line</p>
+                  <p className="text-xs text-slate-300">Transparent indicators we review</p>
                 </div>
               </div>
 
@@ -1240,7 +1213,7 @@ export default function PaidAdvertisementsPage() {
               FAQ : <span className="text-transparent bg-clip-text bg-gradient-to-r from-blue-600 via-indigo-600 to-[#e20b27]">Frequently Asked Questions</span>
             </h2>
             <p className="text-slate-600 text-sm sm:text-base">
-              Clear answers to the most common questions healthcare practitioners and clinic managers ask about our paid advertising services.
+              Clear answers to common questions about our paid campaign services.
             </p>
           </div>
 
@@ -1295,7 +1268,7 @@ export default function PaidAdvertisementsPage() {
               </div>
               <div>
                 <h4 className="text-sm font-bold text-[#1a1053]">Have a specific advertising question?</h4>
-                <p className="text-xs text-slate-600">Our senior healthcare ad strategists are ready to evaluate your target location and budget.</p>
+                <p className="text-xs text-slate-600">Our team is ready to discuss your location, messaging needs, and budget.</p>
               </div>
             </div>
             <Link
@@ -1303,7 +1276,7 @@ export default function PaidAdvertisementsPage() {
               className="inline-flex items-center gap-2 py-2.5 px-5 rounded-xl bg-[#e20b27] hover:bg-red-700 text-white font-bold text-xs shrink-0 shadow-sm transition-colors"
             >
               <PhoneCall size={14} />
-              <span>Talk to PPC Specialist</span>
+              <span>Talk to Our Team</span>
             </Link>
           </div>
         </section>
@@ -1320,15 +1293,15 @@ export default function PaidAdvertisementsPage() {
             <div className="relative z-10 max-w-3xl mx-auto text-center space-y-6">
               <div className="inline-flex items-center gap-2 px-4 py-1.5 rounded-full bg-white/10 border border-white/20 text-xs font-bold text-amber-300">
                 <Sparkles className="w-4 h-4" />
-                <span>Immediate Patient Pipeline</span>
+                <span>Transparent Campaign Setup</span>
               </div>
 
               <h2 className="text-3xl sm:text-4xl lg:text-5xl font-extrabold text-white tracking-tight leading-tight">
-                Ready to Generate High-Quality Leads with Paid Ads?
+                Ready to Plan Policy-Compliant Paid Campaigns?
               </h2>
 
               <p className="text-slate-300 text-base sm:text-lg leading-relaxed max-w-2xl mx-auto">
-                Start with a performance-driven ad campaign for your healthcare practice. Book your free 1-on-1 ad strategy consultation today.
+                Connect with our team to discuss clear, truthful, policy-compliant search and social campaigns for your organization.
               </p>
 
               <div className="pt-2 flex flex-col sm:flex-row items-center justify-center gap-4">
@@ -1337,7 +1310,7 @@ export default function PaidAdvertisementsPage() {
                   className="w-full sm:w-auto inline-flex items-center justify-center gap-2.5 px-8 py-4 rounded-xl bg-gradient-to-r from-amber-400 to-amber-500 hover:from-amber-500 hover:to-amber-600 text-slate-950 font-extrabold text-base shadow-lg shadow-amber-400/20 hover:shadow-xl transition-all"
                 >
                   <Sparkles className="w-5 h-5 text-slate-950" />
-                  <span>Book Your Free PPC Consultation</span>
+                  <span>Schedule a Discovery Call</span>
                   <ArrowRight className="w-5 h-5" />
                 </Link>
 

@@ -60,37 +60,36 @@ export default function WhoWeAre() {
                   <span className="relative inline-flex rounded-full h-2 w-2 bg-blue-600"></span>
                 </span>
                 <span className="text-xs font-semibold text-[#1a1053] tracking-wide">
-                  Who We Are · Healthcare Specialists
+                  Who We Are
                 </span>
               </div>
 
               <h2 className="text-3xl sm:text-4xl lg:text-5xl font-semibold text-[#1a1053] tracking-tight leading-[1.15] mb-4">
-                Empowering Medical Brands with <br className="hidden md:block" />
+                Digital Engineering &amp; <br className="hidden md:block" />
                 <span className="text-transparent bg-clip-text bg-gradient-to-r from-blue-600 via-indigo-600 to-[#e20b27]">
-                  Organic Patient Growth
+                  Ethical Communication
                 </span>
               </h2>
 
               <div className="text-slate-600 text-sm sm:text-base font-light leading-relaxed mb-8 space-y-3.5">
                 <p>
-                  We are Codigix Infotech Pvt Ltd — a Pune-based digital marketing agency with an exclusive focus on the healthcare sector. From multi-speciality hospitals to private dental, hair transplant, IVF, and dermatology clinics, we build authoritative organic visibility that patients trust.
+                  Codigix Infotech is a technology and digital communication firm based in Pune, working across healthcare institutions, enterprises, and commercial businesses. Our work centers on dependable web engineering, structured information design, search discoverability, and clear educational communication.
                 </p>
                 <p>
-                  Our expertise centers on Healthcare SEO, GMB Google Maps ranking, High-DA Backlinks & Citations, and active patient education on Instagram, Meta, and YouTube.
+                  Healthcare engagements follow NMC ethical communication principles (allopathic and hospital), NDC norms (dental) and AYUSH guidelines (Ayurvedic); non-medical sectors sit outside these frameworks.
                 </p>
               </div>
 
-              {/* Redesigned Stats Block */}
-              <div className="flex flex-wrap items-center gap-6 p-5 bg-white/40 border border-white/60 rounded-3xl shadow-sm backdrop-blur-md">
-                <div className="flex-1 min-w-[120px]">
-                  <div className="text-3xl md:text-4xl font-semibold text-transparent bg-clip-text bg-gradient-to-br from-[#1a1053] to-[#3a2885] mb-1.5">100+</div>
-                  <div className="text-[9px] font-medium tracking-widest text-slate-500 uppercase">Clinics Scaled</div>
-                </div>
-                <div className="w-px h-12 bg-gradient-to-b from-transparent via-slate-300 to-transparent hidden sm:block"></div>
-                <div className="flex-1 min-w-[120px]">
-                  <div className="text-3xl md:text-4xl font-semibold text-transparent bg-clip-text bg-gradient-to-br from-blue-600 to-purple-600 mb-1.5">#1</div>
-                  <div className="text-[9px] font-medium tracking-widest text-slate-500 uppercase">Google Maps & SEO</div>
-                </div>
+              {/* Healthcare Ethics & Compliance Commitments */}
+              <div className="p-5 bg-white/40 border border-white/60 rounded-3xl shadow-sm backdrop-blur-md">
+                <h3 className="text-sm font-semibold text-[#1a1053] mb-3">Healthcare Ethics &amp; Compliance Commitments</h3>
+                <ul className="space-y-2.5 text-xs sm:text-[13px] text-slate-600 font-light leading-relaxed">
+                  <li><span className="font-semibold text-slate-800">No Patient Solicitation or Referral Incentives:</span> Our engagement models are strictly service-based and are never tied to acquiring individual patients or paying/receiving patient referral incentives.</li>
+                  <li><span className="font-semibold text-slate-800">Factual &amp; Non-Promotional Framing:</span> For medical and hospital engagements, we prioritize accurate institutional details, verified practitioner credentials and registration information, and public-health education without unsubstantiated claims or cure promises.</li>
+                  <li><span className="font-semibold text-slate-800">Authenticity &amp; AI Transparency:</span> We do not use fabricated reviews or deceptive synthetic personas, and we apply clear source disclosures whenever AI tools assist in content or media creation.</li>
+                  <li><span className="font-semibold text-slate-800">Data Protection First:</span> We design digital touchpoints with data minimization and security in mind, aligned with the Information Technology Act, 2000 and the Digital Personal Data Protection Act, 2023 (and 2025 Rules).</li>
+                </ul>
+                <p className="mt-3 text-[11px] text-slate-500 font-light leading-relaxed">All healthcare content undergoes internal pre-publication review for factual accuracy, credential and registration disclosures, privacy safeguards and AI labeling. Agency fees are never linked to patient procurement.</p>
               </div>
             </motion.div>
 
@@ -121,9 +120,9 @@ export default function WhoWeAre() {
                   <svg className="w-6 h-6" fill="none" viewBox="0 0 24 24" stroke="currentColor"><path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M17.657 16.657L13.414 20.9a1.998 1.998 0 01-2.827 0l-4.242-4.243a8 8 0 1111.314 0z" /><path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M15 11a3 3 0 11-6 0 3 3 0 016 0z" /></svg>
                 </div>
                 <div>
-                  <div className="text-[10px] font-semibold text-emerald-600 uppercase tracking-widest mb-1">Visibility</div>
-                  <div className="text-lg font-semibold text-[#1a1053] leading-tight mb-2">Local GMB Maps</div>
-                  <p className="text-xs text-slate-500 font-light leading-relaxed">Dominate local 3-pack map rankings and attract nearby patients ready to book appointments.</p>
+                  <div className="text-[10px] font-semibold text-emerald-600 uppercase tracking-widest mb-1">Listings</div>
+                  <div className="text-lg font-semibold text-[#1a1053] leading-tight mb-2">Accurate Local Profiles</div>
+                  <p className="text-xs text-slate-500 font-light leading-relaxed">Accurate, consistent business listing details such as location, hours, departments and services, without ranking manipulation.</p>
                 </div>
               </div>
 
@@ -148,9 +147,9 @@ export default function WhoWeAre() {
                   <svg className="w-7 h-7" fill="none" viewBox="0 0 24 24" stroke="currentColor"><path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M13.828 10.172a4 4 0 00-5.656 0l-4 4a4 4 0 105.656 5.656l1.102-1.101m-.758-4.899a4 4 0 005.656 0l4-4a4 4 0 00-5.656-5.656l-1.1 1.1" /></svg>
                 </div>
                 <div>
-                  <div className="text-[10px] font-semibold text-indigo-600 uppercase tracking-widest mb-1">Domain Authority</div>
-                  <div className="text-xl font-semibold text-[#1a1053] leading-tight mb-1">High-DA Backlinks</div>
-                  <p className="text-xs text-slate-500 font-light">High-authority medical citations and digital PR that elevate your site to page 1 rankings.</p>
+                  <div className="text-[10px] font-semibold text-indigo-600 uppercase tracking-widest mb-1">Technical SEO</div>
+                  <div className="text-xl font-semibold text-[#1a1053] leading-tight mb-1">Structured Data &amp; Metadata</div>
+                  <p className="text-xs text-slate-500 font-light">Structured metadata, crawl and index health, and clear topical architecture. No guaranteed position claims.</p>
                 </div>
               </div>
 
@@ -173,8 +172,8 @@ export default function WhoWeAre() {
                 <div className="w-10 h-10 rounded-xl bg-gradient-to-br from-orange-50 to-orange-100/50 flex items-center justify-center text-orange-500 mb-3 shadow-inner border border-orange-100 relative z-10">
                   <svg className="w-5 h-5" fill="none" viewBox="0 0 24 24" stroke="currentColor"><path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M14 10h4.764a2 2 0 011.789 2.894l-3.5 7A2 2 0 0115.263 21h-4.017c-.163 0-.326-.02-.485-.06L7 20m7-10V5a2 2 0 00-2-2h-.095c-.5 0-.905.405-.905.905 0 .714-.211 1.412-.608 2.006L7 11v9m7-10h-2M7 20H5a2 2 0 01-2-2v-6a2 2 0 012-2h2.5" /></svg>
                 </div>
-                <div className="text-[9px] font-semibold text-orange-600 uppercase tracking-widest mb-0.5">Insta & Meta</div>
-                <div className="text-sm font-semibold text-[#1a1053]">Social Branding</div>
+                <div className="text-[9px] font-semibold text-orange-600 uppercase tracking-widest mb-0.5">Social &amp; Video</div>
+                <div className="text-sm font-semibold text-[#1a1053]">Educational Social Content</div>
               </div>
 
               {/* 4. Standard Card: YouTube Content */}
@@ -197,7 +196,7 @@ export default function WhoWeAre() {
                   <svg className="w-5 h-5" fill="none" viewBox="0 0 24 24" stroke="currentColor"><path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M15 10l4.553-2.276A1 1 0 0121 8.618v6.764a1 1 0 01-1.447.894L15 14M5 18h8a2 2 0 002-2V8a2 2 0 00-2-2H5a2 2 0 00-2 2v8a2 2 0 002 2z" /></svg>
                 </div>
                 <div className="text-[9px] font-semibold text-pink-600 uppercase tracking-widest mb-0.5">Education</div>
-                <div className="text-sm font-semibold text-[#1a1053]">YouTube Growth</div>
+                <div className="text-sm font-semibold text-[#1a1053]">Educational Video</div>
               </div>
 
               {/* 5. Wide Card: Web Dev */}
@@ -223,7 +222,7 @@ export default function WhoWeAre() {
                 <div>
                   <div className="text-[10px] font-semibold text-purple-600 uppercase tracking-widest mb-1">Platform</div>
                   <div className="text-xl font-semibold text-[#1a1053] leading-tight mb-1">Web Development</div>
-                  <p className="text-xs text-slate-500 font-light">Lightning-fast, high-converting medical websites built for the modern patient.</p>
+                  <p className="text-xs text-slate-500 font-light">Fast, accessible, privacy-aware websites aligned with Indian data-protection laws.</p>
                 </div>
               </div>
 
@@ -246,8 +245,8 @@ export default function WhoWeAre() {
                 <div className="w-10 h-10 rounded-xl bg-white/20 flex items-center justify-center text-white mb-3 backdrop-blur-md border border-white/30 relative z-10">
                   <svg className="w-5 h-5" fill="none" viewBox="0 0 24 24" stroke="currentColor"><path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M13 10V3L4 14h7v7l9-11h-7z" /></svg>
                 </div>
-                <div className="text-[9px] font-semibold text-blue-200 uppercase tracking-widest mb-0.5">Top Rankings</div>
-                <div className="text-sm font-semibold text-white">Healthcare SEO</div>
+                <div className="text-[9px] font-semibold text-blue-200 uppercase tracking-widest mb-0.5">Technical Health</div>
+                <div className="text-sm font-semibold text-white">Search Visibility</div>
               </div>
 
             </div>

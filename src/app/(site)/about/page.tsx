@@ -8,9 +8,9 @@ import { pageMetadata } from '@/lib/page-seo';
 
 export const generateMetadata = () =>
   pageMetadata({
-    title: 'About Codigix Infotech | Healthcare Marketing Agency Pune',
+    title: 'About Codigix Infotech | Digital Engineering & Communication, Pune',
     description:
-      'Learn more about Codigix Infotech, our mission, our team, and our commitment to providing cutting-edge digital marketing solutions for the healthcare industry.',
+      'Codigix Infotech is a Pune-based technology and digital communication firm working across healthcare institutions, enterprises, and commercial businesses, with clear ethics and data-protection commitments.',
     path: '/about',
   });
 

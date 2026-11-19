@@ -66,7 +66,9 @@ export default async function CookiesPage() {
             <p>
               You can block or delete cookies in your browser settings. Blocking third-party cookies may stop embedded maps or videos from
               loading, but the rest of the site will work normally. See our <Link href="/privacy">Privacy Policy</Link> for how we handle
-              personal information.
+              personal information in accordance with the Information Technology Act, 2000 and the Digital Personal Data Protection Act, 2023
+              (and 2025 Rules). Where consent is required for any non-essential cookie, you may withdraw it at any time by contacting us or
+              clearing your browser storage.
             </p>
           ),
         },

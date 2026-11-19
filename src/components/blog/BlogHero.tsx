@@ -33,11 +33,11 @@ interface BlogHeroProps {
 }
 
 const focusTopics = [
-  { name: 'Google Maps 3-Pack', tag: 'Local SEO', icon: MapPin },
-  { name: 'Medical E-E-A-T', tag: 'Healthcare Marketing', icon: Stethoscope },
-  { name: 'AI Search & AEO', tag: 'AI Search', icon: Sparkles },
-  { name: 'High-ROI PPC', tag: 'PPC', icon: TrendingUp },
-  { name: 'E-commerce CRO', tag: 'CRO', icon: Flame },
+  { name: 'Accurate Local Listings', tag: 'Local SEO', icon: MapPin },
+  { name: 'Responsible Health Content', tag: 'Healthcare Marketing', icon: Stethoscope },
+  { name: 'AI Search & Structured Data', tag: 'AI Search', icon: Sparkles },
+  { name: 'Policy-Compliant Campaigns', tag: 'PPC', icon: TrendingUp },
+  { name: 'E-commerce Experience', tag: 'CRO', icon: Flame },
 ];
 
 export default function BlogHero({
@@ -107,7 +107,7 @@ export default function BlogHero({
               <span className="relative inline-flex rounded-full h-2 w-2 bg-[#e20b27]" />
             </span>
             <span className="text-xs font-bold tracking-wider uppercase text-slate-200">
-              {badgeLabel || (isCategory ? `Category • ${categoryName}` : 'Codigix Growth & Healthcare Intelligence')}
+              {badgeLabel || (isCategory ? `Category • ${categoryName}` : 'Codigix Insights & Public-Health Communication')}
             </span>
           </motion.div>
 
@@ -136,9 +136,9 @@ export default function BlogHero({
               </>
             ) : (
               <>
-                Data-Backed Strategies &{' '}
+                Clear Information &{' '}
                 <span className="text-transparent bg-clip-text bg-gradient-to-r from-blue-300 via-indigo-200 to-[#ff7585]">
-                  Growth Intelligence.
+                  Responsible Communication.
                 </span>
               </>
             )}
@@ -153,8 +153,8 @@ export default function BlogHero({
           >
             {subtitle ||
               (isCategory
-                ? `Explore research, tactics, and case studies specifically dedicated to ${categoryName?.toLowerCase()}.`
-                : 'Actionable playbooks, Google Maps ranking blueprints, medical E-E-A-T content systems, and conversion frameworks tested across leading clinics and brands.')}
+                ? `Explore articles and guidance dedicated to ${categoryName?.toLowerCase()}.`
+                : 'Practical guidance on structured information, accurate listings, responsible public-health content and privacy-aware web systems. Articles carry author, reviewer, reference and AI-assistance notes.')}
           </motion.p>
 
           {/* Direct Search Bar */}
@@ -227,8 +227,8 @@ export default function BlogHero({
               <BookOpen size={20} />
             </div>
             <div className="text-left">
-              <div className="text-lg font-bold text-white leading-tight">50+</div>
-              <div className="text-[11px] text-indigo-200/70">Growth Playbooks</div>
+              <div className="text-lg font-bold text-white leading-tight">Dated</div>
+              <div className="text-[11px] text-indigo-200/70">Publication Date Shown</div>
             </div>
           </div>
 
@@ -237,8 +237,8 @@ export default function BlogHero({
               <ShieldCheck size={20} />
             </div>
             <div className="text-left">
-              <div className="text-lg font-bold text-white leading-tight">100%</div>
-              <div className="text-[11px] text-indigo-200/70">Verified Strategies</div>
+              <div className="text-lg font-bold text-white leading-tight">Sourced</div>
+              <div className="text-[11px] text-indigo-200/70">Reference Sources Listed</div>
             </div>
           </div>
 
@@ -247,8 +247,8 @@ export default function BlogHero({
               <TrendingUp size={20} />
             </div>
             <div className="text-left">
-              <div className="text-lg font-bold text-white leading-tight">Weekly</div>
-              <div className="text-[11px] text-indigo-200/70">Market Research</div>
+              <div className="text-lg font-bold text-white leading-tight">Reviewed</div>
+              <div className="text-[11px] text-indigo-200/70">Pre-Publication Review</div>
             </div>
           </div>
 
@@ -257,8 +257,8 @@ export default function BlogHero({
               <CheckCircle2 size={20} />
             </div>
             <div className="text-left">
-              <div className="text-lg font-bold text-white leading-tight">Free</div>
-              <div className="text-[11px] text-indigo-200/70">Practice Audits</div>
+              <div className="text-lg font-bold text-white leading-tight">AI Notes</div>
+              <div className="text-[11px] text-indigo-200/70">AI Assistance Disclosed</div>
             </div>
           </div>
         </motion.div>

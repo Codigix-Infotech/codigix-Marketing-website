@@ -51,63 +51,63 @@ import {
 const whatWeDoList = [
   {
     num: "01",
-    title: "Custom healthcare website design & development",
-    desc: "Bespoke, high-converting websites designed specifically for doctors, clinics, hospitals, and diagnostic centers with patient-first UI/UX."
+    title: "Custom website design & development",
+    desc: "Bespoke, accessible websites for hospitals, clinics, diagnostic centers, and enterprises, with clear information hierarchy and navigation."
   },
   {
     num: "02",
     title: "Mobile-responsive & fast-loading websites",
-    desc: "100% mobile-first architecture optimized to load in under 1.5 seconds on 4G/5G mobile networks, maximizing patient retention."
+    desc: "Mobile-first architecture focused on Core Web Vitals, so pages load quickly and read well on 4G/5G mobile networks."
   },
   {
     num: "03",
-    title: "Online appointment & booking integration",
-    desc: "Seamless 1-click WhatsApp booking, calendar scheduling systems, and instant call triggers that convert visitors into consultations."
+    title: "Contact & enquiry integration",
+    desc: "Clear contact options, click-to-call, and enquiry forms with transparent privacy notices and minimal data collection."
   },
   {
     num: "04",
-    title: "Patient portal & telemedicine integration",
-    desc: "Secure patient inquiry portals, digital lab report downloads, and integrated video consultation booking for modern clinics."
+    title: "Secure portal & report-download integration",
+    desc: "Secure, access-controlled portals and digital report downloads, built with data minimization and security in mind."
   },
   {
     num: "05",
-    title: "SEO-ready architecture & local SEO structure",
-    desc: "Built with clean schema markup, localized Pune/PCMC URL structures, meta tags, and Core Web Vitals excellence from day one."
+    title: "SEO-ready architecture & structured data",
+    desc: "Built with clean schema markup, logical URL structures, accurate meta tags, and a Core Web Vitals focus from day one."
   },
   {
     num: "06",
     title: "Ongoing maintenance & security support",
-    desc: "24/7 uptime monitoring, daily cloud backups, SSL encryption, SSL certificates, speed optimization, and regular content updates."
+    desc: "Uptime monitoring, regular cloud backups, SSL encryption, speed optimization, and regular content updates."
   }
 ];
 
 const whatYouGet = [
   {
     icon: Layout,
-    title: "Conversion-Focused Design",
-    desc: "Every page layout, color choice, and button is engineered to turn casual visitors into confirmed clinic appointments.",
-    badge: "High CVR",
+    title: "Clear, Accessible Design",
+    desc: "Every page layout, color choice, and button is designed for clarity, readability, and accessibility.",
+    badge: "WCAG 2.1 AA Aligned",
     color: "from-blue-600 to-indigo-600"
   },
   {
     icon: Zap,
     title: "Fast & Mobile-Optimized",
-    desc: "Ultra-fast load times with Google PageSpeed 95+ scores, keeping impatient patients engaged on mobile devices.",
-    badge: "< 1.5s Load",
+    desc: "Pages built with a Core Web Vitals focus, so they load quickly and stay usable on mobile devices.",
+    badge: "Core Web Vitals Focused",
     color: "from-amber-600 to-orange-600"
   },
   {
     icon: Search,
     title: "SEO-Ready Structure",
-    desc: "Complete technical SEO built in — medical schema markup, fast sitemaps, OpenGraph tags, and clean semantic HTML5.",
-    badge: "Google Rank #1",
+    desc: "Technical SEO built in — structured data, sitemaps, OpenGraph tags, and clean semantic HTML5, with no ranking guarantees.",
+    badge: "Structured Data",
     color: "from-emerald-600 to-teal-600"
   },
   {
     icon: ShieldCheck,
     title: "Scalable & Secure",
-    desc: "Robust cloud architecture, SSL protection, spam protection, and patient data privacy complying with healthcare standards.",
-    badge: "100% Secure",
+    desc: "Robust cloud architecture, SSL protection, spam protection, and privacy-by-design aligned with the IT Act, 2000 and the DPDP Act, 2023.",
+    badge: "Privacy by Design",
     color: "from-purple-600 to-pink-600"
   }
 ];
@@ -117,31 +117,31 @@ const websiteTypes = [
     icon: Stethoscope,
     title: "Doctor Websites",
     subtitle: "Solo Practitioners & Specialists",
-    desc: "Personal authority websites highlighting doctor credentials, specialties, awards, patient reviews, and instant consultation booking."
+    desc: "Practitioner websites that present qualifications, registration details, specialties, and contact information factually."
   },
   {
     icon: Hospital,
     title: "Clinic & Hospital Websites",
     subtitle: "Multi-Page & Multi-Specialty",
-    desc: "Comprehensive hospital portals featuring department directories, doctor rosters, OPD timings, emergency info, and admission guides."
+    desc: "Comprehensive institutional portals featuring department directories, practitioner listings, OPD timings, emergency information, and visitor guides."
   },
   {
     icon: ShoppingCart,
     title: "E-Commerce Websites",
-    subtitle: "Pharma & Health Stores",
-    desc: "High-speed online medicine and medical equipment stores with secure payment gateways, cart management, and inventory tracking."
+    subtitle: "Non-Regulated Retail Stores",
+    desc: "Fast online stores for commercial, non-regulated retail businesses with secure payment gateways, cart management, and inventory tracking."
   },
   {
     icon: Smile,
-    title: "Dentist & Cosmetic Portals",
-    subtitle: "Aesthetic & Dental Clinics",
-    desc: "Visual-rich websites with before/after smile galleries, transparent procedure pricing, and virtual smile assessment forms."
+    title: "Dental Clinic Websites",
+    subtitle: "NDC Framework",
+    desc: "Clear websites for dental clinics presenting services, practitioner credentials, and registration details, following NDC communication principles."
   },
   {
     icon: FlaskConical,
     title: "Diagnostic & Pathology Labs",
-    subtitle: "Lab & Test Booking Centers",
-    desc: "Interactive health package catalogs, test search engines, home sample collection booking, and instant PDF report download portals."
+    subtitle: "Lab Information & Reports",
+    desc: "Clear test information catalogs, preparation guides, and secure report download portals."
   }
 ];
 
@@ -150,55 +150,55 @@ const processSteps = [
     step: "01",
     phase: "Phase 01",
     title: "Discovery & Strategy",
-    tagline: "Architecture & Conversion Funnel",
-    desc: "We analyze your clinical specialties, target patient demographics in PCMC & Pune, and map out frictionless appointment pathways.",
-    deliverable: "Information Architecture & Booking Flow",
+    tagline: "Architecture & Information Hierarchy",
+    desc: "We review your services, audiences, and applicable regulatory framework, and map out a clear information architecture and navigation.",
+    deliverable: "Information Architecture & Sitemap",
     points: [
-      "Target patient persona & intent mapping",
-      "Competitor UX/UI gap analysis",
-      "Conversion hierarchy & sitemap planning",
-      "Goal alignment: calls vs appointment forms"
+      "Audience & content requirements mapping",
+      "Existing site UX/UI review",
+      "Information hierarchy & sitemap planning",
+      "Regulatory framework check (NMC / NDC / AYUSH / non-medical)"
     ]
   },
   {
     step: "02",
     phase: "Phase 02",
     title: "UI/UX Design & Wireframing",
-    tagline: "Figma Prototyping & Medical Aesthetics",
-    desc: "Crafting intuitive, trust-inducing interfaces with calming medical palettes, high-contrast readability, and frictionless mobile layouts.",
+    tagline: "Figma Prototyping & Accessible Design",
+    desc: "Crafting intuitive interfaces with calm palettes, high-contrast readability, and clear mobile layouts.",
     deliverable: "Interactive High-Fidelity Prototype",
     points: [
       "Figma interactive prototype creation",
-      "Medical color palette & modern typography",
+      "Accessible color palette & modern typography",
       "Mobile-first responsive layouts",
-      "Doctor approval on design mockups"
+      "Client review and approval of design mockups"
     ]
   },
   {
     step: "03",
     phase: "Phase 03",
     title: "Development & Coding",
-    tagline: "Next.js Architecture & Sub-1.5s Speed",
-    desc: "Clean, ultra-fast code built with modern frameworks, instant WhatsApp booking triggers, and seamless backend API integrations.",
+    tagline: "Next.js Architecture & Core Web Vitals Focus",
+    desc: "Clean, fast code built with modern frameworks, click-to-contact options, and secure backend API integrations.",
     deliverable: "Production-Grade Codebase",
     points: [
       "Modern Next.js / React / WordPress tech stack",
-      "Ultra-fast clean code architecture",
-      "WhatsApp & appointment API integration",
-      "Interactive doctor rosters & department tabs"
+      "Clean, performance-focused code architecture",
+      "Contact & enquiry API integration",
+      "Practitioner listings & department tabs"
     ]
   },
   {
     step: "04",
     phase: "Phase 04",
     title: "Content & On-Page SEO",
-    tagline: "Medical E-E-A-T & Schema Setup",
-    desc: "Patient-friendly clinical copywriting aligned with medical ethics, structured schema markup, and local PCMC keyword integration.",
-    deliverable: "SEO-Optimized Clinical Copy & Schema",
+    tagline: "Accurate Content & Schema Setup",
+    desc: "Plain-language copy aligned with medical communication ethics, structured schema markup, and accurate local information.",
+    deliverable: "Reviewed Copy & Structured Data",
     points: [
-      "Medically accurate clinical copywriting",
-      "Google medical schema structured data",
-      "Local PCMC & Pune keyword integration",
+      "Factual, practitioner-reviewed copy",
+      "Schema.org structured data",
+      "Accurate local listing details",
       "Image compression & WebP optimization"
     ]
   },
@@ -206,56 +206,56 @@ const processSteps = [
     step: "05",
     phase: "Phase 05",
     title: "Testing & Launch",
-    tagline: "Multi-Device QA & Zero-Downtime Live",
-    desc: "Rigorous testing across 20+ device viewports, Core Web Vitals audit (PageSpeed 95+), SSL verification, and seamless domain migration.",
-    deliverable: "Flawless Live Website Deployment",
+    tagline: "Multi-Device QA & Careful Launch",
+    desc: "Testing across device viewports, a Core Web Vitals audit, accessibility checks, SSL verification, and careful domain migration.",
+    deliverable: "Live Website Deployment",
     points: [
       "Cross-browser and multi-device QA testing",
-      "Google PageSpeed Core Web Vitals check",
+      "Core Web Vitals & accessibility check",
       "SSL certificate & security hardening",
-      "Live DNS migration with zero downtime"
+      "Planned DNS migration to minimize downtime"
     ]
   },
   {
     step: "06",
     phase: "Phase 06",
     title: "Maintenance & Support",
-    tagline: "24/7 Security & Performance Audits",
-    desc: "Continuous cloud backups, proactive security patching, speed optimization, and prompt updates whenever your clinic services evolve.",
-    deliverable: "Ongoing Peace-of-Mind Maintenance",
+    tagline: "Security & Performance Reviews",
+    desc: "Regular cloud backups, proactive security patching, speed optimization, and prompt updates whenever your services evolve.",
+    deliverable: "Ongoing Maintenance",
     points: [
       "Continuous server uptime monitoring",
-      "Automated daily cloud backups",
+      "Regular automated cloud backups",
       "Monthly speed & security health audits",
-      "Ongoing content additions & doctor profile updates"
+      "Ongoing content additions & practitioner profile updates"
     ]
   }
 ];
 
 const whyChooseUs = [
   {
-    title: "Conversion-Focused Approach",
-    desc: "We don't just build pretty pages; we engineer patient acquisition machines with clear booking funnels and frictionless calls-to-action.",
+    title: "Clarity-Focused Approach",
+    desc: "We don't just build pretty pages; we build clear, accurate, accessible websites with logical navigation and transparent contact options.",
     icon: Target
   },
   {
-    title: "Performance-Driven Development",
-    desc: "Lightweight, blazing-fast code that scores 90+ on Google PageSpeed Insights, ensuring top mobile search rankings and zero drop-offs.",
+    title: "Performance-Focused Development",
+    desc: "Lightweight, efficient code built with a Core Web Vitals focus for a smooth mobile experience.",
     icon: Zap
   },
   {
-    title: "Healthcare-Oriented Strategy",
-    desc: "We understand patient anxiety, medical ethics, and clinical workflows, creating interfaces that instantly reassure and educate visitors.",
+    title: "Healthcare-Aware Design",
+    desc: "We understand medical communication ethics and clinical workflows, and design interfaces that inform clearly and calmly.",
     icon: HeartPulse
   },
   {
-    title: "HIPAA & Privacy Compliance",
-    desc: "Enterprise-grade SSL encryption, secure contact form submissions, and strict patient privacy architecture.",
+    title: "IT Act & DPDP Alignment",
+    desc: "SSL encryption, secure form submissions, and privacy architecture aligned with the Information Technology Act, 2000 and the Digital Personal Data Protection Act, 2023 (and 2025 Rules).",
     icon: Lock
   },
   {
     title: "Local Market Understanding",
-    desc: "Deep expertise in Pune and PCMC patient demographics, multi-lingual considerations (English/Marathi/Hindi), and local clinic hubs.",
+    desc: "Familiarity with Pune and PCMC audiences, multi-lingual considerations (English/Marathi/Hindi), and local areas.",
     icon: Globe
   }
 ];
@@ -266,107 +266,84 @@ const techStack = [
   "WordPress & Elementor Pro",
   "Node.js & PHP Engines",
   "Vercel & AWS Cloud Hosting",
-  "Google PageSpeed Optimizer",
+  "Lighthouse & PageSpeed Insights",
   "Yoast / RankMath SEO Suites",
   "Cloudflare CDN & SSL"
 ];
 
 const kpisList = [
-  "Google PageSpeed Score (95+)",
-  "Mobile Load Time (< 1.5s)",
-  "Appointment Form Conversion Rate",
-  "Direct Call & WhatsApp Click Rate",
-  "Core Web Vitals Pass Rate",
-  "Bounce Rate Reduction (< 35%)",
-  "Search Engine Indexation Speed"
+  "Core Web Vitals (LCP, INP, CLS)",
+  "Mobile Page Load Speed",
+  "Accessibility (WCAG 2.1 AA aligned)",
+  "Structured Data Validity",
+  "Privacy Notice & Consent Checks",
+  "SSL & Security Headers",
+  "Search Engine Indexation Status"
 ];
 
 const clientShowcase = [
   {
     name: "Dr. Sheetal's Glow Clinic",
-    tag: "Skin & Dermatology",
+    tag: "Dermatology (NMC scope)",
     location: "Kothrud, Pune",
-    duration: "6+ Months Active",
-    services: "Social Media Marketing, SEO & GMB, Meta Lead Ads, Web Development",
-    result: "+380% Inquiries",
-    highlight: "Rank #1: Skin Clinic PCMC"
-  },
-  {
-    name: "Regain Hair & Skin Clinic",
-    tag: "Trichology & Hair",
-    location: "Wakad, Pune",
-    duration: "1 Year Active",
-    services: "Social Media Marketing, SEO, Google Business Profile (GMB), Ad Funnels",
-    result: "650+ Inquiries/Mo",
-    highlight: "4.9x Ad ROAS"
-  },
-  {
-    name: "Dr. Prasad Kasbekar Clinic",
-    tag: "Oncology Specialist",
-    location: "Pune & PCMC",
-    duration: "1 Year Active",
-    services: "Doctor Authority Branding, High-Intent Search Ads, Video Content",
-    result: "180+ Consultations",
-    highlight: "High-Intent Patients"
+    duration: "Ongoing engagement",
+    services: "Website development, technical SEO, factual service pages",
+    result: "Website & Information Architecture",
+    highlight: "Factual service pages"
   },
   {
     name: "Canopy Dental Care",
-    tag: "Dental & Aligners",
+    tag: "Dental (NDC scope)",
     location: "Baner, Pune",
-    duration: "1 Year Active",
-    services: "Local Geo-Targeted SEO, WhatsApp Funnels, Website Development",
-    result: "320+ Patients",
-    highlight: "Rank #1: Invisalign Wakad"
+    duration: "Ongoing engagement",
+    services: "Website development, accurate local listings",
+    result: "Website & Accessibility Work",
+    highlight: "Accurate listings"
   },
   {
     name: "CorpLegal Solutions & Co",
-    tag: "Corporate Law & B2B",
+    tag: "Corporate Law & B2B (non-medical)",
     location: "Bavdhan, Pune",
-    duration: "1 Year Active",
-    services: "Web Development, Social Media Content Writing, B2B Search",
-    result: "#1 Organic Authority",
-    highlight: "Rank #1: Corporate Law Pune"
+    duration: "Ongoing engagement",
+    services: "Web development, content writing, technical SEO",
+    result: "Structured Web Content",
+    highlight: "Technical SEO hygiene"
   },
   {
     name: "Bakul Hospitality & Catering",
-    tag: "Hospitality & Events",
+    tag: "Hospitality & Events (non-medical)",
     location: "Pune Metro",
-    duration: "1 Year Active",
-    services: "Social Media Marketing, SEO, Local Maps Optimization, Web Pages",
-    result: "3.4x Direct Calls",
-    highlight: "210+ Verified Reviews"
-  },
-  {
-    name: "Sanskruti Agro Tourism",
-    tag: "Agro Tourism & Leisure",
-    location: "Chakan & Outskirts",
-    duration: "4 Months Active",
-    services: "Social Media Marketing, Meta Ad Campaigns, Local SEO Optimization",
-    result: "+300% Footfall",
-    highlight: "Rank #1: Agro Resort Pune"
+    duration: "Ongoing engagement",
+    services: "Web pages, accurate local listings",
+    result: "Responsive Website Refresh",
+    highlight: "Clear service pages"
   }
 ];
 
 const faqs = [
   {
-    q: "What makes a good healthcare website?",
-    a: "A great healthcare website must load in under 2 seconds, be 100% mobile-responsive, clearly display doctor credentials and treatments, provide transparent contact info, and offer an effortless 1-click appointment booking or WhatsApp inquiry button."
+    q: "What makes a good website for a healthcare organization?",
+    a: "A good healthcare website is fast, mobile-responsive and accessible, clearly displays practitioner credentials and registration details, provides transparent contact information and privacy notices, and presents services factually without exaggerated claims."
   },
   {
-    q: "How long does it take to build a healthcare website?",
-    a: "A custom doctor clinic website typically takes 7 to 14 business days. Larger multi-specialty hospital websites or custom pathology portals with report downloads generally take 3 to 4 weeks, including complete UI/UX design, content writing, SEO, and testing."
+    q: "How long does it take to build a website?",
+    a: "A custom clinic website typically takes a few weeks, and larger multi-department or portal-based websites take longer. The timeline depends on content readiness, review cycles, and the integrations needed."
   },
   {
     q: "Will my website be mobile-friendly?",
-    a: "Absolutely. Over 80% of healthcare searches happen on smartphones. Every website we build is designed mobile-first, ensuring smooth navigation, clear font readability, and instant click-to-call buttons across all iOS and Android devices."
+    a: "Yes. Every website we build is designed mobile-first, with smooth navigation, readable fonts, and click-to-call buttons across iOS and Android devices."
   },
   {
     q: "Do you provide SEO with website development?",
-    a: "Yes! All our websites come pre-configured with advanced on-page SEO, including Google Medical schema markup, XML sitemaps, robots.txt, fast caching, localized keyword tagging, and optimized OpenGraph social previews."
+    a: "We build technical SEO foundations into every site: structured data, XML sitemaps, robots.txt, caching, accurate metadata, and OpenGraph previews. We do not guarantee rankings or search positions."
+  },
+  {
+    q: "How do you handle privacy and data protection?",
+    a: "We use SSL, secure form handling, data minimization, and clear privacy notices, aligned with the Information Technology Act, 2000 and the Digital Personal Data Protection Act, 2023 (and 2025 Rules)."
   },
   {
     q: "Can we manage or update content ourselves after launch?",
-    a: "Yes. We provide an intuitive, user-friendly Content Management System (CMS) and complete video walkthroughs so your clinic staff can easily add new blog posts, update doctor profiles, or modify clinic timings with zero coding knowledge."
+    a: "Yes. We provide a user-friendly Content Management System (CMS) and walkthroughs so your staff can add articles, update practitioner profiles, or change timings without coding knowledge."
   }
 ];
 
@@ -446,7 +423,7 @@ export default function WebDesignDevelopmentPage() {
             </div>
             <div>
               <p className="text-[10px] text-slate-500 font-bold uppercase tracking-wider leading-none mb-1">UI/UX Design</p>
-              <p className="text-sm text-[#1a1053] font-extrabold leading-none">Pixel Perfect Layouts</p>
+              <p className="text-sm text-[#1a1053] font-extrabold leading-none">Clear, Accessible Layouts</p>
             </div>
           </motion.div>
 
@@ -476,7 +453,7 @@ export default function WebDesignDevelopmentPage() {
             </div>
             <div>
               <p className="text-[10px] text-slate-500 font-bold uppercase tracking-wider leading-none mb-1">Performance</p>
-              <p className="text-sm text-[#1a1053] font-extrabold leading-none">&lt; 1.5s Load Time</p>
+              <p className="text-sm text-[#1a1053] font-extrabold leading-none">Core Web Vitals Focused</p>
             </div>
           </motion.div>
 
@@ -491,7 +468,7 @@ export default function WebDesignDevelopmentPage() {
             </div>
             <div>
               <p className="text-[10px] text-slate-500 font-bold uppercase tracking-wider leading-none mb-1">Architecture</p>
-              <p className="text-sm text-[#1a1053] font-extrabold leading-none">SEO Optimized</p>
+              <p className="text-sm text-[#1a1053] font-extrabold leading-none">Structured Data Ready</p>
             </div>
           </motion.div>
         </div>
@@ -510,21 +487,21 @@ export default function WebDesignDevelopmentPage() {
               <span className="relative inline-flex rounded-full h-2 w-2 bg-[#e20b27]"></span>
             </span>
             <span className="text-xs sm:text-sm font-semibold text-[#1a1053] tracking-wide">
-              Pune's #1 Web Design & Development Agency
+              Web Design & Development in Pune
             </span>
           </div>
 
           {/* Main Title */}
           <h1 className="text-4xl sm:text-5xl lg:text-[64px] font-extrabold text-[#1a1053] tracking-tight leading-[1.1] mb-6 max-w-4xl">
-            A Website Your Patients <br className="hidden lg:block" /> Can Trust at First Glance.
+            Accessible, Fast, Privacy-Aware <br className="hidden lg:block" /> Websites for Organizations.
             <span className="block text-transparent bg-clip-text bg-gradient-to-r from-blue-600 via-indigo-600 to-[#e20b27] mt-3">
-              More Trust. More Bookings.
+              Clear Information. Reliable Engineering.
             </span>
           </h1>
 
           {/* Hero Subtitle */}
           <p className="text-base sm:text-lg lg:text-xl text-slate-600 font-light leading-relaxed max-w-2xl mx-auto mb-10">
-            Your website is often the first impression a patient has of your practice. Codigix Infotech designs clean, modern, lightning-fast, and mobile-responsive websites that make it effortless for patients to learn, trust, and book appointments with you.
+            Codigix Infotech builds responsive, accessible, and security-conscious websites with clear privacy controls aligned with Indian data-protection laws, so visitors can find accurate information about your organization easily.
           </p>
 
           {/* CTA Buttons */}
@@ -533,7 +510,7 @@ export default function WebDesignDevelopmentPage() {
               href="/contact"
               className="inline-flex items-center justify-center gap-3 px-8 py-4 bg-[#1a1053] hover:bg-[#281878] text-white rounded-full font-semibold text-base transition-all shadow-[0_10px_25px_-5px_rgba(26,16,83,0.25)] hover:shadow-[0_15px_30px_-5px_rgba(26,16,83,0.35)] transform hover:-translate-y-0.5"
             >
-              <span>Get Free Website Consultation</span>
+              <span>Schedule a Discovery Call</span>
               <ArrowRight size={18} />
             </Link>
             <a
@@ -567,7 +544,7 @@ export default function WebDesignDevelopmentPage() {
               </span>
             </h2>
             <p className="mt-3 text-slate-600 text-base">
-              Comprehensive web design and development crafted to elevate your clinic's credibility and drive appointment bookings.
+              Comprehensive web design and development crafted around accuracy, accessibility, performance, and privacy.
             </p>
           </div>
 
@@ -606,19 +583,19 @@ export default function WebDesignDevelopmentPage() {
                   </div>
 
                   <h3 className="text-2xl font-extrabold tracking-tight text-white">
-                    Engineered for Instant Patient Trust & Speed
+                    Engineered for Clarity & Speed
                   </h3>
 
                   <p className="text-sm text-indigo-200/80 leading-relaxed">
-                    Patients will leave a slow, confusing website within 3 seconds. We build sleek, intuitive digital front doors that convert visitors into booked appointments.
+                    A slow or confusing website frustrates visitors. We build clean, intuitive digital front doors that present information clearly and load quickly.
                   </p>
 
                   <div className="space-y-3 pt-2">
                     {[
-                      "1-Click WhatsApp & Call Widget Integration",
-                      "Interactive Doctor Roster & OPD Schedules",
+                      "Click-to-Call & Contact Options",
+                      "Practitioner Listings & OPD Timings",
                       "Location Maps & Google Directions Embed",
-                      "Automated Email & SMS Booking Alerts"
+                      "Transparent Privacy Notices & Consent"
                     ].map((bullet, i) => (
                       <div key={i} className="flex items-center gap-3 text-xs sm:text-sm text-slate-200">
                         <CheckCircle2 className="w-4 h-4 text-emerald-400 shrink-0" />
@@ -632,7 +609,7 @@ export default function WebDesignDevelopmentPage() {
                       href="/contact"
                       className="w-full inline-flex items-center justify-center gap-2 py-3.5 px-6 rounded-full bg-white text-[#1a1053] hover:bg-indigo-50 font-bold text-sm shadow-md transition-all"
                     >
-                      <span>Request a Live Demo</span>
+                      <span>Request a Walkthrough</span>
                       <ArrowRight className="w-4 h-4" />
                     </Link>
                   </div>
@@ -647,7 +624,7 @@ export default function WebDesignDevelopmentPage() {
 
 
       {/* ============================================================ */}
-      {/* 3. SECTION: Not Just Website Design — A Complete Growth Asset */}
+      {/* 3. SECTION: Not Just Website Design — A Reliable Digital Asset */}
       {/* ============================================================ */}
       <section className="py-20 lg:py-24 bg-gradient-to-b from-[#f4f7fc] to-white relative overflow-hidden">
         <div className="container mx-auto px-4 sm:px-6 lg:px-8 max-w-[1360px]">
@@ -658,53 +635,53 @@ export default function WebDesignDevelopmentPage() {
               <div className="lg:col-span-7 space-y-6">
                 <div className="inline-flex items-center gap-2 px-3.5 py-1.5 rounded-full bg-blue-50 border border-blue-200 text-blue-700 text-xs font-semibold uppercase tracking-wider">
                   <Activity className="w-3.5 h-3.5" />
-                  Growth Architecture
+                  Web Architecture
                 </div>
 
                 <h2 className="text-3xl sm:text-4xl font-extrabold text-[#1a1053] tracking-tight leading-tight">
                   Not Just Website Design — <br />
                   <span className="text-transparent bg-clip-text bg-gradient-to-r from-blue-600 via-indigo-600 to-[#e20b27]">
-                    A Complete Growth Asset
+                    A Reliable Digital Asset
                   </span>
                 </h2>
 
                 <div className="space-y-4 text-slate-600 text-sm sm:text-base leading-relaxed">
                   <p className="font-semibold text-slate-900">
-                    A website should not simply look good — it must convert:
+                    A website should not simply look good — it must be clear and dependable:
                   </p>
 
                   <div className="grid grid-cols-1 sm:grid-cols-3 gap-4">
                     <div className="bg-[#fafcff] p-4 rounded-xl border border-slate-200">
-                      <div className="text-2xl font-black text-indigo-700">94%</div>
-                      <div className="text-xs text-slate-600 mt-1">of first impressions are design & speed related</div>
+                      <div className="text-2xl font-black text-indigo-700">Fast</div>
+                      <div className="text-xs text-slate-600 mt-1">Core Web Vitals focused pages</div>
                     </div>
                     <div className="bg-[#fafcff] p-4 rounded-xl border border-slate-200">
-                      <div className="text-2xl font-black text-rose-600">80%+</div>
-                      <div className="text-xs text-slate-600 mt-1">of patients visit through mobile phones</div>
+                      <div className="text-2xl font-black text-rose-600">Mobile</div>
+                      <div className="text-xs text-slate-600 mt-1">first, responsive layouts</div>
                     </div>
                     <div className="bg-[#fafcff] p-4 rounded-xl border border-slate-200">
-                      <div className="text-2xl font-black text-emerald-600">3.8x</div>
-                      <div className="text-xs text-slate-600 mt-1">higher booking rate with instant WhatsApp CTAs</div>
+                      <div className="text-2xl font-black text-emerald-600">Private</div>
+                      <div className="text-xs text-slate-600 mt-1">minimal data on forms, DPDP-aligned</div>
                     </div>
                   </div>
 
                   <p className="pt-2">
-                    At Codigix Infotech, we engineer healthcare websites that do more than showcase brochures. We build fast, responsive digital assets that rank on Google, establish doctor authority, and make patient consultation booking effortless.
+                    At Codigix Infotech, we engineer websites that do more than showcase brochures. We build fast, responsive, accessible digital assets with accurate institutional information, practitioner credentials disclosed, and clear contact options.
                   </p>
                 </div>
 
                 <div className="flex flex-wrap gap-4 pt-2">
                   <div className="flex items-center gap-2 text-xs font-semibold text-indigo-900 bg-indigo-100/70 px-3 py-1.5 rounded-lg">
                     <Check className="w-4 h-4 text-indigo-700" />
-                    Doctor Credibility Highlighting
+                    Practitioner Credential Disclosure
                   </div>
                   <div className="flex items-center gap-2 text-xs font-semibold text-emerald-900 bg-emerald-100/70 px-3 py-1.5 rounded-lg">
                     <Check className="w-4 h-4 text-emerald-700" />
-                    Sub-1.5s Fast Loading
+                    Core Web Vitals Focused
                   </div>
                   <div className="flex items-center gap-2 text-xs font-semibold text-rose-900 bg-rose-100/70 px-3 py-1.5 rounded-lg">
                     <Check className="w-4 h-4 text-rose-700" />
-                    Zero Friction Patient Booking
+                    Clear Contact Options
                   </div>
                 </div>
               </div>
@@ -714,32 +691,32 @@ export default function WebDesignDevelopmentPage() {
                 <div className="bg-gradient-to-br from-[#1a1053] to-[#251060] rounded-2xl p-6 text-white shadow-xl space-y-4">
                   <div className="flex items-center justify-between border-b border-white/10 pb-3">
                     <span className="text-xs font-bold uppercase tracking-wider text-indigo-300">
-                      Technical Audit Benchmark
+                      Technical Quality Checklist
                     </span>
                     <span className="text-[10px] bg-emerald-500/20 text-emerald-300 px-2 py-0.5 rounded border border-emerald-500/30">
-                      Grade A+
+                      Checklist
                     </span>
                   </div>
 
                   <div className="space-y-3 text-xs">
                     <div className="p-3 rounded-xl bg-white/5 border border-white/10 flex items-center justify-between">
                       <span>Performance & Speed</span>
-                      <span className="font-mono font-bold text-emerald-400">99 / 100</span>
+                      <span className="font-mono font-bold text-emerald-400">Core Web Vitals</span>
                     </div>
 
                     <div className="p-3 rounded-xl bg-white/5 border border-white/10 flex items-center justify-between">
                       <span>Accessibility (WCAG)</span>
-                      <span className="font-mono font-bold text-indigo-300">100 / 100</span>
+                      <span className="font-mono font-bold text-indigo-300">WCAG 2.1 AA aligned</span>
                     </div>
 
                     <div className="p-3 rounded-xl bg-white/5 border border-white/10 flex items-center justify-between">
-                      <span>Best Practices</span>
-                      <span className="font-mono font-bold text-blue-300">100 / 100</span>
+                      <span>Privacy & Security</span>
+                      <span className="font-mono font-bold text-blue-300">DPDP-aligned forms</span>
                     </div>
 
                     <div className="p-3 rounded-xl bg-white/5 border border-white/10 flex items-center justify-between">
                       <span>SEO Structured Data</span>
-                      <span className="font-mono font-bold text-emerald-400">100 / 100</span>
+                      <span className="font-mono font-bold text-emerald-400">Schema.org</span>
                     </div>
                   </div>
                 </div>
@@ -761,13 +738,13 @@ export default function WebDesignDevelopmentPage() {
           <div className="text-center max-w-3xl mx-auto mb-16">
             <div className="inline-flex items-center gap-2 px-3.5 py-1.5 rounded-full bg-indigo-50 border border-indigo-200 text-indigo-700 text-xs font-semibold uppercase tracking-wider mb-4">
               <Award className="w-3.5 h-3.5" />
-              Patient-Centric Value
+              What You Get
             </div>
             <h2 className="text-3xl sm:text-4xl font-extrabold text-[#1a1053] tracking-tight">
               What You Get With Our <span className="text-transparent bg-clip-text bg-gradient-to-r from-blue-600 via-indigo-600 to-[#e20b27]">Website Services</span>
             </h2>
             <p className="mt-3 text-slate-600 text-base">
-              A modern digital clinic experience designed to attract, engage, and retain patients.
+              A modern digital experience designed for clarity, accessibility, and responsible communication.
             </p>
           </div>
 
@@ -820,13 +797,13 @@ export default function WebDesignDevelopmentPage() {
           <div className="text-center max-w-3xl mx-auto mb-16">
             <div className="inline-flex items-center gap-2 px-3.5 py-1.5 rounded-full bg-indigo-50 border border-indigo-200 text-indigo-700 text-xs font-semibold uppercase tracking-wider mb-4">
               <Layout className="w-3.5 h-3.5" />
-              Specialized Solutions
+              Website Types
             </div>
             <h2 className="text-3xl sm:text-4xl font-extrabold text-[#1a1053] tracking-tight">
               Types of Websites <span className="text-transparent bg-clip-text bg-gradient-to-r from-blue-600 via-indigo-600 to-[#e20b27]">We Build</span>
             </h2>
             <p className="mt-3 text-slate-600 text-base">
-              Custom medical digital solutions tailored for every healthcare business model.
+              Custom web solutions tailored to hospitals, clinics, laboratories, and commercial businesses.
             </p>
           </div>
 
@@ -881,13 +858,13 @@ export default function WebDesignDevelopmentPage() {
           <div className="text-center max-w-3xl mx-auto mb-14">
             <div className="inline-flex items-center gap-2 px-3.5 py-1.5 rounded-full bg-indigo-50 border border-indigo-200 text-indigo-700 text-xs font-semibold uppercase tracking-wider mb-4">
               <Layers className="w-3.5 h-3.5" />
-              Agile Web Architecture
+              Our Process
             </div>
             <h2 className="text-3xl sm:text-4xl lg:text-5xl font-extrabold text-[#1a1053] tracking-tight">
               Our 6-Phase <span className="text-transparent bg-clip-text bg-gradient-to-r from-blue-600 via-indigo-600 to-[#e20b27]">Web Development Process</span>
             </h2>
             <p className="mt-3 text-slate-600 text-base max-w-2xl mx-auto">
-              A transparent, agile workflow delivering sub-1.5s mobile speed, E-E-A-T medical compliance, and high appointment conversions.
+              A transparent workflow covering architecture, accessible design, fast development, accurate content, testing, and maintenance.
             </p>
           </div>
 
@@ -1063,7 +1040,7 @@ export default function WebDesignDevelopmentPage() {
                         </span>
                       </div>
                       <span className="text-[11px] font-bold text-indigo-700 uppercase tracking-wider shrink-0">
-                        Verified
+                        Reviewed
                       </span>
                     </div>
                   </div>
@@ -1085,13 +1062,13 @@ export default function WebDesignDevelopmentPage() {
           <div className="text-center max-w-3xl mx-auto mb-14">
             <div className="inline-flex items-center gap-2 px-3.5 py-1.5 rounded-full bg-white/10 border border-white/15 text-indigo-200 text-xs font-semibold uppercase tracking-wider mb-4">
               <BarChart3 className="w-3.5 h-3.5 text-indigo-400" />
-              Modern Stack & Measurable Outcomes
+              Modern Stack & Quality Indicators
             </div>
             <h2 className="text-3xl sm:text-4xl lg:text-5xl font-extrabold text-white tracking-tight leading-tight">
-              Enterprise Technologies & Key Performance Indicators
+              Technologies & Quality Indicators
             </h2>
             <p className="text-sm sm:text-base text-slate-300 font-light leading-relaxed mt-4">
-              We build with modern, future-proof tech stacks that guarantee sub-second speed, military-grade security, and high patient conversion rates.
+              We build with modern tech stacks, with a focus on performance, security, accessibility, and privacy by design.
             </p>
           </div>
 
@@ -1104,7 +1081,7 @@ export default function WebDesignDevelopmentPage() {
                 </div>
                 <div>
                   <h3 className="text-xl sm:text-2xl font-bold text-white">Technologies We Use</h3>
-                  <p className="text-xs text-slate-300">Sub-second framework & secure web stack</p>
+                  <p className="text-xs text-slate-300">Modern framework & secure web stack</p>
                 </div>
               </div>
 
@@ -1131,7 +1108,7 @@ export default function WebDesignDevelopmentPage() {
                 </div>
                 <div>
                   <h3 className="text-xl sm:text-2xl font-bold text-white">KPIs We Track</h3>
-                  <p className="text-xs text-slate-300">Speed, conversion & user experience benchmarks</p>
+                  <p className="text-xs text-slate-300">Speed, accessibility, privacy & UX indicators</p>
                 </div>
               </div>
 
@@ -1170,7 +1147,7 @@ export default function WebDesignDevelopmentPage() {
               Why Choose <span className="text-transparent bg-clip-text bg-gradient-to-r from-blue-600 via-indigo-600 to-[#e20b27]">Codigix Infotech</span>
             </h2>
             <p className="mt-3 text-slate-600 text-base">
-              Specialized healthcare web developers with a track record of driving genuine patient footfall.
+              Web developers experienced in building clear, accurate, and privacy-aware websites for healthcare and enterprise clients.
             </p>
           </div>
 
@@ -1204,14 +1181,14 @@ export default function WebDesignDevelopmentPage() {
       {/* 9. SECTION: CLIENT SUCCESS SHOWCASE (SAME AS SEO PAGE) */}
       {/* ============================================================ */}
       <ClientShowcaseSection
-        badgeText="Verified Web Engineering & Client Growth"
-        headingPrefix="Why Healthcare Clinics & Enterprises"
-        headingGradient="Partner With Codigix Web Team"
-        subtitle="Custom Next.js & React development, sub-second load times, mobile-first patient conversion architecture, and 99+ Google Lighthouse scores."
-        strategicAdvantageTitle="The Codigix Engineering Advantage"
-        strategicAdvantageSubtitle="Enterprise Next.js architecture, high security, frictionless WhatsApp booking, and responsive UI."
-        guaranteeTitle="100% Speed & Conversion Guarantee"
-        guaranteeQuote='"Every website is built with clean Next.js code, sub-second page speed, and seamless patient booking funnels that convert visitors into appointments."'
+        badgeText="Selected Work by Regulatory Scope"
+        headingPrefix="Organizations Across Pune & PCMC"
+        headingGradient="Work With Codigix Infotech"
+        subtitle="Website architecture, factual service pages, and technical hygiene for healthcare organizations (NMC and NDC frameworks) and non-medical businesses, which sit outside NMC scope."
+        strategicAdvantageTitle="How We Engineer"
+        strategicAdvantageSubtitle="Modern architecture, accessibility, security, and responsive UI."
+        guaranteeTitle="Ethical Communication Commitment"
+        guaranteeQuote='"Every website is built with clean code, accessible design, and privacy controls aligned with the IT Act, 2000 and the DPDP Act, 2023."'
       />
 
 
@@ -1230,7 +1207,7 @@ export default function WebDesignDevelopmentPage() {
               Frequently Asked <span className="text-transparent bg-clip-text bg-gradient-to-r from-blue-600 via-indigo-600 to-[#e20b27]">Questions</span>
             </h2>
             <p className="mt-3 text-slate-600 text-base max-w-2xl mx-auto">
-              Everything you need to know about our healthcare website design, mobile speed optimization, and patient conversion architecture.
+              Everything you need to know about our website design, mobile performance, accessibility, and privacy practices.
             </p>
           </div>
 
@@ -1286,8 +1263,8 @@ export default function WebDesignDevelopmentPage() {
                 <Monitor className="w-6 h-6" />
               </div>
               <div>
-                <h3 className="text-base sm:text-lg font-bold text-white">Have specific questions about your clinic website?</h3>
-                <p className="text-xs sm:text-sm text-indigo-200/80">Speak directly with our healthcare web architecture team.</p>
+                <h3 className="text-base sm:text-lg font-bold text-white">Have specific questions about your website?</h3>
+                <p className="text-xs sm:text-sm text-indigo-200/80">Speak directly with our web architecture team.</p>
               </div>
             </div>
 
@@ -1316,10 +1293,10 @@ export default function WebDesignDevelopmentPage() {
 
             <div className="relative z-10 max-w-2xl space-y-3 text-center lg:text-left">
               <h2 className="text-2xl sm:text-3xl lg:text-4xl font-extrabold tracking-tight text-white">
-                Ready to Build a Website That Actually Generates Business?
+                Ready to Build a Clear, Reliable Website?
               </h2>
               <p className="text-sm sm:text-base text-indigo-200/90 font-light">
-                Get a free UI/UX audit of your existing website or a customized quote for your new clinic portal.
+                Connect with our team to discuss a review of your existing website or a quote for a new one.
               </p>
             </div>
 
@@ -1328,7 +1305,7 @@ export default function WebDesignDevelopmentPage() {
                 href="/contact"
                 className="inline-flex items-center gap-3 px-8 py-4 rounded-full bg-gradient-to-r from-[#f59e0b] to-[#fbbf24] hover:from-[#d97706] hover:to-[#f59e0b] text-slate-950 font-bold text-sm shadow-xl hover:scale-105 transition-all"
               >
-                <span>Book Free Web Consultation</span>
+                <span>Schedule a Discovery Call</span>
                 <ArrowRight className="w-4 h-4 text-slate-950" />
               </Link>
             </div>

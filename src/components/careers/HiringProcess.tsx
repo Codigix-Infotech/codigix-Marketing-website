@@ -7,7 +7,7 @@ const steps = [
     title: 'Quick Application Review',
     timing: 'Within 48 Hours',
     description:
-      'We respect your time. Our hiring team reviews your resume and portfolio within two business days. No ghosting, guaranteed.',
+      'We respect your time. Our hiring team reviews your resume and portfolio within two business days. We aim to respond to every applicant.',
     icon: Send,
   },
   {
@@ -15,15 +15,15 @@ const steps = [
     title: '30-Min Discovery Conversation',
     timing: 'Culture & Goals',
     description:
-      'A relaxed conversation with a senior strategist about your past campaigns, personal career ambitions, and what gets you excited.',
+      'A relaxed conversation with a senior team member about your past work, career ambitions, and what gets you excited.',
     icon: PhoneCall,
   },
   {
     step: '03',
-    title: 'Practical Campaign Teardown',
+    title: 'Practical Work Discussion',
     timing: 'Proof of Thinking',
     description:
-      'No grueling 10-hour assignments or free work. You will teardown a real marketing problem or discuss a campaign strategy live.',
+      'No grueling 10-hour assignments or free work. You will walk through a real engineering, content or communication problem live, including how you would handle accuracy, disclosure and data-protection considerations.',
     icon: BrainCircuit,
   },
   {
@@ -31,7 +31,7 @@ const steps = [
     title: 'Offer & Onboarding',
     timing: 'Decision in 48 Hours',
     description:
-      'Transparent compensation, clear bonus structures, and immediate start dates. We send out competitive offers quickly.',
+      'Transparent compensation and clear incentive structures that are never linked to patient procurement. We send out offers quickly.',
     icon: Handshake,
   },
 ];
@@ -52,7 +52,7 @@ export default function HiringProcess() {
             Our 4-Step Hiring Blueprint
           </h2>
           <p className="text-indigo-100/80 text-base sm:text-lg">
-            We move swiftly because great digital marketers don&apos;t stay on the market for long.
+            We move swiftly because good people don&apos;t stay on the market for long.
           </p>
         </div>
 

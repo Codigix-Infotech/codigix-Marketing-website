@@ -23,7 +23,7 @@ export default function TrustCarousel() {
       <div className="absolute inset-y-0 right-0 w-32 bg-gradient-to-l from-primary-bg to-transparent z-10" />
       
       <div className="container mx-auto px-4 text-center mb-8">
-        <p className="text-sm font-semibold text-secondary-text uppercase tracking-widest">Trusted by 500+ Healthcare Providers</p>
+        <p className="text-sm font-semibold text-secondary-text uppercase tracking-widest">Our Clients</p>
       </div>
 
       <div className="flex w-[200%] md:w-[150%] lg:w-full max-w-full">

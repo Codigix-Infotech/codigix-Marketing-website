@@ -33,42 +33,42 @@ interface NavItem {
 const serviceItems = [
   {
     title: "SEO Search Engine Optimization",
-    desc: "Rank #1 for high-intent search terms on Google.",
+    desc: "Technical SEO, structured data & accurate local profiles.",
     href: "/best-seo-services-in-pcmc",
     icon: Search,
     color: "text-emerald-600 bg-emerald-50 border-emerald-200/60"
   },
   {
     title: "Paid Advertisements (PPC)",
-    desc: "Generate high-intent patient leads immediately with max ROI.",
+    desc: "Policy-compliant, truthful search & social campaigns.",
     href: "/paid-advertisements-ppc",
     icon: Zap,
     color: "text-amber-600 bg-amber-50 border-amber-200/60"
   },
   {
     title: "Social Media Marketing",
-    desc: "Engage target audiences with viral reels, branding & campaigns.",
+    desc: "Educational video & public-health awareness content.",
     href: "/social-media-marketing",
     icon: Instagram,
     color: "text-pink-600 bg-pink-50 border-pink-200/60"
   },
   {
     title: "E-Commerce Marketing",
-    desc: "Scale online sales, product rankings & conversion funnels.",
+    desc: "Catalog architecture & storefront performance for retail.",
     href: "/ecommerce-marketing",
     icon: ShoppingCart,
     color: "text-blue-600 bg-blue-50 border-blue-200/60"
   },
   {
     title: "Medical Content Marketing",
-    desc: "Authoritative healthcare content, clinical blogs & patient guides.",
+    desc: "Accurate public-health articles & department guides.",
     href: "/medical-content-marketing",
     icon: FileText,
     color: "text-purple-600 bg-purple-50 border-purple-200/60"
   },
   {
     title: "Web Design & Development",
-    desc: "High-converting, mobile-first healthcare & enterprise websites.",
+    desc: "Accessible, mobile-first, DPDP-aligned websites.",
     href: "/web-design-development",
     icon: Code2,
     color: "text-indigo-600 bg-indigo-50 border-indigo-200/60"
@@ -385,7 +385,7 @@ export default function Navbar() {
                   <span>Get in Touch</span>
                 </Link>
                 <p className="text-center text-[11px] text-slate-400 font-light">
-                  Pune, Maharashtra • Growth & Patient Acquisition
+                  Pune, Maharashtra • Digital Infrastructure & Ethical Communication
                 </p>
               </div>
 

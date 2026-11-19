@@ -25,7 +25,6 @@ import {
   Globe,
   Layers,
   Cpu,
-  Star,
   Target,
   Clock,
   Award,
@@ -75,9 +74,9 @@ const servicesData: ServiceItem[] = [
     id: "seo",
     category: "organic",
     number: "01",
-    title: "Healthcare SEO & GMB",
-    subtitle: "Local Google Maps & Search Dominance",
-    desc: "Rank #1 on Google Search and Maps 3-Pack across PCMC & Pune to capture high-intent patients searching for top specialists.",
+    title: "SEO & Local Profile Management",
+    subtitle: "Technical Site Optimization & Accurate Listings",
+    desc: "Technical site optimization, structured metadata, crawl/index health, and accurate management of business listing details (location, hours, departments, services, and factual information) without ranking manipulation or guaranteed position claims.",
     href: "/best-seo-services-in-pcmc",
     icon: Search,
     gradient: "from-emerald-500 to-teal-600",
@@ -85,279 +84,279 @@ const servicesData: ServiceItem[] = [
     badgeBg: "bg-emerald-50 text-emerald-700 border-emerald-200",
     tagColor: "text-emerald-600",
     readTime: "3 min read",
-    highlights: ["Google Maps 3-Pack", "Medical Schema", "Zero Ad Spend Per Click"],
-    metric: "#1 Rank",
-    metricLabel: "Google Maps 3-Pack"
+    highlights: ["Structured Data & Schema", "Accurate Business Listings", "Crawl & Index Health"],
+    metric: "Technical SEO",
+    metricLabel: "No Guaranteed Positions"
   },
   {
     id: "ppc",
     category: "paid",
     number: "02",
-    title: "Paid Ads (Google & Meta PPC)",
-    subtitle: "High-ROI Instant Patient Acquisition",
-    desc: "Drive urgent, high-value patient appointments and surgical inquiries immediately with laser-targeted Google & Instagram ad funnels.",
+    title: "Paid Digital Campaigns",
+    subtitle: "Policy-Compliant Search & Social Campaigns",
+    desc: "Targeted, policy-compliant search and social campaigns designed around clear, truthful messaging and transparent audience disclosures.",
     href: "/paid-advertisements-ppc",
     icon: Zap,
     gradient: "from-amber-500 to-orange-600",
-    badge: "Instant Leads",
+    badge: "Policy-Compliant",
     badgeBg: "bg-amber-50 text-amber-700 border-amber-200",
     tagColor: "text-amber-600",
     readTime: "2 min read",
-    highlights: ["Google Search Ads", "Meta Video Lead Funnels", "Verified Low CPL"],
-    metric: "4.8x ROAS",
-    metricLabel: "Cost Per Acquisition"
+    highlights: ["Factual Ad Copy", "Transparent Audience Disclosures", "No Inducements or Cure Promises"],
+    metric: "Truthful Messaging",
+    metricLabel: "Platform Policy Aligned"
   },
   {
     id: "social",
     category: "branding",
     number: "03",
-    title: "Social Media & Doctor Reels",
-    subtitle: "Viral Branding & Patient Trust",
-    desc: "Build authority and patient trust with professionally scripted doctor reels, treatment explainers, and engaging clinical content.",
+    title: "Social Media & Educational Video Production",
+    subtitle: "Public-Health Awareness & Institutional Updates",
+    desc: "Structured video and social content focused on public-health awareness, institutional updates, and clear educational explanations, complete with appropriate practitioner credential disclosures and AI source labels where applicable.",
     href: "/social-media-marketing",
     icon: Instagram,
     gradient: "from-pink-500 to-rose-600",
-    badge: "Viral Doctor Reach",
+    badge: "Educational Content",
     badgeBg: "bg-pink-50 text-pink-700 border-pink-200",
     tagColor: "text-pink-600",
     readTime: "3 min read",
-    highlights: ["Cinematic Doctor Reels", "Patient Case Studies", "Multi-Lingual Reach"],
-    metric: "1.2M+ Views",
-    metricLabel: "Average Monthly Reach"
+    highlights: ["Public-Health Awareness Videos", "Credential Disclosures", "AI-Assisted Media Labelled"],
+    metric: "Credential Disclosure",
+    metricLabel: "AI Source Labels Where Applicable"
   },
   {
     id: "ecommerce",
     category: "ecommerce",
     number: "04",
-    title: "Medical E-Commerce Marketing",
-    subtitle: "Online Pharma & Product Scaling",
-    desc: "Scale sales for health supplements, medical equipment, and online pharmacies with Google Shopping and marketplace optimization.",
+    title: "Commercial & E-Commerce Solutions",
+    subtitle: "Retail Commerce, Kept Separate from Clinical Communication",
+    desc: "Catalog architecture, storefront performance, and digital workflows tailored for commercial and non-regulated retail businesses.",
     href: "/ecommerce-marketing",
     icon: ShoppingCart,
     gradient: "from-blue-500 to-indigo-600",
-    badge: "High-Volume Sales",
+    badge: "Retail Commerce",
     badgeBg: "bg-blue-50 text-blue-700 border-blue-200",
     tagColor: "text-blue-600",
     readTime: "4 min read",
-    highlights: ["Google Shopping / PMax", "Amazon & Flipkart Ads", "Automated Retention"],
-    metric: "+284% Orders",
-    metricLabel: "Quarterly Revenue Scaling"
+    highlights: ["Catalog Architecture", "Storefront Performance", "Marketplace Listing Accuracy"],
+    metric: "Non-Regulated Retail",
+    metricLabel: "Outside NMC Scope"
   },
   {
     id: "content",
     category: "branding",
     number: "05",
-    title: "Medical Content Marketing",
-    subtitle: "Doctor-Reviewed Authoritative Guides",
-    desc: "Establish undisputed clinical leadership with medically reviewed blogs, treatment guides, and Google E-E-A-T verified content.",
+    title: "Health & Institutional Content Architecture",
+    subtitle: "Accurate, Review-Ready Informational Content",
+    desc: "Well-organized informational pages, department guides, and public-health articles written for clarity, accuracy, and compliance review prior to publication.",
     href: "/medical-content-marketing",
     icon: FileText,
     gradient: "from-purple-500 to-indigo-600",
-    badge: "E-E-A-T Authority",
+    badge: "Content Architecture",
     badgeBg: "bg-purple-50 text-purple-700 border-purple-200",
     tagColor: "text-purple-600",
     readTime: "3 min read",
-    highlights: ["100% Medical Accuracy", "Patient Education Guides", "Doctor Thought Leadership"],
-    metric: "4m 38s",
-    metricLabel: "Avg. Patient Dwell Time"
+    highlights: ["Department Guides", "Public-Health Articles", "Pre-Publication Review"],
+    metric: "Reviewed Before Publishing",
+    metricLabel: "Factual Accuracy & Source Notes"
   },
   {
     id: "web",
     category: "web",
     number: "06",
-    title: "Clinic & Hospital Web Design",
-    subtitle: "Fast, 1-Click WhatsApp Booking Portals",
-    desc: "High-converting, sub-1.5s medical websites engineered to turn visitors into confirmed clinic appointments seamlessly.",
+    title: "Web Design & Development",
+    subtitle: "Accessible, Fast, Privacy-Aware Websites",
+    desc: "Responsive, accessible, and security-conscious web applications built with clear privacy controls aligned with Indian data-protection laws.",
     href: "/web-design-development",
     icon: Code2,
     gradient: "from-indigo-500 to-violet-600",
-    badge: "High Conversion",
+    badge: "Web Engineering",
     badgeBg: "bg-indigo-50 text-indigo-700 border-indigo-200",
     tagColor: "text-indigo-600",
     readTime: "3 min read",
-    highlights: ["Sub-1.5s Fast Load Speed", "1-Click WhatsApp Flow", "HIPAA/NABH Ready"],
-    metric: "98 / 100",
-    metricLabel: "Google PageSpeed Score"
+    highlights: ["Core Web Vitals Focused", "WCAG 2.1 AA Aligned", "DPDP-Aligned Forms"],
+    metric: "Privacy by Design",
+    metricLabel: "IT Act, 2000 & DPDP Act, 2023"
   }
 ];
 
 const ecosystemSteps = [
   {
     step: "01",
-    title: "Search & Maps Discovery",
-    service: "Healthcare SEO & GMB",
+    title: "Search & Listing Accuracy",
+    service: "SEO & Local Profile Management",
     badge: "Discovery Layer",
-    desc: "Patients in Pune & PCMC searching specific symptoms and treatments find your clinic at the top of Google Search & Maps.",
-    deliverables: ["Google Maps 3-Pack Dominance", "Pune Local Intent Keywords", "Zero Patient Leakage"],
-    metric: "Top 3 Google Rank",
-    kpiDetail: "+340% Local Traffic",
+    desc: "Accurate institutional details, structured metadata, and clean site architecture help people find correct information about your organization in Pune & PCMC.",
+    deliverables: ["Accurate Listing Details", "Structured Data & Schema", "Crawl & Index Health"],
+    metric: "Technical SEO Hygiene",
+    kpiDetail: "No Ranking Guarantees",
     icon: Search
   },
   {
     step: "02",
-    title: "Immediate Patient Inquiries",
-    service: "Paid Ads (PPC)",
-    badge: "Urgent Demand",
-    desc: "Targeted Google & Meta clinical campaigns capture high-urgency patients actively seeking treatment consultations today.",
-    deliverables: ["High-Intent Search Ads", "Location Radius Geo-Fencing", "Strict Cost Per Consultation"],
-    metric: "< 48h Lead Generation",
-    kpiDetail: "3.8x ROAS Target",
+    title: "Transparent Paid Campaigns",
+    service: "Paid Digital Campaigns",
+    badge: "Policy-Compliant",
+    desc: "Search and social campaigns use clear, truthful messaging and transparent audience disclosures, with no inducements or cure promises.",
+    deliverables: ["Factual Ad Copy", "Audience Disclosures", "Platform Policy Alignment"],
+    metric: "Truthful Messaging",
+    kpiDetail: "Non-Soliciting Copy",
     icon: Zap
   },
   {
     step: "03",
-    title: "Doctor Authority & Proof",
-    service: "Doctor Reels & Social Media",
-    badge: "Trust & Proof",
-    desc: "Engaging video reels and patient testimonials establish doctor credibility and eliminate clinical visit anxiety.",
-    deliverables: ["Doctor Authority Scripts", "High-Resolution Production", "Patient Video Reviews"],
-    metric: "10x Social Trust",
-    kpiDetail: "> 120k Reel Reach",
+    title: "Educational Video & Social",
+    service: "Educational Video & Social Media",
+    badge: "Public-Health Awareness",
+    desc: "Structured educational videos and institutional updates with practitioner credential disclosures and AI source labels where applicable.",
+    deliverables: ["Public-Health Explainers", "Credential Disclosures", "AI Media Labelling"],
+    metric: "Credential Disclosure",
+    kpiDetail: "AI Source Labels",
     icon: Instagram
   },
   {
     step: "04",
-    title: "Clinical Education & Authority",
-    service: "Medical Content & Guides",
-    badge: "Patient Education",
-    desc: "Doctor-approved treatment articles and clinical FAQs answer patient queries thoroughly, converting readers into appointments.",
-    deliverables: ["Doctor-Vetted Medical Copy", "MCI/NABH Compliant", "Pre-Op & Post-Op Guides"],
-    metric: "100% Medical Accuracy",
-    kpiDetail: "Zero Compliance Risks",
+    title: "Content Architecture & Review",
+    service: "Health & Institutional Content",
+    badge: "Public Education",
+    desc: "Department guides and public-health articles are written from established consensus and reviewed for accuracy and compliance before publication.",
+    deliverables: ["Department Guides", "Source-Referenced Articles", "Pre-Publication Compliance Review"],
+    metric: "Reviewed Before Publishing",
+    kpiDetail: "Source Notes Included",
     icon: FileText
   },
   {
     step: "05",
-    title: "Frictionless Booking & Web",
-    service: "High-Speed Website",
-    badge: "Conversion Engine",
-    desc: "A sub-1.5s responsive website turns traffic into confirmed clinic appointments via 1-click WhatsApp and smart forms.",
-    deliverables: ["Sub-1.2s Fast Mobile Speed", "1-Click WhatsApp Booking", "HIPAA/NABH Ready Security"],
-    metric: "+310% Conversion Lift",
-    kpiDetail: "98/100 PageSpeed",
+    title: "Accessible, Privacy-Aware Web",
+    service: "Web Design & Development",
+    badge: "Web Engineering",
+    desc: "Responsive, accessible websites with transparent privacy notices and minimal data collection on forms.",
+    deliverables: ["Core Web Vitals Focused", "WCAG 2.1 AA Aligned", "DPDP-Aligned Forms"],
+    metric: "Privacy by Design",
+    kpiDetail: "IT Act & DPDP Aligned",
     icon: Code2
   },
   {
     step: "06",
-    title: "Recurring Retention & Loyalty",
-    service: "E-Commerce & Retention",
-    badge: "Lifetime Loyalty",
-    desc: "Automated follow-up sequences and online prescription re-ordering turn one-time patients into loyal lifelong advocates.",
-    deliverables: ["Automated OPD Reminders", "E-Prescription Refills", "5-Star Review Automation"],
-    metric: "4.8x Lifetime Value",
-    kpiDetail: "+65% Repeat OPD",
+    title: "Commercial & Retail Workflows",
+    service: "Commercial & E-Commerce Solutions",
+    badge: "Non-Regulated Retail",
+    desc: "Catalog architecture and storefront workflows for commercial and non-regulated retail businesses, kept separate from clinical communication.",
+    deliverables: ["Catalog Architecture", "Storefront Performance", "Workflow Automation"],
+    metric: "Retail Commerce",
+    kpiDetail: "Outside NMC Scope",
     icon: ShoppingCart
   }
 ];
 
 const roiSpecialties = [
   {
-    name: "Dental & Orthodontics",
-    tagline: "Implants, Aligners, Braces & Root Canals",
-    avgConsultations: "85 - 140",
-    estRev: "₹4.5L - ₹8.5L",
-    cac: "₹210 - ₹340",
-    opdRate: "76% Walk-In Rate",
-    roiMultiple: "5.2x ROI",
-    timeline: "First 25+ leads in 10 days",
+    name: "NMC Framework",
+    tagline: "Hospitals & Allopathic Practices",
+    avgConsultations: "Factual Institutional Info",
+    estRev: "Credential & Registration Disclosure",
+    cac: "No Solicitation",
+    opdRate: "Reviewed Before Publishing",
+    roiMultiple: "NMC Aligned",
+    timeline: "Scope defined during discovery",
+    icon: Building2,
+    funnelMix: [
+      { channel: "Website & Department Pages", pct: 40, color: "bg-blue-600" },
+      { channel: "Technical SEO & Accurate Listings", pct: 35, color: "bg-indigo-600" },
+      { channel: "Public-Health Education", pct: 25, color: "bg-purple-600" }
+    ],
+    recommended: ["Department Guides", "Accurate Practitioner Profiles", "DPDP-Aligned Forms"]
+  },
+  {
+    name: "NDC Framework",
+    tagline: "Dental Clinics & Specialized Dental Care",
+    avgConsultations: "Factual Clinic Information",
+    estRev: "Credential & Registration Disclosure",
+    cac: "No Inducements",
+    opdRate: "Reviewed Before Publishing",
+    roiMultiple: "NDC Aligned",
+    timeline: "Scope defined during discovery",
     icon: Sparkles,
     funnelMix: [
-      { channel: "Google Local Maps (3-Pack)", pct: 45, color: "bg-blue-600" },
-      { channel: "Targeted PPC Search Ads", pct: 35, color: "bg-indigo-600" },
-      { channel: "Doctor Trust Video Reels", pct: 20, color: "bg-purple-600" }
+      { channel: "Clinic Website & Service Pages", pct: 45, color: "bg-blue-600" },
+      { channel: "Accurate Local Listings", pct: 30, color: "bg-indigo-600" },
+      { channel: "Oral-Health Education", pct: 25, color: "bg-purple-600" }
     ],
-    recommended: ["Local Maps Dominance", "Doctor Authority Reels", "1-Click WhatsApp Booking"]
+    recommended: ["Service Page Architecture", "Accurate Listing Details", "Privacy Notices"]
   },
   {
-    name: "Dermatology & Cosmetology",
-    tagline: "Acne, Laser, Hair PRP & Aesthetics",
-    avgConsultations: "120 - 220",
-    estRev: "₹6.0L - ₹12.0L",
-    cac: "₹180 - ₹290",
-    opdRate: "68% Procedure Conversion",
-    roiMultiple: "6.4x ROI",
-    timeline: "First 40+ leads in 7 days",
+    name: "AYUSH Framework",
+    tagline: "Ayurvedic & Traditional Medicine Practices",
+    avgConsultations: "Factual Practice Information",
+    estRev: "Registration Disclosure",
+    cac: "No Cure Promises",
+    opdRate: "Reviewed Before Publishing",
+    roiMultiple: "AYUSH Aligned",
+    timeline: "Scope defined during discovery",
     icon: HeartPulse,
     funnelMix: [
-      { channel: "Instagram Before/After Reels", pct: 50, color: "bg-pink-600" },
-      { channel: "Google Search Ads", pct: 30, color: "bg-indigo-600" },
-      { channel: "Clinical Landing Pages", pct: 20, color: "bg-emerald-600" }
+      { channel: "Practice Website & Information Pages", pct: 45, color: "bg-emerald-600" },
+      { channel: "Accurate Local Listings", pct: 30, color: "bg-indigo-600" },
+      { channel: "Wellness Education", pct: 25, color: "bg-purple-600" }
     ],
-    recommended: ["Aesthetic Video Campaigns", "Laser Treatment PPC", "Sub-1.2s Fast Landing Page"]
+    recommended: ["Informational Pages", "Registration Disclosures", "Responsible Content Review"]
   },
   {
-    name: "Orthopedics & Joint Care",
-    tagline: "Knee Replacement, Spine & Sports Injury",
-    avgConsultations: "60 - 95",
-    estRev: "₹8.0L - ₹18.0L",
-    cac: "₹380 - ₹560",
-    opdRate: "82% Surgery Referral Rate",
-    roiMultiple: "5.8x ROI",
-    timeline: "First 15+ high-intent calls in 14 days",
-    icon: Activity,
-    funnelMix: [
-      { channel: "High-Intent Google Ads", pct: 55, color: "bg-blue-600" },
-      { channel: "Hospital SEO & GMB", pct: 30, color: "bg-indigo-600" },
-      { channel: "Patient Recovery Stories", pct: 15, color: "bg-purple-600" }
-    ],
-    recommended: ["Joint Replacement PPC", "Doctor Authority Content", "Verified Maps Optimization"]
-  },
-  {
-    name: "IVF & Fertility Centers",
-    tagline: "IVF Cycles, IUI & Fertility Consultations",
-    avgConsultations: "45 - 75",
-    estRev: "₹15.0L - ₹35.0L",
-    cac: "₹650 - ₹1,100",
-    opdRate: "64% Cycle Enrollment",
-    roiMultiple: "7.1x ROI",
-    timeline: "Consistent inquiries in 14 days",
+    name: "Enterprises & Commercial",
+    tagline: "Non-Medical Sectors, Outside NMC Scope",
+    avgConsultations: "Catalog & Site Architecture",
+    estRev: "Storefront Performance",
+    cac: "Transparent Campaigns",
+    opdRate: "Policy-Compliant Messaging",
+    roiMultiple: "Non-Medical",
+    timeline: "Scope defined during discovery",
     icon: Target,
     funnelMix: [
-      { channel: "High-Empathy Search PPC", pct: 45, color: "bg-indigo-600" },
-      { channel: "Doctor Video Explanations", pct: 35, color: "bg-purple-600" },
-      { channel: "Confidential WhatsApp Funnel", pct: 20, color: "bg-emerald-600" }
+      { channel: "Website & Catalog Engineering", pct: 40, color: "bg-blue-600" },
+      { channel: "Technical SEO", pct: 35, color: "bg-indigo-600" },
+      { channel: "Policy-Compliant Campaigns", pct: 25, color: "bg-purple-600" }
     ],
-    recommended: ["Full-Funnel IVF Campaigns", "Clinical Trust Video Series", "Confidential Lead Engine"]
+    recommended: ["Catalog Architecture", "Technical SEO Hygiene", "Workflow Automation"]
   },
   {
     name: "Multi-Speciality Hospital",
-    tagline: "24/7 Emergency, Multi-Ward & Speciality OPD",
-    avgConsultations: "350 - 650",
-    estRev: "₹25.0L - ₹60.0L",
-    cac: "₹160 - ₹240",
-    opdRate: "88% Department Footfall",
-    roiMultiple: "8.5x ROI",
-    timeline: "Immediate 360° patient scaling",
-    icon: Building2,
+    tagline: "Multi-Department Institutional Information Systems",
+    avgConsultations: "Department-Wise Information",
+    estRev: "Accessible Site Architecture",
+    cac: "No Referral Incentives",
+    opdRate: "Reviewed Before Publishing",
+    roiMultiple: "NMC Aligned",
+    timeline: "Scope defined during discovery",
+    icon: Activity,
     funnelMix: [
-      { channel: "360° Google & Maps Domination", pct: 40, color: "bg-blue-600" },
-      { channel: "Department-Wise Paid Ads", pct: 35, color: "bg-indigo-600" },
-      { channel: "Brand & Doctor Authority", pct: 25, color: "bg-purple-600" }
+      { channel: "Institutional Website System", pct: 40, color: "bg-blue-600" },
+      { channel: "Technical SEO & Accurate Listings", pct: 35, color: "bg-indigo-600" },
+      { channel: "Public-Health Education", pct: 25, color: "bg-purple-600" }
     ],
-    recommended: ["360° Omnichannel Engine", "Emergency Keyword Geo-Fencing", "Hospital Website System"]
+    recommended: ["Department Guides", "Accessible Web System", "Privacy-by-Design Forms"]
   }
 ];
 
 const faqs = [
   {
-    q: "Which digital marketing service should my practice start with?",
-    a: "If you need immediate patient appointments within 48 to 72 hours, Paid Advertisements (PPC) and Google Local 3-Pack optimization deliver immediate results. For long-term sustainable growth with zero per-click ad costs, SEO, Medical Content, and a high-converting Website form the foundation."
+    q: "Which digital service should my organization start with?",
+    a: "Most engagements begin with a Web Design & Development or technical SEO review, since accurate, accessible, fast-loading pages and clean site structure are the foundation for everything else. Educational content and policy-compliant campaigns can follow once that foundation is in place."
   },
   {
-    q: "Do you specialize only in healthcare and medical practices?",
-    a: "Yes! Codigix Infotech is 100% dedicated to healthcare growth. We understand medical ethics, NABH/MCI guidelines, patient psychology, clinical treatment terminologies, and localized search habits across Pune and PCMC."
+    q: "Do you work only with healthcare organizations?",
+    a: "No. We work across hospitals, clinics, enterprises, and commercial businesses. For healthcare engagements we follow applicable NMC (allopathic/hospital), NDC (dental), and AYUSH (Ayurvedic) communication principles, and non-medical sectors sit outside NMC scope."
   },
   {
-    q: "Can I combine multiple services into a single custom growth plan?",
-    a: "Yes. Most of our successful hospital and clinic partners use our integrated 360° Healthcare Growth package, combining SEO, Google Ads, Doctor Reels, and Website Optimization for maximum local patient footfall."
+    q: "Can I combine multiple services into a single plan?",
+    a: "Yes. Many organizations combine web development, technical SEO, content architecture, and educational video into one coordinated scope. Fees are service-based and are never tied to acquiring individual patients or to referral incentives."
   },
   {
-    q: "How do you track and report patient acquisition results?",
-    a: "We provide 100% transparent live analytics dashboards. You can track verified phone calls, appointment form fills, Google Maps directions requests, keyword rankings, and return on ad spend (ROAS) in real time."
+    q: "How do you report on the work?",
+    a: "We provide transparent reporting on technical health: site performance, accessibility checks, crawl and index status, listing accuracy, and content review status. We do not promise or guarantee specific rankings or business outcomes."
   },
   {
-    q: "What makes Codigix Infotech different from general marketing agencies?",
-    a: "General agencies create generic, compliant-blind ads with factual inaccuracies. At Codigix Infotech, our healthcare copywriters, medical ad strategists, and web engineers understand healthcare compliance, doctor authority, and patient psychology."
+    q: "What makes Codigix Infotech different from general agencies?",
+    a: "Every deliverable passes an internal pre-publication review covering factual accuracy, credential and registration disclosures, privacy safeguards, and AI labeling, with data handled in line with the Information Technology Act, 2000 and the Digital Personal Data Protection Act, 2023 (and 2025 Rules)."
   }
 ];
 
@@ -428,30 +427,30 @@ export default function ServicesPage() {
                   <span className="relative inline-flex rounded-full h-2 w-2 bg-[#e20b27]"></span>
                 </span>
                 <span className="text-xs sm:text-sm font-semibold text-[#1a1053] tracking-wide">
-                  Pune's Dedicated Healthcare Growth Agency
+                  Pune | Digital Infrastructure & Ethical Healthcare Communication
                 </span>
               </div>
 
               {/* Main Headline */}
               <h1 className="text-3xl sm:text-5xl lg:text-[54px] xl:text-6xl font-extrabold text-[#1a1053] tracking-tight leading-[1.12]">
-                Transforming Clinics Into <br />
+                Digital Strategy, Web Systems & <br />
                 <span className="text-transparent bg-clip-text bg-gradient-to-r from-blue-600 via-indigo-600 to-[#e20b27]">
-                  High-Growth Market Leaders
+                  Compliance-Aligned Communication
                 </span>
               </h1>
 
               {/* Subtitle */}
               <p className="text-base sm:text-lg text-slate-600 font-light leading-relaxed max-w-2xl">
-                We empower doctors, clinics, and hospitals to dominate local Google search, generate high-intent patient inquiries, and build lasting medical authority with predictable ROI.
+                Codigix Infotech builds reliable websites, accurate institutional profiles, and structured public-health content for hospitals, clinics, and enterprises, designed around transparency, accessibility, and regulatory alignment.
               </p>
 
               {/* Value Highlights */}
               <div className="grid grid-cols-1 sm:grid-cols-2 gap-3 pt-1">
                 {[
-                  "Google Maps 3-Pack & Local PCMC Domination",
-                  "100% MCI & NABH Ethical Advertising Standards",
-                  "Verified Patient Bookings & Phone Inquiries",
-                  "90-Day Proven Clinical Growth Blueprint"
+                  "Accurate Institutional & Listing Information",
+                  "NMC, NDC & AYUSH Communication Principles",
+                  "Accessible, DPDP-Aligned Web Systems",
+                  "Pre-Publication Factual & Compliance Review"
                 ].map((item, idx) => (
                   <div key={idx} className="flex items-center gap-2.5 text-xs sm:text-sm text-slate-700 font-medium">
                     <div className="w-5 h-5 rounded-full bg-emerald-50 text-emerald-600 flex items-center justify-center shrink-0 border border-emerald-200">
@@ -468,7 +467,7 @@ export default function ServicesPage() {
                   href="/contact"
                   className="inline-flex items-center gap-3 px-8 py-4 rounded-full bg-[#1a1053] hover:bg-[#281878] text-white font-semibold text-sm shadow-[0_10px_25px_-5px_rgba(26,16,83,0.25)] hover:shadow-[0_15px_30px_-5px_rgba(26,16,83,0.35)] transition-all transform hover:-translate-y-0.5"
                 >
-                  <span>Claim Free Practice Audit</span>
+                  <span>Schedule a Discovery Call</span>
                   <ArrowRight className="w-4 h-4" />
                 </Link>
 
@@ -476,7 +475,7 @@ export default function ServicesPage() {
                   href="#services-grid"
                   className="inline-flex items-center gap-2 px-6 py-4 rounded-full bg-white hover:bg-slate-50 text-[#1a1053] border border-slate-200 font-semibold text-sm shadow-xs transition-all"
                 >
-                  <span>Explore All 6 Channels</span>
+                  <span>Explore Our Services</span>
                   <ChevronDown className="w-4 h-4" />
                 </a>
               </div>
@@ -486,18 +485,15 @@ export default function ServicesPage() {
                 <div className="flex -space-x-2">
                   {[1, 2, 3, 4].map((i) => (
                     <div key={i} className="w-9 h-9 rounded-full bg-gradient-to-br from-indigo-100 to-blue-100 border-2 border-white flex items-center justify-center text-xs font-bold text-[#1a1053] shadow-xs">
-                      Dr
+                      <ShieldCheck size={14} />
                     </div>
                   ))}
                 </div>
                 <div>
-                  <div className="flex items-center gap-1 text-amber-500">
-                    {[...Array(5)].map((_, i) => (
-                      <Star key={i} size={14} className="fill-amber-400" />
-                    ))}
-                    <span className="text-xs font-bold text-slate-800 ml-1.5">4.9 / 5.0</span>
+                  <div className="flex items-center gap-1 text-slate-800">
+                    <span className="text-xs font-bold">Service-based engagements only</span>
                   </div>
-                  <p className="text-xs text-slate-500 font-light">Trusted by 100+ doctors and clinics across Pune & PCMC</p>
+                  <p className="text-xs text-slate-500 font-light">Serving hospitals, clinics, and enterprises across Pune & PCMC</p>
                 </div>
               </div>
 
@@ -521,81 +517,81 @@ export default function ServicesPage() {
                       </div>
                       <div>
                         <div className="flex items-center gap-1.5">
-                          <h4 className="font-bold text-[#1a1053] text-base">Clinical Growth Hub</h4>
+                          <h4 className="font-bold text-[#1a1053] text-base">Digital Systems Hub</h4>
                           <BadgeCheck className="w-4 h-4 text-blue-600 fill-blue-50" />
                         </div>
-                        <p className="text-xs text-slate-500 font-light">Multi-Specialty Patient Acquisition</p>
+                        <p className="text-xs text-slate-500 font-light">Institutional Information Systems</p>
                       </div>
                     </div>
                     <span className="px-3 py-1 rounded-full bg-emerald-50 border border-emerald-200 text-emerald-700 text-xs font-bold flex items-center gap-1.5">
                       <span className="w-1.5 h-1.5 rounded-full bg-emerald-500 animate-ping" />
-                      Live Feed
+                      Capabilities
                     </span>
                   </div>
 
                   {/* 3 Metric Summary Blocks */}
                   <div className="grid grid-cols-3 gap-3 text-center">
                     <div className="p-3.5 rounded-2xl bg-[#f8fafe] border border-slate-200/80">
-                      <div className="text-[10px] text-slate-500 uppercase tracking-wider font-semibold">Local Rank</div>
-                      <div className="text-lg sm:text-xl font-black text-emerald-600 mt-0.5">#1 GMB</div>
-                      <div className="text-[10px] text-slate-400 mt-0.5">5km Radius</div>
+                      <div className="text-[10px] text-slate-500 uppercase tracking-wider font-semibold">Search</div>
+                      <div className="text-lg sm:text-xl font-black text-emerald-600 mt-0.5">Schema</div>
+                      <div className="text-[10px] text-slate-400 mt-0.5">Structured Data</div>
                     </div>
 
                     <div className="p-3.5 rounded-2xl bg-[#f8fafe] border border-slate-200/80">
-                      <div className="text-[10px] text-slate-500 uppercase tracking-wider font-semibold">Ad Return</div>
-                      <div className="text-lg sm:text-xl font-black text-blue-600 mt-0.5">4.8x</div>
-                      <div className="text-[10px] text-slate-400 mt-0.5">Average ROAS</div>
+                      <div className="text-[10px] text-slate-500 uppercase tracking-wider font-semibold">Accessibility</div>
+                      <div className="text-lg sm:text-xl font-black text-blue-600 mt-0.5">WCAG</div>
+                      <div className="text-[10px] text-slate-400 mt-0.5">2.1 AA Aligned</div>
                     </div>
 
                     <div className="p-3.5 rounded-2xl bg-[#f8fafe] border border-slate-200/80">
-                      <div className="text-[10px] text-slate-500 uppercase tracking-wider font-semibold">Inquiries</div>
-                      <div className="text-lg sm:text-xl font-black text-[#e20b27] mt-0.5">+380%</div>
-                      <div className="text-[10px] text-slate-400 mt-0.5">Patient Lift</div>
+                      <div className="text-[10px] text-slate-500 uppercase tracking-wider font-semibold">Privacy</div>
+                      <div className="text-lg sm:text-xl font-black text-[#e20b27] mt-0.5">DPDP</div>
+                      <div className="text-[10px] text-slate-400 mt-0.5">Aligned Forms</div>
                     </div>
                   </div>
 
-                  {/* Verified Patient Inquiries Preview List */}
+                  {/* Engagement Scope Preview List */}
                   <div className="space-y-2.5 bg-[#f8fafe] rounded-2xl p-4 border border-slate-200/80">
                     <div className="flex items-center justify-between text-xs font-bold text-[#1a1053] uppercase tracking-wider">
-                      <span>Recent Patient Inquiries</span>
-                      <span className="text-emerald-600 font-medium">● Verified Leads</span>
+                      <span>Typical Engagement Scope</span>
+                      <span className="text-emerald-600 font-medium">● Reviewed</span>
                     </div>
 
                     <div className="space-y-2 text-xs">
                       <div className="flex items-center justify-between bg-white p-2.5 rounded-xl border border-slate-200/60 shadow-2xs">
                         <div className="flex items-center gap-2.5">
                           <div className="w-2 h-2 rounded-full bg-emerald-500" />
-                          <span className="font-medium text-slate-800">Knee Replacement Consult</span>
+                          <span className="font-medium text-slate-800">Department & Service Pages</span>
                         </div>
-                        <span className="text-[11px] font-mono text-slate-500">Wakad • 4m ago</span>
+                        <span className="text-[11px] font-mono text-slate-500">Content</span>
                       </div>
 
                       <div className="flex items-center justify-between bg-white p-2.5 rounded-xl border border-slate-200/60 shadow-2xs">
                         <div className="flex items-center gap-2.5">
                           <div className="w-2 h-2 rounded-full bg-blue-500" />
-                          <span className="font-medium text-slate-800">Clear Aligners Assessment</span>
+                          <span className="font-medium text-slate-800">Technical SEO Hygiene</span>
                         </div>
-                        <span className="text-[11px] font-mono text-slate-500">Baner • 12m ago</span>
+                        <span className="text-[11px] font-mono text-slate-500">Search</span>
                       </div>
 
                       <div className="flex items-center justify-between bg-white p-2.5 rounded-xl border border-slate-200/60 shadow-2xs">
                         <div className="flex items-center gap-2.5">
                           <div className="w-2 h-2 rounded-full bg-purple-500" />
-                          <span className="font-medium text-slate-800">Laser Skin Treatment Booking</span>
+                          <span className="font-medium text-slate-800">Privacy & Consent Notices</span>
                         </div>
-                        <span className="text-[11px] font-mono text-slate-500">Kothrud • 28m ago</span>
+                        <span className="text-[11px] font-mono text-slate-500">Compliance</span>
                       </div>
                     </div>
                   </div>
 
-                  {/* Consultation Hotline Action */}
+                  {/* Contact Action */}
                   <div className="pt-2 flex items-center justify-between text-xs text-slate-600">
                     <span className="flex items-center gap-1.5 font-medium">
                       <ShieldCheck className="w-4 h-4 text-emerald-600" />
-                      100% Dedicated Healthcare Growth
+                      Ethical Communication Principles
                     </span>
                     <Link href="/contact" className="font-bold text-[#e20b27] hover:underline">
-                      Get Free Audit →
+                      Discuss Your Project →
                     </Link>
                   </div>
 
@@ -652,15 +648,15 @@ export default function ServicesPage() {
               className="inline-flex items-center gap-2 px-3.5 py-1 rounded-full bg-white border border-slate-200/90 shadow-2xs text-[#1a1053] text-[11px] font-bold uppercase tracking-wider mb-3"
             >
               <span className="w-2 h-2 rounded-full bg-[#e20b27] animate-pulse" />
-              <span>Specialized Practice Growth Channels</span>
+              <span>Core Service Areas</span>
             </motion.div>
 
             <h2 className="text-3xl sm:text-4xl font-extrabold text-[#1a1053] tracking-tight leading-tight">
-              Explore Our Healthcare Marketing Services
+              Explore Our Digital Services
             </h2>
 
             <p className="mt-2.5 text-slate-600 text-sm sm:text-base font-light leading-relaxed max-w-2xl mx-auto">
-              Every channel is engineered exclusively for doctors, clinics, and multi-specialty hospitals to maximize OPD bookings, build clinical authority, and dominate local search.
+              Web engineering, structured information design, search discoverability, and clear educational communication for hospitals, clinics, enterprises, and commercial businesses.
             </p>
 
             {/* Quick Practice Trust Highlights with Smooth Stagger */}
@@ -673,15 +669,15 @@ export default function ServicesPage() {
             >
               <div className="flex items-center gap-1.5 px-3 py-1 rounded-full bg-white border border-slate-200/80 shadow-2xs hover:border-emerald-300 transition-colors">
                 <ShieldCheck className="w-3.5 h-3.5 text-emerald-600" />
-                <span>100% Medical & NABH Compliant</span>
+                <span>NMC, NDC & AYUSH Principles</span>
               </div>
               <div className="flex items-center gap-1.5 px-3 py-1 rounded-full bg-white border border-slate-200/80 shadow-2xs hover:border-blue-300 transition-colors">
                 <TrendingUp className="w-3.5 h-3.5 text-blue-600" />
-                <span>Average 4.8x Verified ROAS</span>
+                <span>IT Act & DPDP Aligned</span>
               </div>
               <div className="flex items-center gap-1.5 px-3 py-1 rounded-full bg-white border border-slate-200/80 shadow-2xs hover:border-rose-300 transition-colors">
                 <MapPin className="w-3.5 h-3.5 text-[#e20b27]" />
-                <span>Pune & PCMC Local Dominance</span>
+                <span>Pune & PCMC Based</span>
               </div>
             </motion.div>
           </motion.div>
@@ -787,13 +783,13 @@ export default function ServicesPage() {
             <div className="space-y-1.5 text-center lg:text-left">
               <div className="inline-flex items-center gap-2 px-3 py-0.5 rounded-full bg-emerald-50 text-emerald-700 border border-emerald-200 text-[11px] font-bold">
                 <Sparkles className="w-3 h-3" />
-                <span>Custom Multi-Channel Growth Strategy</span>
+                <span>Custom Service Scope</span>
               </div>
               <h3 className="text-xl sm:text-2xl font-extrabold text-[#1a1053]">
-                Not sure which service mix fits your clinic?
+                Not sure which service mix fits your organization?
               </h3>
               <p className="text-slate-600 text-xs sm:text-sm max-w-2xl font-light">
-                Schedule a complimentary 15-minute healthcare growth audit. We'll analyze your local competition across Pune/PCMC and recommend the highest-ROI channels.
+                Schedule a discovery call. We will review your current website and information structure and recommend a suitable scope of work.
               </p>
             </div>
 
@@ -802,13 +798,13 @@ export default function ServicesPage() {
                 href="/contact"
                 className="w-full sm:w-auto text-center px-6 py-3 rounded-full bg-[#e20b27] hover:bg-[#c00920] text-white font-bold text-xs sm:text-sm shadow-md shadow-rose-950/20 hover:scale-105 transition-all"
               >
-                Request Free Practice Audit →
+                Schedule a Discovery Call →
               </Link>
               <a
                 href="tel:+918208468757"
                 className="w-full sm:w-auto text-center px-5 py-3 rounded-full bg-slate-50 hover:bg-slate-100 border border-slate-200 text-[#1a1053] font-bold text-xs sm:text-sm transition-all"
               >
-                Talk to Strategist
+                Talk to Our Team
               </a>
             </div>
           </motion.div>
@@ -818,7 +814,7 @@ export default function ServicesPage() {
 
 
       {/* ============================================================ */}
-      {/* 3. 360° HEALTHCARE GROWTH ECOSYSTEM (True 360° Orbital Wheel) */}
+      {/* 3. SERVICE FRAMEWORK (Orbital Wheel) */}
       {/* ============================================================ */}
       <section className="py-16 lg:py-24 bg-white relative border-y border-slate-200/80 overflow-hidden">
 
@@ -839,7 +835,7 @@ export default function ServicesPage() {
           <div className="text-center max-w-3xl mx-auto mb-10 lg:mb-14">
             <div className="inline-flex items-center gap-2 px-3 py-1 rounded-full bg-purple-50 border border-purple-200 text-purple-700 text-[11px] font-bold uppercase tracking-wider mb-3.5">
               <span className="w-2 h-2 rounded-full bg-[#e20b27] animate-ping" />
-              <span>360° Connected Clinical Funnel</span>
+              <span>Connected Service Framework</span>
               <span className="text-slate-300">|</span>
               <span className={`text-[11px] font-bold ${isEcosystemPaused ? 'text-amber-600' : 'text-emerald-600'}`}>
                 {isEcosystemPaused ? '❚❚ Paused' : '▶ Auto-Cycling'}
@@ -847,11 +843,11 @@ export default function ServicesPage() {
             </div>
 
             <h2 className="text-3xl sm:text-4xl font-extrabold text-[#1a1053] tracking-tight leading-tight">
-              Our 360° Healthcare Growth Engine
+              How Our Services Fit Together
             </h2>
 
             <p className="mt-3 text-slate-600 text-sm sm:text-base font-light leading-relaxed max-w-2xl mx-auto">
-              Every channel connects into an automated, synchronized 360-degree patient acquisition loop driving continuous OPD bookings.
+              Each service area builds on accurate information, accessible engineering, and privacy-aware design, with every deliverable reviewed before publication.
             </p>
           </div>
 
@@ -1140,7 +1136,7 @@ export default function ServicesPage() {
                     <div className="p-4 rounded-2xl bg-gradient-to-r from-slate-50 to-indigo-50/40 border border-slate-200/90 shadow-2xs flex items-center justify-between gap-4">
                       <div>
                         <div className="text-[10px] uppercase font-extrabold text-slate-400 tracking-wider">
-                          Verified Growth Impact
+                          Focus Area
                         </div>
                         <div className="text-lg sm:text-xl font-black text-[#1a1053] mt-0.5">
                           {ecosystemSteps[activeEcosystemStep].metric}
@@ -1149,7 +1145,7 @@ export default function ServicesPage() {
 
                       <div className="text-right">
                         <div className="text-[10px] uppercase font-extrabold text-slate-400 tracking-wider">
-                          Clinical Benchmark
+                          Principle
                         </div>
                         <div className="text-sm font-bold text-emerald-600 flex items-center justify-end gap-1 mt-0.5">
                           <Check size={14} className="stroke-[3]" />
@@ -1179,7 +1175,7 @@ export default function ServicesPage() {
                         href="#services-grid"
                         className="inline-flex items-center gap-1.5 text-xs font-bold text-[#1a1053] hover:text-[#e20b27] transition-colors group"
                       >
-                        <span>Explore Channel Details</span>
+                        <span>Explore Service Details</span>
                         <ArrowRight size={13} className="group-hover:translate-x-0.5 transition-transform text-[#e20b27]" />
                       </Link>
                     </div>
@@ -1197,7 +1193,7 @@ export default function ServicesPage() {
 
 
       {/* ============================================================ */}
-      {/* 4. INTERACTIVE PRACTICE GROWTH ESTIMATOR (Automated Simulator) */}
+      {/* 4. REGULATORY SCOPE EXPLORER */}
       {/* ============================================================ */}
       <section
         ref={specialtyRef}
@@ -1226,20 +1222,20 @@ export default function ServicesPage() {
 
               <div className="inline-flex items-center gap-2 px-3 py-1 rounded-full bg-blue-50 border border-blue-200 text-blue-800 text-[11px] font-bold uppercase tracking-wider">
                 <Sliders className="w-3.5 h-3.5 text-blue-600" />
-                <span>Live Practice Growth Simulator</span>
+                <span>Regulatory Scope Explorer</span>
                 <span className="text-slate-300">|</span>
                 <span className={`text-[11px] font-bold ${isSpecialtyPaused ? 'text-amber-600' : 'text-emerald-600'}`}>
-                  {isSpecialtyPaused ? '❚❚ Paused' : '▶ Auto-Simulating'}
+                  {isSpecialtyPaused ? '❚❚ Paused' : '▶ Auto-Cycling'}
                 </span>
               </div>
 
               <div className="space-y-3 mt-4">
                 <h2 className="text-3xl sm:text-4xl font-extrabold text-[#1a1053] tracking-tight leading-tight">
-                  Select Your Clinical Specialty to Predict Patient Impact
+                  Select Your Sector to See the Applicable Framework
                 </h2>
 
                 <p className="text-sm sm:text-base text-slate-600 font-light leading-relaxed">
-                  Real growth models derived from scaling 100+ private clinics, diagnostic centers, and hospital practices across Pune & PCMC.
+                  Healthcare engagements follow NMC (allopathic/hospital), NDC (dental), and AYUSH (Ayurvedic) communication principles; non-medical sectors sit outside NMC scope.
                 </p>
               </div>
 
@@ -1289,7 +1285,7 @@ export default function ServicesPage() {
                             {spec.avgConsultations}
                           </span>
                           <span className="text-[10px] text-slate-400 font-medium">
-                            Inquiries/mo
+                            Focus
                           </span>
                         </div>
                       </div>
@@ -1342,7 +1338,7 @@ export default function ServicesPage() {
                     </div>
                     <div>
                       <div className="text-[9px] uppercase font-mono font-bold text-slate-400 tracking-wider mb-0.5">
-                        Forecast
+                        Framework
                       </div>
                       <h3 className="text-base font-extrabold text-[#1a1053] leading-none">
                         {roiSpecialties[selectedSpecialty].name}
@@ -1408,7 +1404,7 @@ export default function ServicesPage() {
                       <div className="p-4 rounded-xl bg-gradient-to-br from-slate-50 to-blue-50/40 border border-slate-200/60 shadow-2xs">
                         <div className="flex items-center justify-between mb-2">
                           <span className="text-[10px] font-bold text-slate-500 uppercase tracking-wider">
-                            Monthly Inquiries
+                            Information Focus
                           </span>
                           <Users size={14} className="text-blue-600" />
                         </div>
@@ -1421,7 +1417,7 @@ export default function ServicesPage() {
                       <div className="p-4 rounded-xl bg-gradient-to-br from-slate-50 to-rose-50/30 border border-slate-200/60 shadow-2xs">
                         <div className="flex items-center justify-between mb-2">
                           <span className="text-[10px] font-bold text-slate-500 uppercase tracking-wider">
-                            Revenue Impact
+                            Disclosure / Scope
                           </span>
                           <TrendingUp size={14} className="text-[#e20b27]" />
                         </div>
@@ -1434,7 +1430,7 @@ export default function ServicesPage() {
                       <div className="p-3.5 rounded-xl bg-white border border-slate-200/60 shadow-2xs flex items-center justify-between">
                         <div>
                           <span className="text-[9px] font-bold text-slate-400 uppercase tracking-wider block mb-1">
-                            Target CAC
+                            Engagement Principle
                           </span>
                           <span className="text-sm font-extrabold text-[#1a1053] block">
                             {roiSpecialties[selectedSpecialty].cac}
@@ -1446,7 +1442,7 @@ export default function ServicesPage() {
                       <div className="p-3.5 rounded-xl bg-white border border-slate-200/60 shadow-2xs flex items-center justify-between">
                         <div>
                           <span className="text-[9px] font-bold text-slate-400 uppercase tracking-wider block mb-1">
-                            OPD Conversion
+                            Review Standard
                           </span>
                           <span className="text-sm font-extrabold text-emerald-600 block">
                             {roiSpecialties[selectedSpecialty].opdRate}
@@ -1458,8 +1454,8 @@ export default function ServicesPage() {
                     {/* Patient Channel Acquisition Breakdown */}
                     <div className="p-4 rounded-xl bg-slate-50 border border-slate-200/60 space-y-3">
                       <div className="flex items-center justify-between text-xs font-bold text-slate-600">
-                        <span>Patient Channel Mix</span>
-                        <span className="text-[10px] font-mono text-slate-400 uppercase tracking-wider">Multi-Touch</span>
+                        <span>Work Focus Areas</span>
+                        <span className="text-[10px] font-mono text-slate-400 uppercase tracking-wider">Typical Mix</span>
                       </div>
 
                       {/* Stacked Progress Bar */}
@@ -1479,13 +1475,13 @@ export default function ServicesPage() {
                           <div key={fIdx} className="flex items-center gap-1.5">
                             <span className={`w-2 h-2 rounded-full ${f.color}`} />
                             <span className="text-slate-700">{f.channel}</span>
-                            <span className="text-slate-400">({f.pct}%)</span>
+                            
                           </div>
                         ))}
                       </div>
                     </div>
 
-                    {/* Recommended Growth Mix Deliverables */}
+                    {/* Recommended Deliverables */}
                     <div className="space-y-2">
                       <span className="text-[10px] font-bold uppercase tracking-wider text-slate-400 block">
                         Recommended Engine:
@@ -1509,7 +1505,7 @@ export default function ServicesPage() {
                         href="/contact"
                         className="w-full flex items-center justify-center gap-2 py-3.5 px-6 rounded-xl bg-[#1a1053] hover:bg-[#e20b27] text-white font-bold text-xs sm:text-sm shadow-sm hover:shadow-md transition-all duration-300 group"
                       >
-                        <span>Custom Strategy for {roiSpecialties[selectedSpecialty].name}</span>
+                        <span>Discuss Scope for {roiSpecialties[selectedSpecialty].name}</span>
                         <ArrowRight className="w-4 h-4 group-hover:translate-x-1 transition-transform" />
                       </Link>
                     </div>
@@ -1539,7 +1535,7 @@ export default function ServicesPage() {
 
           <div className="flex flex-col sm:flex-row items-center justify-between gap-4 mb-8 border-b border-slate-100 pb-4">
             <h2 className="text-3xl sm:text-4xl font-extrabold text-[#1a1053] tracking-tight leading-tight">
-              Why Healthcare Leaders Choose Us
+              Why Organizations Choose Us
             </h2>
             <div className="inline-flex items-center gap-2 px-3 py-1 rounded-full bg-rose-50 border border-rose-200 text-rose-700 text-[11px] font-bold uppercase tracking-wider">
               <ShieldCheck className="w-3 h-3" />
@@ -1550,33 +1546,33 @@ export default function ServicesPage() {
           <div className="flex flex-wrap justify-center gap-3 md:gap-4">
             {[
               {
-                title: "100% Healthcare Specialized",
-                desc: "We only serve medical doctors, multi-specialty clinics, diagnostic labs, and hospitals. No generic templates.",
+                title: "Healthcare & Enterprise Experience",
+                desc: "We work across hospitals, clinics, enterprises, and commercial businesses, with scope-specific processes rather than generic templates.",
                 icon: Stethoscope
               },
               {
                 title: "Clinical Accuracy & Compliance",
-                desc: "Strict adherence to MCI ethics, NABH standards, and medical facts verified by medical writers.",
+                desc: "Factual, non-promotional framing for medical engagements, with credential and registration disclosures and pre-publication review.",
                 icon: ShieldCheck
               },
               {
-                title: "Local Pune & PCMC Mastery",
-                desc: "Unmatched expertise in micro-catchments (Baner, Wakad, Kothrud, Pimpri, Chinchwad, Nigdi, Hinjewadi).",
+                title: "Local Pune & PCMC Presence",
+                desc: "A Pune-based team familiar with the local areas (Baner, Wakad, Kothrud, Pimpri, Chinchwad, Nigdi, Hinjewadi).",
                 icon: MapPin
               },
               {
-                title: "Data-Driven Patient Inquiries",
-                desc: "We focus strictly on verified patient phone calls and clinic footfall rather than superficial vanity impressions.",
+                title: "Data Protection First",
+                desc: "We design touchpoints with data minimization and security in mind, aligned with the IT Act, 2000 and the DPDP Act, 2023 (and 2025 Rules).",
                 icon: Target
               },
               {
                 title: "Multi-Channel Cohesion",
-                desc: "Your SEO, Google Ads, Doctor Reels, and Website work together as a synchronized patient conversion engine.",
+                desc: "Your website, search structure, content, and campaigns are planned together so information stays consistent.",
                 icon: Layers
               },
               {
-                title: "Transparent Live Reporting",
-                desc: "Access real-time dashboards showing every phone inquiry, booked consultation, and search ranking 24/7.",
+                title: "Transparent Reporting",
+                desc: "Clear reporting on site performance, accessibility, listing accuracy, and content review status.",
                 icon: BarChart3
               }
             ].map((item, idx) => {

@@ -4,33 +4,33 @@ import { Coffee, BarChart3, Palette, Rocket, PartyPopper } from 'lucide-react';
 const schedule = [
   {
     time: '09:30 AM',
-    title: 'Morning Pulse & Campaign Dashboard',
+    title: 'Morning Check-In & Site Health Review',
     description:
-      'Grab your favorite brew in the studio kitchen. Review real-time Google Ads ROAS, GA4 patient leads, and overnight keyword ranking movements on our agency dashboards.',
+      'Start with a team check-in. Review site health, accessibility and performance reports, and any listing or content accuracy updates that came in overnight.',
     icon: Coffee,
     color: 'bg-amber-500/10 text-amber-600 border-amber-200/60',
   },
   {
     time: '11:15 AM',
-    title: 'Creative Jam & Strategic Scripting',
+    title: 'Content Planning & Review',
     description:
-      'Huddle with our creative directors and copywriters. Brainstorm high-converting hooks for doctor reels, write A/B headlines for PPC landing pages, and sketch visual storyboards.',
+      'Huddle with writers and reviewers. Plan educational video scripts and public-health articles, check practitioner credential disclosures and sources, and sketch visual storyboards.',
     icon: Palette,
     color: 'bg-purple-500/10 text-purple-600 border-purple-200/60',
   },
   {
     time: '02:30 PM',
-    title: 'Deep Work & Live Campaign Execution',
+    title: 'Deep Work & Delivery',
     description:
-      'Uninterrupted focus time. Deploy Performance Max assets, optimize Google Business Profile citations, execute technical SEO schema migrations, and write medical pillar content.',
+      'Uninterrupted focus time. Build and ship web features, update structured data and accurate business listings, and write source-referenced informational content.',
     icon: Rocket,
     color: 'bg-blue-500/10 text-blue-600 border-blue-200/60',
   },
   {
     time: '05:00 PM',
-    title: 'Growth Teardowns & Victory Confetti',
+    title: 'Pre-Publication Review & Wrap-Up',
     description:
-      'Review new conversion records, share algorithm discoveries from the trenches, celebrate client breakthroughs with the team, and wrap up with clean documentation.',
+      'Run the pre-publication checklist for factual accuracy, credential disclosures, privacy safeguards and AI labelling, share learnings with the team, and wrap up with clean documentation.',
     icon: PartyPopper,
     color: 'bg-rose-500/10 text-[#e20b27] border-rose-200/60',
   },
@@ -46,13 +46,13 @@ export default function DayInTheLife() {
             Agency Rhythm
           </div>
           <h2 className="text-3xl sm:text-4xl lg:text-5xl font-extrabold text-[#1a1053] tracking-tight leading-tight mb-4">
-            A Day in the Life of a{' '}
+            A Day in the Life at{' '}
             <span className="text-transparent bg-clip-text bg-gradient-to-r from-blue-600 via-indigo-600 to-[#e20b27]">
-              Codigix Marketer
+              Codigix
             </span>
           </h2>
           <p className="text-slate-500 text-base sm:text-lg leading-relaxed">
-            Here is what high-autonomy, outcome-driven marketing actually looks like inside our Pune studio.
+            Here is what a typical day can look like inside our Pune team.
           </p>
         </div>
 

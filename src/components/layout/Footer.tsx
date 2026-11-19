@@ -104,7 +104,7 @@ export default function Footer({ settings }: { settings: PublicSettings }) {
               <Logo size="lg" />
             </Link>
             <p className="text-sm text-secondary-text font-light mb-8 leading-relaxed">
-              {site.description}
+              Codigix Infotech provides web development, search visibility, content structuring, and digital communication services in accordance with applicable Indian laws (including the IT Act, 2000 and DPDP Act, 2023) and NMC ethical communication principles for healthcare engagements.
             </p>
 
             {/* Social Icons */}

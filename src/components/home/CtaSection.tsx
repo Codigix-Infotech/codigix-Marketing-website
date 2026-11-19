@@ -118,22 +118,22 @@ export default function CtaSection() {
               <span>Let's Build What's Next</span>
             </div>
             <h2 className="text-3xl sm:text-4xl lg:text-5xl font-semibold text-[#1a1053] leading-[1.15] tracking-tight mb-4">
-              Ready to Grow <br />
+              Build Clear, Reliable <br />
               <span className="text-transparent bg-clip-text bg-gradient-to-r from-blue-600 via-indigo-600 to-[#e20b27]">
-                Your Healthcare Practice?
+                Digital Foundations
               </span>
             </h2>
             <p className="text-slate-600 font-light text-base sm:text-lg leading-relaxed max-w-md mb-8">
-              Schedule a strategic consultation to see how our SEO, Google Maps, and patient acquisition systems can scale your clinic.
+              Connect with our team to discuss website engineering, factual information architecture, or public-health content workflows aligned with applicable Indian digital and medical communication guidelines.
             </p>
 
             <div className="flex flex-wrap items-center gap-5">
               <Link href="/contact" className="inline-flex items-center gap-2 px-8 py-3.5 bg-[#1a1053] hover:bg-[#25186f] text-white rounded-full font-medium text-sm transition-all shadow-[0_8px_20px_rgba(26,16,83,0.18)] hover:-translate-y-0.5">
-                <span>Get a Free Consultation</span>
+                <span>Schedule a Discovery Call</span>
                 <ArrowRight size={15} />
               </Link>
               <Link href="/contact" className="text-sm font-medium text-[#1a1053] hover:text-[#e20b27] transition-colors">
-                Talk to Our Strategist →
+                Explore Our Services →
               </Link>
             </div>
           </div>

@@ -2,24 +2,25 @@
 
 import React from 'react';
 import { motion } from 'framer-motion';
-import { ArrowLeft, ArrowRight, Star } from 'lucide-react';
+import { ArrowLeft, ArrowRight } from 'lucide-react';
 
 export default function Testimonials() {
   const reviews = [
     {
-      text: "Codigix transformed our online presence. Their team is professional, creative and truly understands business growth.",
-      name: "Rohan Deshpande",
-      role: "Retail Business Owner",
+      title: "No Patient Solicitation or Referral Incentives",
+      text: "Our engagement models are strictly service-based and are never tied to acquiring individual patients or paying/receiving patient referral incentives.",
     },
     {
-      text: "Highly recommended for their strategic approach and timely execution. They deliver exactly what they promise.",
-      name: "Neha Kulkarni",
-      role: "E-commerce Entrepreneur",
+      title: "Factual & Non-Promotional Framing",
+      text: "For medical and hospital engagements, we prioritize accurate institutional details, verified practitioner credentials and registration information, and public-health education without unsubstantiated claims or cure promises.",
     },
     {
-      text: "A reliable and result-oriented team. They bring great ideas to the table and have excellent communication.",
-      name: "Sandeep Patil",
-      role: "Manufacturing Business",
+      title: "Authenticity & AI Transparency",
+      text: "We do not use fabricated reviews or deceptive synthetic personas, and we apply clear source disclosures whenever AI tools assist in content or media creation.",
+    },
+    {
+      title: "Data Protection First",
+      text: "We design digital touchpoints with data minimization and security in mind, aligned with the Information Technology Act, 2000 and the Digital Personal Data Protection Act, 2023 (and 2025 Rules).",
     }
   ];
 
@@ -55,29 +56,13 @@ export default function Testimonials() {
           className="flex flex-col md:flex-row md:items-end justify-between gap-8 mb-16"
         >
           <div className="max-w-2xl relative">
-            {/* Floating Glassmorphism Badge */}
-            <motion.div
-              initial={{ opacity: 0, transform: "scale(0.8)" }}
-              whileInView={{ opacity: 1, transform: "scale(1)" }}
-              viewport={{ once: true }}
-              transition={{ delay: 0.35, duration: 0.6, ease: [0.22, 1, 0.36, 1] }}
-              className="absolute -top-12 -right-4 lg:-right-32 z-30 bg-white/70 backdrop-blur-md border border-white/40 shadow-xl rounded-2xl p-4 flex items-center gap-4 hidden lg:flex"
-            >
-              <div className="w-10 h-10 rounded-full bg-amber-100 flex items-center justify-center text-amber-500">
-                <Star size={18} className="fill-current" />
-              </div>
-              <div>
-                <p className="text-xl text-slate-800 leading-none">4.9/5</p>
-                <p className="text-[10px] font-bold text-slate-500 mt-1 uppercase tracking-wider">Average Rating</p>
-              </div>
-            </motion.div>
             <span className="text-xs font-bold tracking-[0.2em] text-primary-accent uppercase mb-4 block">
-              Client Testimonials
+              Our Commitments
             </span>
             <h2 className="text-4xl lg:text-5xl font-extrabold text-[#1a1053] leading-[1.1] tracking-tight">
-              What Our <br className="hidden md:block" />
+              Our Ethical <br className="hidden md:block" />
               <span className="text-transparent bg-clip-text bg-gradient-to-r from-blue-600 via-indigo-600 to-[#e20b27]">
-                Clients Say
+                Communication Commitments
               </span>
             </h2>
           </div>
@@ -93,7 +78,7 @@ export default function Testimonials() {
         </motion.div>
 
         {/* Testimonials Grid */}
-        <div className="grid grid-cols-1 md:grid-cols-3 gap-6">
+        <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-6">
           {reviews.map((review, idx) => (
             <motion.div
               key={idx}
@@ -101,7 +86,7 @@ export default function Testimonials() {
               whileInView={{ opacity: 1 }}
               viewport={{ once: true, margin: "-50px" }}
               transition={{ delay: idx * 0.15, duration: 0.6, type: "spring", stiffness: 100 }}
-              className="bg-white p-10 rounded-3xl border border-slate-100 shadow-[0_4px_20px_rgb(0,0,0,0.02)] flex flex-col hover:-translate-y-2 hover:shadow-xl transition-all duration-300 relative group"
+              className="bg-white p-8 rounded-3xl border border-slate-100 shadow-[0_4px_20px_rgb(0,0,0,0.02)] flex flex-col hover:-translate-y-2 hover:shadow-xl transition-all duration-300 relative group"
             >
               {/* Big Quote Icon */}
               <div className="mb-6">
@@ -110,25 +95,10 @@ export default function Testimonials() {
                 </svg>
               </div>
 
-              <p className="text-sm text-primary-text leading-relaxed font-medium mb-8 flex-1">
-                "{review.text}"
+              <h4 className="text-sm font-bold text-primary-text mb-3">{review.title}</h4>
+              <p className="text-sm text-secondary-text leading-relaxed font-medium flex-1">
+                {review.text}
               </p>
-
-              <div className="flex items-center gap-4 mt-auto">
-                {/* Avatar Placeholder */}
-                <div className="w-12 h-12 rounded-full bg-slate-200 overflow-hidden shrink-0">
-                  <img src={`https://i.pravatar.cc/150?u=${idx}`} alt={review.name} className="w-full h-full object-cover" />
-                </div>
-                <div>
-                  <h4 className="text-sm font-bold text-primary-text">{review.name}</h4>
-                  <p className="text-[10px] font-bold text-secondary-text mt-0.5">{review.role}</p>
-                  <div className="flex gap-1 mt-1 text-highlight">
-                    {[...Array(5)].map((_, i) => (
-                      <Star key={i} size={10} fill="currentColor" />
-                    ))}
-                  </div>
-                </div>
-              </div>
             </motion.div>
           ))}
         </div>

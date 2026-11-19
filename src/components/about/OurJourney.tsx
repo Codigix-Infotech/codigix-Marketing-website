@@ -7,8 +7,8 @@ const journeySteps = [
   {
     id: 1,
     title: "The Vision",
-    headline: "Beyond Just Clicks",
-    description: "Codigix Infotech Pvt. Ltd. began with a mission that went beyond clicks and rankings; we wanted to connect the right patients with the right doctors.",
+    headline: "Beyond Just Websites",
+    description: "Codigix Infotech Pvt. Ltd. began with a mission to build dependable digital systems and clear, accurate information for organizations that serve the public.",
     color: "#3b82f6", // blue
     icon: Rocket,
     gradient: "from-blue-600/10 via-blue-400/5 to-transparent"
@@ -16,8 +16,8 @@ const journeySteps = [
   {
     id: 2,
     title: "The Discovery",
-    headline: "The Visibility Gap",
-    description: "As we worked closely with healthcare professionals across India, we saw firsthand how talented doctors, thriving clinics, and even well-established hospitals were losing patients not because of their quality of care, but because they were invisible online.",
+    headline: "The Information Gap",
+    description: "Working with healthcare institutions and enterprises, we saw how often accurate institutional details, practitioner information and public-health education were hard to find, outdated or inconsistent online.",
     color: "#6366f1", // indigo
     icon: Eye,
     gradient: "from-indigo-600/10 via-indigo-400/5 to-transparent"
@@ -25,8 +25,8 @@ const journeySteps = [
   {
     id: 3,
     title: "The Pivot",
-    headline: "Dedicated to Healthcare",
-    description: "That insight became our purpose. We dedicated ourselves entirely to the healthcare world—partnering with dental clinics, multi-specialty hospitals, cancer care centers, hair transplant specialists, general practitioners, and independent clinics to build the kind of digital presence that earns patient trust before they even walk through the door.",
+    headline: "Care for Healthcare Sensitivities",
+    description: "That insight shaped our purpose. We work with hospitals, clinics and enterprises to build accurate, accessible and privacy-aware digital presences, following NMC ethical communication principles for allopathic and hospital work, NDC norms for dental work and AYUSH guidelines for Ayurvedic work.",
     color: "#8b5cf6", // purple
     icon: Heart,
     gradient: "from-purple-600/10 via-purple-400/5 to-transparent"
@@ -34,8 +34,8 @@ const journeySteps = [
   {
     id: 4,
     title: "The Strategy",
-    headline: "Precision Execution",
-    description: "From dominating local Google searches and optimizing Google Business Profiles to running targeted patient acquisition campaigns and managing online reputations for both small clinics and large hospital networks, we crafted strategies built specifically for the sensitivities and standards of healthcare.",
+    headline: "Responsible Execution",
+    description: "From technical site optimization and accurate business listings to policy-compliant campaigns and educational content, our services are service-based, never tied to patient procurement, and reviewed internally for accuracy, disclosures, privacy safeguards and AI labelling.",
     color: "#d946ef", // fuchsia
     icon: Target,
     gradient: "from-fuchsia-600/10 via-fuchsia-400/5 to-transparent"
@@ -43,8 +43,8 @@ const journeySteps = [
   {
     id: 5,
     title: "Today",
-    headline: "India's Growth Ally",
-    description: "Today, Codigix Infotech Pvt. Ltd. stands as India’s dedicated healthcare marketing partner—not just an agency, but a growth ally for every doctor, clinic, and hospital ready to make a greater impact in their community.",
+    headline: "A Dependable Digital Partner",
+    description: "Today, Codigix Infotech Pvt. Ltd. is a Pune-based technology and digital communication firm, working across healthcare institutions, enterprises and commercial businesses on web engineering, structured information design and clear educational communication.",
     color: "#ec4899", // pink
     icon: Award,
     gradient: "from-pink-600/10 via-pink-400/5 to-transparent"
@@ -130,19 +130,19 @@ export default function OurJourney() {
                 <span className="relative inline-flex rounded-full h-2 w-2 bg-blue-600"></span>
               </span>
               <span className="text-xs font-semibold text-[#1a1053] tracking-wide">
-                Our Journey · Healthcare Evolution
+                Our Journey
               </span>
             </div>
 
             <h2 className="text-2xl sm:text-4xl lg:text-5xl font-semibold text-[#1a1053] tracking-tight leading-[1.15]">
-              Empowering Doctors With <br className="hidden md:block" />
+              Building Clear, Reliable <br className="hidden md:block" />
               <span className="text-transparent bg-clip-text bg-gradient-to-r from-blue-600 via-indigo-600 to-[#e20b27]">
-                Predictable Practice Growth
+                Digital Foundations
               </span>
             </h2>
 
             <p className="hidden sm:block text-slate-600 font-light text-base sm:text-lg leading-relaxed mt-3 max-w-2xl mx-auto">
-              Scroll through our roadmap to see how we transformed healthcare visibility across India.
+              Scroll through our roadmap to see how our approach evolved.
             </p>
           </div>
 
@@ -214,25 +214,25 @@ export default function OurJourney() {
 
             {/* Left Side Stats (2 Cards) */}
             <div className="hidden sm:flex items-center gap-3 shrink-0 order-2 lg:order-1">
-              {/* Stat 1: 96% Client Retention */}
+              {/* Stat 1 */}
               <div className="bg-white/95 backdrop-blur-md px-3.5 py-2.5 rounded-2xl border border-slate-200/90 shadow-[0_4px_20px_rgba(26,16,83,0.04)] flex items-center gap-2.5 group hover:border-emerald-200 hover:shadow-md transition-all">
                 <div className="w-9 h-9 rounded-xl bg-emerald-50 text-emerald-600 flex items-center justify-center shrink-0 border border-emerald-100">
                   <HeartHandshake size={18} />
                 </div>
                 <div className="flex flex-col">
-                  <span className="text-sm font-bold text-[#1a1053] leading-none">96%</span>
-                  <span className="text-[10px] font-medium text-slate-500 mt-0.5 whitespace-nowrap">Client Retention</span>
+                  <span className="text-sm font-bold text-[#1a1053] leading-none">DPDP</span>
+                  <span className="text-[10px] font-medium text-slate-500 mt-0.5 whitespace-nowrap">Aligned Forms</span>
                 </div>
               </div>
 
-              {/* Stat 2: 50+ Healthcare Clients */}
+              {/* Stat 2 */}
               <div className="bg-white/95 backdrop-blur-md px-3.5 py-2.5 rounded-2xl border border-slate-200/90 shadow-[0_4px_20px_rgba(26,16,83,0.04)] flex items-center gap-2.5 group hover:border-blue-200 hover:shadow-md transition-all">
                 <div className="w-9 h-9 rounded-xl bg-blue-50 text-blue-600 flex items-center justify-center shrink-0 border border-blue-100">
                   <Building2 size={18} />
                 </div>
                 <div className="flex flex-col">
-                  <span className="text-sm font-bold text-[#1a1053] leading-none">50+</span>
-                  <span className="text-[10px] font-medium text-slate-500 mt-0.5 whitespace-nowrap">Healthcare Clients</span>
+                  <span className="text-sm font-bold text-[#1a1053] leading-none">WCAG</span>
+                  <span className="text-[10px] font-medium text-slate-500 mt-0.5 whitespace-nowrap">2.1 AA Aligned</span>
                 </div>
               </div>
             </div>
@@ -290,25 +290,25 @@ export default function OurJourney() {
 
             {/* Right Side Stats (2 Cards) */}
             <div className="hidden sm:flex items-center gap-3 shrink-0 order-3">
-              {/* Stat 3: 250+ Projects Completed */}
+              {/* Stat 3 */}
               <div className="bg-white/95 backdrop-blur-md px-3.5 py-2.5 rounded-2xl border border-slate-200/90 shadow-[0_4px_20px_rgba(26,16,83,0.04)] flex items-center gap-2.5 group hover:border-purple-200 hover:shadow-md transition-all">
                 <div className="w-9 h-9 rounded-xl bg-purple-50 text-purple-600 flex items-center justify-center shrink-0 border border-purple-100">
                   <TrendingUp size={18} />
                 </div>
                 <div className="flex flex-col">
-                  <span className="text-sm font-bold text-[#1a1053] leading-none">250+</span>
-                  <span className="text-[10px] font-medium text-slate-500 mt-0.5 whitespace-nowrap">Projects Completed</span>
+                  <span className="text-sm font-bold text-[#1a1053] leading-none">CWV</span>
+                  <span className="text-[10px] font-medium text-slate-500 mt-0.5 whitespace-nowrap">Performance Focus</span>
                 </div>
               </div>
 
-              {/* Stat 4: 5+ Years Experience */}
+              {/* Stat 4 */}
               <div className="bg-white/95 backdrop-blur-md px-3.5 py-2.5 rounded-2xl border border-slate-200/90 shadow-[0_4px_20px_rgba(26,16,83,0.04)] flex items-center gap-2.5 group hover:border-rose-200 hover:shadow-md transition-all">
                 <div className="w-9 h-9 rounded-xl bg-rose-50 text-[#e20b27] flex items-center justify-center shrink-0 border border-rose-100">
                   <Award size={18} />
                 </div>
                 <div className="flex flex-col">
-                  <span className="text-sm font-bold text-[#1a1053] leading-none">5+</span>
-                  <span className="text-[10px] font-medium text-slate-500 mt-0.5 whitespace-nowrap">Years Healthcare</span>
+                  <span className="text-sm font-bold text-[#1a1053] leading-none">Schema</span>
+                  <span className="text-[10px] font-medium text-slate-500 mt-0.5 whitespace-nowrap">Structured Data</span>
                 </div>
               </div>
             </div>

@@ -7,7 +7,7 @@ import { pageMetadata } from '@/lib/page-seo';
 export const generateMetadata = () =>
   pageMetadata({
     title: 'Privacy Policy | Codigix Infotech',
-    description: 'How Codigix Infotech collects, uses and protects the personal information you share through our website, contact forms and job applications.',
+    description: 'How Codigix Infotech collects, uses and protects personal information under the IT Act, 2000 and the DPDP Act, 2023 (and 2025 Rules).',
     path: '/privacy',
   });
 
@@ -25,6 +25,16 @@ export default async function PrivacyPage() {
       siteName={name}
       sections={[
         {
+          heading: 'Legal framework',
+          body: (
+            <p>
+              We handle personal data in accordance with the Information Technology Act, 2000 and the Digital Personal Data Protection (DPDP)
+              Act, 2023 (and the 2025 Rules made under it). Our healthcare-related work also follows applicable ethical communication
+              principles, but this website is not a medical service and we do not want to receive patient medical information.
+            </p>
+          ),
+        },
+        {
           heading: 'Information we collect',
           body: (
             <>
@@ -34,8 +44,19 @@ export default async function PrivacyPage() {
                 <li><strong>Job applications:</strong> your name, contact details, experience, current company, LinkedIn or portfolio links, cover letter and the résumé you upload.</li>
                 <li><strong>Newsletter:</strong> your email address if you subscribe through the form in our website footer.</li>
               </ul>
-              <p>Like most websites, our servers also record basic technical data (IP address, browser type, pages requested and time of visit) to keep the site secure and working.</p>
+              <p>Please do not share confidential patient medical records, diagnostic reports, or sensitive personal health information through our forms or email. We collect only the minimum data needed for each purpose. Like most websites, our servers also record basic technical data (IP address, browser type, pages requested and time of visit) to keep the site secure and working.</p>
             </>
+          ),
+        },
+        {
+          heading: 'Purpose limitation and consent',
+          body: (
+            <p>
+              We use your personal data only for the specific purpose for which you provided it, such as replying to an enquiry, assessing a job
+              application or sending a newsletter you subscribed to. We process it on the basis of your consent or another lawful use permitted
+              by the DPDP Act, 2023. You may withdraw your consent at any time by contacting us; withdrawal does not affect processing done
+              before it, and we will stop the related processing unless the law requires us to keep the data.
+            </p>
           ),
         },
         {
@@ -62,7 +83,7 @@ export default async function PrivacyPage() {
           heading: 'Data retention and security',
           body: (
             <p>
-              We keep enquiries and applications only as long as needed for the purpose they were shared for, or as required by law. Résumés are
+              We keep enquiries and applications only for as long as needed for the purpose they were shared for, or as required by law, and then delete or anonymise them. Where no ongoing purpose remains, data is erased on request. Résumés are
               stored privately and are accessible only to authorised team members. We use reasonable technical and organisational safeguards,
               but no method of transmission over the internet is completely secure.
             </p>
@@ -72,9 +93,9 @@ export default async function PrivacyPage() {
           heading: 'Your rights',
           body: (
             <p>
-              In line with India&apos;s Digital Personal Data Protection Act, 2023, you may ask us to access, correct or erase the personal
-              information you have shared with us, or withdraw your consent. Use the contact details below and we will respond within a
-              reasonable time.
+              In line with India&apos;s Digital Personal Data Protection Act, 2023 (and 2025 Rules), you may ask us to access, correct or erase the
+              personal information you have shared with us, withdraw your consent, nominate another person to exercise your rights, or raise a
+              grievance. Use the contact details below (including the grievance contact) and we will respond within a reasonable time.
             </p>
           ),
         },

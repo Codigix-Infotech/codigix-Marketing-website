@@ -12,46 +12,46 @@ import {
 const disciplines = [
   {
     icon: Search,
-    title: 'SEO & Organic Growth',
-    tagline: 'Google Maps 3-Pack, Technical SEO, High-DA Link Acquisition & AEO',
+    title: 'SEO & Local Profile Management',
+    tagline: 'Technical SEO, Structured Data, Accurate Business Listings & AEO',
     description:
-      'We crack high-intent medical and business search queries. Our SEO team drives hundreds of thousands of organic visits by mastering entities, schema markup, and Google Business Profile algorithms.',
+      'Our SEO team works on technical site optimization, structured metadata, crawl and index health, and accurate management of business listing details, without ranking manipulation or guaranteed position claims.',
     rolesCount: '2 Open Roles',
     tools: ['Ahrefs', 'Semrush', 'Screaming Frog', 'GA4 & GSC'],
   },
   {
     icon: TrendingUp,
-    title: 'Performance & Paid Media',
-    tagline: 'Google Search & PMax, Meta Ads, Call-Only Campaigns, ROAS Funnels',
+    title: 'Paid Digital Campaigns',
+    tagline: 'Google Search, Meta Ads, Policy-Compliant Campaign Setup',
     description:
-      'Turn ad clicks into booked consultations and e-commerce transactions. Manage high-budget campaigns, craft bulletproof landing pages, and optimize cost-per-acquisition with surgical precision.',
+      'Plan and run policy-compliant search and social campaigns built around clear, truthful messaging and transparent audience disclosures, for healthcare and commercial clients.',
     rolesCount: '2 Open Roles',
     tools: ['Google Ads', 'Meta Ads Manager', 'Tag Manager', 'TripleWhale'],
   },
   {
     icon: Video,
-    title: 'Creative & Short-Form Video',
-    tagline: 'Doctor Authority Reels, YouTube Shorts, Hook Scripting & Editing',
+    title: 'Educational Video & Social Content',
+    tagline: 'Public-Health Awareness Videos, Scripting & Editing',
     description:
-      'Capture human attention in the first 2 seconds. We shoot and edit engaging, trust-building video content that humanizes doctors, explains complex treatments, and drives viral social reach.',
+      'Script, shoot and edit clear educational video and social content for public-health awareness and institutional updates, with practitioner credential disclosures and AI source labels where applicable.',
     rolesCount: '1 Open Role',
     tools: ['Premiere Pro', 'CapCut', 'After Effects', 'Canva Pro'],
   },
   {
     icon: Layout,
-    title: 'UI/UX & Web Conversion',
-    tagline: 'Next.js & React Engineering, Tailwind, Appointment Flow CRO',
+    title: 'UI/UX & Web Development',
+    tagline: 'Next.js & React Engineering, Tailwind, Accessibility',
     description:
-      'Design and build lightning-fast web experiences engineered specifically to turn anxious patients into confirmed consultations with sub-second page speeds.',
+      'Design and build fast, accessible, mobile-friendly web experiences with transparent privacy notices and minimal data collection on forms, aligned with Indian data-protection laws.',
     rolesCount: '1 Open Role',
     tools: ['Figma', 'Next.js 14', 'TailwindCSS', 'Hotjar'],
   },
   {
     icon: Users,
-    title: 'Client Growth & Strategy',
-    tagline: 'Healthcare Partnerships, Account Direction, Revenue Reviews',
+    title: 'Client Partnerships & Delivery',
+    tagline: 'Healthcare Partnerships, Account Direction, Delivery Reviews',
     description:
-      'Act as the true digital partner for clinic founders, hospital directors, and growing brands. Translate complex analytics into clear business growth narratives.',
+      'Act as the day-to-day partner for clinic founders, hospital administrators and enterprise teams, keeping engagements service-based and aligned with applicable communication guidelines.',
     rolesCount: '1 Open Role',
     tools: ['HubSpot CRM', 'Looker Studio', 'Slack', 'Notion'],
   },
@@ -65,7 +65,7 @@ export default function MarketingDisciplines() {
           <div>
             <div className="inline-flex items-center gap-2 px-3 py-1 rounded-full bg-white border border-slate-200 text-xs font-bold uppercase tracking-wider text-[#1a1053] mb-3 shadow-sm">
               <Layers size={13} className="text-[#e20b27]" />
-              Our Growth Engines
+              Our Disciplines
             </div>
             <h2 className="text-3xl sm:text-4xl font-extrabold text-[#1a1053] tracking-tight">
               Pick Your Arena in{' '}
@@ -75,7 +75,7 @@ export default function MarketingDisciplines() {
             </h2>
           </div>
           <p className="text-slate-500 max-w-md text-sm sm:text-base">
-            Whether you love technical ranking signals, creative viral hooks, or scaling ad spend, we have a specialized division for your superpower.
+            Whether you enjoy technical site health, educational storytelling or careful campaign planning, we have a team for your skills.
           </p>
         </div>
 
@@ -129,7 +129,7 @@ export default function MarketingDisciplines() {
               </div>
               <h3 className="text-xl font-bold text-white mb-2">Have a Unique Superpower?</h3>
               <p className="text-indigo-100/80 text-sm leading-relaxed mb-6">
-                Don&apos;t see your exact role listed? If you have proven proof of work in SEO, content, design, or growth marketing, we always create custom seats for exceptional talent.
+                Don&apos;t see your exact role listed? If you have proven work in engineering, SEO, content or design, get in touch; we are always glad to hear from strong candidates.
               </p>
             </div>
             <a

@@ -19,60 +19,60 @@ const chapters = [
     label: "The Foundation",
     title: "Overview",
     subtitle: "Why Codigix Was Founded",
-    domain: "Pan-India Growth",
-    subdomain: "Deep Healthcare Focus",
-    desc: "Codigix Infotech Pvt. Ltd. unlocks the power of digital marketing with a deep understanding of healthcare to help doctors, clinics, and hospitals attract more patients, build unshakeable trust, and grow their practice with confidence across India.",
+    domain: "Pune-Based Firm",
+    subdomain: "Web & Information Design",
+    desc: "Codigix Infotech is a technology and digital communication firm based in Pune, working across healthcare institutions, enterprises, and commercial businesses. Our work centers on dependable web engineering, structured information design, search discoverability, and clear educational communication.",
     icon: Sparkles,
     color: "#2563eb",
     lightBg: "bg-blue-50 text-blue-600 border-blue-100",
     badgeBg: "bg-blue-50 text-blue-700",
     glowColor: "rgba(37, 99, 235, 0.12)",
-    tags: ["Practice Scaling", "Patient Trust Architecture"]
+    tags: ["Web Engineering", "Structured Information Design"]
   },
   {
     id: "02",
     label: "The Responsibility",
     title: "Core Values",
     subtitle: "Our Ethical Commitment",
-    domain: "Honesty & Empathy",
-    subdomain: "Moral Responsibility",
-    desc: "At Codigix Infotech Pvt. Ltd. we believe that healthcare marketing carries a responsibility greater than any other industry. We are driven by honesty, empathy, and integrity, ensuring every campaign we run respects the sensibility of healthcare, upholds patient trust, and delivers ethical, results-driven growth for every doctor and hospital we serve.",
+    domain: "Ethics & Compliance",
+    subdomain: "Healthcare Ethics & Compliance Commitments",
+    desc: "Our commitments: (1) No patient solicitation or referral incentives. Engagements are strictly service-based and never tied to acquiring individual patients or paying or receiving referral incentives. (2) Factual and non-promotional framing, with accurate institutional details, verified practitioner credentials and registration information, and no unsubstantiated claims or cure promises. (3) Authenticity and AI transparency: no fabricated reviews or deceptive synthetic personas, and clear source disclosures when AI tools assist content or media. (4) Data protection first, aligned with the Information Technology Act, 2000 and the Digital Personal Data Protection Act, 2023 (and 2025 Rules). All content undergoes internal pre-publication review, and agency fees are never linked to patient procurement.",
     icon: ShieldCheck,
     color: "#7c3aed",
     lightBg: "bg-purple-50 text-purple-600 border-purple-100",
     badgeBg: "bg-purple-50 text-purple-700",
     glowColor: "rgba(124, 58, 237, 0.12)",
-    tags: ["Clinical Sensibility First", "Ethical Growth"]
+    tags: ["No Patient Solicitation", "AI Transparency", "Data Protection First"]
   },
   {
     id: "03",
     label: "The Future Horizon",
     title: "Our Vision",
     subtitle: "Where We Are Heading",
-    domain: "India's Growth Ally",
-    subdomain: "Expanding Patient Care",
-    desc: "To become India's most trusted healthcare marketing partner, empowering every doctor, clinic, and hospital with the digital tools, strategies, and patient connections they need to deliver better care to more people.",
+    domain: "Accurate, Accessible Information",
+    subdomain: "Responsible Digital Presence",
+    desc: "To be a dependable digital partner for healthcare institutions and enterprises, helping them present accurate, accessible and privacy-aware information that supports public understanding.",
     icon: Eye,
     color: "#059669",
     lightBg: "bg-emerald-50 text-emerald-600 border-emerald-100",
     badgeBg: "bg-emerald-50 text-emerald-700",
     glowColor: "rgba(5, 150, 105, 0.12)",
-    tags: ["Better Care for More People", "Doctor Empowerment"]
+    tags: ["Public-Health Education", "Accessibility"]
   },
   {
     id: "04",
     label: "The Core Purpose",
     title: "Our Mission",
-    subtitle: "Bridging Doctors with Patients",
-    domain: "The Patient Bridge",
-    subdomain: "Doctor Focus Protection",
-    desc: "Our mission is to bridge the gap between exceptional healthcare professionals and the patients who need them through targeted digital strategies built exclusively for the healthcare industry. We help clinics, hospitals, and specialists grow their patient base, strengthen their online reputation, and focus on what they do best.",
+    subtitle: "Clear, Factual Digital Communication",
+    domain: "Information Clarity",
+    subdomain: "Regulatory Alignment",
+    desc: "Our mission is to build reliable websites, accurate institutional profiles and structured public-health content for hospitals, clinics and enterprises, designed around transparency, accessibility and regulatory alignment (NMC for allopathic and hospital work, NDC for dental, AYUSH for Ayurvedic).",
     icon: Target,
     color: "#e20b27",
     lightBg: "bg-rose-50 text-[#e20b27] border-rose-100",
     badgeBg: "bg-rose-50 text-rose-700",
     glowColor: "rgba(226, 11, 39, 0.12)",
-    tags: ["Targeted Digital Strategies", "Protecting Doctor Reputation"]
+    tags: ["Transparent Information", "Regulatory Alignment"]
   }
 ];
 
@@ -116,7 +116,7 @@ export default function WhyChooseUs() {
           >
             <Compass size={13} className="text-[#e20b27] animate-spin" style={{ animationDuration: '12s' }} />
             <span className="text-xs font-semibold text-[#1a1053] tracking-wide">
-              The Codigix Manifesto · Purpose & Values
+              Purpose, Values & Commitments
             </span>
           </motion.div>
 
@@ -129,7 +129,7 @@ export default function WhyChooseUs() {
           >
             Our Purpose, Values & <br />
             <span className="text-transparent bg-clip-text bg-gradient-to-r from-blue-600 via-indigo-600 to-[#e20b27]">
-              Vision for Indian Healthcare
+              Ethical Healthcare Communication
             </span>
           </motion.h2>
 
@@ -140,7 +140,7 @@ export default function WhyChooseUs() {
             transition={{ duration: 0.5, delay: 0.15, ease: [0.22, 1, 0.36, 1] }}
             className="text-slate-600 font-light text-base sm:text-lg leading-relaxed mt-3.5 max-w-xl mx-auto"
           >
-            Why we started Codigix Infotech — and the foundational principles that guide every doctor partnership, clinic campaign, and hospital strategy.
+            The principles that guide every healthcare engagement we take on.
           </motion.p>
         </div>
 

@@ -7,20 +7,20 @@ import { Plus, Minus } from 'lucide-react';
 export default function FaqSection() {
   const faqs = [
     {
-      question: "Do you specialize exclusively in healthcare digital marketing?",
-      answer: "Yes, Codigix Infotech focuses heavily on healthcare. We understand medical compliance (HIPAA), patient journey mapping, doctor authority branding, and the local SEO keywords needed to drive highly qualified patient appointments."
+      question: "Do you work only with healthcare organizations?",
+      answer: "No. Codigix Infotech works across healthcare institutions, enterprises, and commercial businesses. For healthcare engagements we follow NMC ethical communication principles (and NDC or AYUSH guidelines where relevant), prioritize accurate institutional information, and align data handling with the Information Technology Act, 2000 and the Digital Personal Data Protection Act, 2023 (and 2025 Rules)."
     },
     {
-      question: "How long does it take to see results from Healthcare SEO & GMB?",
-      answer: "Google Business Profile (GMB) and local map optimizations typically show noticeable increases in patient calls within weeks. High-DA backlink building and organic keyword rankings steadily compound over 3 to 6 months for durable, long-term patient acquisition."
+      question: "How long does technical SEO and local profile work take?",
+      answer: "Search visibility is influenced by many factors outside our control, so we do not guarantee rankings, positions, or timelines. We focus on technical site health, structured metadata, and accurate listing details (location, hours, departments, services), which support clear discoverability over time."
     },
     {
-      question: "How do Instagram, Meta, and YouTube help our clinic?",
-      answer: "We produce informative patient education videos, doctor FAQs, and high-quality reels on Instagram, Meta Business, and YouTube. This builds profound trust and positions your practitioners as leading healthcare authorities in your region."
+      question: "What does educational video and social content involve?",
+      answer: "We produce public-health awareness videos, factual department and facility introductions, and educational Q&A content. Practitioner credential and registration details are disclosed, AI-assisted media is labelled, and we do not produce promotional patient testimonials."
     },
     {
-      question: "Can you redesign our clinic or hospital website for better patient conversions?",
-      answer: "Absolutely. We build lightning-fast, mobile-responsive, and HIPAA-compliant healthcare websites using Next.js and React, optimized specifically for fast load times and seamless patient booking."
+      question: "Can you redesign our clinic or hospital website?",
+      answer: "Yes. We build fast, mobile-responsive, accessible, and security-conscious websites using Next.js and React, with transparent privacy notices, minimal data collection on forms, and clear information hierarchy, aligned with Indian data-protection laws."
     }
   ];
 

@@ -103,9 +103,12 @@ export default function ContactForm({
           minLength={5}
           maxLength={5000}
           className={inputClass}
-          placeholder="Briefly describe your requirements or practice goals..."
+          placeholder="Briefly describe your website, digital infrastructure or content requirements..."
         ></textarea>
       </div>
+      <p className="text-[11px] text-slate-500 leading-snug">
+        Please do not share confidential patient medical records, diagnostic reports, or sensitive personal health information through this form. We use the details you submit only to respond to your enquiry, in line with our <a href="/privacy" className="underline">Privacy Policy</a> (IT Act, 2000 and DPDP Act, 2023).
+      </p>
       {error && <p role="alert" className="text-xs text-red-600 bg-red-50 border border-red-100 rounded-lg px-3 py-1.5">{error}</p>}
       <button
         type="submit"

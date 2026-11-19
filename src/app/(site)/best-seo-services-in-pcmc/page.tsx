@@ -40,16 +40,16 @@ import {
 const whatWeDoList = [
   {
     num: "01",
-    title: "Local SEO for businesses in Pune/PCMC",
-    desc: "Target customers in your specific locality (Kothrud, Baner, Wakad, Pimpri, Chinchwad, Hinjewadi) searching for your products or services.",
+    title: "Local profile & listing accuracy for Pune/PCMC",
+    desc: "Accurate location, hours, departments, and service details across your locality (Kothrud, Baner, Wakad, Pimpri, Chinchwad, Hinjewadi) so people can find correct information.",
     icon: MapPin,
     color: "from-blue-600 to-indigo-600",
     bg: "bg-blue-50 text-blue-600 border-blue-200"
   },
   {
     num: "02",
-    title: "On-page & off-page SEO optimization",
-    desc: "Comprehensive metadata, semantic HTML hierarchy, internal linking architecture, and high-authority industry backlinks.",
+    title: "On-page & structural SEO optimization",
+    desc: "Comprehensive metadata, semantic HTML hierarchy, and internal linking architecture, with no link schemes or purchased backlinks.",
     icon: Layers,
     color: "from-emerald-600 to-teal-600",
     bg: "bg-emerald-50 text-emerald-600 border-emerald-200"
@@ -57,15 +57,15 @@ const whatWeDoList = [
   {
     num: "03",
     title: "Google Business Profile management",
-    desc: "Optimization of Google Maps 3-pack listing, weekly updates, verified review generation, and local business citation building.",
+    desc: "Accurate management of business listing details (location, hours, departments, services), regular factual updates, and consistent citations, without ranking manipulation.",
     icon: Globe,
     color: "from-purple-600 to-fuchsia-600",
     bg: "bg-purple-50 text-purple-600 border-purple-200"
   },
   {
     num: "04",
-    title: "High-intent keyword strategy",
-    desc: "Target search queries with strong purchase intent (e.g. 'best [service] near me', 'top [product] in Pune').",
+    title: "Informational keyword research",
+    desc: "Research into the queries people use to find accurate information about your services, departments, and facilities.",
     icon: Search,
     color: "from-rose-600 to-red-600",
     bg: "bg-rose-50 text-rose-600 border-rose-200"
@@ -73,15 +73,15 @@ const whatWeDoList = [
   {
     num: "05",
     title: "Technical SEO & website speed optimization",
-    desc: "Core Web Vitals tuning, mobile responsiveness, fast load speeds, schema structured data, and flawless indexation.",
+    desc: "Core Web Vitals tuning, mobile responsiveness, schema structured data, and crawl and index health.",
     icon: Cpu,
     color: "from-amber-600 to-orange-600",
     bg: "bg-amber-50 text-amber-600 border-amber-200"
   },
   {
     num: "06",
-    title: "Monthly ranking & ROI tracking",
-    desc: "Transparent monthly analytics tracking keyword positions, Google Maps calls, sales inquiries, and website visits.",
+    title: "Monthly technical reporting",
+    desc: "Transparent monthly reporting on crawl and index status, site performance, listing accuracy, and website visits.",
     icon: BarChart3,
     color: "from-cyan-600 to-blue-600",
     bg: "bg-cyan-50 text-cyan-600 border-cyan-200"
@@ -91,29 +91,29 @@ const whatWeDoList = [
 const whatYouGetCards = [
   {
     icon: Target,
-    title: "High-Intent Traffic",
-    desc: "We bring visitors who are actively searching for your specific products and services.",
+    title: "Accurate, Findable Information",
+    desc: "Clear site structure and accurate metadata that help people find correct information about your services.",
     color: "from-blue-600 to-indigo-600",
     bg: "bg-blue-50/80 border-blue-200/70"
   },
   {
     icon: PhoneCall,
-    title: "Consistent Lead Generation",
-    desc: "Turn organic traffic into verified inquiries, phone calls, and scheduled consultations or sales.",
+    title: "Accurate Contact & Listing Details",
+    desc: "Consistent phone numbers, addresses, and hours across your website and business listings.",
     color: "from-emerald-600 to-teal-600",
     bg: "bg-emerald-50/80 border-emerald-200/70"
   },
   {
     icon: MapPin,
-    title: "Local Market Domination",
-    desc: "Rank in the Google Maps 3-Pack and capture local 'near me' searches across Pune & PCMC.",
+    title: "Local Profile Accuracy",
+    desc: "Accurate Google Business Profile details for Pune & PCMC, with no ranking manipulation or guaranteed positions.",
     color: "from-purple-600 to-pink-600",
     bg: "bg-purple-50/80 border-purple-200/70"
   },
   {
     icon: TrendingUp,
-    title: "Long-Term Growth",
-    desc: "Build a permanent organic customer acquisition asset without having to pay per click on ad networks.",
+    title: "Sound Technical Foundation",
+    desc: "A technically healthy site that is easy to maintain and to build on over time.",
     color: "from-rose-600 to-amber-600",
     bg: "bg-rose-50/80 border-rose-200/70"
   }
@@ -123,12 +123,12 @@ const seoProcessSteps = [
   {
     step: "01",
     title: "Website Audit & Research",
-    points: ["Complete technical audit", "Competitor analysis", "Keyword gap identification"]
+    points: ["Complete technical audit", "Existing content review", "Keyword gap identification"]
   },
   {
     step: "02",
-    title: "Keyword Strategy (Intent-Based)",
-    points: ["Transactional keywords", "Local keywords", "Informational keywords"]
+    title: "Keyword Research (Informational)",
+    points: ["Informational keywords", "Local keywords", "Service and department terms"]
   },
   {
     step: "03",
@@ -142,111 +142,84 @@ const seoProcessSteps = [
   },
   {
     step: "05",
-    title: "Local SEO (Google Business Optimization)",
-    points: ["Google Business Profile setup & optimization", "Local citations", "Review management", "Map ranking improvement"]
+    title: "Local Profile Management",
+    points: ["Google Business Profile setup & accuracy review", "Consistent local citations", "Factual profile updates"]
   },
   {
     step: "06",
-    title: "Content Marketing",
-    points: ["SEO blogs & topic clusters", "Service/Product page optimization", "Industry authority content"]
+    title: "Content Architecture",
+    points: ["Informational articles & topic clusters", "Service/department page structure", "Source-referenced content"]
   },
   {
     step: "07",
-    title: "Link Building",
-    points: ["High-quality backlinks", "Niche-specific authority links", "Domain authority growth"]
+    title: "Reporting & Review",
+    points: ["Crawl and index status", "Listing accuracy review", "Monthly summary of work delivered"]
   }
 ];
 
 const clientShowcase = [
   {
     name: "Dr. Sheetal's Glow Clinic",
-    tag: "Skin & Dermatology",
+    tag: "Healthcare & Dermatology (NMC scope)",
     location: "Kothrud, Pune",
-    duration: "6+ Months Active",
-    services: "Social Media Marketing, SEO & GMB, Meta Lead Ads, Web Development",
-    result: "+380% Inquiries",
-    highlight: "Rank #1: Skin Clinic PCMC"
-  },
-  {
-    name: "Regain Hair & Skin Clinic",
-    tag: "Trichology & Hair",
-    location: "Wakad, Pune",
-    duration: "1 Year Active",
-    services: "Social Media Marketing, SEO, Google Business Profile (GMB), Ad Funnels",
-    result: "650+ Inquiries/Mo",
-    highlight: "4.9x Ad ROAS"
-  },
-  {
-    name: "Dr. Prasad Kasbekar Clinic",
-    tag: "Oncology Specialist",
-    location: "Pune & PCMC",
-    duration: "1 Year Active",
-    services: "Doctor Authority Branding, High-Intent Search Ads, Video Content",
-    result: "180+ Consultations",
-    highlight: "High-Intent Patients"
+    duration: "Ongoing engagement",
+    services: "Website development, technical SEO, factual service pages",
+    result: "Website & Information Architecture",
+    highlight: "Factual service pages"
   },
   {
     name: "Canopy Dental Care",
-    tag: "Dental & Aligners",
+    tag: "Dental (NDC scope)",
     location: "Baner, Pune",
-    duration: "1 Year Active",
-    services: "Local Geo-Targeted SEO, WhatsApp Funnels, Website Development",
-    result: "320+ Patients",
-    highlight: "Rank #1: Invisalign Wakad"
+    duration: "Ongoing engagement",
+    services: "Website development, accurate local listings",
+    result: "Website & Accessibility Work",
+    highlight: "Accurate listings"
   },
   {
     name: "CorpLegal Solutions & Co",
-    tag: "Corporate Law & B2B",
+    tag: "Corporate Law & B2B (Non-medical)",
     location: "Bavdhan, Pune",
-    duration: "1 Year Active",
-    services: "Web Development, Social Media Content Writing, B2B Search",
-    result: "#1 Organic Authority",
-    highlight: "Rank #1: Corporate Law Pune"
+    duration: "Ongoing engagement",
+    services: "Web development, content writing, technical SEO",
+    result: "Structured Web Content",
+    highlight: "Technical SEO hygiene"
   },
   {
     name: "Bakul Hospitality & Catering",
-    tag: "Hospitality & Events",
+    tag: "Hospitality & Events (Non-medical)",
     location: "Pune Metro",
-    duration: "1 Year Active",
-    services: "Social Media Marketing, SEO, Local Maps Optimization, Web Pages",
-    result: "3.4x Direct Calls",
-    highlight: "210+ Verified Reviews"
-  },
-  {
-    name: "Sanskruti Agro Tourism",
-    tag: "Agro Tourism & Leisure",
-    location: "Chakan & Outskirts",
-    duration: "4 Months Active",
-    services: "Social Media Marketing, Meta Ad Campaigns, Local SEO Optimization",
-    result: "+300% Footfall",
-    highlight: "Rank #1: Agro Resort Pune"
+    duration: "Ongoing engagement",
+    services: "Web pages, accurate local listings",
+    result: "Responsive Website Refresh",
+    highlight: "Clear service pages"
   }
 ];
 
 const whyChoosePoints = [
   {
-    title: "Performance-Driven Approach",
-    desc: "We focus on real ROI, qualified leads, and sales, not just vanity keyword rankings.",
+    title: "Engineering-Led Approach",
+    desc: "We focus on technical health, accurate information, and clear site structure, not on promises of rankings.",
     icon: Zap
   },
   {
-    title: "Conversion-Focused SEO",
-    desc: "Traffic is useless without conversions — we optimize web layouts for phone calls and inquiries.",
+    title: "Clear Site Architecture",
+    desc: "We structure pages, navigation, and metadata so information is easy for people and search engines to understand.",
     icon: Target
   },
   {
-    title: "Data-Backed Strategy",
-    desc: "Every recommendation and strategy is backed by deep analytics, search volume, and intent insights.",
+    title: "Documented Process",
+    desc: "Every recommendation is documented and explained, based on analytics, search data, and platform guidelines.",
     icon: BarChart3
   },
   {
-    title: "Local SEO Experts in Pune & PCMC",
-    desc: "Decade of experience dominating Google Maps 3-Pack searches across Pune, PCMC, and surrounding hubs.",
+    title: "Local Presence in Pune & PCMC",
+    desc: "A Pune-based team familiar with the local areas across Pune, PCMC, and surrounding hubs.",
     icon: MapPin
   },
   {
-    title: "Digital Growth Specialists",
-    desc: "We understand consumer psychology, search intent, and how to build scalable digital growth engines.",
+    title: "Ethical Search Practices",
+    desc: "No ranking manipulation, purchased links, fake reviews, or guaranteed position claims.",
     icon: ShieldCheck
   }
 ];
@@ -261,87 +234,87 @@ const toolsList = [
 ];
 
 const expectedResults = [
-  "Increased organic search traffic",
-  "Higher Google Maps & organic keyword rankings",
-  "More verified leads and phone calls",
-  "Significantly higher conversion rates",
-  "Strong domain authority and brand credibility"
+  "A technically healthy, crawlable website",
+  "Accurate metadata and structured data",
+  "Consistent business listing details",
+  "Clear information architecture",
+  "Transparent monthly reporting"
 ];
 
 const faqs = [
   {
-    q: "Why does my business need SEO?",
-    a: "SEO helps your business get discovered by people who are already actively searching for your products and services on Google. This results in far higher trust, lower customer acquisition costs, and better conversion rates than cold ads."
+    q: "Why does my organization need SEO?",
+    a: "SEO helps people who are searching on Google find accurate information about your organization, its services, and its locations. It focuses on site structure, metadata, and content clarity."
   },
   {
     q: "How long does SEO take to show results?",
-    a: "SEO typically shows measurable ranking improvements within 3 to 6 months, depending on competitive intensity in your micro-location and current website health. Local GMB 3-Pack optimizations often begin driving initial phone calls even sooner."
+    a: "Search visibility changes gradually and depends on competition, site health, and search engine decisions. We do not promise or guarantee any specific timeline, ranking, or position."
   },
   {
-    q: "Do you provide local SEO for Pune and PCMC?",
-    a: "Yes, we specialize in Local SEO and Google Business Profile optimization. We optimize your citations, categories, reviews, and geo-targeted landing pages so your business ranks at the very top of Google Maps and 'near me' local searches."
+    q: "Do you provide local profile management for Pune and PCMC?",
+    a: "Yes. We manage the accuracy of your Google Business Profile and local listings, including location, hours, departments, services, and factual information, without ranking manipulation."
   },
   {
-    q: "Is SEO better than paid ads?",
-    a: "Both play vital roles. SEO builds long-term organic authority and continuous lead flow with zero per-click costs, while Paid Ads provide immediate visibility. We recommend a combined strategy for maximum ROI."
+    q: "Is SEO better than paid campaigns?",
+    a: "They serve different purposes. SEO builds technical and informational foundations over time, while paid campaigns, which we run in a policy-compliant way, can share information in the shorter term. We can recommend a combination based on your goals."
   },
   {
     q: "What makes Codigix Infotech different?",
-    a: "We don't just stop at ranking keywords on page 1. We build complete, end-to-end customer acquisition systems — combining technical SEO, intent-driven content, Google Maps domination, and conversion rate optimization to generate verifiable revenue."
+    a: "We combine technical SEO, structured data, accurate listings, and content architecture, with a pre-publication review for factual accuracy, credential disclosures, privacy, and AI labelling for healthcare engagements."
   },
   {
-    q: "Do you provide monthly ranking & ROI reports?",
-    a: "Yes, you receive transparent monthly performance reports detailing keyword ranking progress, Google Maps phone calls, verified website inquiries, organic traffic metrics, and next-month strategic action items."
+    q: "Do you provide monthly reports?",
+    a: "Yes, you receive transparent monthly reports covering crawl and index status, site performance, listing accuracy, website visits, and next-month action items. We do not guarantee ranking positions."
   }
 ];
 
 const allServices = [
   {
     id: "seo",
-    name: "Search Engine Optimization",
-    desc: "Dominate Google search results for your brand, products, and services.",
+    name: "SEO & Local Profile Management",
+    desc: "Technical site optimization, structured metadata, and accurate listing details.",
     icon: Search,
     badge: "Organic Search",
     href: "/best-seo-services-in-pcmc"
   },
   {
     id: "ppc",
-    name: "Paid Advertisements (PPC)",
-    desc: "Generate high-intent leads immediately with multi-channel ad campaigns.",
+    name: "Paid Digital Campaigns",
+    desc: "Policy-compliant search and social campaigns with clear, truthful messaging.",
     icon: Zap,
-    badge: "Instant Leads",
+    badge: "Policy-Compliant",
     href: "/paid-advertisements-ppc"
   },
   {
     id: "social",
-    name: "Social Media Marketing",
-    desc: "Engage customers with authentic reels, service explainers, and targeted social branding.",
+    name: "Social Media & Educational Video",
+    desc: "Public-health awareness, institutional updates, and clear educational explanations.",
     icon: Instagram,
-    badge: "Viral Reach",
+    badge: "Educational",
     href: "/social-media-marketing"
   },
   {
     id: "ecommerce",
-    name: "E-Commerce Marketing",
-    desc: "Drive high-converting sales, product rankings, and ROI for online stores.",
+    name: "Commercial & E-Commerce Solutions",
+    desc: "Catalog architecture and storefront performance for non-regulated retail businesses.",
     icon: ShoppingCart,
-    badge: "E-Commerce",
+    badge: "Retail Commerce",
     href: "/ecommerce-marketing"
   },
   {
     id: "content",
-    name: "Content Marketing",
-    desc: "Build immense trust with educational blogs, buying guides, and industry authority copy.",
+    name: "Health & Institutional Content",
+    desc: "Well-organized informational pages, department guides, and public-health articles.",
     icon: FileText,
-    badge: "Authority",
+    badge: "Content Architecture",
     href: "/medical-content-marketing"
   },
   {
     id: "web",
     name: "Web Design & Development",
-    desc: "Fast, mobile-first, and conversion-optimized websites engineered to turn visitors into paying customers.",
+    desc: "Responsive, accessible, and security-conscious websites with clear privacy controls.",
     icon: Code2,
-    badge: "Conversion",
+    badge: "Web Engineering",
     href: "/web-design-development"
   }
 ];
@@ -352,17 +325,17 @@ const roadmapPhases = [
     stepNum: 1,
     name: "Audit",
     time: "Wks 1–2",
-    title: "Find & Fix All Website Errors",
+    title: "Find & Fix Website Errors",
     stage: "Audit & Fixes",
     timeline: "Weeks 1–2",
     icon: Search,
-    deliverable: "Complete Website Health & Fix Report",
+    deliverable: "Website Health & Fix Report",
     badgeBg: "bg-blue-50 text-blue-600 border-blue-200",
     boxBg: "bg-blue-50/70 border-blue-200/90",
     points: [
-      "Find hidden technical bugs stopping your Google ranking",
-      "Analyze top competitors to uncover their best keywords",
-      "Action plan to outrank local competitors in PCMC & Pune"
+      "Identify technical issues affecting crawling and indexing",
+      "Review existing content and metadata for accuracy",
+      "Prioritized action plan for site improvements"
     ]
   },
   {
@@ -370,17 +343,17 @@ const roadmapPhases = [
     stepNum: 2,
     name: "Keywords",
     time: "Wks 2–3",
-    title: "Pick Keywords That Bring Customers",
+    title: "Research Informational Keywords",
     stage: "Keyword Research",
     timeline: "Weeks 2–3",
     icon: Target,
-    deliverable: "Ready-to-Rank Buying Keywords List",
+    deliverable: "Informational Keyword & Topic List",
     badgeBg: "bg-purple-50 text-purple-600 border-purple-200",
     boxBg: "bg-purple-50/70 border-purple-200/90",
     points: [
-      "Find exact search words people use when ready to buy",
-      "Target high-intent local areas (Baner, Wakad, Hinjewadi)",
-      "Filter out useless traffic to focus on real sales inquiries"
+      "Find the words people use to look for accurate information",
+      "Map local areas (Baner, Wakad, Hinjewadi) to relevant pages",
+      "Filter out irrelevant or misleading terms"
     ]
   },
   {
@@ -388,17 +361,17 @@ const roadmapPhases = [
     stepNum: 3,
     name: "On-Page",
     time: "Wks 3–5",
-    title: "Turn Visitors Into Calls & Leads",
-    stage: "Lead Optimization",
+    title: "Clarify Titles, Headings & Content",
+    stage: "On-Page Structure",
     timeline: "Weeks 3–5",
     icon: Layers,
-    deliverable: "High-Converting Sales Web Pages",
+    deliverable: "Well-Structured Informational Web Pages",
     badgeBg: "bg-emerald-50 text-emerald-600 border-emerald-200",
     boxBg: "bg-emerald-50/70 border-emerald-200/90",
     points: [
-      "Add direct WhatsApp and Call buttons for quick inquiries",
-      "Write titles & headings so more searchers click your link",
-      "Add verified business FAQs to rank higher on Google search"
+      "Provide clear contact options with privacy notices",
+      "Write accurate titles and headings",
+      "Add factual FAQs with structured data"
     ]
   },
   {
@@ -406,54 +379,54 @@ const roadmapPhases = [
     stepNum: 4,
     name: "Speed",
     time: "Wks 5–6",
-    title: "Make Pages Open in Under 1 Second",
+    title: "Improve Page Speed & Core Web Vitals",
     stage: "Speed & Performance",
     timeline: "Weeks 5–6",
     icon: Zap,
-    deliverable: "Under 1-Second Page Load Speed",
+    deliverable: "Core Web Vitals Focused Page Performance",
     badgeBg: "bg-amber-50 text-amber-600 border-amber-200",
     boxBg: "bg-amber-50/70 border-amber-200/90",
     points: [
-      "Compress heavy images and code for lightning-fast loading",
-      "Score 90+ on Google Mobile PageSpeed Insights",
-      "Prevent customers from leaving due to a slow website"
+      "Compress heavy images and code for faster loading",
+      "Review mobile performance in PageSpeed Insights",
+      "Reduce friction caused by a slow website"
     ]
   },
   {
     phase: "05",
     stepNum: 5,
-    name: "Google Maps",
+    name: "Local Profile",
     time: "Wks 6–8",
-    title: "Rank #1 on Google Maps for Nearby Buyers",
-    stage: "Local Search",
+    title: "Keep Local Profiles Accurate",
+    stage: "Local Profile",
     timeline: "Weeks 6–8",
     icon: MapPin,
-    deliverable: "Top 3 Google Maps Placement & Reviews",
+    deliverable: "Accurate Google Business Profile & Listings",
     badgeBg: "bg-rose-50 text-rose-600 border-rose-200",
     boxBg: "bg-rose-50/70 border-rose-200/90",
     points: [
-      "Optimize Google Business Profile with correct local categories",
-      "List your business in trusted Pune business directories",
-      "Automated system to get more genuine 5-star customer reviews"
+      "Set up Google Business Profile with correct categories and details",
+      "Keep listings in trusted local directories consistent",
+      "No fake reviews, incentives, or ranking manipulation"
     ]
   },
   {
     phase: "06",
     stepNum: 6,
-    name: "Authority",
+    name: "Content",
     time: "Ongoing",
-    title: "Build Trust & Keep Rankings on Top",
-    stage: "Long-Term Growth",
-    timeline: "Ongoing Growth",
+    title: "Maintain Accurate Content & Structure",
+    stage: "Ongoing Maintenance",
+    timeline: "Ongoing",
     icon: Award,
-    deliverable: "Monthly Backlinks & Traffic Growth",
+    deliverable: "Monthly Technical & Content Review",
     isFinal: true,
     badgeBg: "bg-cyan-50 text-cyan-600 border-cyan-200",
     boxBg: "bg-cyan-50/70 border-cyan-200/90",
     points: [
-      "Get quality backlinks from popular, trusted websites",
-      "Publish helpful guides that establish you as the #1 expert",
-      "Get cited in AI search results (Google AI, ChatGPT)"
+      "Regular review of content accuracy and freshness",
+      "Publish helpful, source-referenced informational guides",
+      "Keep structured data and metadata up to date"
     ]
   }
 ];
@@ -532,8 +505,8 @@ export default function BestSeoServicesPage() {
               <MapPin size={16} />
             </div>
             <div>
-              <p className="text-[10px] text-slate-500 font-bold uppercase tracking-wider leading-none mb-1">Local SEO</p>
-              <p className="text-sm text-[#1a1053] font-extrabold leading-none">#1 on Maps 3-Pack</p>
+              <p className="text-[10px] text-slate-500 font-bold uppercase tracking-wider leading-none mb-1">Local Profile</p>
+              <p className="text-sm text-[#1a1053] font-extrabold leading-none">Accurate Listings</p>
             </div>
           </motion.div>
 
@@ -547,8 +520,8 @@ export default function BestSeoServicesPage() {
               <PhoneCall size={16} />
             </div>
             <div>
-              <p className="text-[10px] text-slate-500 font-bold uppercase tracking-wider leading-none mb-1">Conversions</p>
-              <p className="text-sm text-[#1a1053] font-extrabold leading-none">+340% Inbound Inquiries</p>
+              <p className="text-[10px] text-slate-500 font-bold uppercase tracking-wider leading-none mb-1">Structure</p>
+              <p className="text-sm text-[#1a1053] font-extrabold leading-none">Structured Data</p>
             </div>
           </motion.div>
 
@@ -562,8 +535,8 @@ export default function BestSeoServicesPage() {
               <Search size={16} />
             </div>
             <div>
-              <p className="text-[10px] text-slate-500 font-bold uppercase tracking-wider leading-none mb-1">Organic</p>
-              <p className="text-sm text-[#1a1053] font-extrabold leading-none">Page 1 Rankings</p>
+              <p className="text-[10px] text-slate-500 font-bold uppercase tracking-wider leading-none mb-1">Technical</p>
+              <p className="text-sm text-[#1a1053] font-extrabold leading-none">Crawl & Index Health</p>
             </div>
           </motion.div>
 
@@ -577,8 +550,8 @@ export default function BestSeoServicesPage() {
               <TrendingUp size={16} />
             </div>
             <div>
-              <p className="text-[10px] text-slate-500 font-bold uppercase tracking-wider leading-none mb-1">Growth</p>
-              <p className="text-sm text-[#1a1053] font-extrabold leading-none">High-Intent Traffic</p>
+              <p className="text-[10px] text-slate-500 font-bold uppercase tracking-wider leading-none mb-1">Content</p>
+              <p className="text-sm text-[#1a1053] font-extrabold leading-none">Clear Architecture</p>
             </div>
           </motion.div>
         </div>
@@ -597,21 +570,21 @@ export default function BestSeoServicesPage() {
               <span className="relative inline-flex rounded-full h-2 w-2 bg-[#e20b27]"></span>
             </span>
             <span className="text-xs sm:text-sm font-semibold text-[#1a1053] tracking-wide">
-              Pune's #1 Digital Growth & SEO Experts
+              SEO & Local Profile Management in Pune
             </span>
           </div>
 
           {/* Main Title */}
           <h1 className="text-4xl sm:text-5xl lg:text-[64px] font-extrabold text-[#1a1053] tracking-tight leading-[1.1] mb-6 max-w-4xl">
-            Be the First Business Customers <br className="hidden lg:block" /> Find on Google.
+            Technical SEO & Accurate <br className="hidden lg:block" /> Local Listings.
             <span className="block text-transparent bg-clip-text bg-gradient-to-r from-blue-600 via-indigo-600 to-[#e20b27] mt-3">
-              More Visibility. More Growth.
+              Clear Structure. No Ranking Promises.
             </span>
           </h1>
 
           {/* Hero Subtitle */}
           <p className="text-base sm:text-lg lg:text-xl text-slate-600 font-light leading-relaxed max-w-2xl mx-auto mb-10">
-            In today’s digital world, customers search online before making a purchase or booking a service. Codigix Infotech’s Advanced SEO services ensure your business appears at the very top of Google search results.
+            Codigix Infotech provides technical site optimization, structured metadata, crawl and index health, and accurate management of business listing details (location, hours, departments, services, and factual information), without ranking manipulation or guaranteed position claims.
           </p>
 
           {/* CTA Buttons */}
@@ -620,7 +593,7 @@ export default function BestSeoServicesPage() {
               href="/contact"
               className="inline-flex items-center justify-center gap-3 px-8 py-4 bg-[#1a1053] hover:bg-[#281878] text-white rounded-full font-semibold text-base transition-all shadow-[0_10px_25px_-5px_rgba(26,16,83,0.25)] hover:shadow-[0_15px_30px_-5px_rgba(26,16,83,0.35)] transform hover:-translate-y-0.5"
             >
-              <span>Get a Free SEO Audit</span>
+              <span>Schedule a Discovery Call</span>
               <ArrowRight size={18} />
             </Link>
             <a
@@ -654,11 +627,11 @@ export default function BestSeoServicesPage() {
             <h2 className="text-3xl sm:text-4xl lg:text-5xl font-extrabold text-[#1a1053] leading-[1.15] tracking-tight mb-4">
               Comprehensive <br className="hidden sm:block" />
               <span className="text-transparent bg-clip-text bg-gradient-to-r from-blue-600 via-indigo-600 to-[#e20b27]">
-                Business SEO & Growth Services
+                SEO & Local Profile Services
               </span>
             </h2>
             <p className="text-slate-600 text-base sm:text-lg font-light leading-relaxed max-w-2xl mx-auto">
-              Engineered for Pune and PCMC enterprises, local businesses, and modern brands looking to dominate organic search and attract high-converting buyers.
+              Built for Pune and PCMC hospitals, clinics, enterprises, and local businesses that want accurate, well-structured, and technically healthy search presence.
             </p>
           </div>
 
@@ -727,16 +700,16 @@ export default function BestSeoServicesPage() {
                 <span className="animate-ping absolute inline-flex h-full w-full rounded-full bg-blue-400 opacity-75"></span>
                 <span className="relative inline-flex rounded-full h-2 w-2 bg-blue-600"></span>
               </span>
-              <span>360° Omnichannel Search Strategy</span>
+              <span>Four Areas of Search Visibility</span>
             </div>
             <h2 className="text-3xl sm:text-4xl lg:text-5xl font-extrabold text-[#1a1053] leading-[1.15] tracking-tight mb-4">
-              Capturing Inbound Demand Across <br />
+              Making Information Findable Across <br />
               <span className="text-transparent bg-clip-text bg-gradient-to-r from-blue-600 via-indigo-600 to-[#e20b27]">
-                The 4 Pillars of Search: SEO, GEO, GMB & AEO
+                The 4 Areas of Search: SEO, GEO, GMB & AEO
               </span>
             </h2>
             <p className="text-slate-600 text-base sm:text-lg font-light leading-relaxed">
-              Modern buyers don’t search in just one place. We position your brand across every touchpoint—traditional Google SERPs, AI Overviews, local Google Maps 3-Packs, and instant voice answers.
+              People search in more than one place. We help keep your information accurate and well-structured across traditional search results, AI-generated overviews, local map listings, and voice answers, without any guarantee of placement.
             </p>
           </div>
 
@@ -747,14 +720,14 @@ export default function BestSeoServicesPage() {
             <div className="flex flex-wrap items-center justify-between gap-4 pb-6 mb-8 border-b border-slate-100 text-xs text-slate-500">
               <div className="flex items-center gap-2 font-semibold text-[#1a1053]">
                 <span className="w-2 h-2 rounded-full bg-emerald-500 animate-pulse" />
-                <span className="tracking-wide uppercase text-[11px]">Omnichannel Search Engine Framework</span>
+                <span className="tracking-wide uppercase text-[11px]">Search Visibility Framework</span>
               </div>
               <div className="flex items-center gap-3">
                 <span className="hidden sm:inline-block px-3 py-1 rounded-full bg-slate-100 font-medium text-slate-600 text-[11px]">
-                  Coverage: PCMC & Pune Metro
+                  Coverage: PCMC & Pune
                 </span>
                 <span className="px-3 py-1 rounded-full bg-blue-50 text-blue-700 font-bold text-[11px] border border-blue-200">
-                  100% Demand Capture
+                  Accuracy First
                 </span>
               </div>
             </div>
@@ -775,12 +748,12 @@ export default function BestSeoServicesPage() {
                     <div>
                       <div className="flex items-center gap-2 mb-1.5">
                         <span className="px-2.5 py-0.5 rounded-lg bg-blue-100 text-blue-700 font-bold text-[10px] tracking-wider uppercase">
-                          Channel 01 • Organic Search
+                          Area 01 • Organic Search
                         </span>
-                        <span className="text-slate-400 text-xs font-mono">• Google SERP Dominance</span>
+                        <span className="text-slate-400 text-xs font-mono">• Technical SEO</span>
                       </div>
                       <h3 className="text-xl sm:text-2xl font-extrabold text-[#1a1053] tracking-tight">
-                        High-Volume Organic SEO
+                        Technical & Organic SEO
                       </h3>
                     </div>
                     <div className="w-12 h-12 rounded-2xl bg-blue-600 text-white flex items-center justify-center shadow-md shadow-blue-500/20 shrink-0">
@@ -789,7 +762,7 @@ export default function BestSeoServicesPage() {
                   </div>
 
                   <p className="text-slate-600 text-xs sm:text-sm font-light leading-relaxed mb-6">
-                    Target high-intent transactional search terms that convert prospects into buyers. We optimize site architecture, build authoritative backlinks, and secure top-3 organic Google rankings.
+                    We optimize site architecture, metadata, internal linking, and content structure so that accurate information is easy for search engines to crawl and understand. We do not buy links or guarantee rankings.
                   </p>
 
                   {/* Interactive SERP Simulator & Live Traffic Chart Widget */}
@@ -799,20 +772,20 @@ export default function BestSeoServicesPage() {
                       <div>
                         <div className="flex items-center gap-2 mb-2 pb-2 border-b border-slate-100 text-[11px] text-slate-500 font-mono">
                           <span className="w-2 h-2 rounded-full bg-emerald-500" />
-                          <span className="truncate">google.com/search?q=best+services+in+pcmc</span>
+                          <span className="truncate">google.com/search?q=services+in+pcmc</span>
                         </div>
                         <div className="flex items-center gap-1.5 text-xs text-slate-500 mb-1">
                           <span className="w-3.5 h-3.5 rounded-full bg-blue-600 text-white flex items-center justify-center text-[8px] font-bold">G</span>
                           <span className="font-mono text-[10px] text-slate-400">yourbrand.com › pcmc</span>
                           <span className="px-1.5 py-0.2 rounded bg-emerald-50 text-emerald-700 font-bold text-[9px] border border-emerald-200">
-                            Rank #1
+                            Example
                           </span>
                         </div>
                         <h4 className="text-xs sm:text-sm font-bold text-blue-700 leading-snug hover:underline cursor-pointer mb-1">
-                          Top-Ranked Enterprise Services in PCMC | #1 Inbound Partner
+                          Your Organization | Services in PCMC
                         </h4>
                         <p className="text-[11px] text-slate-500 line-clamp-2 leading-relaxed">
-                          Capturing top search market share across PCMC & Pune with validated business deliverables and proven conversion funnels.
+                          An illustrative search result showing an accurate title and description. Actual search results are determined by search engines.
                         </p>
                       </div>
                     </div>
@@ -820,8 +793,8 @@ export default function BestSeoServicesPage() {
                     {/* Animated SVG Traffic Growth Chart (5 Cols) */}
                     <div className="md:col-span-5 bg-gradient-to-br from-blue-50/70 to-indigo-50/40 rounded-xl p-3 border border-blue-100 flex flex-col justify-between">
                       <div className="flex items-center justify-between text-xs mb-1">
-                        <span className="text-[10px] font-bold text-slate-500 uppercase tracking-wider">Organic Visits</span>
-                        <span className="text-xs font-extrabold text-blue-600">+340%</span>
+                        <span className="text-[10px] font-bold text-slate-500 uppercase tracking-wider">Search Snippet</span>
+                        <span className="text-xs font-extrabold text-blue-600">Illustrative</span>
                       </div>
 
                       {/* SVG Mini Chart with Animated Line */}
@@ -850,8 +823,8 @@ export default function BestSeoServicesPage() {
                       </div>
 
                       <div className="flex items-center justify-between text-[10px] text-slate-500 pt-1 border-t border-blue-200/50">
-                        <span>Month 1: 2.1k</span>
-                        <span className="font-bold text-[#1a1053]">Month 6: 12.8k</span>
+                        <span>Illustrative layout only</span>
+                        <span className="font-bold text-[#1a1053]">No outcome data</span>
                       </div>
                     </div>
                   </div>
@@ -861,17 +834,17 @@ export default function BestSeoServicesPage() {
                 <div className="pt-4 border-t border-slate-100 flex flex-wrap items-center justify-between gap-3 text-xs">
                   <div className="flex flex-wrap gap-1.5">
                     <span className="px-2.5 py-1 rounded-lg bg-white border border-slate-200 text-slate-700 font-medium text-[11px]">
-                      Commercial Keywords
+                      Informational Keywords
                     </span>
                     <span className="px-2.5 py-1 rounded-lg bg-white border border-slate-200 text-slate-700 font-medium text-[11px]">
-                      High-DA Link Building
+                      Internal Linking
                     </span>
                     <span className="px-2.5 py-1 rounded-lg bg-white border border-slate-200 text-slate-700 font-medium text-[11px]">
-                      Technical Speed (99+)
+                      Core Web Vitals Focused
                     </span>
                   </div>
                   <span className="font-bold text-blue-700 text-xs">
-                    Dominates Google Page #1
+                    Technical SEO Hygiene
                   </span>
                 </div>
               </motion.div>
@@ -889,9 +862,9 @@ export default function BestSeoServicesPage() {
                     <div>
                       <div className="flex items-center gap-2 mb-1.5">
                         <span className="px-2.5 py-0.5 rounded-lg bg-emerald-100 text-emerald-700 font-bold text-[10px] tracking-wider uppercase">
-                          Channel 02 • Local Lead Gen
+                          Area 02 • Local Profile
                         </span>
-                        <span className="text-slate-400 text-xs font-mono">• Google 3-Pack</span>
+                        <span className="text-slate-400 text-xs font-mono">• Google Maps</span>
                       </div>
                       <h3 className="text-xl sm:text-2xl font-extrabold text-[#1a1053] tracking-tight">
                         Google Maps & GMB
@@ -903,7 +876,7 @@ export default function BestSeoServicesPage() {
                   </div>
 
                   <p className="text-slate-600 text-xs sm:text-sm font-light leading-relaxed mb-6">
-                    Capture nearby customers searching "near me" across PCMC and Pune. Directly drives high-intent phone inquiries, store visits, and quotation requests.
+                    Keep your Google Business Profile accurate across PCMC and Pune: location, hours, departments, services, and factual information. We do not manipulate rankings or generate reviews.
                   </p>
 
                   {/* Google Maps Business Profile Interactive Simulation */}
@@ -911,25 +884,23 @@ export default function BestSeoServicesPage() {
                     <div className="flex items-start justify-between gap-2 mb-2 pb-2 border-b border-slate-100">
                       <div>
                         <h4 className="text-sm font-bold text-[#1a1053] flex items-center gap-1.5">
-                          Your Business Listing <span className="text-blue-500 font-bold">✓</span>
+                          Your Business Listing
                         </h4>
-                        <div className="flex items-center gap-1.5 text-xs text-amber-500 font-bold mt-0.5">
-                          <span>4.9</span>
-                          <div className="flex text-amber-400 text-[11px]">★★★★★</div>
-                          <span className="text-slate-400 font-normal text-[11px]">(185+ Google Reviews)</span>
+                        <div className="flex items-center gap-1.5 text-xs text-slate-500 font-medium mt-0.5">
+                          <span>Category • Address • Hours</span>
                         </div>
                       </div>
                       <span className="inline-flex items-center gap-1 px-2.5 py-0.5 rounded-full bg-emerald-100 text-emerald-800 text-[10px] font-bold">
                         <span className="w-1.5 h-1.5 rounded-full bg-emerald-600 animate-ping" />
-                        Top 3 Ranked
+                        Details Verified
                       </span>
                     </div>
 
                     <p className="text-[11px] text-slate-500 mb-3">
-                      📍 PCMC Coverage: Wakad, Hinjawadi, Chinchwad, Pimpri, Bhosari
+                      PCMC areas: Wakad, Hinjawadi, Chinchwad, Pimpri, Bhosari
                     </p>
 
-                    {/* 3 High-Conversion Direct Action Buttons */}
+                    {/* Listing Action Buttons */}
                     <div className="grid grid-cols-3 gap-1.5">
                       <div className="py-2 px-2 rounded-lg bg-emerald-600 hover:bg-emerald-700 text-white text-center text-[11px] font-bold flex items-center justify-center gap-1 shadow-sm transition-transform hover:scale-105 cursor-pointer">
                         <PhoneCall size={12} /> Call Now
@@ -946,8 +917,8 @@ export default function BestSeoServicesPage() {
 
                 {/* Bottom Marketing Deliverables */}
                 <div className="pt-4 border-t border-slate-100 flex items-center justify-between text-xs">
-                  <span className="text-[11px] text-slate-500 font-medium">Near Me • Citations • Geofencing</span>
-                  <span className="font-bold text-emerald-600 text-xs">3.4x More Phone Inquiries</span>
+                  <span className="text-[11px] text-slate-500 font-medium">Accurate Details • Citations</span>
+                  <span className="font-bold text-emerald-600 text-xs">Factual Listing Details</span>
                 </div>
               </motion.div>
 
@@ -964,7 +935,7 @@ export default function BestSeoServicesPage() {
                     <div>
                       <div className="flex items-center gap-2 mb-1.5">
                         <span className="px-2.5 py-0.5 rounded-lg bg-indigo-100 text-indigo-700 font-bold text-[10px] tracking-wider uppercase">
-                          Channel 03 • Next-Gen Search
+                          Area 03 • AI Search
                         </span>
                         <span className="text-slate-400 text-xs font-mono">• AI Overviews</span>
                       </div>
@@ -978,7 +949,7 @@ export default function BestSeoServicesPage() {
                   </div>
 
                   <p className="text-slate-600 text-xs sm:text-sm font-light leading-relaxed mb-6">
-                    When buyers ask Google AI Overviews, Gemini, or Perplexity for trusted providers, we structure your brand’s digital footprint so you are the primary recommended authority.
+                    AI-generated search summaries draw on what is published online. We structure your website and information so that it is accurate, clear, and easy for these systems to read. We cannot control or guarantee what they say.
                   </p>
 
                   {/* Google AI Overview Style Card */}
@@ -989,12 +960,12 @@ export default function BestSeoServicesPage() {
                         <span>Google AI Overview</span>
                       </div>
                       <span className="text-[10px] font-mono px-2 py-0.5 rounded bg-indigo-100 text-indigo-700 font-semibold">
-                        Grounded Citation
+                        Source Links
                       </span>
                     </div>
 
                     <p className="text-xs text-slate-700 leading-relaxed mb-3">
-                      "For top-rated marketing and business growth solutions in PCMC, <strong className="text-indigo-900 font-bold underline decoration-indigo-400">[Your Business]</strong> is highlighted for validated client ROI and verified local presence..."
+                      "<strong className="text-indigo-900 font-bold underline decoration-indigo-400">[Your Organization]</strong> is located in PCMC and provides the following services, as described on its official website..."
                     </p>
 
                     {/* Official-Style Source Link Chips */}
@@ -1004,7 +975,7 @@ export default function BestSeoServicesPage() {
                         🔗 Official Brand Page
                       </span>
                       <span className="px-2 py-0.5 rounded-lg bg-white border border-slate-200 text-slate-700 font-medium shadow-2xs">
-                        🔗 Verified Client Reviews
+                        🔗 Structured Data
                       </span>
                     </div>
                   </div>
@@ -1013,7 +984,7 @@ export default function BestSeoServicesPage() {
                 {/* Bottom Marketing Deliverables */}
                 <div className="pt-4 border-t border-slate-100 flex items-center justify-between text-xs">
                   <span className="text-[11px] text-slate-500 font-medium">Google SGE • Entity Citations</span>
-                  <span className="font-bold text-indigo-700 text-xs">Primary Brand Recommendation</span>
+                  <span className="font-bold text-indigo-700 text-xs">Accurate, Readable Information</span>
                 </div>
               </motion.div>
 
@@ -1030,7 +1001,7 @@ export default function BestSeoServicesPage() {
                     <div>
                       <div className="flex items-center gap-2 mb-1.5">
                         <span className="px-2.5 py-0.5 rounded-lg bg-cyan-100 text-cyan-800 font-bold text-[10px] tracking-wider uppercase">
-                          Channel 04 • Zero-Click Answers
+                          Area 04 • Direct Answers
                         </span>
                         <span className="text-slate-400 text-xs font-mono">• Featured Snippet & Voice</span>
                       </div>
@@ -1044,26 +1015,26 @@ export default function BestSeoServicesPage() {
                   </div>
 
                   <p className="text-slate-600 text-xs sm:text-sm font-light leading-relaxed mb-6">
-                    Claim Google’s coveted Position Zero featured answer box and provide instant responses to voice assistant queries (Siri, Alexa, Google Assistant) using validated Schema JSON-LD.
+                    Structure FAQ and informational content with valid Schema JSON-LD so that clear answers may be eligible for featured snippets and voice responses. Eligibility is decided by search platforms.
                   </p>
 
                   {/* Google Featured Snippet & Voice Waveform Widget */}
                   <div className="rounded-2xl bg-white border border-slate-200/90 p-4 shadow-sm mb-5">
                     <div className="flex items-center justify-between pb-2 mb-2 border-b border-slate-100 text-xs">
                       <span className="font-bold text-cyan-900 bg-cyan-50 px-2.5 py-0.5 rounded-lg border border-cyan-200">
-                        Featured Snippet from the Web
+                        Featured Snippet Example
                       </span>
                       <span className="text-slate-500 font-mono text-[11px]">
-                        Google Position 0
+                        Illustrative
                       </span>
                     </div>
 
                     <div className="p-3 bg-slate-50/80 rounded-xl border border-slate-200/70 mb-3 text-xs">
                       <p className="font-bold text-[#1a1053] mb-1">
-                        Q: How do PCMC businesses generate consistent high-value client inquiries?
+                        Q: What information should an organization publish on its website?
                       </p>
                       <p className="text-slate-600 leading-relaxed text-[11px]">
-                        "By integrating commercial keyword SEO, verified Google Maps 3-Pack authority, and structured Schema rich snippets to capture 100% of local organic buyer intent."
+                        "Accurate contact details, a clear list of services and departments, and structured data so the information is easy to read."
                       </p>
                     </div>
 
@@ -1078,11 +1049,11 @@ export default function BestSeoServicesPage() {
                           <span className="w-1 bg-cyan-500 rounded-full animate-bounce [animation-delay:250ms] h-2" />
                         </div>
                         <span className="text-[11px] text-slate-600 font-medium">
-                          Voice Assistant Ready (Siri / Alexa / Google)
+                          Voice-Friendly Structure
                         </span>
                       </div>
                       <span className="text-cyan-700 font-bold text-[11px]">
-                        Zero-Click Instant Authority
+                        Clear, Concise Answers
                       </span>
                     </div>
                   </div>
@@ -1095,14 +1066,14 @@ export default function BestSeoServicesPage() {
                       FAQ Schema Markup
                     </span>
                     <span className="px-2.5 py-1 rounded-lg bg-white border border-slate-200 text-slate-700 font-medium text-[11px]">
-                      Rich Snippet Badges
+                      Rich Result Eligibility
                     </span>
                     <span className="px-2.5 py-1 rounded-lg bg-white border border-slate-200 text-slate-700 font-medium text-[11px]">
                       Voice Search Optimization
                     </span>
                   </div>
                   <span className="font-bold text-cyan-700 text-xs">
-                    Position Zero Dominance
+                    Structured Answer Content
                   </span>
                 </div>
               </motion.div>
@@ -1112,7 +1083,7 @@ export default function BestSeoServicesPage() {
         </motion.div>
       </section>
 
-      {/* 3. NOT JUST SEO — A COMPLETE REVENUE GROWTH SYSTEM (COMPACT AGENCY EDITION) */}
+      {/* 3. NOT JUST SEO — A COMPLETE INFORMATION SYSTEM */}
       <section className="py-12 lg:py-16 bg-gradient-to-b from-[#f8faff] via-[#ffffff] to-[#f4f7fc] relative border-b border-slate-200/80 overflow-hidden">
 
         {/* Ambient subtle brand glows */}
@@ -1134,19 +1105,19 @@ export default function BestSeoServicesPage() {
               {/* Strategic Pill */}
               <div className="inline-flex items-center gap-2 px-4 py-1.5 rounded-full bg-blue-50 border border-blue-200/80 text-xs font-bold text-blue-700 tracking-wider uppercase w-fit mb-4">
                 <span className="w-2 h-2 rounded-full bg-emerald-500 animate-pulse" />
-                <span>Strategic Differentiation • Revenue-First SEO</span>
+                <span>Our Approach • Accuracy-First SEO</span>
               </div>
 
               {/* Headline */}
               <h2 className="text-2xl sm:text-3xl lg:text-4xl font-extrabold text-[#1a1053] leading-tight tracking-tight mb-3">
-                Not Just Keyword Rankings — <br />
+                Not Just Keywords — <br />
                 <span className="text-transparent bg-clip-text bg-gradient-to-r from-blue-600 via-indigo-600 to-[#e20b27]">
-                  A Complete Inbound Revenue Engine
+                  A Complete, Accurate Information System
                 </span>
               </h2>
 
               <p className="text-slate-600 text-sm sm:text-base font-light leading-relaxed mb-6 max-w-2xl">
-                Typical agencies celebrate vanity rankings for terms nobody searches. At Codigix, we engineer high-converting acquisition funnels designed to deliver <strong className="text-[#1a1053] font-semibold">qualified inquiries, direct phone calls, and closed deals.</strong>
+                Search visibility is not just about keywords. At Codigix, we focus on <strong className="text-[#1a1053] font-semibold">accurate information, clear structure, and technical health</strong>, without promising rankings or outcomes.
               </p>
 
               {/* 3 Streamlined Growth Nodes */}
@@ -1160,14 +1131,14 @@ export default function BestSeoServicesPage() {
                   <div className="flex-1">
                     <div className="flex flex-col sm:flex-row sm:items-center justify-between gap-2 mb-1.5">
                       <h3 className="text-sm sm:text-base font-bold text-[#1a1053] tracking-tight">
-                        Commercial Buyer Intent Targeting
+                        Informational Query Research
                       </h3>
                       <span className="text-[11px] font-mono px-2.5 py-0.5 rounded-full bg-blue-50 text-blue-700 font-semibold border border-blue-200/80 w-fit">
-                        Zero Vanity Keywords
+                        Relevant Terms Only
                       </span>
                     </div>
                     <p className="text-xs sm:text-[13px] text-slate-500 leading-relaxed">
-                      Target decision-makers actively searching for service providers, pricing, and quotes in PCMC & Pune.
+                      Research the queries people actually use to look for services and information in PCMC & Pune.
                     </p>
                   </div>
                 </div>
@@ -1180,14 +1151,14 @@ export default function BestSeoServicesPage() {
                   <div className="flex-1">
                     <div className="flex flex-col sm:flex-row sm:items-center justify-between gap-2 mb-1.5">
                       <h3 className="text-sm sm:text-base font-bold text-[#1a1053] tracking-tight">
-                        Frictionless Conversion Architecture (CRO)
+                        Clear Page Structure & Usability
                       </h3>
                       <span className="text-[11px] font-mono px-2.5 py-0.5 rounded-full bg-rose-50 text-rose-700 font-semibold border border-rose-200/80 w-fit">
-                        3.4x Conversion Lift
+                        Accessible Layouts
                       </span>
                     </div>
                     <p className="text-xs sm:text-[13px] text-slate-500 leading-relaxed">
-                      Landing layouts and 1-tap call triggers engineered to turn organic traffic into immediate inquiries.
+                      Page layouts and clear contact options designed for readability, accessibility, and ease of use.
                     </p>
                   </div>
                 </div>
@@ -1200,14 +1171,14 @@ export default function BestSeoServicesPage() {
                   <div className="flex-1">
                     <div className="flex flex-col sm:flex-row sm:items-center justify-between gap-2 mb-1.5">
                       <h3 className="text-sm sm:text-base font-bold text-[#1a1053] tracking-tight">
-                        Direct Revenue & Pipeline Attribution
+                        Transparent Technical Reporting
                       </h3>
                       <span className="text-[11px] font-mono px-2.5 py-0.5 rounded-full bg-emerald-50 text-emerald-700 font-semibold border border-emerald-200/80 w-fit">
-                        100% Trackable ROI
+                        Clear Reporting
                       </span>
                     </div>
                     <p className="text-xs sm:text-[13px] text-slate-500 leading-relaxed">
-                      Real-time analytics tracking actual business outcomes: qualified phone calls and customer revenue.
+                      Consent-aware analytics and clear reporting on site health, listing accuracy, and visits.
                     </p>
                   </div>
                 </div>
@@ -1216,7 +1187,7 @@ export default function BestSeoServicesPage() {
 
               {/* Compact Trust Endorsement */}
               <div className="px-4 py-3 mt-2 rounded-lg bg-slate-50 border-l-4 border-[#e20b27] text-sm font-light text-slate-600 leading-relaxed">
-                "Engineered for businesses across PCMC & Pune who demand real client revenue over superficial metrics."
+                "Built for organizations across PCMC & Pune that value accurate information and sound technical foundations."
               </div>
 
             </div>
@@ -1233,25 +1204,25 @@ export default function BestSeoServicesPage() {
                         <Activity size={20} className="text-white" />
                       </div>
                       <div>
-                        <h3 className="font-extrabold text-[#1a1053] text-base leading-tight">Codigix Growth Index</h3>
-                        <p className="text-xs text-slate-400 mt-0.5">Verified Campaign Telemetry</p>
+                        <h3 className="font-extrabold text-[#1a1053] text-base leading-tight">Codigix Technical Checklist</h3>
+                        <p className="text-xs text-slate-400 mt-0.5">Items We Review</p>
                       </div>
                     </div>
                     <span className="px-3 py-1 rounded-full bg-emerald-50 text-emerald-700 border border-emerald-200 text-xs font-mono font-semibold flex items-center gap-1.5">
                       <span className="w-2 h-2 rounded-full bg-emerald-500 animate-ping" />
-                      Live ROI
+                      Checklist
                     </span>
                   </div>
 
                   {/* Standard Agency vs Codigix Comparison */}
                   <div className="grid grid-cols-2 gap-3 mb-5 p-1.5 rounded-xl bg-slate-50 border border-slate-200/70 text-xs">
                     <div className="p-2.5 rounded-lg bg-white text-slate-500 text-center border border-slate-200/50">
-                      <span className="block font-bold text-rose-600 mb-0.5">Other Agencies</span>
-                      <span className="text-[11px]">Vanity Rankings ❌</span>
+                      <span className="block font-bold text-rose-600 mb-0.5">What We Avoid</span>
+                      <span className="text-[11px]">Ranking Promises</span>
                     </div>
                     <div className="p-2.5 rounded-lg bg-emerald-50 text-emerald-800 text-center border border-emerald-200 font-semibold">
-                      <span className="block font-bold text-emerald-700 mb-0.5">Codigix SEO</span>
-                      <span className="text-[11px]">Paying Clients ✓</span>
+                      <span className="block font-bold text-emerald-700 mb-0.5">What We Do</span>
+                      <span className="text-[11px]">Technical Health ✓</span>
                     </div>
                   </div>
 
@@ -1261,45 +1232,36 @@ export default function BestSeoServicesPage() {
                     {/* Metric 01 */}
                     <div className="p-4 rounded-xl bg-slate-50/80 border border-slate-200/60">
                       <div className="flex items-center justify-between mb-2">
-                        <span className="text-[13px] font-semibold text-slate-700">Average Inbound Inquiries</span>
-                        <span className="text-sm font-black text-emerald-600 font-mono">+340%</span>
-                      </div>
-                      <div className="w-full h-1.5 bg-slate-200 rounded-full overflow-hidden mb-2">
-                        <div className="w-[85%] h-full bg-gradient-to-r from-emerald-500 to-teal-500 rounded-full" />
+                        <span className="text-[13px] font-semibold text-slate-700">Crawl & Index Health</span>
+                        <span className="text-sm font-black text-emerald-600 font-mono">Reviewed</span>
                       </div>
                       <div className="flex items-center justify-between text-[11px] text-slate-500">
-                        <span>Measured in first 90 days</span>
-                        <span className="text-slate-600 font-medium">Verified Calls & Leads</span>
+                        <span>Sitemaps, robots.txt, canonical tags</span>
+                        <span className="text-slate-600 font-medium">Technical</span>
                       </div>
                     </div>
 
                     {/* Metric 02 */}
                     <div className="p-4 rounded-xl bg-slate-50/80 border border-slate-200/60">
                       <div className="flex items-center justify-between mb-2">
-                        <span className="text-[13px] font-semibold text-slate-700">Google Maps 3-Pack Visibility</span>
-                        <span className="text-sm font-black text-blue-600 font-mono">Rank #1</span>
-                      </div>
-                      <div className="w-full h-1.5 bg-slate-200 rounded-full overflow-hidden mb-2">
-                        <div className="w-[92%] h-full bg-gradient-to-r from-blue-500 to-indigo-600 rounded-full" />
+                        <span className="text-[13px] font-semibold text-slate-700">Local Profile Accuracy</span>
+                        <span className="text-sm font-black text-blue-600 font-mono">Reviewed</span>
                       </div>
                       <div className="flex items-center justify-between text-[11px] text-slate-500">
-                        <span>Across 5km local radius</span>
-                        <span className="text-slate-600 font-medium">High-Intent Calls</span>
+                        <span>Address, hours, departments, services</span>
+                        <span className="text-slate-600 font-medium">Factual</span>
                       </div>
                     </div>
 
                     {/* Metric 03 */}
                     <div className="p-4 rounded-xl bg-slate-50/80 border border-slate-200/60">
                       <div className="flex items-center justify-between mb-2">
-                        <span className="text-[13px] font-semibold text-slate-700">Cost Per Acquisition (CPA)</span>
-                        <span className="text-sm font-black text-amber-600 font-mono">-70% vs Ads</span>
-                      </div>
-                      <div className="w-full h-1.5 bg-slate-200 rounded-full overflow-hidden mb-2">
-                        <div className="w-[75%] h-full bg-gradient-to-r from-amber-500 to-rose-500 rounded-full" />
+                        <span className="text-[13px] font-semibold text-slate-700">Core Web Vitals & Accessibility</span>
+                        <span className="text-sm font-black text-amber-600 font-mono">Reviewed</span>
                       </div>
                       <div className="flex items-center justify-between text-[11px] text-slate-500">
-                        <span>Compounding organic asset</span>
-                        <span className="text-slate-600 font-medium">Permanent ROI</span>
+                        <span>Speed, WCAG 2.1 AA alignment</span>
+                        <span className="text-slate-600 font-medium">Engineering</span>
                       </div>
                     </div>
 
@@ -1312,15 +1274,15 @@ export default function BestSeoServicesPage() {
                     href="/contact"
                     className="w-full py-3 px-4 rounded-xl bg-gradient-to-r from-blue-600 via-indigo-600 to-[#e20b27] hover:from-blue-500 hover:to-[#ff1f3d] text-white font-bold text-xs text-center flex items-center justify-center gap-2 shadow-md shadow-blue-600/20 hover:scale-[1.01] active:scale-[0.99] transition-all cursor-pointer"
                   >
-                    <span>Schedule Free Strategy Session</span>
+                    <span>Schedule a Discovery Call</span>
                     <ArrowRight size={14} />
                   </Link>
 
                   {/* Micro Trust Proof */}
                   <div className="flex items-center justify-center gap-2 mt-2 text-[9px] text-slate-400">
-                    <span>✓ Free 30-Min Call</span>
+                    <span>✓ Discovery Call</span>
                     <span className="w-1 h-1 rounded-full bg-slate-300" />
-                    <span>✓ Custom PCMC Audit</span>
+                    <span>✓ Site Review</span>
                     <span className="w-1 h-1 rounded-full bg-slate-300" />
                     <span>✓ No Obligation</span>
                   </div>
@@ -1353,16 +1315,16 @@ export default function BestSeoServicesPage() {
                 <span className="animate-ping absolute inline-flex h-full w-full rounded-full bg-blue-400 opacity-75"></span>
                 <span className="relative inline-flex rounded-full h-2 w-2 bg-blue-600"></span>
               </span>
-              <span>Tangible Deliverables & Proven Strategy</span>
+              <span>Deliverables & Our Process</span>
             </div>
             <h2 className="text-3xl sm:text-4xl lg:text-5xl font-extrabold text-[#1a1053] leading-[1.15] tracking-tight mb-4">
               What You Get & How We Execute : <br />
               <span className="text-transparent bg-clip-text bg-gradient-to-r from-blue-600 via-indigo-600 to-[#e20b27]">
-                The 6-Phase Growth Roadmap
+                The 6-Phase Roadmap
               </span>
             </h2>
             <p className="text-slate-600 text-base sm:text-lg font-light leading-relaxed max-w-2xl mx-auto">
-              Every deliverable is engineered to create a permanent customer acquisition asset, transforming search traffic into verified phone inquiries and closed deals.
+              Every deliverable is designed to create a technically healthy, accurate, and well-structured website, without promising rankings or outcomes.
             </p>
           </div>
 
@@ -1609,16 +1571,16 @@ export default function BestSeoServicesPage() {
                 <span className="animate-ping absolute inline-flex h-full w-full rounded-full bg-emerald-400 opacity-75"></span>
                 <span className="relative inline-flex rounded-full h-2 w-2 bg-emerald-600"></span>
               </span>
-              <span>Proven Track Record & Client Success</span>
+              <span>Selected Work by Regulatory Scope</span>
             </div>
             <h2 className="text-3xl sm:text-4xl lg:text-5xl font-extrabold text-[#1a1053] leading-[1.15] tracking-tight mb-4">
-              Why Businesses Across PCMC & Pune <br />
+              Organizations Across PCMC & Pune <br />
               <span className="text-transparent bg-clip-text bg-gradient-to-r from-blue-600 via-indigo-600 to-[#e20b27]">
-                Partner With Codigix Infotech
+                Work With Codigix Infotech
               </span>
             </h2>
             <p className="text-slate-600 text-base sm:text-lg font-light leading-relaxed max-w-2xl mx-auto">
-              Delivering verified business growth, high-ticket leads, and top-3 Google rankings across enterprise B2B, healthcare clinics, local services, and retail brands.
+              Website architecture, factual service pages, and technical hygiene for healthcare organizations (NMC and NDC frameworks) and non-medical businesses, which sit outside NMC scope.
             </p>
           </motion.div>
 
@@ -1635,10 +1597,10 @@ export default function BestSeoServicesPage() {
             >
               <div className="p-5 rounded-2xl bg-white border border-slate-200/90 shadow-2xs hover:shadow-md transition-shadow">
                 <h3 className="text-base font-extrabold text-[#1a1053] mb-1">
-                  The Codigix Strategic Advantage
+                  How We Work
                 </h3>
                 <p className="text-xs text-slate-500 font-light mb-4">
-                  We blend technical search mastery with deep local consumer psychology across Pune & PCMC.
+                  Engineering, accuracy, and privacy-by-design across Pune & PCMC.
                 </p>
 
                 <div className="space-y-2.5">
@@ -1678,9 +1640,9 @@ export default function BestSeoServicesPage() {
               >
                 <div className="flex items-center gap-1.5 font-bold text-[#1a1053] text-xs mb-1">
                   <Award size={14} className="text-[#e20b27]" />
-                  <span>100% White-Hat Google ROI Guarantee</span>
+                  <span>Ethical Communication Commitment</span>
                 </div>
-                "Engineered specifically for manufacturers, growing enterprises, healthcare providers, and local services in Pune & PCMC who demand real business revenue over superficial metrics."
+                "Built for hospitals, clinics, enterprises, and local businesses in Pune & PCMC that need accurate, accessible, and privacy-aligned digital systems. Healthcare engagements follow NMC (allopathic), NDC (dental), and AYUSH (Ayurvedic) communication principles."
               </motion.div>
             </motion.div>
 
@@ -1727,7 +1689,7 @@ export default function BestSeoServicesPage() {
                     <span className="relative inline-flex rounded-full h-2 w-2 bg-emerald-500"></span>
                   </span>
                   <span className="text-xs font-bold text-[#1a1053]">
-                    Live Verified Client Search Results
+                    Selected Engagements by Framework
                   </span>
                 </div>
                 <div className="flex items-center gap-1.5 px-2.5 py-1 rounded-full bg-slate-100/90 border border-slate-200/70 text-[10px] font-medium text-slate-500">
@@ -1748,98 +1710,98 @@ export default function BestSeoServicesPage() {
                   const clientShowcaseList = [
                     {
                       name: "Dr. Sheetal's Glow Clinic",
-                      tag: "Healthcare & Dermatology",
+                      tag: "Healthcare & Dermatology (NMC scope)",
                       tagColor: "bg-emerald-50 text-emerald-700 border-emerald-200/80",
                       avatarBg: "bg-emerald-50 text-emerald-600 border-emerald-200",
                       logo: "/clients/sheetals-glow.webp",
                       coverImage: "https://images.unsplash.com/photo-1505751172876-fa1923c5c528?auto=format&fit=crop&q=80&w=800",
                       icon: Stethoscope,
-                      duration: "6+ Mos Active",
-                      result: "+380% Inquiries",
-                      rankKeyword: "Rank #1: Skin Clinic PCMC",
+                      duration: "Ongoing engagement",
+                      result: "Website & Information Architecture",
+                      rankKeyword: "Factual service & department pages",
                       area: "Pimpri-Chinchwad",
-                      rating: "5.0",
-                      reviews: "140+ Reviews",
+                      rating: "",
+                      reviews: "",
                       trendPath: "M0 18 Q 20 16, 40 10 T 70 6 T 90 2"
                     },
                     {
                       name: "CorpLegal Solutions & Co",
-                      tag: "Corporate Law & B2B",
+                      tag: "Corporate Law & B2B (Non-medical)",
                       tagColor: "bg-blue-50 text-blue-700 border-blue-200/80",
                       avatarBg: "bg-blue-50 text-blue-600 border-blue-200",
                       logo: "/clients/corplegal.webp",
                       coverImage: "https://images.unsplash.com/photo-1486406146926-c627a92ad1ab?auto=format&fit=crop&q=80&w=800",
                       icon: Building2,
-                      duration: "1 Year Active",
-                      result: "#1 Organic Authority",
-                      rankKeyword: "Rank #1: Corporate Law Pune",
+                      duration: "Ongoing engagement",
+                      result: "Structured Web Content",
+                      rankKeyword: "Technical SEO hygiene & site structure",
                       area: "Pune & PCMC",
-                      rating: "4.9",
-                      reviews: "85+ Reviews",
+                      rating: "",
+                      reviews: "",
                       trendPath: "M0 20 Q 25 18, 45 11 T 72 5 T 90 2"
                     },
                     {
                       name: "Precision Tech Engineering",
-                      tag: "Manufacturing & Industrial",
+                      tag: "Manufacturing & Industrial (Non-medical)",
                       tagColor: "bg-amber-50 text-amber-800 border-amber-200/80",
                       avatarBg: "bg-amber-50 text-amber-600 border-amber-200",
                       logo: "/clients/regain.webp",
                       coverImage: "https://images.unsplash.com/photo-1581091226825-a6a2a5aee158?auto=format&fit=crop&q=80&w=800",
                       icon: Factory,
-                      duration: "8 Mos Active",
-                      result: "High-Ticket RFQs",
-                      rankKeyword: "Rank #1: Bhosari MIDC Machining",
+                      duration: "Ongoing engagement",
+                      result: "Catalog & Enquiry Workflows",
+                      rankKeyword: "Product pages & technical SEO",
                       area: "Bhosari MIDC",
-                      rating: "5.0",
-                      reviews: "MIDC Verified",
+                      rating: "",
+                      reviews: "",
                       trendPath: "M0 19 Q 22 17, 42 12 T 68 7 T 90 3"
                     },
                     {
                       name: "Bakul Hospitality & Catering",
-                      tag: "Hospitality & Events",
+                      tag: "Hospitality & Events (Non-medical)",
                       tagColor: "bg-purple-50 text-purple-700 border-purple-200/80",
                       avatarBg: "bg-purple-50 text-purple-600 border-purple-200",
                       logo: "/clients/bakul.webp",
                       coverImage: "https://images.unsplash.com/photo-1555244162-803834f70033?auto=format&fit=crop&q=80&w=800",
                       icon: UtensilsCrossed,
-                      duration: "1 Year Active",
-                      result: "3.4x Phone Calls",
-                      rankKeyword: "Top 3: Event Catering PCMC",
+                      duration: "Ongoing engagement",
+                      result: "Responsive Website Refresh",
+                      rankKeyword: "Clear service pages & navigation",
                       area: "Pune Metro",
-                      rating: "4.9",
-                      reviews: "210+ Reviews",
+                      rating: "",
+                      reviews: "",
                       trendPath: "M0 20 Q 20 19, 45 13 T 70 6 T 90 2"
                     },
                     {
                       name: "Canopy Healthcare & Aligners",
-                      tag: "Dental & Specialized Care",
+                      tag: "Dental & Specialized Care (NDC scope)",
                       tagColor: "bg-cyan-50 text-cyan-700 border-cyan-200/80",
                       avatarBg: "bg-cyan-50 text-cyan-600 border-cyan-200",
                       logo: "/clients/canopy.webp",
                       coverImage: "https://images.unsplash.com/photo-1588776814546-1ffcf47267a5?auto=format&fit=crop&q=80&w=800",
                       icon: Activity,
-                      duration: "1 Year Active",
-                      result: "185+ 5★ Reviews",
-                      rankKeyword: "Rank #1: Invisalign Wakad",
+                      duration: "Ongoing engagement",
+                      result: "Website & Accessibility Work",
+                      rankKeyword: "Accurate listings & service pages",
                       area: "Wakad & Hinjawadi",
-                      rating: "5.0",
-                      reviews: "185+ Reviews",
+                      rating: "",
+                      reviews: "",
                       trendPath: "M0 18 Q 24 15, 48 9 T 72 4 T 90 1"
                     },
                     {
                       name: "Sanskruti Agro Tourism",
-                      tag: "Tourism & Leisure",
+                      tag: "Tourism & Leisure (Non-medical)",
                       tagColor: "bg-rose-50 text-rose-700 border-rose-200/80",
                       avatarBg: "bg-rose-50 text-rose-600 border-rose-200",
                       logo: "/clients/sanskruti-agro-farm.webp",
                       coverImage: "https://images.unsplash.com/photo-1500651230702-0e2d8a49d4ad?auto=format&fit=crop&q=80&w=800",
                       icon: Globe,
-                      duration: "4 Mos Active",
-                      result: "+300% Footfall",
-                      rankKeyword: "Rank #1: Agro Resort Pune",
+                      duration: "Ongoing engagement",
+                      result: "Responsive Website & Listings",
+                      rankKeyword: "Accurate listing details",
                       area: "Pune Outskirts",
-                      rating: "4.9",
-                      reviews: "320+ Reviews",
+                      rating: "",
+                      reviews: "",
                       trendPath: "M0 19 Q 20 18, 44 11 T 70 5 T 90 2"
                     }
                   ];
@@ -1878,7 +1840,7 @@ export default function BestSeoServicesPage() {
                             </span>
                           </div>
 
-                          {/* Bottom on Image: Growth Highlight Pill */}
+                          {/* Bottom on Image: Scope Pill */}
                           <div className="absolute bottom-2.5 right-2.5 z-10">
                             <div className="flex items-center gap-1 px-2.5 py-0.5 rounded-lg bg-emerald-600/95 backdrop-blur-md text-white shadow-md border border-emerald-400/40 text-[11px] font-bold group-hover:scale-105 transition-transform">
                               <TrendingUp size={11} className="stroke-[2.5]" />
@@ -1910,7 +1872,7 @@ export default function BestSeoServicesPage() {
                                   {client.name}
                                 </h4>
                                 <span className="text-[10px] font-light text-slate-500 truncate block">
-                                  {client.area} • Verified Client
+                                  {client.area}
                                 </span>
                               </div>
                             </div>
@@ -1922,23 +1884,12 @@ export default function BestSeoServicesPage() {
                                   G
                                 </div>
                                 <div className="truncate">
-                                  <div className="text-[8px] font-bold text-slate-400 uppercase tracking-wider">Top Google Ranking</div>
+                                  <div className="text-[8px] font-bold text-slate-400 uppercase tracking-wider">Work Delivered</div>
                                   <div className="text-[11px] font-bold text-slate-800 truncate">{client.rankKeyword}</div>
                                 </div>
                               </div>
                               {/* Sparkline Indicator */}
                               <div className="shrink-0 flex flex-col items-end">
-                                <svg className="w-14 h-4 text-emerald-500 overflow-visible" viewBox="0 0 90 24" fill="none">
-                                  <path
-                                    d={client.trendPath}
-                                    stroke="currentColor"
-                                    strokeWidth="2.5"
-                                    strokeLinecap="round"
-                                    strokeLinejoin="round"
-                                  />
-                                  <circle cx="90" cy="2" r="3.5" className="fill-emerald-500" />
-                                </svg>
-                                <span className="text-[8px] font-bold text-emerald-700">Verified</span>
                               </div>
                             </div>
                           </div>
@@ -1949,15 +1900,7 @@ export default function BestSeoServicesPage() {
                               <MapPin size={11} className="text-[#e20b27] shrink-0" />
                               <span>{client.area}</span>
                             </div>
-                            <div className="flex items-center gap-1 bg-amber-50/80 border border-amber-200/60 px-1.5 py-0.5 rounded-lg">
-                              <div className="flex text-amber-400">
-                                {[...Array(5)].map((_, i) => (
-                                  <Star key={i} size={9} className="fill-amber-400 text-amber-400" />
-                                ))}
-                              </div>
-                              <span className="text-[10px] font-bold text-slate-800">{client.rating}</span>
-                              <span className="text-[9px] text-slate-500">({client.reviews})</span>
-                            </div>
+                            <div className="text-[10px] font-medium text-slate-500">Scope-based engagement</div>
                           </div>
                         </div>
                       </div>
@@ -2002,8 +1945,8 @@ export default function BestSeoServicesPage() {
                     <Cpu size={16} />
                   </div>
                   <div>
-                    <h3 className="text-sm font-bold text-[#1a1053]">Enterprise Tech Stack We Deploy</h3>
-                    <p className="text-[11px] text-slate-500">Industry-standard auditing and analytics infrastructure</p>
+                    <h3 className="text-sm font-bold text-[#1a1053]">Tools We Use</h3>
+                    <p className="text-[11px] text-slate-500">Auditing and analytics tools</p>
                   </div>
                 </div>
 
@@ -2014,7 +1957,7 @@ export default function BestSeoServicesPage() {
                     "Ahrefs & SEMrush",
                     "Screaming Frog",
                     "Google Tag Manager",
-                    "Lighthouse 99+"
+                    "Lighthouse Audits"
                   ].map((tool, i) => (
                     <div key={i} className="py-2 px-2.5 rounded-lg bg-slate-50 border border-slate-200/80 text-center text-[11px] font-semibold text-slate-700 hover:border-blue-300 hover:bg-blue-50/50 transition-colors">
                       {tool}
@@ -2030,17 +1973,17 @@ export default function BestSeoServicesPage() {
                     <TrendingUp size={16} />
                   </div>
                   <div>
-                    <h3 className="text-sm font-bold text-[#1a1053]">Measurable Business Outcomes</h3>
-                    <p className="text-[11px] text-slate-500">Actual ROI metrics delivered to your pipeline</p>
+                    <h3 className="text-sm font-bold text-[#1a1053]">Deliverables You Can Expect</h3>
+                    <p className="text-[11px] text-slate-500">What the work covers</p>
                   </div>
                 </div>
 
                 <div className="space-y-2">
                   {[
-                    "Over +340% average increase in organic search traffic within 90 days",
-                    "Dominant Google Maps 3-Pack rankings for local 'near me' queries",
-                    "Verified high-ticket client inquiries, phone calls & quotation forms",
-                    "Lower Cost-Per-Acquisition (CPA) compared to paid search campaigns"
+                    "Technical audit with prioritized fixes",
+                    "Accurate Google Business Profile and listing details",
+                    "Structured data and metadata for key pages",
+                    "Clear monthly reporting on site health"
                   ].map((item, idx) => (
                     <div key={idx} className="flex items-center gap-2 text-xs font-light text-slate-700">
                       <span className="w-4 h-4 rounded-full bg-emerald-100 text-emerald-700 flex items-center justify-center text-[10px] font-bold shrink-0">
@@ -2074,7 +2017,7 @@ export default function BestSeoServicesPage() {
               FAQ : <span className="text-transparent bg-clip-text bg-gradient-to-r from-blue-600 via-indigo-600 to-[#e20b27]">Frequently Asked Questions</span>
             </h2>
             <p className="text-slate-600 font-light text-base sm:text-lg leading-relaxed max-w-2xl mx-auto">
-              Clear answers to the most common questions business owners and marketing leaders in PCMC & Pune ask about our SEO services.
+              Clear answers to common questions about our SEO and local profile services.
             </p>
           </div>
 

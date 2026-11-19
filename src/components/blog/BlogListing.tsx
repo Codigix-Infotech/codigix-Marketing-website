@@ -285,7 +285,7 @@ export default function BlogListing({
                         {featured.author_name || 'Codigix Team'}
                       </div>
                       <div className="text-[11px] text-slate-400">
-                        {featured.author_role || 'Growth Strategist'}
+                        {featured.author_role || 'Content Team'}
                       </div>
                     </div>
                   </div>
@@ -335,13 +335,13 @@ export default function BlogListing({
                 <div className="relative z-10">
                   <div className="inline-flex items-center gap-1.5 px-3 py-1 rounded-full bg-white/10 backdrop-blur-md text-[#ff7582] text-xs font-bold uppercase tracking-wider mb-5 border border-white/10">
                     <Sparkles size={12} />
-                    Free Clinic Audit
+                    Editorial Standards
                   </div>
                   <h3 className="text-2xl font-bold tracking-tight mb-3 text-white leading-snug">
-                    Want More High-Intent Patients From Google?
+                    Accurate, Responsible Health Information
                   </h3>
                   <p className="text-indigo-100/80 text-sm leading-relaxed mb-6">
-                    Get an in-depth audit of your Google Maps 3-pack visibility, keyword rankings, and website conversion bottlenecks.
+                    Our articles are for general informational purposes only, are not medical advice, and are reviewed before publication. Questions about our content workflow? Get in touch.
                   </p>
                 </div>
 
@@ -350,7 +350,7 @@ export default function BlogListing({
                     href="/contact"
                     className="inline-flex items-center justify-between w-full px-5 py-3 rounded-full bg-white text-[#1a1053] hover:bg-[#e20b27] hover:text-white font-bold text-xs uppercase tracking-wider transition-all duration-300 shadow-lg"
                   >
-                    <span>Request Free Audit</span>
+                    <span>Contact Our Team</span>
                     <ArrowUpRight size={16} />
                   </Link>
                 </div>

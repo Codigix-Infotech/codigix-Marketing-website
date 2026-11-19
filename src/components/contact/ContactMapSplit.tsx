@@ -56,7 +56,7 @@ const MINIMAL_NODES = [
   {
     id: 'hours',
     title: 'Mon – Sat: 10AM – 7PM',
-    subtitle: 'Consultation Hours',
+    subtitle: 'Office Hours',
     x: 88,
     y: 78,
     icon: Clock,
@@ -325,34 +325,34 @@ export default function ContactMapSplit({ contact }: ContactMapSplitProps) {
 
                   <div className="hidden sm:flex items-center gap-1 text-[11px] text-slate-500 font-medium bg-blue-50/70 px-2 py-0.5 rounded-full border border-blue-100">
                     <Sparkles size={11} className="text-blue-600" />
-                    <span>Free Practice Audit</span>
+                    <span>Discovery Call</span>
                   </div>
                 </div>
 
                 <h2 className="text-xl sm:text-2xl font-extrabold text-[#1a1053] tracking-tight leading-snug">
-                  Let’s Build Something{' '}
+                  Let’s Discuss Your{' '}
                   <span className="text-transparent bg-clip-text bg-gradient-to-r from-blue-600 via-indigo-600 to-[#e20b27]">
-                    Extraordinary.
+                    Digital Requirements.
                   </span>
                 </h2>
 
                 <p className="text-xs text-slate-500 mt-1 leading-relaxed font-normal">
-                  Ready to accelerate your practice growth & patient appointments? Speak directly with our Pune digital growth team.
+                  Reach out to discuss website development, digital infrastructure, or educational content services. Please do not share confidential patient medical records, diagnostic reports, or sensitive personal health information through general inquiry forms or email.
                 </p>
 
                 {/* Trust Highlight Pills */}
                 <div className="flex flex-wrap items-center gap-1.5 mt-2 pt-2 border-t border-slate-100 text-[10.5px] font-medium text-slate-600">
                   <div className="flex items-center gap-1 bg-slate-50 px-2 py-0.5 rounded-lg border border-slate-200/80">
                     <Clock size={11} className="text-emerald-600" />
-                    <span>15-Min Response</span>
+                    <span>Prompt Response</span>
                   </div>
                   <div className="flex items-center gap-1 bg-slate-50 px-2 py-0.5 rounded-lg border border-slate-200/80">
                     <ShieldCheck size={11} className="text-blue-600" />
-                    <span>100% NDA Protected</span>
+                    <span>DPDP-Aligned Handling</span>
                   </div>
                   <div className="flex items-center gap-1 bg-slate-50 px-2 py-0.5 rounded-lg border border-slate-200/80">
                     <Award size={11} className="text-purple-600" />
-                    <span>50+ Clinics Grown</span>
+                    <span>Pune-Based Team</span>
                   </div>
                 </div>
               </div>

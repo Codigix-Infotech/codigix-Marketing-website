@@ -46,47 +46,47 @@ const whatWeDoList = [
   {
     num: "01",
     title: "Platform Strategy for Instagram, Facebook & LinkedIn",
-    desc: "Comprehensive multi-channel roadmap tailored to your clinical specialty, patient demographics, and geographic market in Pune/PCMC.",
+    desc: "A structured content roadmap tailored to your organization, audience, and geographic area in Pune/PCMC, with clear editorial standards.",
     icon: Share2,
     color: "from-pink-600 to-rose-600",
     bg: "bg-pink-50 text-pink-600 border-pink-200"
   },
   {
     num: "02",
-    title: "Healthcare Content Creation & Graphic Design",
-    desc: "Stunning, on-brand medical carousels, educational infographics, and treatment before/after layouts that build immediate authority.",
+    title: "Institutional Content Creation & Graphic Design",
+    desc: "Clear, on-brand carousels, educational infographics, and institutional update graphics that present factual information accurately.",
     icon: Sparkles,
     color: "from-purple-600 to-indigo-600",
     bg: "bg-purple-50 text-purple-600 border-purple-200"
   },
   {
     num: "03",
-    title: "Patient Education Posts, Reels & Stories",
-    desc: "Short-form video scripts and reels addressing common patient doubts, symptoms, prevention tips, and modern treatment technologies.",
+    title: "Public-Health Awareness Posts, Reels & Stories",
+    desc: "Short-form educational video scripts and posts on public-health awareness, prevention information, and general explanations, based on established consensus.",
     icon: Play,
     color: "from-rose-600 to-red-600",
     bg: "bg-rose-50 text-rose-600 border-rose-200"
   },
   {
     num: "04",
-    title: "Community Management & Patient Engagement",
-    desc: "Active response to comments, direct messages, and patient inquiries with professional lead nurturing and appointment routing.",
+    title: "Community Management & Responsible Engagement",
+    desc: "Professional responses to general comments and questions, directing personal medical queries to appropriate channels and never discussing individual patient information publicly.",
     icon: MessageCircle,
     color: "from-blue-600 to-cyan-600",
     bg: "bg-blue-50 text-blue-600 border-blue-200"
   },
   {
     num: "05",
-    title: "Influencer & Doctor Collaboration Campaigns",
-    desc: "Cross-promotions, expert doctor interview series, and healthcare awareness collabs that multiply your organic community reach.",
+    title: "Educational Interview & Expert Series",
+    desc: "Expert interview series and awareness collaborations with practitioner credentials and registration details clearly disclosed.",
     icon: Users,
     color: "from-amber-600 to-orange-600",
     bg: "bg-amber-50 text-amber-600 border-amber-200"
   },
   {
     num: "06",
-    title: "Monthly Analytics & Performance Reporting",
-    desc: "Transparent monthly reporting tracking follower growth, profile visits, video watch time, DM inquiries, and booked appointments.",
+    title: "Monthly Content & Compliance Reporting",
+    desc: "Transparent monthly reporting on content published, review status, disclosures applied, and platform insights.",
     icon: BarChart3,
     color: "from-emerald-600 to-teal-600",
     bg: "bg-emerald-50 text-emerald-600 border-emerald-200"
@@ -96,37 +96,37 @@ const whatWeDoList = [
 const whatYouGetCards = [
   {
     icon: Award,
-    title: "Strong Brand Authority",
-    desc: "Position your clinic and doctors as the go-to medical authority in your specialty across Pune and PCMC.",
-    stat: "#1 Authority",
-    statLabel: "Specialty Positioning",
+    title: "Clear Institutional Presence",
+    desc: "Accurate, consistent institutional and practitioner profiles across your social channels, with credentials and registration disclosed.",
+    stat: "Accurate",
+    statLabel: "Profile Information",
     color: "from-blue-600 to-indigo-600",
     bg: "bg-blue-50/80 border-blue-200/70"
   },
   {
     icon: Flame,
-    title: "Consistent Engagement",
-    desc: "Build lasting patient trust through valuable clinical education, relatable doctor reels, and engaging Q&A stories.",
-    stat: "10x+",
-    statLabel: "Audience Engagement",
+    title: "Educational Content",
+    desc: "Valuable public-health education through clear explainers, awareness posts, and general Q&A stories.",
+    stat: "Educational",
+    statLabel: "Content Focus",
     color: "from-rose-600 to-pink-600",
     bg: "bg-rose-50/80 border-rose-200/70"
   },
   {
     icon: MessageCircle,
-    title: "Lead Generation",
-    desc: "Convert passive social media followers into active clinic inquiries, WhatsApp consultations, and scheduled appointments.",
-    stat: "350+ Leads",
-    statLabel: "Monthly Inquiries",
+    title: "Responsible Engagement",
+    desc: "Professional handling of general queries, with privacy-aware guidance and no discussion of individual medical cases.",
+    stat: "Privacy-Aware",
+    statLabel: "Community Handling",
     color: "from-emerald-600 to-teal-600",
     bg: "bg-emerald-50/80 border-emerald-200/70"
   },
   {
     icon: Share2,
-    title: "Multi-Platform Growth",
-    desc: "Scale your presence simultaneously across Instagram Reels, Facebook Community, YouTube Shorts & LinkedIn.",
-    stat: "4 Platforms",
-    statLabel: "Omni-Channel Reach",
+    title: "Multi-Platform Consistency",
+    desc: "Consistent messaging across Instagram, Facebook, YouTube, and LinkedIn, with AI-assisted media labelled.",
+    stat: "Consistent",
+    statLabel: "Cross-Platform Messaging",
     color: "from-purple-600 to-indigo-600",
     bg: "bg-purple-50/80 border-purple-200/70"
   }
@@ -136,56 +136,56 @@ const socialServicesIncluded = [
   {
     title: "Social Media Management",
     subtitle: "Complete Platform Handling",
-    desc: "End-to-end management of your clinic's Instagram, Facebook & LinkedIn pages with daily posting and optimization.",
+    desc: "End-to-end management of your organization's Instagram, Facebook & LinkedIn pages with planned, reviewed posting.",
     icon: Share2,
     color: "text-blue-600 bg-blue-50 border-blue-200/70",
     pill: "Full Management",
-    points: ["Daily story updates & regular feed posts", "Profile grid aesthetics & bio optimization", "Hashtag & audio trend curation"]
+    points: ["Planned story updates & regular feed posts", "Profile consistency & bio accuracy", "Hashtag curation for accurate discoverability"]
   },
   {
-    title: "Lead Generation Campaigns",
-    subtitle: "High-Intent Inquiries",
-    desc: "Targeted social ad campaigns engineered to capture patients actively seeking consultations and treatments.",
+    title: "Paid Social Awareness",
+    subtitle: "Policy-Compliant Campaigns",
+    desc: "Targeted, policy-compliant social campaigns with clear, truthful messaging and transparent audience disclosures.",
     icon: Target,
     color: "text-emerald-600 bg-emerald-50 border-emerald-200/70",
-    pill: "Direct Leads",
-    points: ["Instagram & FB instant lead forms", "Click-to-WhatsApp direct message ads", "Micro-location radius targeting"]
+    pill: "Transparent Targeting",
+    points: ["Truthful, non-soliciting ad copy", "Transparent audience disclosures", "No inducements or cure promises"]
   },
   {
-    title: "Reels & Video Marketing",
-    subtitle: "Viral Short-Form Content",
-    desc: "High-retention doctor reels, patient testimonials, and treatment explainer videos crafted for algorithmic reach.",
+    title: "Educational Video Production",
+    subtitle: "Public-Health Explainers",
+    desc: "Educational videos on public-health topics, department introductions, and facility overviews, with practitioner credentials disclosed.",
     icon: Video,
     color: "text-pink-600 bg-pink-50 border-pink-200/70",
-    pill: "Viral Reach",
-    points: ["Doctor script writing & direction", "Professional video editing & motion graphics", "Trending medical sound integration"]
+    pill: "Educational Video",
+    points: ["Script writing with practitioner review", "Professional video editing & captions", "AI-assisted media clearly labelled"]
   },
   {
-    title: "WhatsApp & Automation Marketing",
-    subtitle: "Automated Communication",
-    desc: "Seamlessly connect social media inquiries with automated WhatsApp appointment booking flows.",
+    title: "WhatsApp Business Communication",
+    subtitle: "Structured Communication",
+    desc: "Set up business communication flows for general information, with clear privacy notices and no collection of medical records.",
     icon: Smartphone,
     color: "text-teal-600 bg-teal-50 border-teal-200/70",
-    pill: "Fast Booking",
-    points: ["Instant WhatsApp greeting & menu", "Automated consultation reminders", "Patient lead nurturing funnels"]
+    pill: "Business Messaging",
+    points: ["Clear greeting & information menu", "Privacy notice on first contact", "Guidance not to share medical records"]
   },
   {
-    title: "Doctors’ Social Media Marketing",
-    subtitle: "Our Specialty USP",
-    desc: "Tailored branding strategies built around doctor authority, medical ethics, patient education, and clinic footfall.",
+    title: "Practitioner Profile Content",
+    subtitle: "Credential Disclosure",
+    desc: "Accurate practitioner profile content that discloses qualifications and registration details, built around medical ethics and patient education.",
     icon: Activity,
     color: "text-indigo-600 bg-indigo-50 border-indigo-200/70",
-    pill: "Medical USP",
-    points: ["Build deep patient connection & trust", "Educate on symptoms & modern procedures", "Increase clinic consultation volume"]
+    pill: "Credentials Disclosed",
+    points: ["Verified qualifications & registration numbers", "Educate on general health topics", "Avoid comparative or superlative claims"]
   },
   {
-    title: "Verification & Branding",
-    subtitle: "Credibility Badges",
-    desc: "Establish verified trust with official Meta blue badges and WhatsApp green business ticks.",
+    title: "Verification & Profile Accuracy",
+    subtitle: "Official Profile Setup",
+    desc: "Assistance with official platform verification and accurate business profile information, where applicable.",
     icon: BadgeCheck,
     color: "text-amber-600 bg-amber-50 border-amber-200/60",
     pill: "Verification",
-    points: ["Meta Blue Tick (FB & Instagram)", "WhatsApp Official Green Tick", "Hospital & doctor brand protection"]
+    points: ["Meta verification submission support", "WhatsApp official business account setup", "Institutional brand protection"]
   }
 ];
 
@@ -195,17 +195,17 @@ const strategySteps = [
     stepNum: 1,
     name: "Research",
     time: "Days 1–3",
-    title: "Clinical Specialty & Competitor Breakdown",
-    stage: "Specialty Audit",
+    title: "Scope & Regulatory Review",
+    stage: "Scope Audit",
     timeline: "Days 1–3",
     icon: Search,
-    deliverable: "Competitive Analysis & Patient Persona Blueprint",
+    deliverable: "Content Scope & Disclosure Checklist",
     badgeBg: "bg-blue-50 text-blue-600 border-blue-200",
     boxBg: "bg-blue-50/70 border-blue-200/90",
     points: [
-      "In-depth clinical competitor social content audit",
-      "Patient engagement study and high-swipe topics",
-      "Target demographic mapping for Pune & PCMC micro-localities"
+      "Review of existing social content for accuracy and disclosures",
+      "Identification of public-health topics suited to education",
+      "Confirmation of applicable NMC, NDC, or AYUSH communication principles"
     ]
   },
   {
@@ -217,13 +217,13 @@ const strategySteps = [
     stage: "Content Strategy",
     timeline: "Days 4–7",
     icon: Layout,
-    deliverable: "30-Day Content Matrix with Doctor Shooting Plan",
+    deliverable: "30-Day Content Plan with Review Schedule",
     badgeBg: "bg-purple-50 text-purple-600 border-purple-200",
     boxBg: "bg-purple-50/70 border-purple-200/90",
     points: [
-      "3 Core Pillars: Educational, Promotional & Trust-Building",
-      "Doctor shooting schedule with structured clinical scripts",
-      "Trending audio integration and viral reel hooks"
+      "Content pillars: Educational, Institutional Updates & Awareness",
+      "Practitioner recording schedule with reviewed scripts",
+      "Source references noted for each educational topic"
     ]
   },
   {
@@ -231,17 +231,17 @@ const strategySteps = [
     stepNum: 3,
     name: "Production",
     time: "Weeks 2–3",
-    title: "High-Retention Video Reels & Carousels",
+    title: "Educational Video Reels & Carousels",
     stage: "Creative Production",
     timeline: "Weeks 2–3",
     icon: Video,
-    deliverable: "High-Impact Edited Reels & Medical Carousels",
+    deliverable: "Edited Educational Videos & Carousels",
     badgeBg: "bg-pink-50 text-pink-600 border-pink-200",
     boxBg: "bg-pink-50/70 border-pink-200/90",
     points: [
-      "Dynamic captions, visual B-rolls and treatment animations",
-      "High-swipe educational carousels with clinic branding",
-      "Interactive story Q&A polls to drive active patient queries"
+      "Captions, visuals, and clear explanatory animations",
+      "Educational carousels with accurate institutional branding",
+      "General Q&A stories with privacy-safe questions"
     ]
   },
   {
@@ -257,9 +257,9 @@ const strategySteps = [
     badgeBg: "bg-amber-50 text-amber-600 border-amber-200",
     boxBg: "bg-amber-50/70 border-amber-200/90",
     points: [
-      "Optimized posting times for peak patient engagement",
-      "Hyper-local Pune & PCMC hashtag architecture",
-      "Cross-platform syndication across Instagram, Facebook & LinkedIn"
+      "Scheduled posting after pre-publication review",
+      "Accurate Pune & PCMC location tagging",
+      "Consistent publishing across Instagram, Facebook & LinkedIn"
     ]
   },
   {
@@ -267,17 +267,17 @@ const strategySteps = [
     stepNum: 5,
     name: "Paid Boost",
     time: "Weeks 3–4",
-    title: "Targeted Lead Generation & Reel Boosts",
+    title: "Policy-Compliant Awareness Boosts",
     stage: "Paid Amplification",
     timeline: "Weeks 3–4",
     icon: Zap,
-    deliverable: "Targeted Paid Patient Acquisition Funnel",
+    deliverable: "Transparent Paid Awareness Campaigns",
     badgeBg: "bg-rose-50 text-rose-600 border-rose-200",
     boxBg: "bg-rose-50/70 border-rose-200/90",
     points: [
-      "Laser-targeted radius ads around your clinic or hospital",
-      "Amplification of top-performing organic educational reels",
-      "Direct Click-to-WhatsApp and Instagram DM lead campaigns"
+      "Location-based awareness campaigns with clear disclosures",
+      "Boosting of educational content, not promotional offers",
+      "Truthful ad copy with no inducements or cure promises"
     ]
   },
   {
@@ -285,45 +285,45 @@ const strategySteps = [
     stepNum: 6,
     name: "Community",
     time: "Ongoing",
-    title: "DM Consultation Filtering & Appointment Booking",
-    stage: "Lead Conversion",
-    timeline: "Ongoing Growth",
+    title: "Community Management & Reporting",
+    stage: "Engagement & Review",
+    timeline: "Ongoing",
     icon: MessageCircle,
-    deliverable: "Verified Patient Consultations & Monthly Analytics",
+    deliverable: "Monthly Content & Compliance Report",
     badgeBg: "bg-emerald-50 text-emerald-600 border-emerald-200",
     boxBg: "bg-emerald-50/70 border-emerald-200/90",
     points: [
-      "Rapid response to patient comments and direct inquiries",
-      "Seamless patient routing to front desk & WhatsApp CRM",
-      "Monthly growth report tracking reach, inquiries & ROI"
+      "Professional responses to general comments and questions",
+      "Redirection of personal medical queries to appropriate channels",
+      "Monthly report on content published, disclosures, and platform insights"
     ]
   }
 ];
 
 const whyChooseCodigix = [
   {
-    title: "Healthcare-First Approach",
-    desc: "We understand medical terminologies, patient sensitivities, doctor schedules, and healthcare advertising ethics.",
+    title: "Ethics-First Approach",
+    desc: "We understand medical terminology, patient sensitivities, and healthcare communication ethics, and apply a pre-publication review to every piece of content.",
     icon: ShieldCheck
   },
   {
-    title: "Conversion-Focused Content",
-    desc: "Every post and reel is engineered not just for vanity likes, but to educate patients and drive appointment bookings.",
+    title: "Educational, Not Promotional",
+    desc: "Every post and video is built to inform and educate on public-health topics, not to solicit or promote.",
     icon: Target
   },
   {
-    title: "Data-Driven Execution",
-    desc: "We monitor audience retention, swipe rates, and DM conversion ratios to constantly refine your social presence.",
+    title: "Transparent Reporting",
+    desc: "We report on content published, disclosures applied, and platform insights so you always know what is live.",
     icon: BarChart3
   },
   {
-    title: "Healthcare Expertise",
-    desc: "Over 8+ years scaling specialized doctors, dental clinics, IVF centers, dermatologists, and multi-specialty hospitals.",
+    title: "Healthcare Experience",
+    desc: "Experience working with doctors, dental clinics, specialty practices, and multi-specialty hospitals under the relevant NMC, NDC, and AYUSH principles.",
     icon: Award
   },
   {
-    title: "Local Market Understanding",
-    desc: "Deep knowledge of Pune & PCMC patient demographics, languages, and neighborhood healthcare preferences.",
+    title: "Local Understanding",
+    desc: "Familiarity with Pune & PCMC languages and neighborhoods, used to keep content clear and relevant.",
     icon: Globe
   }
 ];
@@ -331,111 +331,84 @@ const whyChooseCodigix = [
 const clientShowcase = [
   {
     name: "Dr. Sheetal's Glow Clinic",
-    tag: "Skin & Dermatology",
+    tag: "Dermatology (NMC scope)",
     location: "Kothrud, Pune",
-    duration: "6+ Months Active",
-    services: "Social Media Marketing, SEO & GMB, Meta Lead Ads, Web Development",
-    result: "+380% Inquiries",
-    highlight: "Rank #1: Skin Clinic PCMC"
-  },
-  {
-    name: "Regain Hair & Skin Clinic",
-    tag: "Trichology & Hair",
-    location: "Wakad, Pune",
-    duration: "1 Year Active",
-    services: "Social Media Marketing, SEO, Google Business Profile (GMB), Ad Funnels",
-    result: "650+ Inquiries/Mo",
-    highlight: "4.9x Ad ROAS"
-  },
-  {
-    name: "Dr. Prasad Kasbekar Clinic",
-    tag: "Oncology Specialist",
-    location: "Pune & PCMC",
-    duration: "1 Year Active",
-    services: "Doctor Authority Branding, High-Intent Search Ads, Video Content",
-    result: "180+ Consultations",
-    highlight: "High-Intent Patients"
+    duration: "Ongoing engagement",
+    services: "Website development, technical SEO, factual service pages",
+    result: "Website & Information Architecture",
+    highlight: "Factual service pages"
   },
   {
     name: "Canopy Dental Care",
-    tag: "Dental & Aligners",
+    tag: "Dental (NDC scope)",
     location: "Baner, Pune",
-    duration: "1 Year Active",
-    services: "Local Geo-Targeted SEO, WhatsApp Funnels, Website Development",
-    result: "320+ Patients",
-    highlight: "Rank #1: Invisalign Wakad"
+    duration: "Ongoing engagement",
+    services: "Website development, accurate local listings",
+    result: "Website & Accessibility Work",
+    highlight: "Accurate listings"
   },
   {
     name: "CorpLegal Solutions & Co",
-    tag: "Corporate Law & B2B",
+    tag: "Corporate Law & B2B (non-medical)",
     location: "Bavdhan, Pune",
-    duration: "1 Year Active",
-    services: "Web Development, Social Media Content Writing, B2B Search",
-    result: "#1 Organic Authority",
-    highlight: "Rank #1: Corporate Law Pune"
+    duration: "Ongoing engagement",
+    services: "Web development, content writing, technical SEO",
+    result: "Structured Web Content",
+    highlight: "Technical SEO hygiene"
   },
   {
     name: "Bakul Hospitality & Catering",
-    tag: "Hospitality & Events",
+    tag: "Hospitality & Events (non-medical)",
     location: "Pune Metro",
-    duration: "1 Year Active",
-    services: "Social Media Marketing, SEO, Local Maps Optimization, Web Pages",
-    result: "3.4x Direct Calls",
-    highlight: "210+ Verified Reviews"
-  },
-  {
-    name: "Sanskruti Agro Tourism",
-    tag: "Agro Tourism & Leisure",
-    location: "Chakan & Outskirts",
-    duration: "4 Months Active",
-    services: "Social Media Marketing, Meta Ad Campaigns, Local SEO Optimization",
-    result: "+300% Footfall",
-    highlight: "Rank #1: Agro Resort Pune"
+    duration: "Ongoing engagement",
+    services: "Social content, web pages, accurate local listings",
+    result: "Responsive Website Refresh",
+    highlight: "Clear service pages"
   }
 ];
 
 const toolsList = [
   "Meta Business Suite & Creator Studio",
   "Canva Pro & Adobe Creative Cloud",
-  "CapCut & Premiere Pro for Healthcare Reels",
-  "WhatsApp Business API & Automation Bots",
-  "Social Media Telemetry & Analytics Tools",
-  "Lead Tracking & Appointment CRM"
+  "CapCut & Premiere Pro for Educational Video",
+  "WhatsApp Business Platform",
+  "Social Media Insights & Analytics Tools",
+  "Content Review & Approval Workflow"
 ];
 
 const kpiList = [
-  "Follower Growth Rate & Community Size",
-  "Reel Views, Watch Time & Viral Shares",
-  "Engagement Rate (Comments, Saves & Shares)",
-  "Direct Message (DM) Consultation Requests",
-  "Cost Per Social Lead (CPL)",
-  "Verified Patient Footfall & Clinic Appointments"
+  "Content Published vs. Planned Calendar",
+  "Disclosure Checklist Completion",
+  "AI-Assisted Media Labelling Status",
+  "Pre-Publication Review Status",
+  "Platform Insights (Reach & Engagement)",
+  "Profile Information Accuracy"
 ];
 
 const faqs = [
   {
-    q: "Why is social media marketing essential for doctors and clinics?",
-    a: "Today's patients research doctors on Instagram and Facebook before scheduling a visit. A vibrant, educational social media presence builds immense personal trust, showcases your expertise, demystifies complex treatments, and turns casual social media users into loyal patients."
+    q: "Why does social media matter for healthcare organizations?",
+    a: "Many people look for general health information on Instagram and Facebook. A clear, educational and accurate social presence helps organizations share public-health awareness content and institutional updates responsibly."
   },
   {
-    q: "Do you write scripts and shoot video reels for doctors?",
-    a: "Yes! We provide complete end-to-end video support: researching high-demand patient questions, writing engaging 30–60 second doctor scripts, guiding camera delivery, and professionally editing reels with dynamic captions, sound design, and medical graphics."
+    q: "Do you write scripts and produce educational videos?",
+    a: "Yes. We provide end-to-end video support: researching public-health topics, writing clear scripts based on established consensus, guiding camera delivery, and editing videos with captions and graphics. Practitioner credentials are disclosed and AI-assisted media is labelled."
   },
   {
-    q: "How often will you post on our clinic’s social media channels?",
-    a: "We maintain a consistent, high-impact schedule: typically 12 to 20 high-quality reels and carousels per month, combined with daily interactive Instagram Stories (polls, patient FAQs, clinic behind-the-scenes) to keep your practice top-of-mind."
+    q: "How often will you post on our social media channels?",
+    a: "We agree a publishing calendar with you based on your goals and review capacity. Typical plans combine educational reels and carousels with regular stories, always subject to pre-publication review."
   },
   {
-    q: "How do you help us get verified with a Blue Tick or WhatsApp Green Tick?",
-    a: "We assist with the complete official documentation, PR citations, clinic registration verification, and submission process to secure the official Meta Verified badge (Instagram/Facebook) and the WhatsApp Official Business Account (Green Tick)."
+    q: "Can you help with platform verification?",
+    a: "Yes. We assist with the documentation and submission process for official Meta verification and a WhatsApp official business account, where eligible. We cannot guarantee that a platform will approve a request."
   },
   {
-    q: "How does social media generate actual clinic appointments?",
-    a: "We integrate clear call-to-actions, link-in-bio appointment funnels, click-to-WhatsApp message buttons, and targeted paid lead generation ads that guide interested viewers directly into booking a consultation with your front desk."
+    q: "Do you use patient testimonials or before-and-after content?",
+    a: "No. For medical engagements we do not publish promotional patient testimonials, before-and-after content, or reviews as marketing. Our content focuses on public-health education and factual institutional information."
   },
   {
-    q: "Is social media marketing suitable for medical compliance and ethics?",
-    a: "Absolutely. All our content adheres strictly to medical advertising regulations, ethical healthcare communication standards, and patient privacy (HIPAA / medical guidelines), ensuring your clinical reputation is always protected."
+    q: "Is social media content compliant with medical advertising ethics?",
+    a: "Our medical-engagement content follows NMC (allopathic/hospital), NDC (dental), and AYUSH (Ayurvedic) communication principles, with credential disclosures and an internal pre-publication review. Data is handled in line with the Information Technology Act, 2000 and the Digital Personal Data Protection Act, 2023 (and 2025 Rules)."
   }
 ];
 
@@ -508,8 +481,8 @@ export default function SocialMediaMarketingPage() {
                 <Instagram size={16} />
               </div>
               <div>
-                <p className="text-[10px] text-slate-500 font-bold uppercase tracking-wider leading-none mb-1 text-left">Viral Growth</p>
-                <p className="text-sm text-[#1a1053] font-extrabold leading-none text-left">10x+ Reel Engagement</p>
+                <p className="text-[10px] text-slate-500 font-bold uppercase tracking-wider leading-none mb-1 text-left">Educational Reach</p>
+                <p className="text-sm text-[#1a1053] font-extrabold leading-none text-left">Awareness Videos</p>
               </div>
             </motion.div>
 
@@ -524,7 +497,7 @@ export default function SocialMediaMarketingPage() {
               </div>
               <div>
                 <p className="text-[10px] text-slate-500 font-bold uppercase tracking-wider leading-none mb-1 text-left">Community</p>
-                <p className="text-sm text-[#1a1053] font-extrabold leading-none text-left">High Patient Trust</p>
+                <p className="text-sm text-[#1a1053] font-extrabold leading-none text-left">Responsible Engagement</p>
               </div>
             </motion.div>
 
@@ -538,8 +511,8 @@ export default function SocialMediaMarketingPage() {
                 <TrendingUp size={16} />
               </div>
               <div>
-                <p className="text-[10px] text-slate-500 font-bold uppercase tracking-wider leading-none mb-1 text-left">Conversions</p>
-                <p className="text-sm text-[#1a1053] font-extrabold leading-none text-left">350+ Monthly Leads</p>
+                <p className="text-[10px] text-slate-500 font-bold uppercase tracking-wider leading-none mb-1 text-left">Disclosures</p>
+                <p className="text-sm text-[#1a1053] font-extrabold leading-none text-left">Credentials Disclosed</p>
               </div>
             </motion.div>
 
@@ -554,7 +527,7 @@ export default function SocialMediaMarketingPage() {
               </div>
               <div>
                 <p className="text-[10px] text-slate-500 font-bold uppercase tracking-wider leading-none mb-1 text-left">Compliance</p>
-                <p className="text-sm text-[#1a1053] font-extrabold leading-none text-left">100% Medical Ethics Safe</p>
+                <p className="text-sm text-[#1a1053] font-extrabold leading-none text-left">Ethics-Aligned Content</p>
               </div>
             </motion.div>
           </div>
@@ -566,21 +539,21 @@ export default function SocialMediaMarketingPage() {
               <span className="relative inline-flex rounded-full h-2 w-2 bg-pink-500"></span>
             </span>
             <span className="text-xs sm:text-sm font-semibold text-[#1a1053] tracking-wide">
-              Social Media Marketing
+              Social Media & Educational Video
             </span>
           </div>
 
           {/* Main Title */}
           <h1 className="text-4xl sm:text-5xl lg:text-[64px] font-extrabold text-[#1a1053] tracking-tight leading-[1.1] mb-6 max-w-4xl relative z-20">
-            Drive Instant Patient Inquiries with <br className="hidden lg:block" /> Targeted Ads & Reels.
+            Public-Health Awareness & <br className="hidden lg:block" /> Institutional Updates.
             <span className="block text-transparent bg-clip-text bg-gradient-to-r from-blue-600 via-indigo-600 to-[#e20b27] mt-3">
-              More Followers. More Engagement.
+              Clear, Credentialed, Responsible.
             </span>
           </h1>
 
           {/* Hero Subtitle */}
           <p className="text-base sm:text-lg lg:text-xl text-slate-600 font-light leading-relaxed max-w-2xl mx-auto mb-10 relative z-20">
-            Today’s patients choose doctors they feel connected to. Our Social Media Marketing services help your clinic build a credible, engaging, and trustworthy presence on platforms where your patients spend their time every day.
+            Our social media services help hospitals, clinics, and enterprises share structured educational video and social content focused on public-health awareness, institutional updates, and clear explanations, with practitioner credential disclosures and AI source labels where applicable.
           </p>
 
           {/* CTA Buttons */}
@@ -589,14 +562,14 @@ export default function SocialMediaMarketingPage() {
               href="/contact"
               className="inline-flex items-center justify-center gap-3 px-8 py-4 bg-[#1a1053] hover:bg-[#281878] text-white rounded-full font-semibold text-base transition-all shadow-[0_10px_25px_-5px_rgba(26,16,83,0.25)] hover:shadow-[0_15px_30px_-5px_rgba(26,16,83,0.35)] transform hover:-translate-y-0.5"
             >
-              <span>Book Free Social Media Call</span>
+              <span>Schedule a Discovery Call</span>
               <ArrowRight size={18} />
             </Link>
             <a
               href="#strategy"
               className="inline-flex items-center justify-center gap-2 px-8 py-4 bg-white border border-slate-200 hover:bg-slate-50 text-[#1a1053] rounded-full font-semibold text-base shadow-xs transition-all"
             >
-              <span>Explore 7-Step Strategy</span>
+              <span>Explore Our 6-Step Process</span>
               <ChevronDown size={18} />
             </a>
           </div>
@@ -619,11 +592,11 @@ export default function SocialMediaMarketingPage() {
             <h2 className="text-3xl sm:text-4xl lg:text-5xl font-extrabold text-[#1a1053] tracking-tight leading-[1.15]">
               Comprehensive <br className="hidden sm:block" />
               <span className="text-transparent bg-clip-text bg-gradient-to-r from-blue-600 via-indigo-600 to-[#e20b27]">
-                Healthcare Social Growth Engine
+                Educational Social Content Services
               </span>
             </h2>
             <p className="text-slate-600 text-base sm:text-lg font-light leading-relaxed max-w-2xl mx-auto">
-              A comprehensive social media growth engine designed specifically for doctors, clinics, and medical institutions to turn casual scrollers into verified patient appointments.
+              A structured social media content service for doctors, clinics, hospitals, and enterprises, built around accuracy, disclosure, and educational communication.
             </p>
           </div>
 
@@ -686,17 +659,17 @@ export default function SocialMediaMarketingPage() {
               <div className="lg:col-span-5 space-y-4">
                 <div className="rounded-2xl bg-white border border-slate-200/90 shadow-lg p-6 space-y-4">
                   <div className="flex items-center justify-between border-b border-slate-100 pb-3">
-                    <span className="text-xs font-bold text-slate-600 uppercase">Social Growth Engine</span>
-                    <span className="text-xs font-bold text-pink-600">Patient Psychology</span>
+                    <span className="text-xs font-bold text-slate-600 uppercase">Content Process</span>
+                    <span className="text-xs font-bold text-pink-600">Reviewed Content</span>
                   </div>
 
                   <div className="space-y-3">
                     <div className="p-3 rounded-xl bg-slate-50 border border-slate-100 flex items-center justify-between">
                       <div className="flex items-center gap-2.5">
                         <span className="w-6 h-6 rounded-full bg-pink-600 text-white text-xs font-bold flex items-center justify-center">1</span>
-                        <span className="text-xs font-bold text-slate-800">Strategic Content (Not Random Posts)</span>
+                        <span className="text-xs font-bold text-slate-800">Planned, Reviewed Content</span>
                       </div>
-                      <span className="text-[11px] text-pink-600 font-semibold">Authority</span>
+                      <span className="text-[11px] text-pink-600 font-semibold">Accuracy</span>
                     </div>
 
                     <div className="flex justify-center text-slate-300">
@@ -706,9 +679,9 @@ export default function SocialMediaMarketingPage() {
                     <div className="p-3 rounded-xl bg-slate-50 border border-slate-100 flex items-center justify-between">
                       <div className="flex items-center gap-2.5">
                         <span className="w-6 h-6 rounded-full bg-rose-600 text-white text-xs font-bold flex items-center justify-center">2</span>
-                        <span className="text-xs font-bold text-slate-800">Audience Psychology &amp; Reels</span>
+                        <span className="text-xs font-bold text-slate-800">Educational Reels &amp; Posts</span>
                       </div>
-                      <span className="text-[11px] text-rose-600 font-semibold">High Reach</span>
+                      <span className="text-[11px] text-rose-600 font-semibold">Credentials Disclosed</span>
                     </div>
 
                     <div className="flex justify-center text-slate-300">
@@ -718,9 +691,9 @@ export default function SocialMediaMarketingPage() {
                     <div className="p-3 rounded-xl bg-emerald-50 border border-emerald-200 flex items-center justify-between">
                       <div className="flex items-center gap-2.5">
                         <span className="w-6 h-6 rounded-full bg-emerald-600 text-white text-xs font-bold flex items-center justify-center">3</span>
-                        <span className="text-xs font-bold text-emerald-900">Conversion-Driven Engagement</span>
+                        <span className="text-xs font-bold text-emerald-900">Responsible Community Management</span>
                       </div>
-                      <span className="text-[11px] text-emerald-700 font-bold">Booked Visits</span>
+                      <span className="text-[11px] text-emerald-700 font-bold">Privacy-Aware</span>
                     </div>
                   </div>
                 </div>
@@ -729,20 +702,20 @@ export default function SocialMediaMarketingPage() {
               {/* Right Column: Copy & Bullet Points */}
               <div className="lg:col-span-7 space-y-6">
                 <span className="inline-block px-3.5 py-1 rounded-full bg-pink-100 border border-pink-200 text-pink-800 text-xs font-bold uppercase tracking-wider">
-                  Strategic Positioning
+                  Our Approach
                 </span>
 
                 <h2 className="text-3xl sm:text-4xl font-extrabold text-[#1a1053] tracking-tight">
-                  Social Media is Not About Posting — It’s About Positioning
+                  Social Media is Not About Posting — It’s About Accuracy and Clarity
                 </h2>
 
                 <p className="text-slate-600 text-base sm:text-lg leading-relaxed">
-                  Most agencies treat social media as occasional content posting. <br className="hidden sm:inline" />
-                  <strong className="text-[#1a1053] font-bold">We treat it as a high-converting patient growth engine.</strong>
+                  Social content about health needs care. <br className="hidden sm:inline" />
+                  <strong className="text-[#1a1053] font-bold">We treat it as a channel for accurate, educational, responsibly reviewed communication.</strong>
                 </p>
 
                 <div className="p-4 rounded-xl bg-pink-50 border-l-4 border-pink-500 text-pink-950 text-sm font-semibold">
-                  🚀 Your social media becomes a consistent, dependable patient lead generation channel.
+                  Your social media becomes a consistent, dependable channel for accurate institutional and public-health information.
                 </div>
 
                 <div className="space-y-3 pt-2">
@@ -750,19 +723,19 @@ export default function SocialMediaMarketingPage() {
                   <ul className="grid grid-cols-1 sm:grid-cols-2 gap-3">
                     <li className="flex items-center gap-2.5 text-sm text-slate-700 font-medium">
                       <CheckCircle2 className="w-4 h-4 text-emerald-600 flex-shrink-0" />
-                      <span>Strategic medical content (not random posts)</span>
+                      <span>Planned, reviewed educational content</span>
                     </li>
                     <li className="flex items-center gap-2.5 text-sm text-slate-700 font-medium">
                       <CheckCircle2 className="w-4 h-4 text-emerald-600 flex-shrink-0" />
-                      <span>Audience psychology &amp; treatment curiosity</span>
+                      <span>Public-health awareness topics</span>
                     </li>
                     <li className="flex items-center gap-2.5 text-sm text-slate-700 font-medium">
                       <CheckCircle2 className="w-4 h-4 text-emerald-600 flex-shrink-0" />
-                      <span>Conversion-driven DM &amp; story engagement</span>
+                      <span>Responsible DM &amp; story engagement</span>
                     </li>
                     <li className="flex items-center gap-2.5 text-sm text-slate-700 font-medium">
                       <CheckCircle2 className="w-4 h-4 text-emerald-600 flex-shrink-0" />
-                      <span>Verified doctor brand authority building</span>
+                      <span>Practitioner credential disclosure</span>
                     </li>
                   </ul>
                 </div>
@@ -779,13 +752,13 @@ export default function SocialMediaMarketingPage() {
         <section className="py-16 sm:py-24 max-w-7xl m-auto">
           <div className="text-center max-w-3xl mx-auto space-y-4 mb-16">
             <span className="inline-block px-3.5 py-1 rounded-full bg-rose-50 border border-rose-200 text-rose-700 text-xs font-bold uppercase tracking-wider">
-              Proven Outcomes
+              What You Get
             </span>
             <h2 className="text-3xl sm:text-4xl font-extrabold text-[#1a1053] tracking-tight">
-              What You Get With Our Strong Social Media
+              What You Get With Our Social Media Services
             </h2>
             <p className="text-slate-600 text-base sm:text-lg">
-              Tangible clinical branding and continuous patient inquiries that elevate your healthcare practice above local competition.
+              Clear institutional presence and educational content that is accurate, consistent, and responsibly reviewed.
             </p>
           </div>
 
@@ -839,10 +812,10 @@ export default function SocialMediaMarketingPage() {
               Comprehensive Service Suite
             </span>
             <h2 className="text-3xl sm:text-4xl font-extrabold text-[#1a1053] tracking-tight">
-              What Is Included In Our Healthcare Social Media Services?
+              What Is Included In Our Social Media Services?
             </h2>
             <p className="text-slate-600 text-base sm:text-lg">
-              Structured, compliant, and results-driven offerings designed to build authority and fill your appointment calendar.
+              Structured, compliance-aware offerings designed around accuracy, disclosure, and clear educational communication.
             </p>
           </div>
 
@@ -898,10 +871,10 @@ export default function SocialMediaMarketingPage() {
               Step-by-Step Blueprint
             </span>
             <h2 className="text-3xl sm:text-4xl font-extrabold text-[#1a1053] tracking-tight">
-              Our 6-Step Social Media Strategy & Growth Roadmap
+              Our 6-Step Social Media Process
             </h2>
             <p className="text-slate-600 text-base sm:text-lg">
-              A synchronized medical branding framework that turns your clinic into an active, patient-generating digital authority across Pune & PCMC.
+              A structured framework for planning, producing, reviewing, and publishing accurate educational content across Pune & PCMC.
             </p>
           </div>
 
@@ -1115,7 +1088,7 @@ export default function SocialMediaMarketingPage() {
               Why Choose Codigix Infotech
             </h2>
             <p className="text-slate-600 text-base sm:text-lg">
-              We understand doctor schedules, clinical nuances, and the exact content formats that inspire prospective patients to take action.
+              We understand practitioner schedules, clinical nuances, and the content formats that explain health topics clearly.
             </p>
           </div>
 
@@ -1146,17 +1119,17 @@ export default function SocialMediaMarketingPage() {
             <div className="rounded-2xl bg-gradient-to-br from-[#1a1053] to-slate-900 text-white p-6 sm:p-7 shadow-xl flex flex-col justify-between">
               <div className="space-y-2">
                 <span className="text-xs font-bold text-amber-400 uppercase tracking-wider flex items-center gap-1.5">
-                  <Sparkles className="w-3.5 h-3.5" /> Doctor Reel Strategy Call
+                  <Sparkles className="w-3.5 h-3.5" /> Educational Video Discovery Call
                 </span>
-                <h3 className="text-lg font-bold text-white">Want custom reel scripts?</h3>
-                <p className="text-xs text-slate-300">We analyze your clinical specialty and create 5 ready-to-record viral reel scripts for free.</p>
+                <h3 className="text-lg font-bold text-white">Want an educational video plan?</h3>
+                <p className="text-xs text-slate-300">We review your specialty and outline educational video topics suited to public-health awareness.</p>
               </div>
               <div className="pt-4">
                 <Link
                   href="/contact"
                   className="inline-flex items-center gap-2 text-xs font-bold px-4 py-2.5 rounded-lg bg-[#e20b27] hover:bg-red-700 text-white transition-colors"
                 >
-                  <span>Claim 5 Free Scripts</span>
+                  <span>Schedule a Discovery Call</span>
                   <ArrowRight className="w-4 h-4" />
                 </Link>
               </div>
@@ -1169,14 +1142,14 @@ export default function SocialMediaMarketingPage() {
         {/* SECTION 8: CLIENT SUCCESS SHOWCASE (SAME AS SEO PAGE) */}
         {/* ========================================================================= */}
         <ClientShowcaseSection
-          badgeText="Verified Social Reach & Client Growth"
-          headingPrefix="Why Healthcare & Premium Brands"
-          headingGradient="Trust Codigix Social Media"
-          subtitle="Building authentic doctor brand authority, viral video content, and converting social followers into booked clinic appointments."
-          strategicAdvantageTitle="The Codigix Creative Advantage"
-          strategicAdvantageSubtitle="Clinical accuracy, thumb-stopping reel scripts, and dedicated patient psychology hooks."
-          guaranteeTitle="100% Brand Credibility & Compliance"
-          guaranteeQuote='"Every reel, script, and visual campaign complies strictly with medical ethics while generating verified engagement and clinic bookings."'
+          badgeText="Selected Work by Regulatory Scope"
+          headingPrefix="Organizations Across Pune & PCMC"
+          headingGradient="Work With Codigix Infotech"
+          subtitle="Website architecture, factual service pages, and technical hygiene for healthcare organizations (NMC and NDC frameworks) and non-medical businesses, which sit outside NMC scope."
+          strategicAdvantageTitle="How We Create Content"
+          strategicAdvantageSubtitle="Clinical accuracy, clear scripts, and practitioner credential disclosure."
+          guaranteeTitle="Ethical Communication Commitment"
+          guaranteeQuote='"Every video, script, and visual follows medical communication ethics, with credential disclosures and AI-assisted media labelled."'
         />
 
 
@@ -1220,7 +1193,7 @@ export default function SocialMediaMarketingPage() {
                 </div>
                 <div>
                   <h3 className="text-xl sm:text-2xl font-bold text-white">KPIs We Track</h3>
-                  <p className="text-xs text-slate-300">Metrics that translate engagement into clinic revenue</p>
+                  <p className="text-xs text-slate-300">Indicators we review each month</p>
                 </div>
               </div>
 
@@ -1250,7 +1223,7 @@ export default function SocialMediaMarketingPage() {
               FAQ : <span className="text-transparent bg-clip-text bg-gradient-to-r from-blue-600 via-indigo-600 to-[#e20b27]">Frequently Asked Questions</span>
             </h2>
             <p className="text-slate-600 text-sm sm:text-base">
-              Everything you need to know about our healthcare social media strategy, video reel production, and verification process.
+              Everything you need to know about our social media process, educational video production, and verification support.
             </p>
           </div>
 
@@ -1304,8 +1277,8 @@ export default function SocialMediaMarketingPage() {
                 <Instagram size={18} />
               </div>
               <div>
-                <h4 className="text-sm font-bold text-[#1a1053]">Need a custom healthcare social audit?</h4>
-                <p className="text-xs text-slate-600">Our medical social strategists will review your current Instagram grid and outline a viral roadmap.</p>
+                <h4 className="text-sm font-bold text-[#1a1053]">Need a content and disclosure review?</h4>
+                <p className="text-xs text-slate-600">Our team will review your current social profiles and outline accurate, educational content improvements.</p>
               </div>
             </div>
             <Link
@@ -1313,7 +1286,7 @@ export default function SocialMediaMarketingPage() {
               className="inline-flex items-center gap-2 py-2.5 px-5 rounded-xl bg-[#e20b27] hover:bg-red-700 text-white font-bold text-xs shrink-0 shadow-sm transition-colors"
             >
               <PhoneCall size={14} />
-              <span>Talk to Social Strategist</span>
+              <span>Talk to Our Team</span>
             </Link>
           </div>
         </section>
@@ -1330,15 +1303,15 @@ export default function SocialMediaMarketingPage() {
             <div className="relative z-10 max-w-3xl mx-auto text-center space-y-6">
               <div className="inline-flex items-center gap-2 px-4 py-1.5 rounded-full bg-white/10 border border-white/20 text-xs font-bold text-pink-300">
                 <Sparkles className="w-4 h-4" />
-                <span>Transform Your Social Presence</span>
+                <span>Clear Social Communication</span>
               </div>
 
               <h2 className="text-3xl sm:text-4xl lg:text-5xl font-extrabold text-white tracking-tight leading-tight">
-                Ready to Generate High-Quality Leads with Social Media?
+                Ready to Plan Educational Social Content?
               </h2>
 
               <p className="text-slate-300 text-base sm:text-lg leading-relaxed max-w-2xl mx-auto">
-                Let’s create medical content that builds lasting patient authority, drives viral reach, and fills your consultation schedule.
+                Let’s plan accurate, educational content with clear credential disclosures and responsible review.
               </p>
 
               <div className="pt-2 flex flex-col sm:flex-row items-center justify-center gap-4">
@@ -1347,7 +1320,7 @@ export default function SocialMediaMarketingPage() {
                   className="w-full sm:w-auto inline-flex items-center justify-center gap-2.5 px-8 py-4 rounded-xl bg-gradient-to-r from-pink-500 to-rose-600 hover:from-pink-600 hover:to-rose-700 text-white font-extrabold text-base shadow-lg shadow-pink-500/20 hover:shadow-xl transition-all"
                 >
                   <Sparkles className="w-5 h-5 text-white" />
-                  <span>Book Free Social Consultation</span>
+                  <span>Schedule a Discovery Call</span>
                   <ArrowRight className="w-5 h-5" />
                 </Link>
 

@@ -3,11 +3,11 @@ import { pageMetadata, serviceJsonLd } from '@/lib/page-seo';
 
 // The page itself is a client component, so its metadata and structured data live here.
 const PATH = '/medical-content-marketing';
-const TITLE = 'Medical Content Marketing for Doctors & Clinics | Codigix';
-const DESCRIPTION = 'Educate patients, build authority and earn trust with healthcare content marketing: clinical blogs, patient education guides and doctor branding.';
+const TITLE = 'Health & Institutional Content Architecture | Codigix';
+const DESCRIPTION = 'Accurate public-health education, department guides and institutional content, written for clarity and reviewed for compliance before publication.';
 
 export const generateMetadata = () =>
-  pageMetadata({ title: TITLE, description: DESCRIPTION, path: PATH, keywords: ['medical content marketing', 'healthcare content writing', 'doctor personal branding', 'patient education content'] });
+  pageMetadata({ title: TITLE, description: DESCRIPTION, path: PATH, keywords: ['medical content marketing', 'healthcare content writing', 'practitioner credential disclosure', 'patient education content'] });
 
 export default function Layout({ children }: { children: React.ReactNode }) {
   const schema = serviceJsonLd({ name: 'Medical Content Marketing', serviceType: 'Content marketing', description: DESCRIPTION, path: PATH });

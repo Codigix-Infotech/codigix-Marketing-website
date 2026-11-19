@@ -115,12 +115,12 @@ export default function HealthcareSpecialities() {
             </motion.div>
 
             <motion.h2 variants={{ hidden: { opacity: 0, transform: "translate(0px, 15px)" }, visible: { opacity: 1, transform: "translate(0px, 0px)" } }} className="text-4xl lg:text-5xl font-semibold text-[#1a1053] leading-[1.18] tracking-tight mb-6">
-              Complete Digital Solutions <br />
-              for Every <span className="font-semibold text-transparent bg-clip-text bg-gradient-to-r from-blue-600 via-indigo-600 to-[#e20b27]">Healthcare Need</span>
+              Digital Systems & Information <br />
+              for Every <span className="font-semibold text-transparent bg-clip-text bg-gradient-to-r from-blue-600 via-indigo-600 to-[#e20b27]">Healthcare Organization</span>
             </motion.h2>
 
             <motion.p variants={{ hidden: { opacity: 0, transform: "translate(0px, 15px)" }, visible: { opacity: 1, transform: "translate(0px, 0px)" } }} className="text-[15px] text-slate-500 max-w-lg font-light leading-relaxed">
-              We understand the unique needs of the healthcare industry and deliver technology solutions tailored for every speciality.
+              Web engineering and accurate information design for healthcare organizations of every speciality, aligned with applicable NMC, NDC and AYUSH communication guidelines.
             </motion.p>
           </motion.div>
 
@@ -145,13 +145,13 @@ export default function HealthcareSpecialities() {
                   </div>
                   <div>
                     <h4 className="text-[15px] font-semibold text-[#1a1053] leading-tight">Healthcare Digital Hub</h4>
-                    <p className="text-xs text-slate-400 font-light">Smarter Healthcare Growth</p>
+                    <p className="text-xs text-slate-400 font-light">Clear, Accurate Digital Information</p>
                   </div>
                 </div>
 
                 <div className="flex items-center gap-1.5 px-3 py-1 rounded-full bg-emerald-50/80 border border-emerald-200/60 text-emerald-700 text-[11px] font-medium">
                   <span className="w-1.5 h-1.5 rounded-full bg-emerald-500 animate-ping" />
-                  <span>100+ Practices Scaled</span>
+                  <span>Standards-aligned</span>
                 </div>
               </div>
 
@@ -159,18 +159,18 @@ export default function HealthcareSpecialities() {
               <div className="p-4 rounded-2xl bg-gradient-to-br from-[#f8fafe] to-[#eef2f9] border border-slate-200/50 mb-5 relative z-10">
                 <div className="flex items-center justify-between">
                   <div className="flex flex-col">
-                    <span className="text-2xl font-semibold text-[#1a1053] tracking-tight">3.8x</span>
-                    <span className="text-[10px] font-light text-slate-500 uppercase tracking-wider">Patient Inflow</span>
+                    <span className="text-2xl font-semibold text-[#1a1053] tracking-tight">WCAG</span>
+                    <span className="text-[10px] font-light text-slate-500 uppercase tracking-wider">2.1 AA aligned</span>
                   </div>
                   <div className="h-7 w-[1px] bg-slate-200" />
                   <div className="flex flex-col">
-                    <span className="text-2xl font-semibold text-[#e20b27] tracking-tight">#1 Rank</span>
-                    <span className="text-[10px] font-light text-slate-500 uppercase tracking-wider">Google Maps Pack</span>
+                    <span className="text-2xl font-semibold text-[#e20b27] tracking-tight">Schema</span>
+                    <span className="text-[10px] font-light text-slate-500 uppercase tracking-wider">Structured data</span>
                   </div>
                   <div className="h-7 w-[1px] bg-slate-200" />
                   <div className="flex flex-col">
-                    <span className="text-2xl font-semibold text-emerald-600 tracking-tight">98.4%</span>
-                    <span className="text-[10px] font-light text-slate-500 uppercase tracking-wider">Retention</span>
+                    <span className="text-2xl font-semibold text-emerald-600 tracking-tight">DPDP</span>
+                    <span className="text-[10px] font-light text-slate-500 uppercase tracking-wider">Aligned forms</span>
                   </div>
                 </div>
               </div>
@@ -187,7 +187,7 @@ export default function HealthcareSpecialities() {
                   <Baby size={13} className="text-[#e20b27]" /> IVF & Fertility
                 </span>
                 <span className="px-3 py-1 rounded-xl bg-emerald-50/80 text-emerald-700 border border-emerald-100/80 text-xs font-light flex items-center gap-1.5">
-                  <HeartPulse size={13} className="text-emerald-500" /> Specialist OPDs
+                  <HeartPulse size={13} className="text-emerald-500" /> Specialist Departments
                 </span>
               </div>
             </div>
@@ -226,16 +226,16 @@ export default function HealthcareSpecialities() {
             </div>
             <div>
               <h4 className="font-semibold text-[#1a1053] text-lg leading-none mb-1">
-                <AnimatedCounter to={500} />
+                Healthcare &amp; Enterprise
               </h4>
-              <p className="text-[11px] font-light text-slate-500 uppercase tracking-wider">Healthcare Clients Served</p>
+              <p className="text-[11px] font-light text-slate-500 uppercase tracking-wider">Sectors We Work With</p>
             </div>
           </div>
 
           <div className="flex-1 hidden md:flex items-center justify-center px-8">
             <div className="h-[1px] w-full bg-slate-200 relative">
               <span className="absolute left-1/2 top-1/2 -translate-x-1/2 -translate-y-1/2 bg-[#fafbfe] px-4 text-[10px] font-light text-slate-400 tracking-[0.2em] uppercase whitespace-nowrap">
-                Empowering Healthcare With Innovative Digital Solutions
+                Reliable Digital Foundations For Healthcare
               </span>
             </div>
           </div>

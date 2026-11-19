@@ -28,21 +28,21 @@ export default function AboutHero() {
                   <span className="relative inline-flex rounded-full h-2 w-2 bg-blue-600"></span>
                 </span>
                 <span className="text-xs font-semibold text-[#1a1053] tracking-wide">
-                  Codigix Infotech · Healthcare Growth Agency
+                  About Codigix Infotech
                 </span>
               </div>
 
               <h1 className="text-3xl sm:text-4xl lg:text-5xl font-semibold text-[#1a1053] tracking-tight leading-[1.15]">
-                Specialized Healthcare <br className="hidden md:block" />
+                About <br className="hidden md:block" />
                 <span className="text-transparent bg-clip-text bg-gradient-to-r from-blue-600 via-indigo-600 to-[#e20b27]">
-                  Digital Practice Growth
+                  Codigix Infotech
                 </span>
               </h1>
             </div>
 
             <div className="max-w-[400px] lg:pb-2">
               <p className="text-slate-600 font-light text-base sm:text-lg leading-relaxed">
-                We empower doctors, clinics, and hospitals to build patient trust through Medical SEO, Google Maps 3-Pack, Authority Backlinks, and targeted patient education.
+                Codigix Infotech is a technology and digital communication firm based in Pune, working across healthcare institutions, enterprises, and commercial businesses. Our work centers on dependable web engineering, structured information design, search discoverability, and clear educational communication.
               </p>
             </div>
           </motion.div>
@@ -83,7 +83,7 @@ export default function AboutHero() {
                     </div>
                     <div>
                       <p className="text-[13px] sm:text-sm font-semibold text-[#1a1053] whitespace-nowrap">SEO</p>
-                      <p className="hidden sm:block text-xs text-slate-400 font-light">Organic Ranks</p>
+                      <p className="hidden sm:block text-xs text-slate-400 font-light">Technical Site Health</p>
                     </div>
                   </div>
                 </motion.div>
@@ -95,8 +95,8 @@ export default function AboutHero() {
                       <svg className="w-5 h-5" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path strokeLinecap="round" strokeLinejoin="round" strokeWidth="1.5" d="M17.657 16.657L13.414 20.9a1.998 1.998 0 01-2.827 0l-4.242-4.243a8 8 0 1111.314 0z" /><path strokeLinecap="round" strokeLinejoin="round" strokeWidth="1.5" d="M15 11a3 3 0 11-6 0 3 3 0 016 0z" /></svg>
                     </div>
                     <div>
-                      <p className="text-[13px] sm:text-sm font-semibold text-[#1a1053] whitespace-nowrap">GMB Maps</p>
-                      <p className="hidden sm:block text-xs text-slate-400 font-light">#1 Local Pack</p>
+                      <p className="text-[13px] sm:text-sm font-semibold text-[#1a1053] whitespace-nowrap">Local Profiles</p>
+                      <p className="hidden sm:block text-xs text-slate-400 font-light">Accurate Listings</p>
                     </div>
                   </div>
                 </motion.div>
@@ -109,7 +109,7 @@ export default function AboutHero() {
                     </div>
                     <div>
                       <p className="text-[13px] sm:text-sm font-semibold text-[#1a1053] whitespace-nowrap">Social & Meta</p>
-                      <p className="hidden sm:block text-xs text-slate-400 font-light">Community Reach</p>
+                      <p className="hidden sm:block text-xs text-slate-400 font-light">Educational Content</p>
                     </div>
                   </div>
                 </motion.div>
@@ -121,8 +121,8 @@ export default function AboutHero() {
                       <svg className="w-5 h-5" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path strokeLinecap="round" strokeLinejoin="round" strokeWidth="1.5" d="M13.828 10.172a4 4 0 00-5.656 0l-4 4a4 4 0 105.656 5.656l1.102-1.101m-.758-4.899a4 4 0 005.656 0l4-4a4 4 0 00-5.656-5.656l-1.1 1.1"></path></svg>
                     </div>
                     <div>
-                      <p className="text-[13px] sm:text-sm font-semibold text-[#1a1053] whitespace-nowrap">Backlinks</p>
-                      <p className="hidden sm:block text-xs text-slate-400 font-light">High Authority PR</p>
+                      <p className="text-[13px] sm:text-sm font-semibold text-[#1a1053] whitespace-nowrap">Web Systems</p>
+                      <p className="hidden sm:block text-xs text-slate-400 font-light">Privacy by Design</p>
                     </div>
                   </div>
                 </motion.div>
@@ -148,19 +148,20 @@ export default function AboutHero() {
                     <div className="w-14 h-14 bg-gradient-to-br from-blue-500 to-purple-600 rounded-2xl flex items-center justify-center text-white shadow-lg shadow-blue-500/30 shrink-0">
                       <svg className="w-7 h-7" fill="none" viewBox="0 0 24 24" stroke="currentColor"><path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2.2} d="M9 12l2 2 4-4m5.618-4.016A11.955 11.955 0 0112 2.944a11.955 11.955 0 01-8.618 3.04A12.02 12.02 0 003 9c0 5.591 3.824 10.29 9 11.622 5.176-1.332 9-6.03 9-11.622 0-1.042-.133-2.052-.382-3.016z" /></svg>
                     </div>
-                    <h3 className="text-xl lg:text-[22px] font-semibold text-[#1a1053] leading-snug">Dedicated to <br /><span className="text-transparent bg-clip-text bg-gradient-to-r from-blue-600 via-indigo-600 to-[#e20b27] font-extrabold">Healthcare Growth</span></h3>
+                    <h3 className="text-xl lg:text-[22px] font-semibold text-[#1a1053] leading-snug">Committed to <br /><span className="text-transparent bg-clip-text bg-gradient-to-r from-blue-600 via-indigo-600 to-[#e20b27] font-extrabold">Ethical Communication</span></h3>
                   </div>
 
                   <div className="mb-8 flex-grow">
                     <p className="text-slate-600 text-sm lg:text-[15px] font-light leading-relaxed mb-5">
-                      We are a Pune-based agency with a dedicated focus on the healthcare sector. We help medical brands build a powerful online presence that patients trust.
+                      Our healthcare engagements follow NMC ethical communication principles; dental work follows NDC norms and Ayurvedic work follows AYUSH guidelines. Non-medical sectors sit outside these frameworks.
                     </p>
-                    
+
                     <ul className="space-y-3">
                       {[
-                        "Medical SEO & Google Maps",
-                        "High-DA Healthcare Backlinks",
-                        "Patient-Focused Social Media"
+                        "No Patient Solicitation or Referral Incentives",
+                        "Factual & Non-Promotional Framing",
+                        "Authenticity & AI Transparency",
+                        "Data Protection First (IT Act 2000, DPDP Act 2023 & 2025 Rules)"
                       ].map((item, i) => (
                         <li key={i} className="flex items-center gap-3 text-slate-700 text-sm lg:text-[15px] font-medium">
                           <div className="w-5 h-5 rounded-full bg-blue-50 border border-blue-100 text-blue-600 flex items-center justify-center shrink-0">
@@ -184,8 +185,8 @@ export default function AboutHero() {
                       </div>
                     </div>
                     <div className="text-right">
-                      <div className="text-base lg:text-lg font-extrabold text-[#1a1053] tracking-tight">100+ Clinics</div>
-                      <div className="text-[10px] lg:text-[11px] font-bold text-transparent bg-clip-text bg-gradient-to-r from-blue-600 to-indigo-600 uppercase tracking-widest mt-0.5">Trusted Us</div>
+                      <div className="text-base lg:text-lg font-extrabold text-[#1a1053] tracking-tight">Pune-Based</div>
+                      <div className="text-[10px] lg:text-[11px] font-bold text-transparent bg-clip-text bg-gradient-to-r from-blue-600 to-indigo-600 uppercase tracking-widest mt-0.5">Digital Firm</div>
                     </div>
                   </div>
                 </div>

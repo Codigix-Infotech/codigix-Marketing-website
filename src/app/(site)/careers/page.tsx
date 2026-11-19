@@ -16,9 +16,9 @@ import { pageMetadata } from '@/lib/page-seo';
 
 export const generateMetadata = () =>
   pageMetadata({
-    title: 'Digital Marketing Jobs in Pune | Codigix Infotech Careers',
+    title: 'Careers in Pune | Codigix Infotech',
     description:
-      'Join Pune’s healthcare digital marketing agency. We’re hiring SEO specialists, Google Ads marketers, video creators and growth strategists.',
+      'Join Codigix Infotech, a Pune-based technology and digital communication firm. We hire engineers, SEO specialists, content writers and designers who value ethical communication and data protection.',
     path: '/careers',
   });
 
@@ -69,7 +69,7 @@ export default async function CareersPage() {
                 Don&apos;t See the Exact Role? Let&apos;s Talk Anyway.
               </h2>
               <p className="text-slate-600 text-sm sm:text-base leading-relaxed">
-                We are constantly expanding our digital marketing roster. Send us your resume and past campaign wins, or reach out directly to our talent scouting team.
+                We are always glad to hear from strong candidates. Send us your resume and examples of your work, or reach out directly to our hiring team.
               </p>
 
               {/* Direct Contact Pills */}

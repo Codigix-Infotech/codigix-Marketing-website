@@ -11,7 +11,6 @@ import {
   Activity,
   Globe,
   MapPin,
-  Star,
   TrendingUp,
   Zap,
   Target,
@@ -41,23 +40,23 @@ export interface ClientShowcaseSectionProps {
 
 const defaultAdvantages: AdvantageItem[] = [
   {
-    title: "Performance-Driven Approach",
-    desc: "We focus on real ROI, qualified patient leads, and sales, not just vanity impressions.",
+    title: "Engineering-Led Approach",
+    desc: "We focus on dependable website engineering, clear information hierarchy, and accessible, fast-loading pages.",
     icon: Zap
   },
   {
-    title: "Conversion-Focused Architecture",
-    desc: "Traffic is useless without conversions — we optimize funnels for phone calls and direct bookings.",
+    title: "Clear Information Architecture",
+    desc: "Factual service and department pages, logical navigation, and privacy and consent disclosures built into every touchpoint.",
     icon: Target
   },
   {
-    title: "Data-Backed Strategy",
-    desc: "Every recommendation and campaign is backed by deep analytics, search volume, and intent insights.",
+    title: "Documented, Reviewed Process",
+    desc: "Each deliverable passes an internal review for factual accuracy, credential disclosures, privacy safeguards, and AI labeling.",
     icon: BarChart3
   },
   {
-    title: "Local Market Mastery in Pune & PCMC",
-    desc: "Decade of experience dominating local searches across Pune, PCMC, Wakad, Baner, and surrounding hubs.",
+    title: "Local Presence in Pune & PCMC",
+    desc: "A Pune-based team working with organizations across Pune, PCMC, Wakad, Baner, and surrounding areas.",
     icon: MapPin
   }
 ];
@@ -65,112 +64,112 @@ const defaultAdvantages: AdvantageItem[] = [
 export const clientShowcaseList = [
   {
     name: "Dr. Sheetal's Glow Clinic",
-    tag: "Healthcare & Dermatology",
+    tag: "Healthcare & Dermatology (NMC scope)",
     tagColor: "bg-emerald-50 text-emerald-700 border-emerald-200/80",
     avatarBg: "bg-emerald-50 text-emerald-600 border-emerald-200",
     logo: "/clients/sheetals-glow.webp",
     coverImage: "https://images.unsplash.com/photo-1505751172876-fa1923c5c528?auto=format&fit=crop&q=80&w=800",
     icon: Stethoscope,
-    duration: "6+ Mos Active",
-    result: "+380% Inquiries",
-    rankKeyword: "Rank #1: Skin Clinic PCMC",
+    duration: "Ongoing engagement",
+    result: "Website & Information Architecture",
+    rankKeyword: "Factual service & department pages",
     area: "Pimpri-Chinchwad",
-    rating: "5.0",
-    reviews: "140+ Reviews",
+    rating: "",
+    reviews: "",
     trendPath: "M0 18 Q 20 16, 40 10 T 70 6 T 90 2"
   },
   {
-    name: "CorpLegal Solutions & Co",
-    tag: "Corporate Law & B2B",
-    tagColor: "bg-blue-50 text-blue-700 border-blue-200/80",
-    avatarBg: "bg-blue-50 text-blue-600 border-blue-200",
-    logo: "/clients/corplegal.webp",
-    coverImage: "https://images.unsplash.com/photo-1486406146926-c627a92ad1ab?auto=format&fit=crop&q=80&w=800",
-    icon: Building2,
-    duration: "1 Year Active",
-    result: "#1 Organic Authority",
-    rankKeyword: "Rank #1: Corporate Law Pune",
-    area: "Pune & PCMC",
-    rating: "4.9",
-    reviews: "85+ Reviews",
-    trendPath: "M0 20 Q 25 18, 45 11 T 72 5 T 90 2"
-  },
-  {
-    name: "Precision Tech Engineering",
-    tag: "Manufacturing & Industrial",
-    tagColor: "bg-amber-50 text-amber-800 border-amber-200/80",
-    avatarBg: "bg-amber-50 text-amber-600 border-amber-200",
-    logo: "/clients/regain.webp",
-    coverImage: "https://images.unsplash.com/photo-1581091226825-a6a2a5aee158?auto=format&fit=crop&q=80&w=800",
-    icon: Factory,
-    duration: "8 Mos Active",
-    result: "High-Ticket RFQs",
-    rankKeyword: "Rank #1: Bhosari MIDC Machining",
-    area: "Bhosari MIDC",
-    rating: "5.0",
-    reviews: "MIDC Verified",
-    trendPath: "M0 19 Q 22 17, 42 12 T 68 7 T 90 3"
-  },
-  {
-    name: "Bakul Hospitality & Catering",
-    tag: "Hospitality & Events",
-    tagColor: "bg-purple-50 text-purple-700 border-purple-200/80",
-    avatarBg: "bg-purple-50 text-purple-600 border-purple-200",
-    logo: "/clients/bakul.webp",
-    coverImage: "https://images.unsplash.com/photo-1555244162-803834f70033?auto=format&fit=crop&q=80&w=800",
-    icon: UtensilsCrossed,
-    duration: "1 Year Active",
-    result: "3.4x Phone Calls",
-    rankKeyword: "Top 3: Event Catering PCMC",
-    area: "Pune Metro",
-    rating: "4.9",
-    reviews: "210+ Reviews",
-    trendPath: "M0 20 Q 20 19, 45 13 T 70 6 T 90 2"
-  },
-  {
     name: "Canopy Healthcare & Aligners",
-    tag: "Dental & Specialized Care",
+    tag: "Dental & Specialized Care (NDC scope)",
     tagColor: "bg-cyan-50 text-cyan-700 border-cyan-200/80",
     avatarBg: "bg-cyan-50 text-cyan-600 border-cyan-200",
     logo: "/clients/canopy.webp",
     coverImage: "https://images.unsplash.com/photo-1588776814546-1ffcf47267a5?auto=format&fit=crop&q=80&w=800",
     icon: Activity,
-    duration: "1 Year Active",
-    result: "185+ 5★ Reviews",
-    rankKeyword: "Rank #1: Invisalign Wakad",
+    duration: "Ongoing engagement",
+    result: "Website & Accessibility Work",
+    rankKeyword: "Accurate listings & service pages",
     area: "Wakad & Hinjawadi",
-    rating: "5.0",
-    reviews: "185+ Reviews",
+    rating: "",
+    reviews: "",
     trendPath: "M0 18 Q 24 15, 48 9 T 72 4 T 90 1"
   },
   {
+    name: "CorpLegal Solutions & Co",
+    tag: "Corporate Law & B2B (Non-medical)",
+    tagColor: "bg-blue-50 text-blue-700 border-blue-200/80",
+    avatarBg: "bg-blue-50 text-blue-600 border-blue-200",
+    logo: "/clients/corplegal.webp",
+    coverImage: "https://images.unsplash.com/photo-1486406146926-c627a92ad1ab?auto=format&fit=crop&q=80&w=800",
+    icon: Building2,
+    duration: "Ongoing engagement",
+    result: "Structured Web Content",
+    rankKeyword: "Technical SEO hygiene & site structure",
+    area: "Pune & PCMC",
+    rating: "",
+    reviews: "",
+    trendPath: "M0 20 Q 25 18, 45 11 T 72 5 T 90 2"
+  },
+  {
+    name: "Precision Tech Engineering",
+    tag: "Manufacturing & Industrial (Non-medical)",
+    tagColor: "bg-amber-50 text-amber-800 border-amber-200/80",
+    avatarBg: "bg-amber-50 text-amber-600 border-amber-200",
+    logo: "/clients/regain.webp",
+    coverImage: "https://images.unsplash.com/photo-1581091226825-a6a2a5aee158?auto=format&fit=crop&q=80&w=800",
+    icon: Factory,
+    duration: "Ongoing engagement",
+    result: "Catalog & Enquiry Workflows",
+    rankKeyword: "Product pages & technical SEO",
+    area: "Bhosari MIDC",
+    rating: "",
+    reviews: "",
+    trendPath: "M0 19 Q 22 17, 42 12 T 68 7 T 90 3"
+  },
+  {
+    name: "Bakul Hospitality & Catering",
+    tag: "Hospitality & Events (Non-medical)",
+    tagColor: "bg-purple-50 text-purple-700 border-purple-200/80",
+    avatarBg: "bg-purple-50 text-purple-600 border-purple-200",
+    logo: "/clients/bakul.webp",
+    coverImage: "https://images.unsplash.com/photo-1555244162-803834f70033?auto=format&fit=crop&q=80&w=800",
+    icon: UtensilsCrossed,
+    duration: "Ongoing engagement",
+    result: "Responsive Website Refresh",
+    rankKeyword: "Clear service pages & navigation",
+    area: "Pune Metro",
+    rating: "",
+    reviews: "",
+    trendPath: "M0 20 Q 20 19, 45 13 T 70 6 T 90 2"
+  },
+  {
     name: "Sanskruti Agro Tourism",
-    tag: "Tourism & Leisure",
+    tag: "Tourism & Leisure (Non-medical)",
     tagColor: "bg-rose-50 text-rose-700 border-rose-200/80",
     avatarBg: "bg-rose-50 text-rose-600 border-rose-200",
     logo: "/clients/sanskruti-agro-farm.webp",
     coverImage: "https://images.unsplash.com/photo-1500651230702-0e2d8a49d4ad?auto=format&fit=crop&q=80&w=800",
     icon: Globe,
-    duration: "4 Mos Active",
-    result: "+300% Footfall",
-    rankKeyword: "Rank #1: Agro Resort Pune",
+    duration: "Ongoing engagement",
+    result: "Responsive Website & Listings",
+    rankKeyword: "Accurate listing details",
     area: "Pune Outskirts",
-    rating: "4.9",
-    reviews: "320+ Reviews",
+    rating: "",
+    reviews: "",
     trendPath: "M0 19 Q 20 18, 44 11 T 70 5 T 90 2"
   }
 ];
 
 export function ClientShowcaseSection({
-  badgeText = "Proven Track Record & Client Success",
-  headingPrefix = "Why Businesses Across PCMC & Pune",
-  headingGradient = "Partner With Codigix Infotech",
-  subtitle = "Delivering verified business growth, high-ticket leads, and top-3 Google rankings across enterprise B2B, healthcare clinics, local services, and retail brands.",
-  strategicAdvantageTitle = "The Codigix Strategic Advantage",
-  strategicAdvantageSubtitle = "We blend technical mastery with deep local consumer psychology across Pune & PCMC.",
+  badgeText = "Selected Work by Regulatory Scope",
+  headingPrefix = "Organizations Across PCMC & Pune",
+  headingGradient = "Work With Codigix Infotech",
+  subtitle = "Website architecture, factual service pages, and technical hygiene for healthcare organizations (NMC and NDC frameworks) and non-medical businesses, which sit outside NMC scope.",
+  strategicAdvantageTitle = "How We Work",
+  strategicAdvantageSubtitle = "Engineering, accuracy, and privacy-by-design across Pune & PCMC.",
   advantages = defaultAdvantages,
-  guaranteeTitle = "100% White-Hat Growth Guarantee",
-  guaranteeQuote = '"Engineered specifically for manufacturers, growing enterprises, healthcare providers, and local services in Pune & PCMC who demand real business revenue over superficial metrics."'
+  guaranteeTitle = "Ethical Communication Commitment",
+  guaranteeQuote = '"Built for hospitals, clinics, enterprises, and local businesses in Pune & PCMC that need accurate, accessible, and privacy-aligned digital systems. Healthcare engagements follow NMC (allopathic), NDC (dental), and AYUSH (Ayurvedic) communication principles."'
 }: ClientShowcaseSectionProps) {
   const col1 = clientShowcaseList.slice(0, 3);
   const col2 = clientShowcaseList.slice(3, 6);
@@ -205,7 +204,7 @@ export function ClientShowcaseSection({
             </span>
           </div>
 
-          {/* Bottom Growth Result Pill */}
+          {/* Bottom Scope Pill */}
           <div className="absolute bottom-2.5 right-2.5 z-10">
             <div className="flex items-center gap-1 px-2.5 py-0.5 rounded-lg bg-emerald-600/95 backdrop-blur-md text-white shadow-md border border-emerald-400/40 text-[11px] font-bold group-hover:scale-105 transition-transform">
               <TrendingUp size={11} className="stroke-[2.5]" />
@@ -237,7 +236,7 @@ export function ClientShowcaseSection({
                   {client.name}
                 </h4>
                 <span className="text-[10px] font-light text-slate-500 truncate block">
-                  {client.area} • Verified Client
+                  {client.area}
                 </span>
               </div>
             </div>
@@ -249,22 +248,12 @@ export function ClientShowcaseSection({
                   G
                 </div>
                 <div className="truncate">
-                  <div className="text-[8px] font-bold text-slate-400 uppercase tracking-wider">Top Google Ranking</div>
+                  <div className="text-[8px] font-bold text-slate-400 uppercase tracking-wider">Work Delivered</div>
                   <div className="text-[11px] font-bold text-slate-800 truncate">{client.rankKeyword}</div>
                 </div>
               </div>
               <div className="shrink-0 flex flex-col items-end">
-                <svg className="w-14 h-4 text-emerald-500 overflow-visible" viewBox="0 0 90 24" fill="none">
-                  <path
-                    d={client.trendPath}
-                    stroke="currentColor"
-                    strokeWidth="2.5"
-                    strokeLinecap="round"
-                    strokeLinejoin="round"
-                  />
-                  <circle cx="90" cy="2" r="3.5" className="fill-emerald-500" />
-                </svg>
-                <span className="text-[8px] font-bold text-emerald-700">Verified</span>
+                
               </div>
             </div>
           </div>
@@ -275,15 +264,7 @@ export function ClientShowcaseSection({
               <MapPin size={11} className="text-[#e20b27] shrink-0" />
               <span>{client.area}</span>
             </div>
-            <div className="flex items-center gap-1 bg-amber-50/80 border border-amber-200/60 px-1.5 py-0.5 rounded-lg">
-              <div className="flex text-amber-400">
-                {[...Array(5)].map((_, i) => (
-                  <Star key={i} size={9} className="fill-amber-400 text-amber-400" />
-                ))}
-              </div>
-              <span className="text-[10px] font-bold text-slate-800">{client.rating}</span>
-              <span className="text-[9px] text-slate-500">({client.reviews})</span>
-            </div>
+            <div className="text-[10px] font-medium text-slate-500">Scope-based engagement</div>
           </div>
         </div>
       </div>
@@ -430,7 +411,7 @@ export function ClientShowcaseSection({
                   <span className="relative inline-flex rounded-full h-2 w-2 bg-emerald-500"></span>
                 </span>
                 <span className="text-xs font-bold text-[#1a1053]">
-                  Live Verified Client Search Results
+                  Selected Engagements by Framework
                 </span>
               </div>
               <div className="flex items-center gap-1.5 px-2.5 py-1 rounded-full bg-slate-100/90 border border-slate-200/70 text-[10px] font-medium text-slate-500">

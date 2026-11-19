@@ -265,7 +265,7 @@ export default async function BlogPostPage({ params }: Props) {
             <p className="mt-5 flex items-start gap-2.5 rounded-xl border border-emerald-200 bg-emerald-50/70 px-4 py-3 text-sm text-emerald-900">
               <ShieldCheck size={18} className="shrink-0 text-emerald-600 mt-px" />
               <span>
-                Medically reviewed by <strong className="font-semibold">{reviewer.name}</strong>
+                Content reviewed by <strong className="font-semibold">{reviewer.name}</strong>
                 {post.reviewer_credentials ? `, ${post.reviewer_credentials}` : ''}
                 {reviewedOn && <span className="text-emerald-700"> · <time dateTime={String(post.last_reviewed_at)}>{reviewedOn}</time></span>}
               </span>
@@ -378,8 +378,8 @@ export default async function BlogPostPage({ params }: Props) {
               </section>
 
               {reviewer && (
-                <section aria-label="Medical review" className="rounded-2xl border border-emerald-200 bg-gradient-to-br from-emerald-50/80 to-white p-6">
-                  <p className="text-[11px] font-bold uppercase tracking-widest text-emerald-700 mb-4">Medically reviewed</p>
+                <section aria-label="Content review" className="rounded-2xl border border-emerald-200 bg-gradient-to-br from-emerald-50/80 to-white p-6">
+                  <p className="text-[11px] font-bold uppercase tracking-widest text-emerald-700 mb-4">Reviewed by</p>
                   <div className="flex items-center gap-4 mb-4">
                     <span className="w-16 h-16 rounded-full bg-emerald-600 text-white flex items-center justify-center shrink-0 ring-2 ring-white shadow-sm">
                       <ShieldCheck size={28} />
@@ -390,11 +390,20 @@ export default async function BlogPostPage({ params }: Props) {
                     </div>
                   </div>
                   <p className="text-[15px] text-slate-600 leading-relaxed">
-                    The medical information in this article was checked for accuracy{reviewedOn ? <> on <time dateTime={String(post.last_reviewed_at)}>{reviewedOn}</time></> : ''}.
+                    The information in this article was reviewed for factual accuracy and source references{reviewedOn ? <> on <time dateTime={String(post.last_reviewed_at)}>{reviewedOn}</time></> : ''}.
                   </p>
                 </section>
               )}
             </div>
+
+            {/* Editorial, AI-assistance & reference-sources note */}
+            <section aria-label="Editorial notes" className="mt-10 rounded-2xl border border-slate-200 bg-slate-50/70 p-6 text-[14px] text-slate-600 leading-relaxed space-y-3">
+              <p className="text-[11px] font-bold uppercase tracking-widest text-slate-400">Editorial notes</p>
+              <p><strong className="font-semibold text-slate-800">Publication &amp; review:</strong> Publication date, author and reviewer details are shown above. Articles undergo internal pre-publication review for factual accuracy, credential and registration disclosures, privacy safeguards and AI labelling.</p>
+              <p><strong className="font-semibold text-slate-800">AI assistance:</strong> AI tools may assist with drafting, research or media preparation. Where they do, content is checked and edited by our team before publication.</p>
+              <p><strong className="font-semibold text-slate-800">Reference sources:</strong> Sources and references are cited within the article text where applicable. Public-health education draws on established consensus and published literature.</p>
+              <p><strong className="font-semibold text-slate-800">Not medical advice:</strong> This article is for general informational purposes only. It does not constitute medical advice, diagnosis or treatment, and does not guarantee specific search rankings or clinical or business outcomes.</p>
+            </section>
 
             {/* Prev / next */}
             {(prev || next) && (
@@ -434,11 +443,11 @@ export default async function BlogPostPage({ params }: Props) {
 
               <section className="relative overflow-hidden rounded-2xl bg-gradient-to-br from-[#1a1053] to-[#2d1d8a] p-6 text-white">
                 <div aria-hidden="true" className="absolute -right-10 -top-10 w-36 h-36 rounded-full bg-[#e20b27]/25 blur-2xl" />
-                <p className="relative text-[11px] font-bold uppercase tracking-widest text-white/60 mb-3">Free audit</p>
-                <p className="relative text-xl font-bold leading-snug text-white mb-2">Want this working for your clinic?</p>
-                <p className="relative text-sm text-white/75 leading-relaxed mb-5">Get a free SEO &amp; Google Maps audit with a clear action plan for your practice.</p>
+                <p className="relative text-[11px] font-bold uppercase tracking-widest text-white/60 mb-3">Editorial standards</p>
+                <p className="relative text-xl font-bold leading-snug text-white mb-2">Questions about this article?</p>
+                <p className="relative text-sm text-white/75 leading-relaxed mb-5">Our content is for general information only and is reviewed before publication. Get in touch with our team to discuss our content workflow.</p>
                 <Link href="/contact" className="relative inline-flex w-full items-center justify-center gap-2 rounded-xl bg-white px-5 py-3 text-sm font-semibold text-[#1a1053] hover:bg-[#e20b27] hover:text-white transition-colors">
-                  Request free audit <ArrowRight size={15} />
+                  Contact our team <ArrowRight size={15} />
                 </Link>
               </section>
             </div>

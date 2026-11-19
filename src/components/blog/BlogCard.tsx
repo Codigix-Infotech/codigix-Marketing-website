@@ -130,7 +130,7 @@ export default function BlogCard({ post, priority = false }: { post: BlogSummary
                 {post.author_name || 'Codigix Team'}
               </span>
               <span className="text-[10px] text-slate-400 truncate">
-                {post.author_role || 'Growth Strategist'}
+                {post.author_role || 'Content Team'}
               </span>
             </div>
           </div>

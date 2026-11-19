@@ -3,20 +3,20 @@ import { HelpCircle } from 'lucide-react';
 
 const faqs = [
   {
-    q: 'Do I need previous healthcare marketing experience to apply?',
-    a: 'Not necessarily! If you have strong fundamental skills in SEO, Google Ads, short-form video creation, or web UX, we will train you on our proprietary medical marketing frameworks, HIPAA compliance, and local patient journey systems.',
+    q: 'Do I need previous healthcare experience to apply?',
+    a: 'Not necessarily. If you have strong fundamentals in web development, technical SEO, content, video or UX, we will train you on our internal review practices, including ethical healthcare communication principles (NMC, NDC and AYUSH frameworks where relevant), the Information Technology Act, 2000 and the Digital Personal Data Protection Act, 2023 (and 2025 Rules).',
   },
   {
     q: 'What does your hybrid work policy look like?',
     a: 'We operate with high trust. Most roles are hybrid (2–3 days in our Pune creative studio for team jams and client strategy huddles, and the rest from home). Fully remote options are also available for select senior content and technical roles.',
   },
   {
-    q: 'How are performance bonuses calculated?',
-    a: 'We believe in sharing the upside. For media buyers and account leads, campaign ROAS and client retention targets unlock quarterly bonuses. For SEOs and creatives, organic growth milestones and viral reach benchmarks trigger direct financial incentives.',
+    q: 'How are performance reviews and incentives handled?',
+    a: 'Roles are reviewed regularly against agreed delivery, quality and compliance goals. Incentives are never tied to acquiring individual patients or to patient referrals; details for each role are shared during the interview process.',
   },
   {
     q: 'What tools and equipment will I have access to?',
-    a: 'Every team member gets modern workstation hardware plus enterprise logins to Ahrefs, Semrush, SurferSEO, Meta Business Suite, Adobe Premiere Pro, Midjourney, Figma, and OpenAI/Claude developer tiers.',
+    a: 'Every team member gets modern workstation hardware plus licensed access to the professional tools your role needs, such as SEO, design, video and development tools. Where AI tools are used, outputs are reviewed and labelled in line with our AI-transparency practice.',
   },
   {
     q: 'How fast is the interview and offer timeline?',

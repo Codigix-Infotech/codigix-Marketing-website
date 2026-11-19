@@ -7,14 +7,10 @@ import HeroDashboard from './HeroDashboard';
 import type { HeroDashboardData } from '@/lib/types';
 
 const healthcareCategories = [
-   "Healthcare Brands",
-   "Dental Clinics",
+   "Healthcare Organizations",
    "Hospitals",
-   "IVF Centers",
-   "Hair Clinics",
-   "Cancer Centers",
-   "Skin Clinics",
-   "Doctors & Clinics"
+   "Clinics",
+   "Enterprises"
 ];
 
 // Custom hook for animated counter
@@ -170,16 +166,16 @@ export default function HeroSection({ dashboard }: { dashboard?: HeroDashboardDa
                            <span className="animate-ping absolute inline-flex h-full w-full rounded-full bg-white opacity-75"></span>
                            <span className="relative inline-flex rounded-full h-1.5 w-1.5 bg-white"></span>
                         </span>
-                        Pune
+                        PUNE |
                      </span>
                      <span className="text-[11px] sm:text-xs font-semibold text-[#1a1053] tracking-wider uppercase">
-                        Healthcare Marketing & Patient Acquisition
+                        DIGITAL INFRASTRUCTURE & ETHICAL HEALTHCARE COMMUNICATION
                      </span>
                   </div>
 
                   {/* Main Headline with Animated Categories - Stable Height & No Layout Jump */}
                   <h1 className="text-4xl sm:text-5xl lg:text-[3.2rem] xl:text-[3.8rem] font-semibold leading-[1.12] text-[#1a1053] tracking-tight mb-5">
-                     Strategy That Grows <br />
+                     Digital Systems & Clear Information Architecture for <br />
                      <span className="relative inline-flex items-center h-[1.24em] overflow-hidden align-middle">
                         <AnimatePresence mode="popLayout">
                            <motion.span
@@ -199,18 +195,15 @@ export default function HeroSection({ dashboard }: { dashboard?: HeroDashboardDa
 
                   {/* Subtitle Paragraph */}
                   <p className="text-base sm:text-lg text-slate-600 mb-7 max-w-xl font-light leading-relaxed">
-                     Codigix Infotech is Pune’s premier healthcare growth agency — helping hospitals, clinics & specialists win more patients with{' '}
-                     <span className="font-medium text-[#1a1053]">#1 Google Maps rankings</span>,{' '}
-                     <span className="font-medium text-[#1a1053]">healthcare SEO</span> and{' '}
-                     <span className="font-medium text-[#1a1053]">content that converts</span>.
+                     Codigix Infotech builds reliable websites, accurate institutional profiles, and structured public-health content for hospitals, clinics, and enterprises—designed around transparency, accessibility, and regulatory alignment.
                   </p>
 
                   {/* Proof Strip */}
                   <div className="grid grid-cols-3 w-full max-w-xl mb-8 rounded-2xl bg-white/80 backdrop-blur-sm border border-slate-200/80 shadow-[0_4px_20px_-8px_rgba(26,16,83,0.12)] divide-x divide-slate-200/80">
                      {[
-                        { icon: Users, value: '75+', label: 'Healthcare clients', tint: 'text-blue-600 bg-blue-50' },
-                        { icon: MapPin, value: '94%', label: '#1 on Google Maps', tint: 'text-emerald-600 bg-emerald-50' },
-                        { icon: TrendingUp, value: '4.8x', label: 'Average ad ROAS', tint: 'text-[#e20b27] bg-rose-50' },
+                        { icon: Globe, value: 'WCAG', label: '2.1 AA aligned', tint: 'text-blue-600 bg-blue-50' },
+                        { icon: ShieldCheck, value: 'DPDP', label: 'Aligned forms', tint: 'text-emerald-600 bg-emerald-50' },
+                        { icon: TrendingUp, value: 'CWV', label: 'Core Web Vitals focused', tint: 'text-[#e20b27] bg-rose-50' },
                      ].map(({ icon: Icon, value, label, tint }) => (
                         <div key={label} className="flex items-center gap-2.5 px-3 sm:px-4 py-3">
                            <div className={`hidden 2xl:flex w-9 h-9 rounded-xl items-center justify-center shrink-0 ${tint}`}>
@@ -230,7 +223,7 @@ export default function HeroSection({ dashboard }: { dashboard?: HeroDashboardDa
                         href="https://codigix.co/about-us/"
                         className="group inline-flex items-center justify-center gap-3 pl-7 pr-2 py-2 w-full sm:w-auto bg-[#1a1053] hover:bg-[#26186b] text-white rounded-full font-medium text-[15px] shadow-[0_10px_25px_rgba(26,16,83,0.25)] hover:shadow-[0_14px_35px_rgba(26,16,83,0.35)] hover:-translate-y-0.5 active:translate-y-0 transition-all duration-300"
                      >
-                        <span>Discover More About Us</span>
+                        <span>Explore Our Services</span>
                         <div className="w-10 h-10 rounded-full bg-white/15 flex items-center justify-center group-hover:bg-[#e20b27] group-hover:text-white transition-colors duration-300">
                            <ArrowRight size={16} className="group-hover:translate-x-0.5 transition-transform" />
                         </div>
@@ -243,20 +236,20 @@ export default function HeroSection({ dashboard }: { dashboard?: HeroDashboardDa
                         </span>
                         <span className="flex flex-col items-start leading-tight">
                            <span>Watch Video</span>
-                           <span className="text-[11px] font-normal text-slate-500">See how we grow clinics</span>
+                           <span className="text-[11px] font-normal text-slate-500">Schedule a Discovery Call</span>
                         </span>
                      </button>
                   </div>
 
-                  {/* Channels we manage */}
+                  {/* Our services */}
                   <div className="flex flex-wrap items-center gap-2">
-                     <span className="text-[10px] font-semibold uppercase tracking-[0.14em] text-slate-400 mr-1">Channels we manage</span>
+                     <span className="text-[10px] font-semibold uppercase tracking-[0.14em] text-slate-400 mr-1">Our services</span>
                      {[
                         { icon: TrendingUp, label: 'SEO', color: 'text-emerald-600' },
-                        { icon: MapPin, label: 'Google Maps', color: 'text-blue-600' },
-                        { icon: Link2, label: 'Backlinks', color: 'text-purple-600' },
-                        { icon: Instagram, label: 'Instagram & Meta', color: 'text-pink-600' },
-                        { icon: Youtube, label: 'YouTube', color: 'text-[#e20b27]' },
+                        { icon: MapPin, label: 'Local Profiles', color: 'text-blue-600' },
+                        { icon: Link2, label: 'Content Structure', color: 'text-purple-600' },
+                        { icon: Instagram, label: 'Educational Social', color: 'text-pink-600' },
+                        { icon: Youtube, label: 'Educational Video', color: 'text-[#e20b27]' },
                      ].map(({ icon: Icon, label, color }) => (
                         <span key={label} className="inline-flex items-center gap-1.5 px-2.5 py-1 rounded-full bg-white border border-slate-200/80 text-[11px] font-medium text-slate-700 shadow-[0_1px_2px_rgba(15,23,42,0.04)]">
                            <Icon size={12} className={color} /> {label}
@@ -293,8 +286,8 @@ export default function HeroSection({ dashboard }: { dashboard?: HeroDashboardDa
                         <Link2 size={14} />
                      </div>
                      <div className="leading-tight">
-                        <div className="text-[13px] font-extrabold text-[#1a1053]">5,000+</div>
-                        <div className="text-[9.5px] font-medium text-slate-500">High-DA Backlinks</div>
+                        <div className="text-[13px] font-extrabold text-[#1a1053]">Structured Data</div>
+                        <div className="text-[9.5px] font-medium text-slate-500">Schema &amp; metadata hygiene</div>
                      </div>
                   </motion.div>
 
@@ -309,10 +302,10 @@ export default function HeroSection({ dashboard }: { dashboard?: HeroDashboardDa
                      </div>
                      <div className="leading-tight">
                         <div className="text-[13px] font-extrabold flex items-center gap-1">
-                           #1 Rank
+                           Accurate Listings
                            <span className="flex h-1.5 w-1.5 rounded-full bg-emerald-400 animate-pulse" />
                         </div>
-                        <div className="text-[9.5px] font-medium text-slate-300">Google Maps 3-Pack</div>
+                        <div className="text-[9.5px] font-medium text-slate-300">Location, hours &amp; departments</div>
                      </div>
                   </motion.div>
 
@@ -327,10 +320,9 @@ export default function HeroSection({ dashboard }: { dashboard?: HeroDashboardDa
                      </div>
                      <div className="leading-tight">
                         <div className="text-[13px] font-extrabold text-[#1a1053] flex items-center gap-1">
-                           2.4M+
-                           <span className="text-[9px] font-bold text-emerald-600 flex items-center"><TrendingUp size={9} />38%</span>
+                           Educational Video
                         </div>
-                        <div className="text-[9.5px] font-medium text-slate-500">Video Reach</div>
+                        <div className="text-[9.5px] font-medium text-slate-500">Credential disclosures &amp; AI labels</div>
                      </div>
                   </motion.div>
 
@@ -360,35 +352,28 @@ export default function HeroSection({ dashboard }: { dashboard?: HeroDashboardDa
                   transition={{ duration: 0.6, delay: 0.15 }}
                   className="mt-8 sm:mt-10 grid grid-cols-1 sm:grid-cols-2 gap-2.5 w-full max-w-[620px]"
                >
-                  {/* Card 1: Doctor Trust & Star Rating */}
+                  {/* Card 1: Transparency */}
                   <div className="flex items-center gap-2.5 p-2.5 px-3.5 rounded-2xl bg-white/90 backdrop-blur-xl border border-slate-200/80 shadow-[0_4px_14px_rgba(26,16,83,0.04)] hover:shadow-md transition-all">
-                     <div className="flex -space-x-2 shrink-0">
-                        <div className="w-7 h-7 rounded-full border-2 border-white bg-gradient-to-tr from-blue-600 to-indigo-600 flex items-center justify-center text-white text-[9px] font-medium shadow-sm">Dr</div>
-                        <div className="w-7 h-7 rounded-full border-2 border-white bg-gradient-to-tr from-emerald-600 to-teal-600 flex items-center justify-center text-white text-[9px] font-medium shadow-sm">MD</div>
-                        <div className="w-7 h-7 rounded-full border-2 border-white bg-[#1a1053] text-[#e20b27] flex items-center justify-center text-[8px] font-medium shadow-sm">+97</div>
+                     <div className="w-7 h-7 rounded-xl bg-blue-50 flex items-center justify-center text-blue-600 shrink-0">
+                        <CheckCircle size={16} />
                      </div>
                      <div className="flex flex-col">
-                        <div className="flex items-center gap-1 text-amber-400">
-                           {[...Array(5)].map((_, i) => (
-                              <Star key={i} size={10} className="fill-amber-400 text-amber-400" />
-                           ))}
-                           <span className="text-[10px] font-semibold text-slate-800 ml-1">4.9/5 Rating</span>
-                        </div>
-                        <span className="text-[10px] font-light text-slate-500">Trusted by 100+ Brands</span>
+                        <span className="text-[11px] font-semibold text-slate-800">Factual &amp; Non-Promotional</span>
+                        <span className="text-[10px] font-light text-slate-500">Accuracy-first healthcare communication</span>
                      </div>
                   </div>
 
-                  {/* Card 2: Verified Healthcare Growth Guarantee */}
+                  {/* Card 2: Privacy */}
                   <div className="flex items-center gap-2.5 p-2.5 px-3.5 rounded-2xl bg-gradient-to-br from-[#1a1053] to-[#2b1f6f] text-white shadow-[0_4px_14px_rgba(26,16,83,0.1)] border border-[#382f7c]">
                      <div className="w-7 h-7 rounded-xl bg-white/10 flex items-center justify-center text-[#e20b27] shrink-0 border border-white/10">
                         <ShieldCheck size={16} className="text-[#e20b27]" />
                      </div>
                      <div className="flex flex-col">
                         <div className="flex items-center gap-1.5">
-                           <span className="text-[11px] font-semibold tracking-wide text-white">Verified ROI Results</span>
+                           <span className="text-[11px] font-semibold tracking-wide text-white">Data Protection First</span>
                            <span className="flex h-1.5 w-1.5 rounded-full bg-emerald-400 animate-pulse" />
                         </div>
-                        <span className="text-[9px] text-slate-300 font-light">Data-Driven Patient Inquiries</span>
+                        <span className="text-[9px] text-slate-300 font-light">IT Act, 2000 &amp; DPDP Act, 2023 aligned</span>
                      </div>
                   </div>
                </motion.div>

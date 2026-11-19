@@ -16,10 +16,10 @@ export default function WhyChooseUs() {
   const y3 = useSpring(useTransform(scrollYProgress, [0, 1], [0, -200]));
 
   const features = [
-    { title: "Specialized in Healthcare", icon: <Target className="text-blue-500" size={32} /> },
-    { title: "Measurable ROI", icon: <TrendingUp className="text-green-500" size={32} /> },
-    { title: "Patient-Centric Approach", icon: <Users className="text-purple-500" size={32} /> },
-    { title: "HIPAA Compliant Strategies", icon: <ShieldCheck className="text-primary-accent" size={32} /> }
+    { title: "Healthcare Sector Experience", icon: <Target className="text-blue-500" size={32} /> },
+    { title: "Transparent Reporting", icon: <TrendingUp className="text-green-500" size={32} /> },
+    { title: "Factual, Accessible Information", icon: <Users className="text-purple-500" size={32} /> },
+    { title: "IT Act & DPDP Act Aligned", icon: <ShieldCheck className="text-primary-accent" size={32} /> }
   ];
 
   return (
@@ -44,7 +44,7 @@ transition={{ duration: 0.5, ease: [0.22, 1, 0.36, 1] }}
             viewport={{ once: true }}
             className="text-4xl md:text-5xl font-bold text-primary-text mb-6"
           >
-            Why Healthcare Brands <span className="text-gradient">Choose Us</span>
+            Why Healthcare Organizations <span className="text-gradient">Choose Us</span>
           </motion.h2>
           <motion.p 
             initial={{ opacity: 0, transform: "translate(0px, 30px)" }}
@@ -53,7 +53,7 @@ transition={{ duration: 0.5, ease: [0.22, 1, 0.36, 1] }}
             transition={{ delay: 0.2, duration: 0.5, ease: [0.22, 1, 0.36, 1] }}
             className="text-lg text-secondary-text"
           >
-            We combine deep industry knowledge with cutting-edge digital marketing tactics to ensure your practice stays ahead.
+            We combine sector knowledge with dependable web engineering and clear, accurate communication practices aligned with applicable Indian laws and medical communication guidelines.
           </motion.p>
         </div>
 
