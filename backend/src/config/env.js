@@ -30,6 +30,16 @@ const env = {
     email: process.env.ADMIN_EMAIL || 'admin@codigix.com',
     password: process.env.ADMIN_PASSWORD || 'Admin@12345',
   },
+  // Accepts SMTP_* or EMAIL_* variable names.
+  smtp: {
+    host: process.env.SMTP_HOST || process.env.EMAIL_HOST || '',
+    port: Number(process.env.SMTP_PORT || process.env.EMAIL_PORT || 587),
+    secure: String(process.env.SMTP_SECURE || process.env.EMAIL_SECURE || '').toLowerCase() === 'true',
+    user: process.env.SMTP_USER || process.env.EMAIL_USER || '',
+    pass: process.env.SMTP_PASS || process.env.EMAIL_PASS || '',
+    from: process.env.MAIL_FROM || process.env.EMAIL_FROM || '',
+    replyTo: process.env.MAIL_REPLY_TO || process.env.EMAIL_REPLY_TO || '',
+  },
   siteUrl: (process.env.SITE_URL || 'http://localhost:3002').replace(/\/$/, ''),
   revalidateSecret: process.env.REVALIDATE_SECRET || '',
   uploadDir: path.join(root, 'uploads'),

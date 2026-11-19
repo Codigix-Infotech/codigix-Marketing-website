@@ -6,11 +6,12 @@ import { ArrowRight, Users, Trophy, Smile, TrendingUp, BarChart2, Target, Search
 import HeroDashboard from './HeroDashboard';
 import type { HeroDashboardData } from '@/lib/types';
 
-const healthcareCategories = [
-   "Healthcare Organizations",
-   "Hospitals",
-   "Clinics",
-   "Enterprises"
+const sectorCategories = [
+   "Organizations",
+   "Enterprises",
+   "Retail Brands",
+   "Professional Firms",
+   "Healthcare Providers"
 ];
 
 // Custom hook for animated counter
@@ -111,7 +112,7 @@ export default function HeroSection({ dashboard }: { dashboard?: HeroDashboardDa
 
    useEffect(() => {
       const interval = setInterval(() => {
-         setCategoryIndex((prev) => (prev + 1) % healthcareCategories.length);
+         setCategoryIndex((prev) => (prev + 1) % sectorCategories.length);
       }, 2600);
       return () => clearInterval(interval);
    }, []);
@@ -169,7 +170,7 @@ export default function HeroSection({ dashboard }: { dashboard?: HeroDashboardDa
                         PUNE |
                      </span>
                      <span className="text-[11px] sm:text-xs font-semibold text-[#1a1053] tracking-wider uppercase">
-                        DIGITAL INFRASTRUCTURE & ETHICAL HEALTHCARE COMMUNICATION
+                        DIGITAL INFRASTRUCTURE & ETHICAL COMMUNICATION
                      </span>
                   </div>
 
@@ -186,7 +187,7 @@ export default function HeroSection({ dashboard }: { dashboard?: HeroDashboardDa
                               transition={{ duration: 0.35, ease: [0.25, 1, 0.5, 1] }}
                               className="inline-block font-semibold bg-gradient-to-r from-blue-600 via-indigo-600 to-[#e20b27] bg-clip-text text-transparent whitespace-nowrap leading-tight"
                            >
-                              {healthcareCategories[categoryIndex]}
+                              {sectorCategories[categoryIndex]}
                            </motion.span>
                         </AnimatePresence>
                         <span className="absolute bottom-0 left-0 w-full h-[3px] bg-gradient-to-r from-blue-600 via-indigo-600 to-[#e20b27] rounded-full opacity-80" />
@@ -195,7 +196,7 @@ export default function HeroSection({ dashboard }: { dashboard?: HeroDashboardDa
 
                   {/* Subtitle Paragraph */}
                   <p className="text-base sm:text-lg text-slate-600 mb-7 max-w-xl font-light leading-relaxed">
-                     Codigix Infotech builds reliable websites, accurate institutional profiles, and structured public-health content for hospitals, clinics, and enterprises—designed around transparency, accessibility, and regulatory alignment.
+                     Codigix Infotech builds reliable websites, accurate institutional profiles, and structured, educational content for healthcare organizations, enterprises, and commercial businesses—designed around transparency, accessibility, and regulatory alignment.
                   </p>
 
                   {/* Proof Strip */}
@@ -359,7 +360,7 @@ export default function HeroSection({ dashboard }: { dashboard?: HeroDashboardDa
                      </div>
                      <div className="flex flex-col">
                         <span className="text-[11px] font-semibold text-slate-800">Factual &amp; Non-Promotional</span>
-                        <span className="text-[10px] font-light text-slate-500">Accuracy-first healthcare communication</span>
+                        <span className="text-[10px] font-light text-slate-500">Accuracy-first communication</span>
                      </div>
                   </div>
 

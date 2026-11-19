@@ -58,38 +58,47 @@ export default function Footer({ settings }: { settings: PublicSettings }) {
 
       <div className="container mx-auto px-4 lg:px-8  relative z-10 max-w-7xl">
 
-        {/* Attractive Newsletter Block */}
-        <div className="bg-primary-text rounded-[32px] p-10 lg:p-14 mb-20 relative overflow-hidden shadow-2xl flex flex-col lg:flex-row items-center justify-between gap-10">
-          <div className="absolute top-0 right-0 w-full h-full pointer-events-none z-0">
-            <div className="absolute top-[-50%] right-[-10%] w-[400px] h-[400px] bg-primary-accent/40 rounded-full blur-[80px]" />
-            <div className="absolute bottom-[-50%] left-[20%] w-[300px] h-[300px] bg-highlight/30 rounded-full blur-[80px]" />
+        {/* Compact Newsletter Bar */}
+        <div className="bg-primary-text rounded-3xl px-6 py-6 sm:px-8 lg:px-10 lg:py-7 mb-14 relative overflow-hidden shadow-xl flex flex-col lg:flex-row lg:items-center justify-between gap-6 lg:gap-10">
+          <div className="absolute inset-0 pointer-events-none z-0">
+            <div className="absolute top-[-80%] right-[-5%] w-[320px] h-[320px] bg-primary-accent/40 rounded-full blur-[70px]" />
+            <div className="absolute bottom-[-90%] left-[25%] w-[240px] h-[240px] bg-highlight/25 rounded-full blur-[70px]" />
           </div>
 
-          <div className="relative z-10 lg:w-1/2">
-            <h3 className="text-3xl lg:text-4xl text-white font-semibold mb-4">{site.newsletter_title || 'Join our Newsletter'}</h3>
-            <p className="text-slate-300 text-sm font-light leading-relaxed max-w-md">
-              {site.newsletter_text}
-            </p>
+          <div className="relative z-10 flex items-start gap-4 lg:max-w-[46%]">
+            <span className="hidden sm:flex w-11 h-11 shrink-0 items-center justify-center rounded-2xl bg-white/10 border border-white/15 text-white">
+              <Mail size={20} />
+            </span>
+            <div>
+              <h3 className="text-lg sm:text-xl text-white font-semibold leading-tight">{site.newsletter_title || 'Join our Newsletter'}</h3>
+              <p className="text-slate-300 text-[13px] font-light leading-relaxed mt-1.5">
+                {site.newsletter_text}
+              </p>
+            </div>
           </div>
 
-          <div className="relative z-10 w-full lg:w-1/2 max-w-md">
-            <form onSubmit={onSubscribe} className="flex w-full bg-white/10 backdrop-blur-md p-1.5 rounded-full border border-white/20 shadow-inner focus-within:border-primary-accent focus-within:bg-white/20 transition-all">
+          <div className="relative z-10 w-full lg:w-[420px] lg:shrink-0">
+            <form onSubmit={onSubscribe} className="flex w-full bg-white/10 backdrop-blur-md p-1 rounded-full border border-white/20 focus-within:border-primary-accent focus-within:bg-white/20 transition-all">
               <input
                 type="email"
                 value={email}
                 onChange={(e) => setEmail(e.target.value)}
                 aria-label="Email address"
                 placeholder="Enter your email address"
-                className="flex-1 min-w-0 bg-transparent text-white placeholder-slate-300 px-4 sm:px-6 py-3 outline-none text-sm font-light"
+                className="flex-1 min-w-0 bg-transparent text-white placeholder-slate-300 px-4 py-2.5 outline-none text-sm font-light"
                 required
               />
-              <button type="submit" disabled={newsletter.state === 'loading'} className="bg-highlight hover:bg-highlight/90 text-white font-semibold text-sm px-5 sm:px-8 py-3 rounded-full transition-transform hover:scale-105 shadow-md shrink-0 disabled:opacity-70">
+              <button type="submit" disabled={newsletter.state === 'loading'} className="bg-highlight hover:bg-highlight/90 text-white font-semibold text-sm px-5 sm:px-6 py-2.5 rounded-full transition-transform hover:scale-[1.03] shadow-md shrink-0 disabled:opacity-70">
                 {newsletter.state === 'loading' ? 'Subscribing…' : 'Subscribe'}
               </button>
             </form>
-            {newsletter.message && (
-              <p role="status" className={`mt-3 text-sm px-4 ${newsletter.state === 'error' ? 'text-red-300' : 'text-emerald-300'}`}>
+            {newsletter.message ? (
+              <p role="status" className={`mt-2 text-xs px-4 ${newsletter.state === 'error' ? 'text-red-300' : 'text-emerald-300'}`}>
                 {newsletter.message}
+              </p>
+            ) : (
+              <p className="mt-2 text-[11px] px-4 text-slate-400 font-light">
+                No spam. Unsubscribe anytime. See our <Link href="/privacy" className="underline hover:text-white">Privacy Policy</Link>.
               </p>
             )}
           </div>

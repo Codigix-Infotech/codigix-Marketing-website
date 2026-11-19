@@ -5,6 +5,7 @@ import env from './config/env.js';
 import { closeDb, dialect } from './config/db.js';
 import { runMigrations } from './db/migrate.js';
 import { seedIfEmpty } from './db/seed.js';
+import { startAutoNotify } from './services/autoNotify.js';
 
 for (const dir of [env.uploadDir, path.join(env.privateUploadDir, 'resumes')]) {
   fs.mkdirSync(dir, { recursive: true });
@@ -32,6 +33,7 @@ try {
 
 const server = createApp().listen(env.port, () => {
   console.log(`[api] Codigix API listening on http://localhost:${env.port}`);
+  startAutoNotify();
   console.log(`[api] Database: ${dialect.toUpperCase()} (${dbConnected ? 'ONLINE' : 'CONNECTING/CHECK NEEDED'})`);
 });
 

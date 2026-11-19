@@ -19,7 +19,7 @@ export default function AboutHero() {
             initial={{ opacity: 0, y: 20 }}
             animate={{ opacity: 1, y: 0 }}
             transition={{ duration: 0.6 }}
-            className="flex flex-col lg:flex-row lg:items-end justify-between gap-8"
+            className="flex flex-col lg:flex-row lg:items-end justify-between gap-6 lg:gap-12"
           >
             <div className="max-w-3xl">
               <div className="inline-flex items-center gap-2 px-3.5 py-1.5 rounded-full bg-white border border-slate-200/90 shadow-2xs mb-3.5">
@@ -40,8 +40,8 @@ export default function AboutHero() {
               </h1>
             </div>
 
-            <div className="max-w-[400px] lg:pb-2">
-              <p className="text-slate-600 font-light text-base sm:text-lg leading-relaxed">
+            <div className="max-w-[640px] lg:pb-2">
+              <p className="text-slate-600 font-light text-sm sm:text-base leading-relaxed">
                 Codigix Infotech is a technology and digital communication firm based in Pune, working across healthcare institutions, enterprises, and commercial businesses. Our work centers on dependable web engineering, structured information design, search discoverability, and clear educational communication.
               </p>
             </div>
@@ -54,7 +54,7 @@ export default function AboutHero() {
 
             {/* Animated Infographic Block (Spans 8 cols) */}
             <motion.div
-              className="lg:col-span-8 relative rounded-[2rem] overflow-hidden shadow-[0_20px_50px_rgba(0,0,0,0.05)] bg-white border border-slate-100 h-[380px] lg:h-[450px]"
+              className="lg:col-span-8 relative rounded-[2rem] overflow-hidden shadow-[0_20px_50px_rgba(0,0,0,0.05)] bg-white border border-slate-100 h-[340px] lg:h-[400px]"
               initial={{ opacity: 0, scale: 0.95 }}
               animate={{ opacity: 1, scale: 1 }}
               transition={{ duration: 0.8, delay: 0.2 }}
@@ -114,7 +114,7 @@ export default function AboutHero() {
                   </div>
                 </motion.div>
 
-                {/* Bottom Right: High-DA Backlinks */}
+                {/* Bottom Right: Web Systems */}
                 <motion.div animate={{ transform: ["translate(0px, 5px)", "translate(0px, -5px)", "translate(0px, 5px)"] }} transition={{ duration: 11, repeat: Infinity, ease: "easeInOut" }} className="absolute bottom-[15%] right-[5%] lg:bottom-[20%] lg:right-[15%] z-20">
                   <div className="bg-white/80 backdrop-blur-md px-3 py-2.5 sm:px-5 sm:py-4 rounded-xl sm:rounded-2xl shadow-[0_8px_30px_rgba(0,0,0,0.04)] border border-slate-100/50 flex items-center gap-2.5 sm:gap-4">
                     <div className="w-8 h-8 sm:w-10 sm:h-10 shrink-0 rounded-full bg-emerald-50/50 flex items-center justify-center text-emerald-600">
@@ -136,7 +136,7 @@ export default function AboutHero() {
               animate={{ opacity: 1, x: 0 }}
               transition={{ duration: 0.8, delay: 0.4 }}
             >
-              <div className="bg-white rounded-3xl p-6 lg:p-8 shadow-[0_20px_50px_rgba(26,16,83,0.08)] border border-slate-100 relative overflow-hidden group">
+              <div className="bg-white rounded-3xl p-5 lg:p-6 shadow-[0_20px_50px_rgba(26,16,83,0.08)] border border-slate-100 relative overflow-hidden group">
                 {/* Top border accent */}
                 <div className="absolute top-0 left-0 w-full h-1.5 bg-gradient-to-r from-blue-500 to-purple-600"></div>
 
@@ -144,27 +144,27 @@ export default function AboutHero() {
                 <div className="absolute top-0 right-0 w-32 h-32 bg-blue-50/50 rounded-full blur-2xl -translate-y-1/2 translate-x-1/2 group-hover:bg-blue-100/50 transition-colors duration-500"></div>
 
                 <div className="relative z-10 flex flex-col h-full">
-                  <div className="flex items-center gap-4 mb-6">
-                    <div className="w-14 h-14 bg-gradient-to-br from-blue-500 to-purple-600 rounded-2xl flex items-center justify-center text-white shadow-lg shadow-blue-500/30 shrink-0">
-                      <svg className="w-7 h-7" fill="none" viewBox="0 0 24 24" stroke="currentColor"><path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2.2} d="M9 12l2 2 4-4m5.618-4.016A11.955 11.955 0 0112 2.944a11.955 11.955 0 01-8.618 3.04A12.02 12.02 0 003 9c0 5.591 3.824 10.29 9 11.622 5.176-1.332 9-6.03 9-11.622 0-1.042-.133-2.052-.382-3.016z" /></svg>
+                  <div className="flex items-center gap-3.5 mb-4">
+                    <div className="w-12 h-12 bg-gradient-to-br from-blue-500 to-purple-600 rounded-2xl flex items-center justify-center text-white shadow-lg shadow-blue-500/30 shrink-0">
+                      <svg className="w-6 h-6" fill="none" viewBox="0 0 24 24" stroke="currentColor"><path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2.2} d="M9 12l2 2 4-4m5.618-4.016A11.955 11.955 0 0112 2.944a11.955 11.955 0 01-8.618 3.04A12.02 12.02 0 003 9c0 5.591 3.824 10.29 9 11.622 5.176-1.332 9-6.03 9-11.622 0-1.042-.133-2.052-.382-3.016z" /></svg>
                     </div>
-                    <h3 className="text-xl lg:text-[22px] font-semibold text-[#1a1053] leading-snug">Committed to <br /><span className="text-transparent bg-clip-text bg-gradient-to-r from-blue-600 via-indigo-600 to-[#e20b27] font-extrabold">Ethical Communication</span></h3>
+                    <h3 className="text-lg lg:text-xl font-semibold text-[#1a1053] leading-snug">Committed to <br /><span className="text-transparent bg-clip-text bg-gradient-to-r from-blue-600 via-indigo-600 to-[#e20b27] font-extrabold">Ethical Communication</span></h3>
                   </div>
 
-                  <div className="mb-8 flex-grow">
-                    <p className="text-slate-600 text-sm lg:text-[15px] font-light leading-relaxed mb-5">
+                  <div className="mb-4 flex-grow">
+                    <p className="text-slate-600 text-[13px] font-light leading-relaxed mb-3.5">
                       Our healthcare engagements follow NMC ethical communication principles; dental work follows NDC norms and Ayurvedic work follows AYUSH guidelines. Non-medical sectors sit outside these frameworks.
                     </p>
 
-                    <ul className="space-y-3">
+                    <ul className="space-y-2">
                       {[
                         "No Patient Solicitation or Referral Incentives",
                         "Factual & Non-Promotional Framing",
                         "Authenticity & AI Transparency",
                         "Data Protection First (IT Act 2000, DPDP Act 2023 & 2025 Rules)"
                       ].map((item, i) => (
-                        <li key={i} className="flex items-center gap-3 text-slate-700 text-sm lg:text-[15px] font-medium">
-                          <div className="w-5 h-5 rounded-full bg-blue-50 border border-blue-100 text-blue-600 flex items-center justify-center shrink-0">
+                        <li key={i} className="flex items-start gap-2.5 text-slate-700 text-[13px] font-medium leading-snug">
+                          <div className="mt-0.5 w-5 h-5 rounded-full bg-blue-50 border border-blue-100 text-blue-600 flex items-center justify-center shrink-0">
                             <svg className="w-3 h-3" fill="none" viewBox="0 0 24 24" stroke="currentColor" strokeWidth={3}>
                               <path strokeLinecap="round" strokeLinejoin="round" d="M5 13l4 4L19 7" />
                             </svg>
@@ -176,17 +176,17 @@ export default function AboutHero() {
                   </div>
 
                   {/* Trust indicator badge */}
-                  <div className="mt-auto bg-gradient-to-r from-slate-50 to-white rounded-2xl p-4 lg:p-5 flex items-center justify-between border border-slate-200/80 shadow-sm group-hover:border-blue-200 transition-colors duration-300">
+                  <div className="mt-auto bg-gradient-to-r from-slate-50 to-white rounded-2xl p-3 lg:p-3.5 flex items-center justify-between border border-slate-200/80 shadow-sm group-hover:border-blue-200 transition-colors duration-300">
                     <div className="flex -space-x-2.5">
-                      <div className="w-10 h-10 rounded-full border-2 border-white bg-gradient-to-br from-blue-100 to-blue-200 flex items-center justify-center text-[11px] font-bold text-blue-800 shadow-sm relative z-30">Dr</div>
-                      <div className="w-10 h-10 rounded-full border-2 border-white bg-gradient-to-br from-purple-100 to-purple-200 flex items-center justify-center text-[11px] font-bold text-purple-800 shadow-sm relative z-20">H</div>
-                      <div className="w-10 h-10 rounded-full border-2 border-white bg-gradient-to-br from-emerald-100 to-emerald-200 flex items-center justify-center text-emerald-800 shadow-sm relative z-10">
+                      <div className="w-9 h-9 rounded-full border-2 border-white bg-gradient-to-br from-blue-100 to-blue-200 flex items-center justify-center text-[11px] font-bold text-blue-800 shadow-sm relative z-30">Dr</div>
+                      <div className="w-9 h-9 rounded-full border-2 border-white bg-gradient-to-br from-purple-100 to-purple-200 flex items-center justify-center text-[11px] font-bold text-purple-800 shadow-sm relative z-20">H</div>
+                      <div className="w-9 h-9 rounded-full border-2 border-white bg-gradient-to-br from-emerald-100 to-emerald-200 flex items-center justify-center text-emerald-800 shadow-sm relative z-10">
                         <svg className="w-5 h-5" fill="currentColor" viewBox="0 0 20 20"><path fillRule="evenodd" d="M10 5a1 1 0 011 1v3h3a1 1 0 110 2h-3v3a1 1 0 11-2 0v-3H6a1 1 0 110-2h3V6a1 1 0 011-1z" clipRule="evenodd"></path></svg>
                       </div>
                     </div>
                     <div className="text-right">
-                      <div className="text-base lg:text-lg font-extrabold text-[#1a1053] tracking-tight">Pune-Based</div>
-                      <div className="text-[10px] lg:text-[11px] font-bold text-transparent bg-clip-text bg-gradient-to-r from-blue-600 to-indigo-600 uppercase tracking-widest mt-0.5">Digital Firm</div>
+                      <div className="text-base font-extrabold text-[#1a1053] tracking-tight">Pune-Based</div>
+                      <div className="text-[10px] font-bold text-transparent bg-clip-text bg-gradient-to-r from-blue-600 to-indigo-600 uppercase tracking-widest mt-0.5">Digital Firm</div>
                     </div>
                   </div>
                 </div>

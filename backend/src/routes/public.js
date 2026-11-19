@@ -10,6 +10,8 @@ import { getSettings, PUBLIC_KEYS } from '../services/settings.js';
 import { buildRecord } from '../utils/fields.js';
 import { badRequest, notFound } from '../utils/httpError.js';
 import { publicBlogsRouter } from './blogs.js';
+import { mailConfigured } from '../services/mailer.js';
+import { newToken, sendWelcome } from '../services/newsletter.js';
 
 const router = Router();
 
@@ -161,11 +163,36 @@ router.post('/newsletter', formLimiter, async (req, res) => {
     { email: { type: 'email', required: true, label: 'Email' }, source: { type: 'string', max: 120 } },
     req.body
   );
-  await query(
-    "INSERT INTO subscribers (email, source) VALUES (?, ?) ON DUPLICATE KEY UPDATE status = 'subscribed'",
-    [email, source || 'footer']
-  );
-  res.status(201).json({ ok: true, message: "You're subscribed! Watch your inbox for our next insights." });
+  const existing = await one('SELECT id, status FROM subscribers WHERE email = ?', [email]);
+  if (!existing) {
+    await query('INSERT INTO subscribers (email, source, unsubscribe_token) VALUES (?, ?, ?)', [email, source || 'footer', newToken()]);
+  } else if (existing.status !== 'subscribed') {
+    await query("UPDATE subscribers SET status = 'subscribed' WHERE id = ?", [existing.id]);
+  }
+  // Welcome email is best-effort: a mail problem must never break the sign-up itself.
+  if (mailConfigured() && (!existing || existing.status !== 'subscribed')) {
+    sendWelcome(email).catch((err) => console.error('[newsletter] welcome email failed:', err.message));
+  }
+  res.status(201).json({ ok: true, message: "You're subscribed! Watch your inbox for our next update." });
+});
+
+// RFC 8058 one-click unsubscribe, called directly by Gmail/Yahoo when someone clicks "Unsubscribe" in their inbox.
+const oneClickLimiter = rateLimit({ windowMs: 10 * 60 * 1000, limit: 300, standardHeaders: 'draft-7', legacyHeaders: false });
+router.post('/newsletter/unsubscribe/:token', oneClickLimiter, async (req, res) => {
+  const token = String(req.params.token || '');
+  if (/^[a-f0-9]{20,64}$/.test(token)) {
+    await query("UPDATE subscribers SET status = 'unsubscribed' WHERE unsubscribe_token = ?", [token]);
+  }
+  res.status(200).json({ ok: true });
+});
+
+router.post('/newsletter/unsubscribe', formLimiter, async (req, res) => {
+  const token = String(req.body?.token || '');
+  if (!/^[a-f0-9]{20,64}$/.test(token)) throw badRequest('This unsubscribe link is not valid.');
+  const sub = await one('SELECT id FROM subscribers WHERE unsubscribe_token = ?', [token]);
+  if (!sub) throw badRequest('This unsubscribe link is not valid or has already been used.');
+  await query("UPDATE subscribers SET status = 'unsubscribed' WHERE id = ?", [sub.id]);
+  res.json({ ok: true, message: 'You have been unsubscribed and will no longer receive our newsletter.' });
 });
 
 router.use('/blogs', publicBlogsRouter);

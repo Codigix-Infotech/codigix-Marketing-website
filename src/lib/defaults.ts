@@ -6,7 +6,7 @@ import type { Client, HeroDashboardData, PublicSettings, Video } from './types';
 export const defaultSettings: PublicSettings = {
   site: {
     name: 'Codigix Infotech',
-    tagline: 'Digital Infrastructure & Ethical Healthcare Communication',
+    tagline: 'Web Engineering & Digital Communication',
     description:
       'Pune-based technology and digital communication firm providing web engineering, structured information design, search discoverability, and clear educational communication for hospitals, clinics, and enterprises.',
     logo: '/logo.webp',
@@ -15,7 +15,7 @@ export const defaultSettings: PublicSettings = {
       'Get practical insights on web engineering, structured information, accessibility, and responsible digital communication delivered to your inbox.',
   },
   seo: {
-    default_title: 'Digital Infrastructure & Ethical Healthcare Communication | Codigix Infotech',
+    default_title: 'Web Engineering & Digital Communication | Codigix Infotech',
     title_template: '%s | Codigix Infotech',
     default_description:
       'Pune-based web development, search visibility, content structuring and digital communication for hospitals, clinics and enterprises, aligned with the IT Act, 2000, the DPDP Act, 2023 and NMC ethical communication principles.',
@@ -50,8 +50,8 @@ export const defaultSettings: PublicSettings = {
   social: {},
 };
 
-// The public hero panel shows qualitative capability indicators only, so these
-// defaults intentionally carry no performance, ranking or outcome figures.
+// Illustrative sample data for the Digital Delivery Dashboard. It describes technical
+// delivery quality only and carries no client outcomes, rankings or revenue figures.
 export const defaultDashboard: HeroDashboardData = {
   metrics: [
     { title: 'Website Visitors', value: 24532, trend: 28, icon: 'users', color: 'blue' },
@@ -93,13 +93,13 @@ export const defaultDashboard: HeroDashboardData = {
   ],
   ads: [
     { label: 'Ad Spend', value: 48320, isCurrency: true, trend: 12 },
-    { label: 'Patient Clicks', value: 12452, trend: 22 },
+    { label: 'Total Clicks', value: 12452, trend: 22 },
     { label: 'Appointments', value: 326, trend: 18 },
     { label: 'Cost / Inquiry', value: 148, isCurrency: true, trend: 14, down: true },
   ],
   funnel: [
     { label: 'Clinic Visitors', value: '24,532', pct: '100%', width: 100 },
-    { label: 'Patient Inquiries', value: '1,248', pct: '5.1%', width: 30 },
+    { label: 'Inquiries', value: '1,248', pct: '5.1%', width: 30 },
     { label: 'Qualified Leads', value: '892', pct: '3.6%', width: 22 },
     { label: 'Consultations Booked', value: '426', pct: '1.7%', width: 12 },
     { label: 'Treatments Started', value: '214', pct: '0.9%', width: 6 },
@@ -113,7 +113,7 @@ export const defaultDashboard: HeroDashboardData = {
       icon: 'building-2',
       color: 'blue',
       highlight: 'Surgical & Multispeciality Hubs',
-      metric: '+4.2x Patient Footfall',
+      metric: '+4.2x Footfall',
       clients: ['Shushrut Surgical Hospital', 'Moraya Multispeciality', 'Kimaya Brain & Spine'],
       logos: ['shushrut.webp', 'morya.webp', 'kimaya.webp']
     },
@@ -308,7 +308,7 @@ export const defaultDashboard: HeroDashboardData = {
     funnel_steps: [
       { step: 'Ad Impressions', count: '4,220,000', pct: '100%' },
       { step: 'High-Intent Clicks', count: '30,776', pct: '0.73%' },
-      { step: 'Qualified Patient Leads', count: '738', pct: '2.40%' },
+      { step: 'Qualified Leads', count: '738', pct: '2.40%' },
       { step: 'Booked Doctor Consults', count: '182', pct: '24.6%' },
       { step: 'Confirmed Treatments', count: '114', pct: '15.4%' }
     ]

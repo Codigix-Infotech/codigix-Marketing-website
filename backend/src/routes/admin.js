@@ -21,6 +21,7 @@ import {
   testimonialsRouter,
   videosRouter,
 } from './resources.js';
+import newslettersRouter from './newsletters.js';
 
 const router = Router();
 router.use(requireAuth);
@@ -88,6 +89,7 @@ router.use('/faqs', faqsRouter);
 router.use('/jobs', jobsRouter);
 router.use('/messages', messagesRouter);
 router.use('/subscribers', subscribersRouter);
+router.use('/newsletters', newslettersRouter);
 router.use('/users', usersRouter);
 
 /* ---------------- Job applications ---------------- */

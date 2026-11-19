@@ -54,6 +54,8 @@ export interface ResourceConfig {
   emptyIcon?: React.ReactNode;
   renderDetail?: (row: Row) => React.ReactNode;
   rowActions?: (row: Row) => React.ReactNode;
+  /** Extra buttons shown in the page header next to Export / New. */
+  headerActions?: React.ReactNode;
   /** Mark a row as read etc. when it is opened. */
   onOpen?: (row: Row) => Record<string, any> | null;
   highlightRow?: (row: Row) => boolean;
@@ -98,7 +100,7 @@ function FieldControl({ field, value, onChange }: { field: FieldConfig; value: a
 export default function ResourceManager({ config }: { config: ResourceConfig }) {
   const {
     endpoint, title, singular, description, columns, fields, defaults = {}, searchPlaceholder, filters = [],
-    reorderable, canCreate = true, canDelete = true, exportable, drawerWidth, emptyIcon, renderDetail, rowActions, onOpen, highlightRow,
+    reorderable, canCreate = true, canDelete = true, exportable, drawerWidth, emptyIcon, renderDetail, rowActions, headerActions, onOpen, highlightRow,
   } = config;
 
   const [rows, setRows] = useState<Row[]>([]);
@@ -259,6 +261,7 @@ export default function ResourceManager({ config }: { config: ResourceConfig }) 
         description={description}
         actions={
           <>
+            {headerActions}
             {exportable && (
               <Button
                 variant="secondary"

@@ -187,6 +187,21 @@ export const sqliteSchema = [
     email TEXT NOT NULL UNIQUE COLLATE NOCASE,
     status TEXT NOT NULL DEFAULT 'subscribed' CHECK (status IN ('subscribed','unsubscribed')),
     source TEXT,
+    unsubscribe_token TEXT,
+    welcome_sent_at TEXT,
+    ${ts}`),
+
+  table('newsletters', `
+    id INTEGER PRIMARY KEY AUTOINCREMENT,
+    subject TEXT NOT NULL,
+    preview_text TEXT,
+    body_html TEXT NOT NULL,
+    include_posts INTEGER NOT NULL DEFAULT 0,
+    status TEXT NOT NULL DEFAULT 'draft' CHECK (status IN ('draft','sending','sent','failed')),
+    sent_at TEXT,
+    sent_count INTEGER NOT NULL DEFAULT 0,
+    failed_count INTEGER NOT NULL DEFAULT 0,
+    last_error TEXT,
     ${ts}`),
 
   table('media', `
@@ -203,7 +218,7 @@ export const sqliteSchema = [
     uploaded_by INTEGER,
     created_at TEXT NOT NULL DEFAULT (datetime('now'))`),
 
-  ...['users', 'blog_categories', 'blogs', 'clients', 'videos', 'testimonials', 'faqs', 'jobs', 'job_applications', 'contact_messages', 'subscribers'].map(touch),
+  ...['users', 'blog_categories', 'blogs', 'clients', 'videos', 'testimonials', 'faqs', 'jobs', 'job_applications', 'contact_messages', 'subscribers', 'newsletters'].map(touch),
   `CREATE TRIGGER IF NOT EXISTS trg_settings_updated AFTER UPDATE ON settings
     FOR EACH ROW WHEN NEW.updated_at = OLD.updated_at
     BEGIN UPDATE settings SET updated_at = datetime('now') WHERE "key" = NEW."key"; END`,

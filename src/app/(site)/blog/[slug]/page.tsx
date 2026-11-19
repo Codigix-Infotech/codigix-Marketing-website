@@ -200,14 +200,14 @@ export default async function BlogPostPage({ params }: Props) {
       <ViewTracker slug={post.slug} />
 
       {/* ---------------- Hero ---------------- */}
-      <header className="relative overflow-hidden bg-gradient-to-b from-[#f5f6fd] to-white pt-28 pb-10 lg:pt-36 lg:pb-14">
+      <header className="relative overflow-hidden bg-gradient-to-b from-[#f5f6fd] to-white pt-24 pb-6 lg:pt-28 lg:pb-8">
         <div
           aria-hidden="true"
           className="absolute inset-0 opacity-[0.35] pointer-events-none"
           style={{ backgroundImage: 'linear-gradient(#e5e7eb 1px, transparent 1px), linear-gradient(90deg, #e5e7eb 1px, transparent 1px)', backgroundSize: '44px 44px', maskImage: 'linear-gradient(to bottom, black, transparent)' }}
         />
-        <div className="relative container mx-auto px-4 max-w-4xl">
-          <nav aria-label="Breadcrumb" className="flex flex-wrap items-center gap-1.5 text-sm text-slate-500 mb-7">
+        <div className="relative container mx-auto px-4"><div className="max-w-6xl mx-auto">
+          <nav aria-label="Breadcrumb" className="flex flex-wrap items-center gap-1.5 text-sm text-slate-500 mb-4">
             <Link href="/" className="hover:text-[#1a1053] transition-colors">Home</Link>
             <ChevronRight size={14} className="text-slate-300" />
             <Link href="/blog" className="hover:text-[#1a1053] transition-colors">Blog</Link>
@@ -219,7 +219,7 @@ export default async function BlogPostPage({ params }: Props) {
             )}
           </nav>
 
-          <div className="flex flex-wrap items-center gap-2 mb-5">
+          <div className="flex flex-wrap items-center gap-2 mb-3">
             {post.category_name && (
               <Link
                 href={`/blog/category/${post.category_slug}`}
@@ -235,14 +235,14 @@ export default async function BlogPostPage({ params }: Props) {
             )}
           </div>
 
-          <h1 className="text-3xl md:text-[2.75rem] lg:text-5xl font-bold text-[#1a1053] leading-[1.15] tracking-tight mb-5 text-balance">
+          <h1 className="text-2xl md:text-4xl lg:text-[2.6rem] font-bold text-[#1a1053] leading-[1.2] tracking-tight mb-4 text-balance">
             {post.title}
           </h1>
 
-          {post.excerpt && <p className="text-lg md:text-xl text-slate-600 leading-relaxed mb-8 max-w-3xl">{post.excerpt}</p>}
+          {post.excerpt && <p className="text-base md:text-lg text-slate-600 leading-relaxed mb-6 max-w-3xl">{post.excerpt}</p>}
 
           {/* Byline */}
-          <div className="flex flex-col sm:flex-row sm:items-center justify-between gap-5 pt-6 border-t border-slate-200/80">
+          <div className="flex flex-col sm:flex-row sm:items-center justify-between gap-4 pt-5 border-t border-slate-200/80">
             <div className="flex items-center gap-3.5">
               <Avatar size="sm" />
               <div className="min-w-0">
@@ -271,22 +271,18 @@ export default async function BlogPostPage({ params }: Props) {
               </span>
             </p>
           )}
-        </div>
+        </div></div>
       </header>
 
-      {/* ---------------- Cover ---------------- */}
-      {post.cover_image && (
-        <div className="container mx-auto px-4 max-w-6xl">
-          <figure className="rounded-3xl overflow-hidden bg-slate-100 aspect-[16/8] shadow-[0_24px_60px_-24px_rgba(26,16,83,0.35)] ring-1 ring-slate-900/5">
-            <img src={mediaUrl(post.cover_image)} alt={post.cover_image_alt || post.title} className="w-full h-full object-cover" fetchPriority="high" />
-          </figure>
-        </div>
-      )}
-
       {/* ---------------- Body ---------------- */}
-      <div className="container mx-auto px-4 py-12 lg:py-16">
+      <div className="container mx-auto px-4 py-8 lg:py-10">
         <div className="max-w-6xl mx-auto grid lg:grid-cols-[minmax(0,1fr)_300px] gap-12 xl:gap-16">
           <article id="article-body" className="min-w-0 max-w-[46rem]">
+            {post.cover_image && (
+              <figure className="mb-8 rounded-2xl overflow-hidden bg-slate-100 aspect-[16/7] max-h-[300px] w-full ring-1 ring-slate-900/5">
+                <img src={mediaUrl(post.cover_image)} alt={post.cover_image_alt || post.title} className="w-full h-full object-cover" fetchPriority="high" />
+              </figure>
+            )}
             {/* Contents — mobile / tablet */}
             {toc.length > 1 && (
               <details className="lg:hidden mb-10 rounded-2xl border border-slate-200 bg-slate-50/60 [&_summary::-webkit-details-marker]:hidden group">
@@ -305,10 +301,10 @@ export default async function BlogPostPage({ params }: Props) {
             )}
 
             <div
-              className="article-content prose prose-lg prose-slate max-w-none
+              className="article-content prose prose-base md:prose-lg prose-slate max-w-none
                 prose-headings:text-[#1a1053] prose-headings:font-bold prose-headings:tracking-tight
-                prose-h2:mt-14 prose-h2:mb-5 prose-h2:text-[1.75rem] prose-h2:leading-snug
-                prose-h3:mt-9 prose-h3:mb-3 prose-h3:text-[1.3rem]
+                prose-h2:mt-10 prose-h2:mb-4 prose-h2:text-[1.5rem] prose-h2:leading-snug
+                prose-h3:mt-7 prose-h3:mb-2 prose-h3:text-[1.15rem]
                 prose-p:text-slate-700 prose-p:leading-[1.85]
                 prose-a:text-[#e20b27] prose-a:font-medium prose-a:underline prose-a:decoration-[#e20b27]/30 prose-a:underline-offset-4 hover:prose-a:decoration-[#e20b27]
                 prose-img:rounded-2xl prose-img:shadow-sm prose-img:my-10
@@ -341,7 +337,7 @@ export default async function BlogPostPage({ params }: Props) {
             )}
 
             {/* Tags + share */}
-            <div className="mt-14 flex flex-col sm:flex-row sm:items-center justify-between gap-6 py-6 border-y border-slate-200">
+            <div className="mt-10 flex flex-col sm:flex-row sm:items-center justify-between gap-5 py-5 border-y border-slate-200">
               {tags.length > 0 ? (
                 <div className="flex flex-wrap items-center gap-2">
                   <Tag size={15} className="text-slate-400 mr-1" aria-hidden="true" />
@@ -359,7 +355,7 @@ export default async function BlogPostPage({ params }: Props) {
             </div>
 
             {/* Author & reviewer */}
-            <div className={`mt-10 grid gap-5 ${reviewer ? 'md:grid-cols-2' : ''}`}>
+            <div className={`mt-8 grid gap-5 ${reviewer ? 'md:grid-cols-2' : ''}`}>
               <section aria-label="About the author" className="rounded-2xl border border-slate-200 bg-gradient-to-br from-[#fafbfe] to-white p-6">
                 <p className="text-[11px] font-bold uppercase tracking-widest text-slate-400 mb-4">About the author</p>
                 <div className="flex items-center gap-4 mb-4">
@@ -397,17 +393,17 @@ export default async function BlogPostPage({ params }: Props) {
             </div>
 
             {/* Editorial, AI-assistance & reference-sources note */}
-            <section aria-label="Editorial notes" className="mt-10 rounded-2xl border border-slate-200 bg-slate-50/70 p-6 text-[14px] text-slate-600 leading-relaxed space-y-3">
-              <p className="text-[11px] font-bold uppercase tracking-widest text-slate-400">Editorial notes</p>
+            <details aria-label="Editorial notes" className="mt-8 rounded-2xl border border-slate-200 bg-slate-50/70 px-5 py-4 text-[14px] text-slate-600 leading-relaxed [&>p]:mt-3">
+              <summary className="cursor-pointer text-[12px] font-bold uppercase tracking-widest text-slate-500">Editorial notes &amp; disclaimer</summary>
               <p><strong className="font-semibold text-slate-800">Publication &amp; review:</strong> Publication date, author and reviewer details are shown above. Articles undergo internal pre-publication review for factual accuracy, credential and registration disclosures, privacy safeguards and AI labelling.</p>
               <p><strong className="font-semibold text-slate-800">AI assistance:</strong> AI tools may assist with drafting, research or media preparation. Where they do, content is checked and edited by our team before publication.</p>
               <p><strong className="font-semibold text-slate-800">Reference sources:</strong> Sources and references are cited within the article text where applicable. Public-health education draws on established consensus and published literature.</p>
               <p><strong className="font-semibold text-slate-800">Not medical advice:</strong> This article is for general informational purposes only. It does not constitute medical advice, diagnosis or treatment, and does not guarantee specific search rankings or clinical or business outcomes.</p>
-            </section>
+            </details>
 
             {/* Prev / next */}
             {(prev || next) && (
-              <nav aria-label="More articles" className="mt-10 grid sm:grid-cols-2 gap-4">
+              <nav aria-label="More articles" className="mt-8 grid sm:grid-cols-2 gap-4">
                 {prev ? (
                   <Link href={`/blog/${prev.slug}`} className="group p-5 rounded-2xl border border-slate-200 hover:border-[#1a1053]/30 hover:shadow-md transition-all flex flex-col">
                     <span className="flex items-center gap-1.5 text-xs font-bold uppercase tracking-wider text-slate-400 mb-2"><ArrowLeft size={14} /> Previous article</span>
@@ -429,18 +425,6 @@ export default async function BlogPostPage({ params }: Props) {
             <div className="sticky top-28 space-y-6">
               <TableOfContents items={toc} />
 
-              <section aria-label="Article details" className="rounded-2xl border border-slate-200 p-5">
-                <p className="text-xs font-bold uppercase tracking-wider text-slate-400 mb-3">Article details</p>
-                <dl className="text-sm divide-y divide-slate-100">
-                  {details.map((d) => (
-                    <div key={d.label} className="flex items-center justify-between gap-3 py-2.5">
-                      <dt className="text-slate-500">{d.label}</dt>
-                      <dd className="text-right text-slate-800 font-medium">{d.value}</dd>
-                    </div>
-                  ))}
-                </dl>
-              </section>
-
               <section className="relative overflow-hidden rounded-2xl bg-gradient-to-br from-[#1a1053] to-[#2d1d8a] p-6 text-white">
                 <div aria-hidden="true" className="absolute -right-10 -top-10 w-36 h-36 rounded-full bg-[#e20b27]/25 blur-2xl" />
                 <p className="relative text-[11px] font-bold uppercase tracking-widest text-white/60 mb-3">Editorial standards</p>
@@ -457,7 +441,7 @@ export default async function BlogPostPage({ params }: Props) {
 
       {/* ---------------- Related ---------------- */}
       {Array.isArray(related) && related.length > 0 && (
-        <section className="py-20 lg:py-24 bg-[#f7f8fd] border-t border-slate-200/70">
+        <section className="py-14 lg:py-16 bg-[#f7f8fd] border-t border-slate-200/70">
           <div className="container mx-auto px-4 max-w-7xl">
             <div className="flex flex-col md:flex-row md:items-end justify-between gap-6 mb-10">
               <div>

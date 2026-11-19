@@ -3,7 +3,6 @@ import AboutHero from '@/components/about/AboutHero';
 import WhoWeAre from '@/components/about/WhoWeAre';
 import OurJourney from '@/components/about/OurJourney';
 import WhyChooseUs from '@/components/about/WhyChooseUs';
-import MeetOurTeam from '@/components/about/MeetOurTeam';
 import { pageMetadata } from '@/lib/page-seo';
 
 export const generateMetadata = () =>
@@ -21,7 +20,6 @@ export default function AboutPage() {
       <WhoWeAre />
       <OurJourney />
       <WhyChooseUs />
-      <MeetOurTeam />
     </div>
   );
 }

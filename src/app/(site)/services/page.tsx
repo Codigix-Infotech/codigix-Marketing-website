@@ -427,7 +427,7 @@ export default function ServicesPage() {
                   <span className="relative inline-flex rounded-full h-2 w-2 bg-[#e20b27]"></span>
                 </span>
                 <span className="text-xs sm:text-sm font-semibold text-[#1a1053] tracking-wide">
-                  Pune | Digital Infrastructure & Ethical Healthcare Communication
+                  Pune | Web Engineering & Digital Communication
                 </span>
               </div>
 

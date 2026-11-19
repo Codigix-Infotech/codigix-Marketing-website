@@ -6,7 +6,7 @@ import { jsonLd as ld } from "@/lib/seo";
 
 export async function generateMetadata(): Promise<Metadata> {
   const { seo, site } = await getSettings();
-  const title = seo.default_title || "Digital Infrastructure & Ethical Healthcare Communication | Codigix Infotech";
+  const title = seo.default_title || "Web Engineering & Digital Communication | Codigix Infotech";
   const description = seo.default_description || "";
   const ogImage = seo.default_og_image ? absoluteUrl(seo.default_og_image) : undefined;
 
@@ -73,7 +73,7 @@ export default async function RootLayout({
     name: site.name || "Codigix Infotech",
     url: SITE_URL,
     logo: absoluteUrl(site.logo || "/logo.webp"),
-    description: site.tagline || "Digital Infrastructure & Ethical Healthcare Communication",
+    description: site.tagline || "Web Engineering & Digital Communication",
     email: contact.email || undefined,
     telephone: contact.phone || undefined,
     address: {

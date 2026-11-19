@@ -6,6 +6,7 @@ import { usePathname } from 'next/navigation';
 import {
   BarChart3, Briefcase, ChevronDown, ExternalLink, FileText, FolderTree, Gauge, HelpCircle, ImageIcon, Inbox, LayoutDashboard,
   LogOut, Mail, Menu, MessageSquareQuote, PlaySquare, Settings, UserCircle, Users, UsersRound, X, Building2, UserCheck,
+  Send,
   type LucideIcon,
 } from 'lucide-react';
 import { api } from '@/lib/admin/api';
@@ -41,6 +42,7 @@ const NAV: { heading: string; items: NavItem[] }[] = [
     items: [
       { href: '/admin/messages', label: 'Contact Messages', icon: Inbox, badge: 'newMessages' },
       { href: '/admin/subscribers', label: 'Subscribers', icon: Mail },
+      { href: '/admin/newsletters', label: 'Newsletters', icon: Send },
     ],
   },
   {

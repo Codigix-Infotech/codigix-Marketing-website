@@ -207,8 +207,26 @@ export const schema = [
     email VARCHAR(190) NOT NULL UNIQUE,
     status ENUM('subscribed','unsubscribed') NOT NULL DEFAULT 'subscribed',
     source VARCHAR(120) NULL,
+    unsubscribe_token VARCHAR(64) NULL,
+    welcome_sent_at DATETIME NULL,
     created_at DATETIME NOT NULL DEFAULT CURRENT_TIMESTAMP,
     updated_at DATETIME NOT NULL DEFAULT CURRENT_TIMESTAMP ON UPDATE CURRENT_TIMESTAMP
+  ) ENGINE=InnoDB DEFAULT CHARSET=utf8mb4 COLLATE=utf8mb4_unicode_ci`,
+
+  `CREATE TABLE IF NOT EXISTS newsletters (
+    id INT UNSIGNED AUTO_INCREMENT PRIMARY KEY,
+    subject VARCHAR(200) NOT NULL,
+    preview_text VARCHAR(255) NULL,
+    body_html LONGTEXT NOT NULL,
+    include_posts TINYINT(1) NOT NULL DEFAULT 0,
+    status ENUM('draft','sending','sent','failed') NOT NULL DEFAULT 'draft',
+    sent_at DATETIME NULL,
+    sent_count INT UNSIGNED NOT NULL DEFAULT 0,
+    failed_count INT UNSIGNED NOT NULL DEFAULT 0,
+    last_error VARCHAR(500) NULL,
+    created_at DATETIME NOT NULL DEFAULT CURRENT_TIMESTAMP,
+    updated_at DATETIME NOT NULL DEFAULT CURRENT_TIMESTAMP ON UPDATE CURRENT_TIMESTAMP,
+    KEY idx_newsletters_status (status)
   ) ENGINE=InnoDB DEFAULT CHARSET=utf8mb4 COLLATE=utf8mb4_unicode_ci`,
 
   `CREATE TABLE IF NOT EXISTS media (

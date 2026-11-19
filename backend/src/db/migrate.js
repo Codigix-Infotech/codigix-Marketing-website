@@ -14,6 +14,10 @@ const addedColumns = [
   ['blogs', 'reviewed_by', 'VARCHAR(160) NULL', 'TEXT'],
   ['blogs', 'reviewer_credentials', 'VARCHAR(160) NULL', 'TEXT'],
   ['blogs', 'last_reviewed_at', 'DATETIME NULL', 'TEXT'],
+  ['subscribers', 'unsubscribe_token', 'VARCHAR(64) NULL', 'TEXT'],
+  ['subscribers', 'welcome_sent_at', 'DATETIME NULL', 'TEXT'],
+  ['blogs', 'notified_at', 'DATETIME NULL', 'TEXT'],
+  ['newsletters', 'include_posts', 'TINYINT(1) NOT NULL DEFAULT 0', 'INTEGER NOT NULL DEFAULT 0'],
 ];
 
 async function ensureColumns(log) {
@@ -25,6 +29,8 @@ async function ensureColumns(log) {
     if (existing.includes(column)) continue;
     await query(`ALTER TABLE ${table} ADD COLUMN ${column} ${dialect === 'mysql' ? mysqlType : sqliteType}`);
     if (log) console.log(`[db] added column ${table}.${column}`);
+    // Existing posts predate auto-notify: mark them announced so only future posts are emailed.
+    if (table === 'blogs' && column === 'notified_at') await query("UPDATE blogs SET notified_at = COALESCE(published_at, CURRENT_TIMESTAMP)");
   }
 }
 

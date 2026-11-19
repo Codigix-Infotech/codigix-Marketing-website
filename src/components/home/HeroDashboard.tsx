@@ -1391,7 +1391,7 @@ function HeroDashboard({ data }: { data?: HeroDashboardData }) {
                   </div>
 
                   <div className={`${CARD} p-1.5 sm:p-2`}>
-                    <div className="text-[7.5px] sm:text-[7.75px] font-medium text-slate-400">Verified Patient Leads</div>
+                    <div className="text-[7.5px] sm:text-[7.75px] font-medium text-slate-400">Verified Leads</div>
                     <div className="text-[12px] sm:text-[14px] font-black text-purple-700">{adView.leads}</div>
                     <Sparkline values={[52, 58, 61, 55, 66, 70, 64, 72, 78, 74, 82, 86]} color="#9333ea" />
                   </div>
@@ -1468,7 +1468,7 @@ function HeroDashboard({ data }: { data?: HeroDashboardData }) {
                   {/* Tapered funnel */}
                   <div className={`${CARD} col-span-4 p-2 flex flex-col`}>
                     <div className="flex items-center justify-between mb-1">
-                      <span className="text-[9.25px] sm:text-[10.25px] font-bold text-slate-900">Patient Funnel</span>
+                      <span className="text-[9.25px] sm:text-[10.25px] font-bold text-slate-900">Lead Funnel</span>
                       <span className="text-[7.5px] font-bold text-emerald-700 bg-emerald-50 border border-emerald-200 px-1 rounded-full">
                         {adsStats.roas}x ROAS
                       </span>
@@ -1543,7 +1543,7 @@ function HeroDashboard({ data }: { data?: HeroDashboardData }) {
                     <div>
                       <div className="flex items-center gap-1.5">
                         <span className="w-1.5 h-1.5 rounded-full bg-blue-600" />
-                        <h3 className="text-[10.5px] sm:text-[11.5px] font-bold text-slate-800">Patient Growth Trajectory</h3>
+                        <h3 className="text-[10.5px] sm:text-[11.5px] font-bold text-slate-800">Growth Trajectory</h3>
                       </div>
                       <div className="flex items-center gap-2 text-[7px] sm:text-[7.5px] text-slate-500 mt-0.5 pl-3">
                         <span className="flex items-center gap-1"><span className="w-2.5 h-[2px] rounded bg-gradient-to-r from-indigo-500 to-blue-600" />{isMilestone ? 'Target' : 'With Codigix'}</span>

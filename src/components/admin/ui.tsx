@@ -223,6 +223,7 @@ export const STATUS_TONES: Record<string, BadgeTone> = {
   draft: 'gray', closed: 'gray', archived: 'gray', unsubscribed: 'gray', inactive: 'gray',
   scheduled: 'blue', reviewing: 'blue', read: 'blue',
   new: 'amber', shortlisted: 'purple', rejected: 'red',
+  sending: 'blue', sent: 'green', failed: 'red',
 };
 
 export function StatusBadge({ status }: { status: string }) {
