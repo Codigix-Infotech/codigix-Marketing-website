@@ -433,15 +433,15 @@ export default function ServicesPage() {
 
               {/* Main Headline */}
               <h1 className="text-3xl sm:text-5xl lg:text-[54px] xl:text-6xl font-extrabold text-[#1a1053] tracking-tight leading-[1.12]">
-                Digital Strategy, Web Systems & <br />
+                Digital Infrastructure, <br />
                 <span className="text-transparent bg-clip-text bg-gradient-to-r from-blue-600 via-indigo-600 to-[#e20b27]">
-                  Compliance-Aligned Communication
+                  Search Visibility & Communication Services
                 </span>
               </h1>
 
               {/* Subtitle */}
               <p className="text-base sm:text-lg text-slate-600 font-light leading-relaxed max-w-2xl">
-                Codigix Infotech builds reliable websites, accurate institutional profiles, and structured public-health content for hospitals, clinics, and enterprises, designed around transparency, accessibility, and regulatory alignment.
+                Codigix Infotech delivers web engineering, structured content architecture, search discoverability, and digital campaign support for healthcare institutions, enterprises, and commercial businesses.
               </p>
 
               {/* Value Highlights */}
@@ -1535,7 +1535,7 @@ export default function ServicesPage() {
 
           <div className="flex flex-col sm:flex-row items-center justify-between gap-4 mb-8 border-b border-slate-100 pb-4">
             <h2 className="text-3xl sm:text-4xl font-extrabold text-[#1a1053] tracking-tight leading-tight">
-              Why Organizations Choose Us
+              How We Structure Healthcare Engagements
             </h2>
             <div className="inline-flex items-center gap-2 px-3 py-1 rounded-full bg-rose-50 border border-rose-200 text-rose-700 text-[11px] font-bold uppercase tracking-wider">
               <ShieldCheck className="w-3 h-3" />
@@ -1546,13 +1546,13 @@ export default function ServicesPage() {
           <div className="flex flex-wrap justify-center gap-3 md:gap-4">
             {[
               {
-                title: "Healthcare & Enterprise Experience",
-                desc: "We work across hospitals, clinics, enterprises, and commercial businesses, with scope-specific processes rather than generic templates.",
+                title: "Factual Information & Accessibility",
+                desc: "We help hospitals and clinics organize accurate department details, operating hours, facilities, and educational resources.",
                 icon: Stethoscope
               },
               {
-                title: "Clinical Accuracy & Compliance",
-                desc: "Factual, non-promotional framing for medical engagements, with credential and registration disclosures and pre-publication review.",
+                title: "Ethical Communication Guardrails",
+                desc: "Our healthcare work avoids patient solicitation, promotional testimonials, unverified \"#1\" or outcome guarantees, and referral-linked fee models.",
                 icon: ShieldCheck
               },
               {
@@ -1561,8 +1561,8 @@ export default function ServicesPage() {
                 icon: MapPin
               },
               {
-                title: "Data Protection First",
-                desc: "We design touchpoints with data minimization and security in mind, aligned with the IT Act, 2000 and the DPDP Act, 2023 (and 2025 Rules).",
+                title: "Data Protection & Transparency",
+                desc: "We design web forms and digital workflows with data minimization, privacy notices aligned with Indian law (IT Act, 2000 and DPDP Act, 2023), and clear AI-content labels where applicable.",
                 icon: Target
               },
               {

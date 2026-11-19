@@ -46,24 +46,24 @@ import {
 const whatWeDoList = [
   {
     num: "01",
-    title: "Product Listing Optimization on Amazon, Flipkart & Store",
-    desc: "Accurate product titles, bullet points, clear descriptive copywriting, rich A+ content, and structured catalog attributes for non-regulated retail products.",
+    title: "Storefront UX & Catalog Architecture",
+    desc: "Intuitive product categorization, search and filtering, and mobile-friendly shopping flows.",
     icon: ShoppingCart,
     color: "from-blue-600 to-indigo-600",
     bg: "bg-blue-50 text-blue-600 border-blue-200"
   },
   {
     num: "02",
-    title: "E-Commerce SEO & Catalog Structure",
-    desc: "Technical SEO, category taxonomy restructuring, rich product schema markup, and clean crawl and index health for online stores.",
+    title: "Performance & Analytics Setup",
+    desc: "Page-speed tuning and transparent funnel and storefront analytics.",
     icon: Search,
     color: "from-emerald-600 to-teal-600",
     bg: "bg-emerald-50 text-emerald-600 border-emerald-200"
   },
   {
     num: "03",
-    title: "Policy-Compliant Product Campaigns",
-    desc: "Google Shopping feeds, Meta catalog campaigns, and marketplace advertising set up with accurate product information and clear platform-policy review.",
+    title: "Regulatory & Sector Separation",
+    desc: "Clear separation between commercial product retail and regulated medical practice communication, adhering to applicable product and advertising laws.",
     icon: Zap,
     color: "from-purple-600 to-pink-600",
     bg: "bg-purple-50 text-purple-600 border-purple-200"
@@ -537,15 +537,15 @@ export default function EcommerceMarketingPage() {
 
           {/* Main Title */}
           <h1 className="text-4xl sm:text-5xl lg:text-[64px] font-extrabold text-[#1a1053] tracking-tight leading-[1.1] mb-6 max-w-4xl relative z-20">
-            Storefront Engineering <br className="hidden lg:block" /> for Retail Businesses.
+            E-Commerce & <br className="hidden lg:block" /> Digital Storefront
             <span className="block text-transparent bg-clip-text bg-gradient-to-r from-blue-600 via-indigo-600 to-[#e20b27] mt-3">
-              Accurate Catalogs. Reliable Storefronts.
+              Solutions.
             </span>
           </h1>
 
           {/* Hero Subtitle */}
           <p className="text-base sm:text-lg lg:text-xl text-slate-600 font-light leading-relaxed max-w-2xl mx-auto mb-10 relative z-20">
-            Codigix Infotech provides catalog architecture, storefront performance, and digital workflows tailored for commercial and non-regulated retail businesses. Retail commerce is kept separate from clinical promotion.
+            We build and optimize digital storefronts, catalog structures, and checkout flows for retail and commercial businesses.
           </p>
 
           {/* CTA Buttons */}

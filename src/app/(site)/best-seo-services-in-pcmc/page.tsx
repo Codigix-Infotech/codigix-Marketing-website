@@ -48,16 +48,16 @@ const whatWeDoList = [
   },
   {
     num: "02",
-    title: "On-page & structural SEO optimization",
-    desc: "Comprehensive metadata, semantic HTML hierarchy, and internal linking architecture, with no link schemes or purchased backlinks.",
+    title: "Technical Site Audits & Architecture",
+    desc: "Clean URL structure, indexation health, internal linking, mobile responsiveness, and page speed optimization.",
     icon: Layers,
     color: "from-emerald-600 to-teal-600",
     bg: "bg-emerald-50 text-emerald-600 border-emerald-200"
   },
   {
     num: "03",
-    title: "Google Business Profile management",
-    desc: "Accurate management of business listing details (location, hours, departments, services), regular factual updates, and consistent citations, without ranking manipulation.",
+    title: "Accurate Profile & Listing Maintenance",
+    desc: "Keeping clinic or business names, addresses, hours, departments, and factual service details consistent and up to date.",
     icon: Globe,
     color: "from-purple-600 to-fuchsia-600",
     bg: "bg-purple-50 text-purple-600 border-purple-200"
@@ -72,8 +72,8 @@ const whatWeDoList = [
   },
   {
     num: "05",
-    title: "Technical SEO & website speed optimization",
-    desc: "Core Web Vitals tuning, mobile responsiveness, schema structured data, and crawl and index health.",
+    title: "Structured Data & Schema",
+    desc: "Implementation of factual schema markup to help search engines understand organizational and service information accurately.",
     icon: Cpu,
     color: "from-amber-600 to-orange-600",
     bg: "bg-amber-50 text-amber-600 border-amber-200"
@@ -576,15 +576,18 @@ export default function BestSeoServicesPage() {
 
           {/* Main Title */}
           <h1 className="text-4xl sm:text-5xl lg:text-[64px] font-extrabold text-[#1a1053] tracking-tight leading-[1.1] mb-6 max-w-4xl">
-            Technical SEO & Accurate <br className="hidden lg:block" /> Local Listings.
+            Technical SEO & Accurate <br className="hidden lg:block" /> Local Information Management
             <span className="block text-transparent bg-clip-text bg-gradient-to-r from-blue-600 via-indigo-600 to-[#e20b27] mt-3">
-              Clear Structure. No Ranking Promises.
+              Crawlable, Fast, Well-Structured
             </span>
           </h1>
 
           {/* Hero Subtitle */}
           <p className="text-base sm:text-lg lg:text-xl text-slate-600 font-light leading-relaxed max-w-2xl mx-auto mb-10">
-            Codigix Infotech provides technical site optimization, structured metadata, crawl and index health, and accurate management of business listing details (location, hours, departments, services, and factual information), without ranking manipulation or guaranteed position claims.
+            We help organizations maintain crawlable, fast, and well-structured websites along with accurate business listings across search and map directories.
+          </p>
+          <p className="text-xs sm:text-sm text-slate-500 font-light leading-relaxed max-w-2xl mx-auto mb-10 -mt-6">
+            Compliance Note: Search engine rankings depend on independent platform algorithms and cannot be guaranteed. We do not engage in ranking manipulation, review fabrication, or patient solicitation.
           </p>
 
           {/* CTA Buttons */}

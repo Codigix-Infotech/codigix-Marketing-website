@@ -60,8 +60,8 @@ const whatWeDoList = [
   },
   {
     num: "03",
-    title: "Audience Settings & Privacy Controls",
-    desc: "Clear audience definitions and consent-aware tracking configuration, with no sensitive health data used for targeting.",
+    title: "Campaign Setup & Keyword/Audience Structure",
+    desc: "Organized ad groups, negative keyword hygiene, and landing-page alignment.",
     icon: RotateCw,
     color: "from-emerald-600 to-teal-600",
     bg: "bg-emerald-50 text-emerald-600 border-emerald-200"
@@ -76,16 +76,16 @@ const whatWeDoList = [
   },
   {
     num: "05",
-    title: "Ad Copy Review & Testing",
-    desc: "Copy and creative variants are reviewed for factual accuracy, with no fear-based messaging, cure promises, or inducements.",
+    title: "Clear, Truthful Ad Copy",
+    desc: "Straightforward messaging that avoids exaggerated claims, fear-based framing, or misleading promises.",
     icon: Sliders,
     color: "from-amber-600 to-orange-600",
     bg: "bg-amber-50 text-amber-600 border-amber-200"
   },
   {
     num: "06",
-    title: "Transparent Campaign Reporting",
-    desc: "Clear reporting on ad spend, impressions, click-through rate, and policy status, so you always know how campaigns are running.",
+    title: "Transparent Reporting",
+    desc: "Clear reporting on spend, impressions, clicks, and technical landing-page performance.",
     icon: BarChart3,
     color: "from-purple-600 to-pink-600",
     bg: "bg-purple-50 text-purple-600 border-purple-200"
@@ -535,15 +535,18 @@ export default function PaidAdvertisementsPage() {
 
           {/* Main Title */}
           <h1 className="text-4xl sm:text-5xl lg:text-[64px] font-extrabold text-[#1a1053] tracking-tight leading-[1.1] mb-6 max-w-4xl relative z-20">
-            Clear, Truthful Messaging <br className="hidden lg:block" /> for Search & Social.
+            Policy-Compliant Paid <br className="hidden lg:block" /> Search & Social Campaigns
             <span className="block text-transparent bg-clip-text bg-gradient-to-r from-blue-600 via-indigo-600 to-[#e20b27] mt-3">
-              Transparent, Policy-Compliant Campaigns.
+              Transparent, Truthful, Clearly Targeted
             </span>
           </h1>
 
           {/* Hero Subtitle */}
           <p className="text-base sm:text-lg lg:text-xl text-slate-600 font-light leading-relaxed max-w-2xl mx-auto mb-10 relative z-20">
-            Targeted, policy-compliant search and social campaigns designed around clear, truthful messaging and transparent audience disclosures, across Google, Facebook, and Instagram.
+            We set up, monitor, and refine paid digital campaigns aligned with platform advertising policies, transparent reporting, and clear audience targeting.
+          </p>
+          <p className="text-xs sm:text-sm text-slate-500 font-light leading-relaxed max-w-2xl mx-auto mb-10 -mt-6 relative z-20">
+            Compliance Note: For healthcare-related campaigns, messaging is structured to respect ethical communication rules against solicitation, unverified outcomes, and prohibited inducements.
           </p>
 
           {/* CTA Buttons */}

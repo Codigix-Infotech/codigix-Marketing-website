@@ -48,18 +48,18 @@ import {
 const whatWeDoList = [
   {
     num: "01",
-    title: "Public-health articles on established medical topics",
-    desc: "Clear, accurate, and easy-to-understand articles on general health topics, prevention, and wellness, written from established consensus and referenced sources."
+    title: "Department & Service Information Pages",
+    desc: "Clear, factual descriptions of departments, facilities, general care pathways, and visiting and contact details."
   },
   {
     num: "02",
-    title: "Institutional website copy",
-    desc: "Factual web copy for department pages, practitioner profiles, facility information, and general FAQs, with credentials and registration details disclosed."
+    title: "Public Health & Awareness Articles",
+    desc: "Plain-language educational content grounded in established medical information and reviewed for clarity before publishing."
   },
   {
     num: "03",
-    title: "Public-health education guides & brochures",
-    desc: "General information guides and brochures that explain what to expect in plain language, without promotional claims or outcome promises."
+    title: "Journal-Grounded Case References",
+    desc: "Where clinical cases are referenced in educational contexts, discussion is restricted to properly de-identified, published medical journal literature."
   },
   {
     num: "04",
@@ -488,15 +488,15 @@ export default function MedicalContentMarketingPage() {
 
         {/* Main Title */}
         <h1 className="text-4xl sm:text-5xl lg:text-[64px] font-extrabold text-[#1a1053] tracking-tight leading-[1.1] mb-6 max-w-4xl relative z-20">
-          Accurate Public-Health Education <br className="hidden lg:block" /> and Institutional Content.
+          Health Education & <br className="hidden lg:block" /> Institutional Content
           <span className="block text-transparent bg-clip-text bg-gradient-to-r from-blue-600 via-indigo-600 to-[#e20b27] mt-3">
-            Clear, Referenced, Reviewed.
+            Architecture.
           </span>
         </h1>
 
         {/* Hero Subtitle */}
         <p className="text-base sm:text-lg lg:text-xl text-slate-600 font-light leading-relaxed max-w-2xl mx-auto mb-10 relative z-20">
-          Codigix Infotech helps healthcare organizations create well-organized informational pages, department guides, and public-health articles, written for clarity and accuracy and reviewed for compliance prior to publication.
+          We help hospitals, clinics, and health organizations publish clear, well-structured informational pages and public-health educational guides.
         </p>
 
         {/* CTA Buttons */}
@@ -658,6 +658,10 @@ export default function MedicalContentMarketingPage() {
 
                   <p className="pt-2">
                     At Codigix Infotech, we ensure your healthcare content is written with medical precision, verified by clinical reviewers, and crafted in plain, easy-to-understand language. We turn complex medical topics into clear general information, without promotional claims or cure promises.
+                  </p>
+
+                  <p className="text-xs sm:text-sm text-slate-500">
+                    Compliance Note: Educational content is designed to inform the public rather than solicit patients, guarantee cures, or replace individualized medical consultation.
                   </p>
                 </div>
 

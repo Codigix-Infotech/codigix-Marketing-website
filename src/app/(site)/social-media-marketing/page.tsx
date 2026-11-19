@@ -53,16 +53,16 @@ const whatWeDoList = [
   },
   {
     num: "02",
-    title: "Institutional Content Creation & Graphic Design",
-    desc: "Clear, on-brand carousels, educational infographics, and institutional update graphics that present factual information accurately.",
+    title: "AI & Media Transparency",
+    desc: "Any AI-assisted visuals, voiceovers, or edits used in permitted content are explicitly marked with source disclosures.",
     icon: Sparkles,
     color: "from-purple-600 to-indigo-600",
     bg: "bg-purple-50 text-purple-600 border-purple-200"
   },
   {
     num: "03",
-    title: "Public-Health Awareness Posts, Reels & Stories",
-    desc: "Short-form educational video scripts and posts on public-health awareness, prevention information, and general explanations, based on established consensus.",
+    title: "Public-Health & Explainer Formats",
+    desc: "Clear educational segments, facility/service overviews, and structured Q&A formats reviewed prior to publication.",
     icon: Play,
     color: "from-rose-600 to-red-600",
     bg: "bg-rose-50 text-rose-600 border-rose-200"
@@ -77,8 +77,8 @@ const whatWeDoList = [
   },
   {
     num: "05",
-    title: "Educational Interview & Expert Series",
-    desc: "Expert interview series and awareness collaborations with practitioner credentials and registration details clearly disclosed.",
+    title: "Practitioner & Regulatory Alignment",
+    desc: "Where medical professionals participate in public educational communication, we include accurate qualification, specialty, and registration disclosures as required.",
     icon: Users,
     color: "from-amber-600 to-orange-600",
     bg: "bg-amber-50 text-amber-600 border-amber-200"
@@ -545,15 +545,18 @@ export default function SocialMediaMarketingPage() {
 
           {/* Main Title */}
           <h1 className="text-4xl sm:text-5xl lg:text-[64px] font-extrabold text-[#1a1053] tracking-tight leading-[1.1] mb-6 max-w-4xl relative z-20">
-            Public-Health Awareness & <br className="hidden lg:block" /> Institutional Updates.
+            Educational Video & <br className="hidden lg:block" /> Structured Social Communication
             <span className="block text-transparent bg-clip-text bg-gradient-to-r from-blue-600 via-indigo-600 to-[#e20b27] mt-3">
-              Clear, Credentialed, Responsible.
+              Public-Health Education, Clearly Told
             </span>
           </h1>
 
           {/* Hero Subtitle */}
           <p className="text-base sm:text-lg lg:text-xl text-slate-600 font-light leading-relaxed max-w-2xl mx-auto mb-10 relative z-20">
-            Our social media services help hospitals, clinics, and enterprises share structured educational video and social content focused on public-health awareness, institutional updates, and clear explanations, with practitioner credential disclosures and AI source labels where applicable.
+            We plan, shoot, edit, and structure short- and long-form video and social content focused on public-health education, institutional updates, and clear brand storytelling.
+          </p>
+          <p className="text-xs sm:text-sm text-slate-500 font-light leading-relaxed max-w-2xl mx-auto mb-10 -mt-6 relative z-20">
+            Compliance Note: We do not produce promotional patient testimonials, sensationalized medical claims, or deceptive synthetic endorsements.
           </p>
 
           {/* CTA Buttons */}

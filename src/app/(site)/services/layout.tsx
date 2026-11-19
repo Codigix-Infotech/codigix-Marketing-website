@@ -5,9 +5,9 @@ import { SITE_URL } from '@/lib/config';
 // The page itself is a client component, so its metadata and structured data live here.
 export const generateMetadata = () =>
   pageMetadata({
-    title: 'Digital Strategy, Web Systems & Communication Services in Pune | Codigix',
+    title: 'Digital Infrastructure, Search Visibility & Communication Services | Codigix',
     description:
-      'SEO and local profile management, educational video content, policy-compliant paid campaigns, content architecture and web development for hospitals, clinics and enterprises in Pune & PCMC.',
+      'Codigix Infotech delivers web engineering, structured content architecture, search discoverability, and digital campaign support for healthcare institutions, enterprises, and commercial businesses.',
     path: '/services',
   });
 

@@ -51,18 +51,18 @@ import {
 const whatWeDoList = [
   {
     num: "01",
-    title: "Custom website design & development",
-    desc: "Bespoke, accessible websites for hospitals, clinics, diagnostic centers, and enterprises, with clear information hierarchy and navigation."
+    title: "Responsive UI & Front-End Engineering",
+    desc: "Clean layouts across desktop and mobile devices with fast load performance and accessible contrast and navigation."
   },
   {
     num: "02",
-    title: "Mobile-responsive & fast-loading websites",
-    desc: "Mobile-first architecture focused on Core Web Vitals, so pages load quickly and read well on 4G/5G mobile networks."
+    title: "Privacy-First Forms & Disclosures",
+    desc: "Clear consent notices, data minimization on inquiry forms, and alignment with the Information Technology Act, 2000 and the Digital Personal Data Protection Act, 2023 (and 2025 Rules)."
   },
   {
     num: "03",
-    title: "Contact & enquiry integration",
-    desc: "Clear contact options, click-to-call, and enquiry forms with transparent privacy notices and minimal data collection."
+    title: "Maintainable CMS & Content Workflows",
+    desc: "Easy-to-update structures for institutional announcements, educational resources, and factual directories."
   },
   {
     num: "04",
@@ -493,15 +493,15 @@ export default function WebDesignDevelopmentPage() {
 
           {/* Main Title */}
           <h1 className="text-4xl sm:text-5xl lg:text-[64px] font-extrabold text-[#1a1053] tracking-tight leading-[1.1] mb-6 max-w-4xl">
-            Accessible, Fast, Privacy-Aware <br className="hidden lg:block" /> Websites for Organizations.
+            Accessible, Privacy-Conscious <br className="hidden lg:block" /> Web Design &
             <span className="block text-transparent bg-clip-text bg-gradient-to-r from-blue-600 via-indigo-600 to-[#e20b27] mt-3">
-              Clear Information. Reliable Engineering.
+              Development.
             </span>
           </h1>
 
           {/* Hero Subtitle */}
           <p className="text-base sm:text-lg lg:text-xl text-slate-600 font-light leading-relaxed max-w-2xl mx-auto mb-10">
-            Codigix Infotech builds responsive, accessible, and security-conscious websites with clear privacy controls aligned with Indian data-protection laws, so visitors can find accurate information about your organization easily.
+            We design and engineer responsive websites and web applications built for reliability, accessibility, clear navigation, and data-protection alignment.
           </p>
 
           {/* CTA Buttons */}
@@ -667,6 +667,10 @@ export default function WebDesignDevelopmentPage() {
 
                   <p className="pt-2">
                     At Codigix Infotech, we engineer websites that do more than showcase brochures. We build fast, responsive, accessible digital assets with accurate institutional information, practitioner credentials disclosed, and clear contact options.
+                  </p>
+
+                  <p className="text-xs sm:text-sm text-slate-500">
+                    Compliance Note: We advise organizations not to collect unnecessary sensitive personal or patient medical data through standard public contact forms.
                   </p>
                 </div>
 
