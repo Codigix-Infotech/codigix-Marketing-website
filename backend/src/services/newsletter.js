@@ -42,6 +42,19 @@ export function unsubscribeHeaders(token) {
   };
 }
 
+const GENERIC = new Set(['info', 'admin', 'sales', 'contact', 'hello', 'support', 'mail', 'office', 'team', 'noreply', 'enquiry', 'inquiry', 'hr', 'accounts', 'billing', 'webmaster']);
+/** Best available first name: the stored name, else a name-like start of the email address. */
+export function firstName(sub = {}) {
+  const clean = (v) => String(v || '').replace(/[^A-Za-zÀ-ɏ' -]/g, ' ').trim().split(/\s+/)[0] || '';
+  let n = clean(sub.name);
+  if (!n && sub.email) {
+    const chunk = String(sub.email).split('@')[0].split(/[._\-+]/)[0].replace(/\d+/g, '');
+    n = /^[A-Za-z]{3,}$/.test(chunk) && !GENERIC.has(chunk.toLowerCase()) ? chunk : '';
+  }
+  return n ? n.charAt(0).toUpperCase() + n.slice(1).toLowerCase() : '';
+}
+const hello = (name) => (name ? `Hello ${esc(name)},` : 'Hello,');
+
 const sleep = (ms) => new Promise((resolve) => setTimeout(resolve, ms));
 
 /* ---------------- Data the templates draw on ---------------- */
@@ -58,142 +71,65 @@ async function loadContext({ withPosts = false } = {}) {
   return { site: s.site || {}, contact: s.contact || {}, social: s.social || {}, posts };
 }
 
-/* ---------------- Template building blocks ---------------- */
+/* ---------------- Template building blocks ----------------
+ * Deliberately plain and personal: no banner, buttons, boxes or gradients. Gmail files heavily
+ * designed, image-and-button emails under "Promotions"; a short note that reads like a message
+ * from a person, with ordinary text links, is far more likely to reach the Primary inbox. */
 
-const button = (href, label, { solid = true } = {}) =>
-  `<a href="${esc(href)}" style="display:inline-block;margin:4px 6px 4px 0;padding:12px 22px;border-radius:999px;font-size:14px;font-weight:bold;text-decoration:none;${
-    solid ? `background:${RED};color:#ffffff;` : `background:#ffffff;color:${NAVY};border:1px solid #d8dbe9;`
-  }">${esc(label)}</a>`;
-
-const feature = (title, text, accent) => `
-<tr><td style="padding:0 0 12px">
-  <table role="presentation" width="100%" cellpadding="0" cellspacing="0" style="background:#f8f9fe;border-radius:12px"><tr>
-    <td width="6" style="background:${accent};border-radius:12px 0 0 12px"></td>
-    <td style="padding:14px 16px">
-      <div style="font-size:15px;font-weight:bold;color:${NAVY};margin-bottom:3px">${esc(title)}</div>
-      <div style="font-size:13.5px;line-height:1.6;color:#4b5563">${esc(text)}</div>
-    </td></tr></table>
-</td></tr>`;
+const link = (href, label) => `<a href="${esc(href)}" style="color:#1a56db;text-decoration:underline">${esc(label)}</a>`;
 
 function postCards(posts) {
   if (!posts.length) return '';
-  const cards = posts
+  const items = posts
     .map(
-      (p) => `
-<tr><td style="padding:0 0 12px">
-  <a href="${esc(`${env.siteUrl}/blog/${p.slug}`)}" style="text-decoration:none;display:block;border:1px solid #e5e7f2;border-radius:12px;padding:14px 16px">
-    <div style="font-size:15px;font-weight:bold;color:${NAVY};line-height:1.4">${esc(p.title)}</div>
-    ${p.excerpt ? `<div style="font-size:13px;line-height:1.6;color:#6b7280;margin-top:4px">${esc(String(p.excerpt).slice(0, 160))}${String(p.excerpt).length > 160 ? '…' : ''}</div>` : ''}
-    <div style="font-size:13px;font-weight:bold;color:${BLUE};margin-top:8px">Read the article &rarr;</div>
-  </a>
-</td></tr>`
+      (p) => `<p style="margin:0 0 14px">${link(`${env.siteUrl}/blog/${p.slug}`, p.title)}${
+        p.excerpt ? `<br><span style="color:#4b5563">${esc(String(p.excerpt).slice(0, 160))}${String(p.excerpt).length > 160 ? '…' : ''}</span>` : ''
+      }</p>`
     )
     .join('');
-  return `
-<tr><td style="padding:8px 32px 8px">
-  <div style="font-size:12px;font-weight:bold;letter-spacing:1.5px;text-transform:uppercase;color:${RED};margin-bottom:10px">Latest from our blog</div>
-  <table role="presentation" width="100%" cellpadding="0" cellspacing="0">${cards}</table>
-</td></tr>`;
+  return `<p style="margin:18px 0 8px"><strong>Recent articles</strong></p>${items}`;
 }
 
-function contactBlock({ contact, social }) {
-  const lines = [];
-  if (contact.email) lines.push(`<a href="mailto:${esc(contact.email)}" style="color:${BLUE};text-decoration:none">${esc(contact.email)}</a>`);
-  if (contact.phone) lines.push(esc(contact.phone));
-  const addr = [contact.address_line1, contact.address_line2].filter(Boolean).join(', ');
-  if (addr) lines.push(esc(addr));
-  const socials = [
-    ['LinkedIn', social.linkedin],
-    ['Instagram', social.instagram],
-    ['Facebook', social.facebook],
-    ['YouTube', social.youtube],
-    ['X', social.twitter],
-  ]
-    .filter(([, url]) => url)
-    .map(([name, url]) => `<a href="${esc(url)}" style="color:${NAVY};text-decoration:none;font-weight:bold">${name}</a>`)
-    .join(' &nbsp;&middot;&nbsp; ');
-  return `
-<tr><td style="padding:8px 32px 28px">
-  <table role="presentation" width="100%" cellpadding="0" cellspacing="0" style="border-top:1px solid #e5e7f2"><tr><td style="padding-top:18px;font-size:13px;line-height:1.8;color:#4b5563">
-    <div style="font-weight:bold;color:${NAVY};margin-bottom:2px">Questions? We are happy to help.</div>
-    ${lines.join('<br>')}
-    ${socials ? `<div style="margin-top:10px">${socials}</div>` : ''}
-  </td></tr></table>
-</td></tr>`;
+function signature({ contact, site }) {
+  const bits = [];
+  if (contact.email) bits.push(link(`mailto:${contact.email}`, contact.email));
+  if (contact.phone) bits.push(esc(contact.phone));
+  return `<p style="margin:22px 0 0">Regards,<br>The team at ${esc(site.name || 'Codigix Infotech')}${bits.length ? `<br>${bits.join(' &nbsp;|&nbsp; ')}` : ''}<br>${link(env.siteUrl, env.siteUrl.replace(/^https?:\/\//, ''))}</p>`;
 }
 
-/** The shared outer layout: header, content rows, footer. */
+/** Plain, single-column layout: just the message and a short footer. */
 function layout({ title, preview, rows, unsubUrl, ctx }) {
   const footerLine = unsubUrl
-    ? `You are receiving this email because you subscribed to updates from Codigix Infotech.<br><a href="${esc(unsubUrl)}" style="color:#6b7280;text-decoration:underline">Unsubscribe</a> at any time.`
-    : 'This is a test send of a Codigix Infotech email.';
-  return `<!doctype html><html lang="en"><head><meta charset="utf-8"><meta name="viewport" content="width=device-width,initial-scale=1"><meta name="color-scheme" content="light"><title>${esc(title)}</title></head>
-<body style="margin:0;padding:0;background:#f4f5fb;font-family:Arial,Helvetica,sans-serif;color:#1f2937">
+    ? `You are receiving this because you subscribed to updates from Codigix Infotech. If you would rather not hear from us, you can ${link(unsubUrl, 'unsubscribe')} at any time.`
+    : 'You are receiving this because you subscribed to updates from Codigix Infotech.';
+  return `<!doctype html><html lang="en"><head><meta charset="utf-8"><meta name="viewport" content="width=device-width,initial-scale=1"><title>${esc(title)}</title></head>
+<body style="margin:0;padding:0;background:#ffffff">
 <span style="display:none;max-height:0;overflow:hidden;opacity:0;color:transparent">${esc(preview || '')}</span>
-<table role="presentation" width="100%" cellpadding="0" cellspacing="0" style="background:#f4f5fb;padding:28px 12px"><tr><td align="center">
-<table role="presentation" width="600" cellpadding="0" cellspacing="0" style="max-width:600px;width:100%;background:#ffffff;border-radius:18px;overflow:hidden;box-shadow:0 8px 30px rgba(26,16,83,0.08)">
-  <tr><td style="background:${NAVY};padding:22px 32px">
-    <table role="presentation" width="100%" cellpadding="0" cellspacing="0"><tr>
-      <td style="font-size:26px;font-weight:bold;color:#ffffff;letter-spacing:-0.5px"><span style="color:${RED}">&#9679;</span> codigix</td>
-      <td align="right" style="font-size:11px;letter-spacing:1.2px;text-transform:uppercase;color:#b9b4e6">Infotech</td>
-    </tr></table>
-  </td></tr>
-  <tr><td style="height:4px;background:${BLUE};background:linear-gradient(90deg,${BLUE},#7c3aed,${RED});font-size:0;line-height:0">&nbsp;</td></tr>
-  ${rows}
-  ${contactBlock(ctx)}
-  <tr><td style="padding:18px 32px;background:#f9fafb;font-size:12px;line-height:1.7;color:#6b7280;text-align:center">
-    ${footerLine}<br>
-    Codigix Infotech, Pune, India. The information shared is for general informational purposes only and is not medical advice.
-  </td></tr>
-</table></td></tr></table></body></html>`;
+<div style="max-width:560px;margin:0 auto;padding:24px 18px;font-family:Arial,Helvetica,sans-serif;font-size:15px;line-height:1.65;color:#222222">
+${rows}
+${signature(ctx)}
+<p style="margin:28px 0 0;padding-top:14px;border-top:1px solid #e5e7eb;font-size:12px;line-height:1.6;color:#6b7280">${footerLine}<br>Codigix Infotech, Pune, India. This message is for general information only and is not medical advice.</p>
+</div></body></html>`;
 }
 
-/* ---------------- The two emails ---------------- */
-
 /** A regular issue written in the admin panel. */
-export function renderEmail({ subject, preview_text, body_html, include_posts }, unsubUrl, ctx) {
-  const rows = `
-  <tr><td style="padding:32px 32px 6px">
-    <h1 style="margin:0;font-size:24px;line-height:1.3;color:${NAVY}">${esc(subject)}</h1>
-  </td></tr>
-  <tr><td style="padding:10px 32px 18px;font-size:15px;line-height:1.7;color:#374151">${body_html}</td></tr>
-  <tr><td style="padding:0 32px 22px">${button(env.siteUrl, 'Visit our website')}${button(`${env.siteUrl}/blog`, 'Read the blog', { solid: false })}</td></tr>
-  ${include_posts ? postCards(ctx.posts) : ''}`;
+export function renderEmail({ subject, preview_text, body_html, include_posts }, unsubUrl, ctx, name = '') {
+  body_html = String(body_html).replace(/\{\{\s*hello\s*\}\}/gi, hello(name)).replace(/\{\{\s*name\s*\}\}/gi, name ? esc(name) : 'there');
+  const rows = `${body_html}${include_posts ? postCards(ctx.posts) : ''}<p style="margin:18px 0 0">More on our ${link(`${env.siteUrl}/blog`, 'blog')}.</p>`;
   const html = layout({ title: subject, preview: preview_text, rows, unsubUrl, ctx });
-  const text = `${subject}\n\n${htmlToText(body_html)}\n\nWebsite: ${env.siteUrl}\nBlog: ${env.siteUrl}/blog\n\n--\n${unsubUrl ? `Unsubscribe: ${unsubUrl}` : 'Test send'}`;
+  const text = `${htmlToText(body_html)}\n\nBlog: ${env.siteUrl}/blog\nWebsite: ${env.siteUrl}\n\n--\n${unsubUrl ? `Unsubscribe: ${unsubUrl}` : 'You are receiving this because you subscribed to updates from Codigix Infotech.'}`;
   return { html, text };
 }
 
 /** The email every new subscriber receives straight after signing up. */
-export function renderWelcome(unsubUrl, ctx) {
-  const subject = 'Welcome to the Codigix Infotech newsletter';
-  const rows = `
-  <tr><td style="padding:0">
-    <table role="presentation" width="100%" cellpadding="0" cellspacing="0" style="background:#f6f5ff;background:linear-gradient(135deg,#f3f4ff,#fff5f6)"><tr><td style="padding:34px 32px 30px">
-      <div style="font-size:12px;font-weight:bold;letter-spacing:1.5px;text-transform:uppercase;color:${RED}">You are subscribed</div>
-      <h1 style="margin:8px 0 10px;font-size:28px;line-height:1.25;color:${NAVY}">Welcome to Codigix Infotech</h1>
-      <p style="margin:0;font-size:15px;line-height:1.7;color:#4b5563">Thank you for subscribing. We are a Pune-based technology and digital communication firm, and we will occasionally share practical, factual updates you can use.</p>
-    </td></tr></table>
-  </td></tr>
-  <tr><td style="padding:26px 32px 6px">
-    <div style="font-size:12px;font-weight:bold;letter-spacing:1.5px;text-transform:uppercase;color:${RED};margin-bottom:12px">What you can expect</div>
-    <table role="presentation" width="100%" cellpadding="0" cellspacing="0">
-      ${feature('Web engineering insights', 'Clear guidance on fast, accessible and well-structured websites.', BLUE)}
-      ${feature('Accurate digital information', 'Practical tips for keeping listings, service details and content correct and consistent.', '#7c3aed')}
-      ${feature('Responsible health communication', 'Educational, non-promotional approaches aligned with Indian ethical communication guidelines.', RED)}
-    </table>
-  </td></tr>
-  <tr><td style="padding:10px 32px 18px">
-    <div style="font-size:15px;line-height:1.7;color:#374151;margin-bottom:12px">A good place to start:</div>
-    ${button(`${env.siteUrl}/services`, 'Explore our services')}${button(`${env.siteUrl}/blog`, 'Read the blog', { solid: false })}${button(`${env.siteUrl}/contact`, 'Get in touch', { solid: false })}
-  </td></tr>
-  <tr><td style="padding:6px 32px 20px">
-    <table role="presentation" width="100%" cellpadding="0" cellspacing="0" style="background:#f8f9fe;border-radius:12px"><tr><td style="padding:14px 16px;font-size:13px;line-height:1.7;color:#4b5563">
-      <strong style="color:${NAVY}">Your privacy.</strong> We only store your email address and handle it under the Information Technology Act, 2000 and the Digital Personal Data Protection Act, 2023. We never sell it, and every email has an unsubscribe link.
-    </td></tr></table>
-  </td></tr>`;
-  const html = layout({ title: subject, preview: 'Thank you for subscribing. Here is what to expect from us.', rows, unsubUrl, ctx });
-  const text = `Welcome to Codigix Infotech\n\nThank you for subscribing. We will occasionally share practical, factual updates on web engineering, accurate digital information and responsible health communication.\n\nServices: ${env.siteUrl}/services\nBlog: ${env.siteUrl}/blog\nContact: ${env.siteUrl}/contact\n\nWe only store your email address and handle it under the IT Act, 2000 and the DPDP Act, 2023.\n\n--\n${unsubUrl ? `Unsubscribe: ${unsubUrl}` : 'Test send'}`;
+export function renderWelcome(unsubUrl, ctx, name = '') {
+  const subject = 'Thanks for subscribing to Codigix Infotech';
+  const rows = `<p style="margin:0 0 14px">${hello(name)}</p>
+<p style="margin:0 0 14px">Thank you for subscribing. We are Codigix Infotech, a small team in Pune that builds websites and helps organizations keep their online information accurate, accessible and clearly written.</p>
+<p style="margin:0 0 14px">From time to time we will send you a short note when we publish something useful, such as a new guide on website performance, accessibility, or keeping listings and service details correct. We will not send you anything frequently, and we do not share your email address.</p>
+<p style="margin:0 0 14px">If you would like to see what we have written so far, our ${link(`${env.siteUrl}/blog`, 'blog')} is the best place to start. And if you have a question or something you would like us to cover, just reply to this email. A real person reads it.</p>`;
+  const html = layout({ title: subject, preview: 'Thank you for subscribing. A short note from the Codigix team.', rows, unsubUrl, ctx });
+  const text = `${hello(name)}\n\nThank you for subscribing. We are Codigix Infotech, a small team in Pune that builds websites and helps organizations keep their online information accurate, accessible and clearly written.\n\nFrom time to time we will send you a short note when we publish something useful. We do not share your email address.\n\nOur blog is the best place to start: ${env.siteUrl}/blog\nIf you have a question, just reply to this email.\n\nRegards,\nThe team at Codigix Infotech\n${env.siteUrl}\n\n--\n${unsubUrl ? `Unsubscribe: ${unsubUrl}` : 'You are receiving this because you subscribed to updates from Codigix Infotech.'}`;
   return { subject, html, text };
 }
 
@@ -201,14 +137,14 @@ export function renderWelcome(unsubUrl, ctx) {
 
 export async function sendTest(newsletter, email) {
   const ctx = await loadContext({ withPosts: !!newsletter.include_posts });
-  const { html, text } = renderEmail(newsletter, null, ctx);
-  await sendMail({ to: email, subject: `[Test] ${newsletter.subject}`, html, text });
+  const { html, text } = renderEmail(newsletter, null, ctx, firstName({ email }));
+  await sendMail({ to: email, subject: newsletter.subject, html, text });
 }
 
 export async function sendWelcomeTest(email) {
   const ctx = await loadContext();
-  const { subject, html, text } = renderWelcome(null, ctx);
-  await sendMail({ to: email, subject: `[Test] ${subject}`, html, text });
+  const { subject, html, text } = renderWelcome(null, ctx, firstName({ email }));
+  await sendMail({ to: email, subject: subject, html, text });
 }
 
 async function tokenFor(sub) {
@@ -219,12 +155,12 @@ async function tokenFor(sub) {
 }
 
 export async function sendWelcome(email) {
-  const sub = await one('SELECT id, unsubscribe_token FROM subscribers WHERE email = ?', [email]);
+  const sub = await one('SELECT id, email, name, unsubscribe_token FROM subscribers WHERE email = ?', [email]);
   if (!sub) return;
   const token = await tokenFor(sub);
   const url = unsubscribeUrl(token);
   const ctx = await loadContext();
-  const { subject, html, text } = renderWelcome(url, ctx);
+  const { subject, html, text } = renderWelcome(url, ctx, firstName(sub));
   await sendMail({ to: email, subject, html, text, headers: unsubscribeHeaders(token) });
   await query('UPDATE subscribers SET welcome_sent_at = ? WHERE id = ?', [new Date().toISOString().slice(0, 19).replace('T', ' '), sub.id]);
 }
@@ -234,7 +170,7 @@ export async function sendWelcome(email) {
  * newsletters row (status, sent_count, failed_count). Returns the number of recipients.
  */
 export async function sendToSubscribers(id) {
-  const subs = await query("SELECT id, email, unsubscribe_token FROM subscribers WHERE status = 'subscribed' ORDER BY id");
+  const subs = await query("SELECT id, email, name, unsubscribe_token FROM subscribers WHERE status = 'subscribed' ORDER BY id");
   setImmediate(async () => {
     let sent = 0;
     let failed = 0;
@@ -246,7 +182,7 @@ export async function sendToSubscribers(id) {
         try {
           const token = await tokenFor(sub);
           const url = unsubscribeUrl(token);
-          const { html, text } = renderEmail(issue, url, ctx);
+          const { html, text } = renderEmail(issue, url, ctx, firstName(sub));
           await sendMail({ to: sub.email, subject: issue.subject, html, text, headers: unsubscribeHeaders(token) });
           sent += 1;
         } catch (err) {

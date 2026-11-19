@@ -159,13 +159,13 @@ router.post('/contact', formLimiter, async (req, res) => {
 
 router.post('/newsletter', formLimiter, async (req, res) => {
   if (isBot(req.body)) return res.status(201).json({ ok: true });
-  const { email, source } = buildRecord(
-    { email: { type: 'email', required: true, label: 'Email' }, source: { type: 'string', max: 120 } },
+  const { email, source, name } = buildRecord(
+    { email: { type: 'email', required: true, label: 'Email' }, name: { type: 'string', max: 120 }, source: { type: 'string', max: 120 } },
     req.body
   );
   const existing = await one('SELECT id, status FROM subscribers WHERE email = ?', [email]);
   if (!existing) {
-    await query('INSERT INTO subscribers (email, source, unsubscribe_token) VALUES (?, ?, ?)', [email, source || 'footer', newToken()]);
+    await query('INSERT INTO subscribers (email, name, source, unsubscribe_token) VALUES (?, ?, ?, ?)', [email, name || null, source || 'footer', newToken()]);
   } else if (existing.status !== 'subscribed') {
     await query("UPDATE subscribers SET status = 'subscribed' WHERE id = ?", [existing.id]);
   }

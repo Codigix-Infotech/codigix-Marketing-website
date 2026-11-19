@@ -11,15 +11,14 @@ const nowSql = () => new Date().toISOString().slice(0, 19).replace('T', ' ');
 let running = false;
 
 function buildBody(posts) {
-  const cards = posts
+  const items = posts
     .map(
-      (p) => `<table role="presentation" width="100%" cellpadding="0" cellspacing="0" style="margin:0 0 16px;border:1px solid #e5e7eb;border-radius:12px"><tr><td style="padding:16px 18px">
-<a href="${env.siteUrl}/blog/${esc(p.slug)}" style="font-size:17px;font-weight:bold;color:${NAVY};text-decoration:none">${esc(p.title)}</a>
-${p.excerpt ? `<p style="margin:8px 0 10px;font-size:14px;line-height:1.6;color:#4b5563">${esc(String(p.excerpt).slice(0, 220))}</p>` : ''}
-<a href="${env.siteUrl}/blog/${esc(p.slug)}" style="font-size:14px;font-weight:bold;color:#e20b27;text-decoration:none">Read the article &rarr;</a></td></tr></table>`
+      (p) => `<p style="margin:0 0 14px"><a href="${env.siteUrl}/blog/${esc(p.slug)}" style="color:#1a56db;text-decoration:underline">${esc(p.title)}</a>${
+        p.excerpt ? `<br><span style="color:#4b5563">${esc(String(p.excerpt).slice(0, 200))}</span>` : ''
+      }</p>`
     )
     .join('');
-  return `<p>Hello,</p><p>${posts.length === 1 ? 'We have just published a new article on the Codigix blog.' : `We have just published ${posts.length} new articles on the Codigix blog.`}</p>${cards}<p>Thank you for being part of our community.</p>`;
+  return `<p style="margin:0 0 14px">{{hello}}</p><p style="margin:0 0 14px">${posts.length === 1 ? 'We have just published a new article on our blog that we thought you might find useful:' : `We have just published ${posts.length} new articles on our blog:`}</p>${items}<p style="margin:0">If you have a question about any of these, just reply to this email.</p>`;
 }
 
 /** Find newly published posts that have not been announced yet and email them to subscribers. */
@@ -36,12 +35,17 @@ export async function notifyNewPosts() {
       const t = toDate(r.published_at).getTime();
       return t <= Date.now() - SETTLE_MS;
     });
+    // Anything published more than 3 days ago (back-dated imports, old drafts finally published) is
+    // marked as announced without emailing, so only genuinely new posts reach subscribers.
+    const stale = ready.filter((r) => toDate(r.published_at).getTime() < Date.now() - 3 * 86400000);
+    for (const r of stale) await query('UPDATE blogs SET notified_at = ? WHERE id = ?', [nowSql(), r.id]);
+    ready.splice(0, ready.length, ...ready.filter((r) => !stale.includes(r)));
     if (!ready.length) return;
     // Claim them first so a slow send or a restart can never announce the same post twice.
     for (const r of ready) await query('UPDATE blogs SET notified_at = ? WHERE id = ?', [nowSql(), r.id]);
     const subs = await one("SELECT COUNT(*) AS n FROM subscribers WHERE status = 'subscribed'");
     if (!Number(subs?.n)) return;
-    const subject = ready.length === 1 ? `New on the Codigix blog: ${ready[0].title}` : `${ready.length} new articles on the Codigix blog`;
+    const subject = ready.length === 1 ? ready[0].title : `${ready.length} new articles from Codigix Infotech`;
     await query('INSERT INTO newsletters (subject, preview_text, body_html, include_posts) VALUES (?, ?, ?, 0)', [
       subject.slice(0, 250),
       ready.length === 1 ? String(ready[0].excerpt || '').slice(0, 140) : 'Fresh guides from the Codigix team.',

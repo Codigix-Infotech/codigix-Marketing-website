@@ -15,6 +15,7 @@ const addedColumns = [
   ['blogs', 'reviewer_credentials', 'VARCHAR(160) NULL', 'TEXT'],
   ['blogs', 'last_reviewed_at', 'DATETIME NULL', 'TEXT'],
   ['subscribers', 'unsubscribe_token', 'VARCHAR(64) NULL', 'TEXT'],
+  ['subscribers', 'name', 'VARCHAR(120) NULL', 'TEXT'],
   ['subscribers', 'welcome_sent_at', 'DATETIME NULL', 'TEXT'],
   ['blogs', 'notified_at', 'DATETIME NULL', 'TEXT'],
   ['newsletters', 'include_posts', 'TINYINT(1) NOT NULL DEFAULT 0', 'INTEGER NOT NULL DEFAULT 0'],
