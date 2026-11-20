@@ -251,7 +251,7 @@ export default function ContactMapSplit({ contact }: ContactMapSplitProps) {
       {/* ========================================================================= */}
       {/* 2. MINIMAL TOP-RIGHT CONTROLS (Positioned below the fixed navbar)         */}
       {/* ========================================================================= */}
-      <div className="absolute top-28 sm:top-32 right-4 sm:right-8 z-30 flex items-center gap-2 pointer-events-auto">
+      <div className="absolute top-28 sm:top-32 right-4 sm:right-8 z-30 hidden sm:flex items-center gap-2 pointer-events-auto">
         <div className="bg-white/90 backdrop-blur-md p-0.5 rounded-xl border border-slate-200 shadow-2xs flex items-center">
           <button
             type="button"

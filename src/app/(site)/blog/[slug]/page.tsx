@@ -355,7 +355,7 @@ export default async function BlogPostPage({ params }: Props) {
             </div>
 
             {/* Author & reviewer */}
-            <div className={`mt-8 grid gap-5 ${reviewer ? 'md:grid-cols-2' : ''}`}>
+            <div className={`mt-8 grid grid-cols-1 gap-5 ${reviewer ? 'md:grid-cols-2' : ''}`}>
               <section aria-label="About the author" className="rounded-2xl border border-slate-200 bg-gradient-to-br from-[#fafbfe] to-white p-6">
                 <p className="text-[11px] font-bold uppercase tracking-widest text-slate-400 mb-4">About the author</p>
                 <div className="flex items-center gap-4 mb-4">

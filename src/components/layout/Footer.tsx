@@ -84,7 +84,7 @@ export default function Footer({ settings }: { settings: PublicSettings }) {
                 value={email}
                 onChange={(e) => setEmail(e.target.value)}
                 aria-label="Email address"
-                placeholder="Enter your email address"
+                placeholder="Your email address"
                 className="flex-1 min-w-0 bg-transparent text-white placeholder-slate-300 px-4 py-2.5 outline-none text-sm font-light"
                 required
               />

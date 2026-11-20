@@ -4,6 +4,7 @@ import React, { useEffect, useRef, useState } from 'react';
 import { motion, AnimatePresence, useInView } from 'framer-motion';
 import { ArrowRight, Users, Trophy, Smile, TrendingUp, BarChart2, Target, Search, Bell, Calendar, ChevronDown, Star, Heart, FileText, Rocket, Monitor, Megaphone, Edit, Lightbulb, Briefcase, Factory, Plus, ShoppingCart, GraduationCap, Utensils, Home, PlayCircle, Handshake, CheckCircle, Share2, Globe, ShieldCheck, MapPin, Youtube, Instagram, Link2, Play } from 'lucide-react';
 import HeroDashboard from './HeroDashboard';
+import FitWidth from '@/components/common/FitWidth';
 import type { HeroDashboardData } from '@/lib/types';
 
 const sectorCategories = [
@@ -154,7 +155,7 @@ export default function HeroSection({ dashboard }: { dashboard?: HeroDashboardDa
             className="absolute bottom-[-10%] left-[5%] w-[800px] h-[700px] border-[1px] border-solid border-purple-600/5 rounded-full z-0 pointer-events-none hidden lg:block"
          />
 
-         <div className="w-full  mx-auto  relative z-20 flex flex-col lg:flex-row items-center justify-between">
+         <div className="w-full max-w-[1680px] mx-auto relative z-20 flex flex-col lg:flex-row items-center justify-between">
 
             {/* LEFT COLUMN: 50% Hero Content */}
             <div className="flex flex-col items-start text-left w-full lg:w-[48%] xl:w-[46%] shrink-0 z-20 lg:pr-6">
@@ -162,20 +163,20 @@ export default function HeroSection({ dashboard }: { dashboard?: HeroDashboardDa
 
                   {/* Top Live Badge */}
                   <div className="inline-flex items-center gap-2.5 pl-1.5 pr-4 py-1.5 rounded-full bg-white shadow-[0_2px_12px_rgba(26,16,83,0.06)] border border-slate-200/80 mb-5 hover:border-[#e20b27]/40 transition-all cursor-default w-fit">
-                     <span className="inline-flex items-center gap-1.5 px-2.5 py-1 rounded-full bg-[#e20b27] text-white text-[10px] font-bold uppercase tracking-wider">
+                     <span className="inline-flex items-center gap-1.5 px-2.5 py-1 rounded-full bg-[#e20b27] text-white text-[10px] font-bold uppercase ">
                         <span className="flex h-1.5 w-1.5 relative">
                            <span className="animate-ping absolute inline-flex h-full w-full rounded-full bg-white opacity-75"></span>
                            <span className="relative inline-flex rounded-full h-1.5 w-1.5 bg-white"></span>
                         </span>
-                        PUNE |
+                        PUNE
                      </span>
-                     <span className="text-[11px] sm:text-xs font-semibold text-[#1a1053] tracking-wider uppercase">
+                     <span className="text-[11px] sm:text-xs  text-[#1a1053]  ">
                         DIGITAL INFRASTRUCTURE & ETHICAL COMMUNICATION
                      </span>
                   </div>
 
                   {/* Main Headline with Animated Categories - Stable Height & No Layout Jump */}
-                  <h1 className="text-4xl sm:text-5xl lg:text-[3.2rem] xl:text-[3.8rem] font-semibold leading-[1.12] text-[#1a1053] tracking-tight mb-5">
+                  <h1 className="text-3xl sm:text-5xl lg:text-[3.2rem] xl:text-[3rem]  leading-[1.12] text-[#1a1053] tracking-tight mb-5">
                      Digital Systems & Clear Information Architecture for <br />
                      <span className="relative inline-flex items-center h-[1.24em] overflow-hidden align-middle">
                         <AnimatePresence mode="popLayout">
@@ -211,7 +212,7 @@ export default function HeroSection({ dashboard }: { dashboard?: HeroDashboardDa
                               <Icon size={17} />
                            </div>
                            <div className="leading-tight min-w-0">
-                              <div className="text-xl sm:text-2xl font-bold text-[#1a1053] tracking-tight">{value}</div>
+                              <div className="text-md sm:text-xl font-bold text-[#1a1053] tracking-tight">{value}</div>
                               <div className="text-[10.5px] sm:text-xs text-slate-500 truncate">{label}</div>
                            </div>
                         </div>
@@ -237,7 +238,7 @@ export default function HeroSection({ dashboard }: { dashboard?: HeroDashboardDa
                         </span>
                         <span className="flex flex-col items-start leading-tight">
                            <span>Watch Video</span>
-                           <span className="text-[11px] font-normal text-slate-500">Schedule a Discovery Call</span>
+                           <span className="text-[11px] font-normal text-slate-500">Know About Codigix Infotech</span>
                         </span>
                      </button>
                   </div>
@@ -340,7 +341,7 @@ export default function HeroSection({ dashboard }: { dashboard?: HeroDashboardDa
                         <div className="absolute inset-x-12 top-0 h-px bg-gradient-to-r from-transparent via-white to-transparent pointer-events-none" />
                         {/* Server-rendered so its space is reserved from the first paint (no layout jump on hydration). */}
                         <div className="relative w-full rounded-[1.6rem] overflow-hidden shadow-[0_2px_10px_-2px_rgba(15,23,42,0.18)] ring-1 ring-slate-900/[0.06]">
-                           <HeroDashboard data={dashboard} />
+                           <FitWidth minWidth={520}><HeroDashboard data={dashboard} /></FitWidth>
                         </div>
                      </div>
                   </motion.div>

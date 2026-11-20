@@ -138,7 +138,7 @@ export default function ClientVisuals({ videos = defaultVideos }: { videos?: Vid
         <div className="absolute top-20 -right-20 w-[600px] h-[600px] bg-blue-100/50 rounded-full opacity-40 blur-3xl mix-blend-overlay" />
       </div>
 
-      <div className=" mx-auto px-4 lg:px-8  relative z-10 max-w-7xl">
+      <div className=" mx-auto px-4 lg:px-8 2xl:px-16 relative z-10 max-w-[1808px]">
 
         <div className="flex flex-col lg:flex-row gap-12 lg:gap-8 items-stretch">
 
@@ -203,7 +203,7 @@ export default function ClientVisuals({ videos = defaultVideos }: { videos?: Vid
             <div
               ref={scrollRef}
               // Extra padding gives the lifted active card's ring + shadow room inside the scroll clip; negative margins keep the layout in place
-              className="flex gap-5 overflow-x-auto hide-scrollbar snap-x snap-mandatory scroll-px-4 pt-5 pb-10 px-4 -mt-3 -mb-4 -mx-3"
+              className="flex gap-5 overflow-x-auto hide-scrollbar snap-x snap-mandatory scroll-px-4 pt-5 pb-10 px-4 -mt-3 -mb-4 -mx-3 [&>:first-child]:ml-auto [&>:last-child]:mr-auto"
             >
               {videosData.map((video) => (
                 <VideoCard

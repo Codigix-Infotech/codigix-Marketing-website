@@ -15,7 +15,7 @@ const env = {
   apiPublicUrl: (process.env.API_PUBLIC_URL || `http://localhost:${process.env.PORT || 5000}`).replace(/\/$/, ''),
   db: {
     // sqlite (default, no setup) or mysql
-    client: (process.env.DB_CLIENT || 'sqlite').toLowerCase() === 'mysql' ? 'mysql' : 'sqlite',
+    client: (process.env.DB_CLIENT || 'mysql').toLowerCase() === 'mysql' ? 'mysql' : 'sqlite',
     sqliteFile: path.resolve(root, process.env.SQLITE_FILE || 'data/codigix.db'),
     host: process.env.DB_HOST || '127.0.0.1',
     port: Number(process.env.DB_PORT || 3306),

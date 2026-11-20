@@ -17,13 +17,33 @@
   }
 
   /* Universal Typography Enforcement (Defaults) */
-  h1 { @apply font-serif text-4xl md:text-5xl lg:text-6xl font-bold text-[#1a1053] leading-tight tracking-tight; }
-  h2 { @apply font-serif text-3xl md:text-4xl lg:text-5xl font-bold text-[#1a1053] leading-snug tracking-tight; }
-  h3 { @apply text-2xl md:text-3xl lg:text-4xl font-semibold text-[#1a1053] leading-snug; }
-  h4 { @apply text-xl md:text-2xl font-semibold text-[#1a1053] leading-snug; }
-  h5 { @apply text-lg md:text-xl font-semibold text-[#1a1053]; }
-  h6 { @apply text-base md:text-lg font-semibold text-[#1a1053]; }
-  p { @apply text-base lg:text-lg font-normal text-slate-700 leading-relaxed; }
+  h1 {
+    @apply font-serif text-4xl md:text-5xl lg:text-6xl font-bold text-[#1a1053] leading-tight tracking-tight;
+  }
+
+  h2 {
+    @apply font-serif text-3xl md:text-4xl lg:text-5xl font-bold text-[#1a1053] leading-snug tracking-tight;
+  }
+
+  h3 {
+    @apply text-2xl md:text-3xl lg:text-4xl font-semibold text-[#1a1053] leading-snug;
+  }
+
+  h4 {
+    @apply text-xl md:text-2xl font-semibold text-[#1a1053] leading-snug;
+  }
+
+  h5 {
+    @apply text-lg md:text-xl font-semibold text-[#1a1053];
+  }
+
+  h6 {
+    @apply text-base md:text-lg font-semibold text-[#1a1053];
+  }
+
+  p {
+    @apply text-base lg:text-lg font-normal text-slate-700 leading-relaxed;
+  }
 
   * {
     border-color: rgba(226, 232, 240, 0.8);
@@ -39,6 +59,10 @@
 
   .container {
     width: 100% !important;
+    max-width: 1808px !important;
+    /* 1680px of content + padding: lines up with the header and hero on big screens */
+    margin-left: auto !important;
+    margin-right: auto !important;
     padding-left: 1rem !important;
     padding-right: 1rem !important;
   }
@@ -76,15 +100,15 @@
   .text-balance {
     text-wrap: balance;
   }
-  
+
   .glass {
     @apply bg-white/70 backdrop-blur-lg border border-slate-200 rounded-2xl shadow-sm;
   }
-  
+
   .glass-card {
     @apply bg-white/70 backdrop-blur-xl border border-slate-200/50 shadow-[0_8px_30px_rgb(0,0,0,0.04)] rounded-2xl relative overflow-hidden;
   }
-  
+
   .text-gradient {
     @apply bg-clip-text text-transparent bg-gradient-to-r from-blue-600 via-indigo-600 to-[#e20b27];
   }
@@ -130,14 +154,24 @@
 }
 
 @keyframes svgPulse {
-  0%, 100% { transform: scale(0.4286); opacity: 0.6; }
-  50% { transform: scale(1); opacity: 0.15; }
+
+  0%,
+  100% {
+    transform: scale(0.4286);
+    opacity: 0.6;
+  }
+
+  50% {
+    transform: scale(1);
+    opacity: 0.15;
+  }
 }
 
 /* Hide scrollbar for horizontal lists */
 .hide-scrollbar::-webkit-scrollbar {
   display: none;
 }
+
 .hide-scrollbar {
   -ms-overflow-style: none;
   scrollbar-width: none;
@@ -168,12 +202,14 @@
    ~200px blank gaps between sections. Tighten the rhythm below 640px (sections only —
    cards and hero offsets that clear the fixed navbar are untouched). */
 @media (max-width: 639px) {
+
   .site-main section.py-20,
   .site-main section.py-24,
   .site-main section.py-28 {
     padding-top: 3.5rem;
     padding-bottom: 3.5rem;
   }
+
   .site-main section.py-32 {
     padding-top: 4rem;
     padding-bottom: 4rem;
@@ -186,6 +222,7 @@
   .site-main button[aria-label]:not([class*="absolute"]):not([class*="fixed"]) {
     position: relative;
   }
+
   .site-main button[aria-label]::after {
     content: '';
     position: absolute;
@@ -210,6 +247,7 @@ html.lenis {
 }
 
 @media (prefers-reduced-motion: reduce) {
+
   .site-main *,
   .site-main *::before,
   .site-main *::after {
@@ -224,16 +262,19 @@ html.lenis {
 .article-content h3 {
   scroll-margin-top: 110px;
 }
+
 .article-content table {
   display: block;
   overflow-x: auto;
 }
+
 .article-content iframe {
   width: 100%;
   aspect-ratio: 16 / 9;
   height: auto;
   border-radius: 1rem;
 }
+
 .article-content mark {
   background: #fef3c7;
   padding: 0 0.15em;
@@ -241,12 +282,46 @@ html.lenis {
 }
 
 /* ---------- Admin panel animations ---------- */
-@keyframes fadeIn { from { opacity: 0 } to { opacity: 1 } }
-@keyframes slideIn { from { transform: translateX(24px); opacity: 0 } to { transform: none; opacity: 1 } }
-@keyframes slideUp { from { transform: translateY(8px); opacity: 0 } to { transform: none; opacity: 1 } }
+@keyframes fadeIn {
+  from {
+    opacity: 0
+  }
+
+  to {
+    opacity: 1
+  }
+}
+
+@keyframes slideIn {
+  from {
+    transform: translateX(24px);
+    opacity: 0
+  }
+
+  to {
+    transform: none;
+    opacity: 1
+  }
+}
+
+@keyframes slideUp {
+  from {
+    transform: translateY(8px);
+    opacity: 0
+  }
+
+  to {
+    transform: none;
+    opacity: 1
+  }
+}
 
 /* TipTap editor */
-.tiptap-editor .ProseMirror { outline: none; min-height: 420px; }
+.tiptap-editor .ProseMirror {
+  outline: none;
+  min-height: 420px;
+}
+
 .tiptap-editor .ProseMirror p.is-editor-empty:first-child::before {
   content: attr(data-placeholder);
   float: left;
@@ -254,16 +329,148 @@ html.lenis {
   pointer-events: none;
   height: 0;
 }
-.tiptap-editor .ProseMirror img.ProseMirror-selectednode { outline: 3px solid #6366f1; border-radius: 0.75rem; }
-.tiptap-editor .ProseMirror table { border-collapse: collapse; width: 100%; }
-.tiptap-editor .ProseMirror td, .tiptap-editor .ProseMirror th { border: 1px solid #e2e8f0; padding: 6px 10px; min-width: 60px; }
-.tiptap-editor .ProseMirror th { background: #f8fafc; }
-.tiptap-editor .ProseMirror .selectedCell { background: #eef2ff; }
+
+.tiptap-editor .ProseMirror img.ProseMirror-selectednode {
+  outline: 3px solid #6366f1;
+  border-radius: 0.75rem;
+}
+
+.tiptap-editor .ProseMirror table {
+  border-collapse: collapse;
+  width: 100%;
+}
+
+.tiptap-editor .ProseMirror td,
+.tiptap-editor .ProseMirror th {
+  border: 1px solid #e2e8f0;
+  padding: 6px 10px;
+  min-width: 60px;
+}
+
+.tiptap-editor .ProseMirror th {
+  background: #f8fafc;
+}
+
+.tiptap-editor .ProseMirror .selectedCell {
+  background: #eef2ff;
+}
 
 /* claude.ai-style serif titles: Source Serif reads best at a medium weight with natural spacing,
    so this overrides the heavier font-bold/extrabold + tracking-tight utilities used on h1/h2. */
-h1, h2,
-h1 span, h2 span {
+h1,
+h2,
+h1 span,
+h2 span {
   font-weight: 500 !important;
   letter-spacing: -0.012em !important;
+}
+
+/* ---------------------------------------------------------------------------
+   Responsive safety net
+   - Large / ultra-wide screens: scale the whole page up proportionally so type and spacing keep their
+     intended size relative to the screen (instead of a tiny page floating in a huge canvas).
+   - Very small phones: stop long words, tables and media from forcing sideways scrolling.
+   --------------------------------------------------------------------------- */
+html {
+  -webkit-text-size-adjust: 100%;
+  text-size-adjust: 100%;
+}
+
+img,
+video,
+svg,
+canvas,
+iframe {
+  max-width: 100%;
+}
+
+img,
+video {
+  height: auto;
+}
+
+p,
+li,
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+a,
+td,
+th {
+  overflow-wrap: anywhere;
+}
+
+@supports (overflow-wrap: break-word) {
+
+  p,
+  li,
+  h1,
+  h2,
+  h3,
+  h4,
+  h5,
+  h6,
+  a,
+  td,
+  th {
+    overflow-wrap: break-word;
+    word-break: normal;
+  }
+}
+
+table {
+  max-width: 100%;
+}
+
+.article-content table {
+  display: block;
+  overflow-x: auto;
+}
+
+.article-content pre {
+  overflow-x: auto;
+  max-width: 100%;
+}
+
+@media (min-width: 2200px) {
+  html {
+    zoom: 1.25;
+  }
+}
+
+@media (min-width: 3000px) {
+  html {
+    zoom: 1.6;
+  }
+}
+
+@media (min-width: 3800px) {
+  html {
+    zoom: 2;
+  }
+}
+
+@media (max-width: 380px) {
+  h1 {
+    font-size: 1.85rem;
+    line-height: 1.2;
+  }
+
+  h2 {
+    font-size: 1.55rem;
+    line-height: 1.25;
+  }
+
+  h3 {
+    font-size: 1.25rem;
+  }
+}
+
+@media (max-width: 340px) {
+  html {
+    font-size: 15px;
+  }
 }

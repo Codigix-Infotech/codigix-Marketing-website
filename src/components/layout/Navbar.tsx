@@ -151,7 +151,7 @@ export default function Navbar() {
           }`}
       >
         <div
-          className={`flex items-center justify-between px-5 sm:px-6 lg:px-8 transition-all duration-500  mx-auto ${isScrolled
+          className={`flex items-center justify-between px-5 sm:px-6 lg:px-8 transition-all duration-500  mx-auto max-w-[1680px] ${isScrolled
             ? 'w-full h-[70px]'
             : 'w-[95%] sm:w-[94%] xl:w-[96%] h-[76px] sm:h-[80px] bg-white/85 backdrop-blur-xl border border-slate-200/80 rounded-full shadow-[0_4px_25px_rgba(26,16,83,0.06)]'
             }`}
