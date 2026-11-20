@@ -26,15 +26,15 @@ jobs:
             echo "Pulling latest changes from Git..."
             git pull origin main
 
+            echo "Installing frontend dependencies & building Next.js...
+            npm ci || npm i
+            npm run build
+
             echo "Installing backend dependencies & running migrations..."
             cd backend
             npm ci || npm i
             npm run migrate
             cd ..
-
-            echo "Installing frontend dependencies & building Next.js..."
-            npm ci || npm i
-            npm run build
 
             echo "Restarting PM2 processes..."
             pm2 restart codigix-marketing-backend
