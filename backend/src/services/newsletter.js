@@ -90,11 +90,10 @@ function postCards(posts) {
   return `<p style="margin:18px 0 8px"><strong>Recent articles</strong></p>${items}`;
 }
 
-function signature({ contact, site }) {
-  const bits = [];
-  if (contact.email) bits.push(link(`mailto:${contact.email}`, contact.email));
-  if (contact.phone) bits.push(esc(contact.phone));
-  return `<p style="margin:22px 0 0">Regards,<br>The team at ${esc(site.name || 'Codigix Infotech')}${bits.length ? `<br>${bits.join(' &nbsp;|&nbsp; ')}` : ''}<br>${link(env.siteUrl, env.siteUrl.replace(/^https?:\/\//, ''))}</p>`;
+const SIGNATURE = { name: 'Codigix Infotech Team', phone: '7066556768', email: 'info@codigix.co', website: 'codigix.co' };
+
+function signature() {
+  return `<p style="margin:22px 0 0">Regards,<br>${esc(SIGNATURE.name)}<br>Phone: ${esc(SIGNATURE.phone)}<br>Email: ${link(`mailto:${SIGNATURE.email}`, SIGNATURE.email)}<br>Website: ${link(`https://${SIGNATURE.website}`, SIGNATURE.website)}</p>`;
 }
 
 /** Plain, single-column layout: just the message and a short footer. */
